@@ -461,7 +461,12 @@ function initMap(s) {
   const map = new google.maps.Map(el, {
     center: dbPos,
     zoom: 14,
-    mapTypeControl: false,
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+      position: google.maps.ControlPosition.TOP_RIGHT,
+      mapTypeIds: ["roadmap", "satellite", "hybrid"]
+    },
     streetViewControl: true,
     fullscreenControl: false
   });
