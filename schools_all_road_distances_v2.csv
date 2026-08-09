@@ -1,0 +1,382 @@
+School Name,Educational District,Educational Sub-District,Block Name,Level Name,Distance to Nearest PWD Road (m),Nearest Road Type,Nearest Road Name/Ref,Latitude,Longitude
+G L P S Pothukundu,Malappuram,Mankada,Mankada,1 - 4,2.2,MDR,Makkarapparamba Mankada Road (KPWD/MDR/503020201/8,11.01726,76.12361
+G. L. P. S. Perumparamba Moodal,Tirur,Kuttippuram,Kuttippuram,1 - 4,3.9,MDR,Moodal Kanchippura By Pass Road (KPWD/MDR/503020102/22,10.8702,76.04659
+G.L.P.S. Mundumuzhi,Malappuram,Kondotty,Kondotty,1 - 4,4.0,MDR,Kondotti Vazhakkad Road (KPWD/MDR/503020302/8,11.24633,75.93915
+G.M.L.P.S. Akkode,Malappuram,Kondotty,Kondotty,1 - 4,4.8,MDR,Feroke College Vazhakkad Road (KPWD/MDR/503020302/32,11.23451,75.91487
+GMLPS Mampuram,Thirurangadi,Vengara,Vengara,1 - 4,5.4,MDR,Mambram Link Road (KPWD/MDR/503020303/13,11.0561,75.92042
+G. U. P. S. Pothanur,Tirur,Edappal,Ponnani,1 - 7,6.1,MDR,Nadakkavu - Nariparamba Road (KPWD/MDR/503020102/8,10.821579,75.984728
+A. M. L. P. S. Kormanthala,Thirurangadi,Tanur,,1 - 4,6.5,MDR,Tanur Poorappuzha Tippu Sulthan Road (KPWD/MDR/503020301/26,10.98716,75.867883
+GUPS AR Nagar,Thirurangadi,Vengara,Vengara,1 - 7,7.4,MDR,Vengara Kacheripadi Kakkadumpuram via Kuttoor North (KPWD/MDR/503020303/46,11.07172,75.94703
+G. L. P. S. Rayirimangalam,Thirurangadi,Tanur,,1 - 4,8.5,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020301/64,10.99357,75.8731
+G. L. P. S. Thrikkanapuram,Tirur,Edappal,Ponnani,1 - 4,8.5,MDR,Athaloor Thrikkanapuram Road (KPWD/MDR/503020101/1,10.839666,75.988633
+G.L.P.S. Thadathilparamba,Malappuram,Kondotty,Kondotty,1 - 4,8.9,MDR,Vettukad Olavathur Mundumuzhi Road (KPWD/MDR/503020302/15,11.20271,75.95149
+Naduvakkad GLPS,Wandoor,Nilambur,Wandoor,1 - 4,9.7,MDR,Mampad Ferry - Thrikkaikuth Ferry Road (KPWD/MDR/503020403/26,11.24277,76.19103
+GMLPS Kizhuparamba,Wandoor,Areacode,Areacode,1 - 4,9.8,MDR,Keezhuparamba - Nellarkadavu Road (KPWD/MDR/503020401/60,11.24977,76.01347
+Koithakundu GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,11.3,MDR,Karuvarakundu - Kuttathi - Neelancheri - Kalikavu (KPWD/MDR15/503020202/10,11.134268,76.32921
+G.G.H.S.S. Manjeri,Malappuram,Manjeri,,1 - 12,11.5,MDR,Manjeri - Pookottur Road (KPWD/MDR/503020401/67,11.120218,76.118038
+GLPS Meppadam,Wandoor,Nilambur,Wandoor,1 - 4,12.0,MDR,Thiruvali High School Padi - Mepadam - Mampad P.H.C (KPWD/MDR18/503020202/12,11.22918,76.18182
+G M L P S Karathode,Thirurangadi,Vengara,Vengara,1 - 4,12.6,SH,Malappuram - Parappanangadi Road (KPWD/MPM/SH/72/1,11.063009,76.013635
+G U P S Pullur,Malappuram,Manjeri,,1 - 7,12.9,SH,Manjery By Pass First Reach (S.H 28) (KPWD/SH/503020401/35,11.123529,76.118215
+G. H. S. S. Ponmundam,Thirurangadi,Tanur,Tanur,1 - 12,12.9,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/1,10.957123,75.956855
+G.L.P.S. Kottakkal,Malappuram,Malappuram,,1 - 4,13.5,MDR,Kottakkal Arya Vydya Sala Road (KPWD/MDR/503020402/25,10.99879,76.00815
+Pallisseri GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,15.1,MDR,Thirkkalangodu - Thiruvali - Wandoor - Kalikavu Road (KPWD/MDR/503020202/18,11.179967,76.303281
+G L P S Vallikkapatta,Malappuram,Mankada,Mankada,1 - 4,15.4,MDR,Tirurkad Anakayam Road (KPWD/MDR/503020203/11,11.06234,76.14056
+G.M.L.P.S. Nediyiruppu,Malappuram,Kondotty,,1 - 4,15.5,NH,NH 966 (KPWD/NH966/302010301/2,11.137528,75.983587
+G. J. B. S. Vattamkulam,Tirur,Edappal,Ponnani,1 - 4,16.3,MDR,Palakkad - Ponnani Road (KPWD/MDR/503020101/24,10.785135,76.01586
+GMLPS Cherur,Thirurangadi,Vengara,Vengara,1 - 4,16.6,MDR,Vengara Kunnumpuram Road (KPWD/MDR/503020303/28,11.073861,75.985242
+G.M.L.P.S. Kondotty Chungam,Malappuram,Kondotty,,1 - 4,16.9,MDR,Old Kozhikode Palakkad Road (KPWD/MDR/503020302/38,11.14417,75.96867
+Pazhedam Panampoyil GLPS,Wandoor,Wandoor,Wandoor,1 - 4,17.2,MDR,Thachangode - Koorad - Kallamoola Road (KPWD/MDR/503020202/6,11.21106,76.292804
+G. M. L. P. S. Vettam Pallippuram,Tirur,Tirur,Tirur,1 - 4,17.6,MDR,Tirur Chammaravattom Road (KPWD/MDR/503020301/56,10.82254,75.95126
+G. M. U. P. S. Kakkad,Thirurangadi,Parappanangadi,,1 - 7,17.7,NH,NH 66 - Kooriyad Puthanathani (KPWD/NH66/302010503/1,11.03522,75.93824
+G.L.P.S. Karuvambrum West,Malappuram,Manjeri,,1 - 4,18.1,MDR,Manjeri - Kizhisseri Road (KPWD/MDR/503020401/56,11.127181,76.101832
+G. M. L. P. S. Cheruvannur,Thirurangadi,Tanur,Tanur,1 - 4,18.5,MDR,Kadungathukundu Panampalam Road (KPWD/MDR/503020301/10,10.928094,75.97306
+G. L. P. S. Chottur,Tirur,Kuttippuram,Kuttippuram,1 - 4,18.7,MDR,Moodal Kanchippura By Pass Road (KPWD/MDR/503020102/22,10.9161,76.03964
+G. M. L. P. S. Korad,Thirurangadi,Tanur,Tanur,1 - 4,19.0,MDR,Ittilakkal Theyyala Road (KPWD/MDR/503020301/8,10.98109,75.91401
+G. M. L. P. S. Thirurangadi,Thirurangadi,Parappanangadi,,1 - 4,19.3,MDR,Tirurangadi Kundoor Cherumukku Road (KPWD/MDR/503020303/23,11.035572,75.926976
+G. L. P. S. Thirurangadi,Thirurangadi,Parappanangadi,,1 - 4,19.6,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/1,11.044321,75.923696
+G.L.P.S. Morayur,Malappuram,Kondotty,Malappuram,1 - 4,19.8,NH,NH 966 (KPWD/NH966/302010301/2,11.13574,76.0211
+G U P S Mankada Pallippuram,Malappuram,Mankada,Mankada,1 - 7,19.9,MDR,Panambattachala Vennakkode Vellila (KPWD/MDR/503020402/47,11.06096,76.12727
+G L P S Othukkungal,Thirurangadi,Vengara,Malappuram,1 - 4,20.3,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/2,11.02562,76.02641
+G.M.L.P.S. Manjeri East,Malappuram,Manjeri,,1 - 4,20.4,MDR,Manjeri - Olipuzha Road (KPWD/MDR/503020401/73,11.121499,76.125117
+GHS Kolappuram,Thirurangadi,Vengara,Vengara,1 -10,20.4,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/1,11.05608,75.935
+G.M.L.P.S. Pandikkad,Malappuram,Manjeri,Wandoor,1 - 5,20.6,SH,Valancheri â€“ Angadipuram-Wandoor-Vadapuram-Nilamboor Road (KPWD/MPM/SH/73/4,11.097809,76.224314
+GUPS Valiyora,Thirurangadi,Vengara,Vengara,1 - 7,20.6,SH,Malappuram - Parappanangadi Road (KPWD/MPM/SH/72/2,11.04873,75.94971
+GMLPS C.U. Campus,Thirurangadi,Vengara,Tirurangadi,1 - 4,21.2,MDR,University - Kadakkattupara - Olippramkadavu - Mukkathu Kadavu Road (KPWD/MDR/503020303/39,11.13099,75.89186
+G L P S Mankada,Malappuram,Mankada,Mankada,1 - 4,21.6,MDR,Tirurkad Anakayam Road (KPWD/MDR/503020203/11,11.01547,76.1772
+Pookkulam GLPS,Wandoor,Wandoor,Wandoor,1 - 4,21.8,SH,Valancheri â€“ Angadipuram-Wandoor-Vadapuram-Nilamboor Road (KPWD/MPM/SH/73/4,11.18966,76.234066
+G. M. L. P. S. Rayirimangalam,Thirurangadi,Tanur,,1 - 4,22.0,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020301/64,10.98098,75.87693
+G. F. L. P. S. Puthuponnani,Tirur,Ponnani,,1 - 5,22.3,MDR,Match Factory Road (KPWD/MDR/503020101/11,10.778658,75.919522
+G. M. L. P. S. Cherumukku,Thirurangadi,Tanur,Tirurangadi,1 - 4,22.5,MDR,Tirurangadi Kundoor Cherumukku Road (KPWD/MDR/503020303/23,11.02253,75.92435
+GMLPS Iringallur,Thirurangadi,Vengara,Vengara,1 - 4,22.5,MDR,Kuzhippurm - Atteeri - Kottakkal Road (KPWD/MDR/503020303/32,11.02338,76.00708
+G. M. L. P. S. Puthiyakadppuram North,Thirurangadi,Tanur,,1 - 4,22.7,MDR,Tippu Sulthan Road (KPWD/MDR/503020301/28,10.950653,75.877138
+G. L. P. S. Athippetta,Tirur,Kuttippuram,Kuttippuram,1 - 4,22.8,SH,Valancheri â€“ Angadipuram-Wandoor-Vadapuram-Nilamboor Road (KPWD/MPM/SH/73/1,10.90529,76.11195
+G.L.P.S. Vettikkattiri,Malappuram,Manjeri,Wandoor,1 - 4,22.9,MDR,Manjeri - Olipuzha Road (KPWD/MDR/503020401/73,11.095161,76.213942
+G. L. P. S. Venniyur,Thirurangadi,Parappanangadi,,1 - 4,23.2,MDR,Venniyoor Paramba Thannur Road (KPWD/MDR/503020303/30,11.014938,75.938959
+GMUPS Kizhisseri,Malappuram,Kizhisseri,Areacode,1 - 7,23.4,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/2,11.17007,75.99138
+G.M.L.P.S. Kondotty,Malappuram,Kondotty,,1 - 4,23.8,MDR,Old Kozhikode Palakkad Road (KPWD/MDR/503020302/39,11.14756,75.96498
+G. L. P. S. Perumparamba,Tirur,Edappal,Ponnani,1 - 4,23.8,MDR,Edappal Tavanoor Road (KPWD/MDR/503020101/8,10.8015,75.99547
+G.L.P.S. Pandallur,Malappuram,Manjeri,Malappuram,1 - 4,24.0,MDR,Anakkayam - Oravambram Road (KPWD/MDR/503020401/2,11.084432,76.166711
+G. L. P. S. Sukapuram,Tirur,Edappal,Ponnani,1 - 4,24.0,MDR,Naduvattom Thanneerkodu Road (KPWD/MDR/503020102/9,10.77321,76.01494
+G.M.L.P.S. Manjeri South,Malappuram,Manjeri,,1 - 4,24.1,MDR,N.S.S. College Road - Manjeri (KPWD/MDR/503020401/14,11.120905,76.12658
+G. L. P. S. Parappanangadi,Thirurangadi,Parappanangadi,,1 - 5,24.1,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020303/37,11.06918,75.85364
+GMUPS Kannamangalam,Thirurangadi,Vengara,Vengara,1 - 7,24.1,MDR,Vengara - Achanambalam Road (KPWD/MDR/503020303/27,11.07803,75.97556
+G. L. P. S. Anappadi,Thirurangadi,Parappanangadi,Tirurangadi,1 - 4,24.6,MDR,Chelari - Parappnangadi Road (KPWD/MDR/503020303/5,11.07553,75.85647
+G. L. P. S. Kaladi,Tirur,Edappal,Ponnani,1 - 4,24.9,SH,Trissur Kuttipuram Road (KPWD/MPM/SH/69/4,10.81377,76.01296
+G. M. L. P. S. Vadakkummuri,Tirur,Edappal,Perumpadappa,1 - 4,25.2,MDR,Variyarmoola - Chelakkadavu Road (KPWD/MDR/503020101/19,10.737365,76.010027
+GLPS Orakam Kizhumuri,Thirurangadi,Vengara,Vengara,1 - 5,26.1,MDR,Athikarathodi - Kuttaloor Road Reach 2 (KPWD/MDR/503020402/15,11.052021,75.993125
+G. F. L. P. S. Parappanangadi,Thirurangadi,Parappanangadi,,1 - 4,26.5,MDR,Chetippadi Alungal Beach Road (KPWD/MDR/503020303/6,11.070636,75.847279
+G.M.L.P.S. Kidangazhi,Malappuram,Manjeri,,1 - 4,26.7,SH,Manjery By Pass First Reach (S.H 28) (KPWD/SH/503020401/35,11.122817,76.11537
+G. U. P. S. Painkannur,Tirur,Kuttippuram,,1 - 7,26.7,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/1,10.87406,76.0641
+GLPS Kizhisseri,Malappuram,Kizhisseri,Areacode,1 - 5,27.2,MDR,Omannur Kuzhimanna Road (KPWD/MDR/503020302/11,11.17617,75.99761
+G. M. L. P. S. Ponmundam South,Thirurangadi,Tanur,Tanur,1 - 4,27.9,MDR,Tanalur Puthanathani Road (KPWD/MDR/503020301/52,10.94892,75.95095
+Pullippadam GLPS,Wandoor,Nilambur,Wandoor,1 - 4,28.0,MDR,Mundengara - Pullippadam - Odayikkal - Veetikkunnu Road (KPWD/MDR/503020401/37,11.24638,76.17012
+G. M. L. P. S. Ponnani Town,Tirur,Ponnani,,1 - 4,28.1,MDR,Western End Of Match Factory Road (KPWD/MDR/503020101/23,10.775853,75.922213
+GLPS Kuzhimanna,Malappuram,Kizhisseri,Areacode,1 - 4,28.3,MDR,Manjeri - Kizhisseri Road (KPWD/MDR/503020401/57,11.17135,76.01795
+G M L P S Pandallur,Malappuram,Manjeri,Malappuram,1 - 4,28.5,MDR,Anakkayam - Oravambram Road (KPWD/MDR/503020401/2,11.085446,76.175403
+K.M Musthafa Memorial G.L.P.S. Mundengara,Malappuram,Manjeri,Areacode,1 - 5,28.6,MDR,Pathananapuram - Moorkanad Road (KPWD/MDR/503020401/16,11.223766,76.140821
+GMLPS Muthiramanna,Malappuram,Perinthalmanna,Perinthalmanna,1 - 4,28.6,MDR,Pallippadi Bidathi Road (KPWD/MDR/503020201/23,10.95579,76.29689
+GMLPS Kilinakode,Thirurangadi,Vengara,Vengara,1 - 4,28.6,MDR,Cherur - Kilinakode - Parakkaanni Road (KPWD/MDR/503020402/17,11.07687,76.00053
+Padikkal KalyaniAMMA Memorial G L P S Kallurma,Tirur,Edappal,Perumpadappa,1 - 4,28.6,MDR,Changaramkulam Cheruvallur Road (KPWD/MDR/503020101/5,10.71287,76.01779
+GLPS Thavarapparamba,Wandoor,Areacode,Areacode,1 - 4,28.7,MDR,Perakamanna - Kuzhiyamparamba Road (KPWD/MDR/503020401/42,11.189739,76.048509
+G. L. P. S. Kuttippuram North,Tirur,Kuttippuram,Kuttippuram,1 - 4,28.8,MDR,PH Centre - Mukkilapeedika Road (KPWD/MDR/503020102/12,10.85369,76.03773
+G.M.U.P.S. Oravambram,Wandoor,Melattur,Perinthalmanna,1 - 7,29.1,SH,Valancheri â€“ Angadipuram-Wandoor-Vadapuram-Nilamboor Road (KPWD/MPM/SH/73/3,11.08214,76.21665
+Uliyathu Aboobacker Memmorial  G. L. P. S. Vadakkummuri,Tirur,Edappal,Perumpadappa,1 - 4,29.2,MDR,Kanhoor Naranipuzha Road (KPWD/MDR/503020101/10,10.72425,75.99978
+G.M.L.P.S. Kolmanna,Malappuram,Malappuram,,1 - 4,29.3,SH,Malappuram - Parappanangadi Road (KPWD/MPM/SH/72/1,11.050419,76.057563
+G.M.U.P.S. Melakkam,Malappuram,Manjeri,,1 - 7,29.3,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.122684,76.119386
+G.M.U.P.S. Kottakkal,Malappuram,Malappuram,,1 - 7,29.5,MDR,Kottakkal Arya Vydya Sala Road (KPWD/MDR/503020402/25,10.99913,76.00788
+G.L.P.S. Nediyiruppu,Malappuram,Kondotty,,1 - 5,29.6,NH,NH 966 (KPWD/NH966/302010301/2,11.1326,75.99311
+G.L.P.S. Panikkarapuraya,Malappuram,Kondotty,Kondotty,1 - 4,29.7,MDR,Kondotti Vazhakkad Road (KPWD/MDR/503020302/8,11.24498,75.96972
+G.M.L.P.S. Morayur,Malappuram,Kondotty,Malappuram,1 - 4,30.3,NH,NH 966 (KPWD/NH966/302010301/2,11.13366,76.01528
+G. M. L. P. S. Tanur North,Thirurangadi,Tanur,,1 - 4,31.0,MDR,Road Connecting Tirur Kadalundy Road And Tipusulthan Road (KPWD/MDR/503020301/24,10.98312,75.869813
+G. L. P. S. Chiyanur,Tirur,Edappal,Perumpadappa,1 - 4,31.0,MDR,Changaramkulam - Kakkadippuram Road (KPWD/MDR/503020102/2,10.73833,76.0303
+GLPS Palappatta,Wandoor,Areacode,Areacode,1 - 4,31.3,SH,Koyilandy Thamarassery Mukkom Areacode Edavanna Road up to Erannyamakkal (KPWD/MPM/SH/34/6,11.213015,76.120174
+G. L. P. S. Kattilangadi,Tirur,Kuttippuram,Kuttippuram,1 - 4,31.5,MDR,Vettichira- Kattilangadi Road (KPWD/MDR/503020301/47,10.89922,76.01126
+GLPS Thachanna,Wandoor,Areacode,Areacode,1 - 4,31.6,MDR,Pathananapuram - Moorkanad Road (KPWD/MDR/503020401/16,11.2406,76.07077
+G. U. P. S. Cheruvayikkara,Tirur,Ponnani,,1 - 7,31.7,MDR,Palakkad - Ponnani Road (KPWD/MDR/503020101/15,10.7891,75.96361
+G. H. S. S. Maranchery,Tirur,Ponnani,Perumpadappa,1 - 12,32.3,SH,Guruvayoor - Althara - Ponnani Road (KPWD/MPM/SH/62/2,10.74075,75.97083
+G. M. L. P. S. Thalakadathur,Thirurangadi,Tanur,Tanur,1 - 4,33.0,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/1,10.939,75.93746
+GLPS Orakam Melmuri,Thirurangadi,Vengara,Vengara,1 - 4,33.0,SH,Malappuram - Parappanangadi Road (KPWD/MPM/SH/72/1,11.063756,76.031395
+GLPS Chungathara Panchayath,Wandoor,Nilambur,Nilambur,1 - 4,33.0,MDR,Chungathara - Kuttimunda Road (KPWD/MDR/503020403/3,11.352719,76.265172
+Konamunda GLPS,Wandoor,Nilambur,Nilambur,1 - 4,33.0,MDR,Akampadom - Pathar Road (KPWD/MDR/503020403/1,11.32322,76.21861
+G.L.P.S. Narukara,Malappuram,Manjeri,,1 - 4,33.9,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.120787,76.096863
+G.M.U.P.S. Ozhukur,Malappuram,Kondotty,Malappuram,1 - 7,34.7,MDR,Morayur Edapparamb Kizhisseri Road (KPWD/MDR/503020302/26,11.15409,76.01258
+G.L.P.S. Paranki Moochikkal,Malappuram,Malappuram,Malappuram,1 - 4,34.8,MDR,Chenathadam - Kuruppampadi (KPWD/MDR/503020402/16,11.006385,76.041245
+G. M. L. P. S. Ayirani,Tirur,Kuttippuram,Kuttippuram,1 - 4,35.0,MDR,Tanalur Puthanathani Road (KPWD/MDR/503020301/52,10.93784,75.98762
+GMLPS Orakam Kizhmuri,Thirurangadi,Vengara,Vengara,1 - 4,35.7,MDR,Athikarathodi - Kuttaloor Road Reach 2 (KPWD/MDR/503020402/15,11.050383,76.011311
+Pazhayakadakkal GUPS,Wandoor,Wandoor,Kalikavu,1 - 7,36.0,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.142177,76.347892
+G.L.P.S. Vettathur,Malappuram,Kondotty,Kondotty,1 - 4,36.8,MDR,Valillappuzha - Elamaram - Irattamoozhi Road (KPWD/MDR/503020302/14,11.25618,75.98985
+Mooleppadam GLPS,Wandoor,Nilambur,Nilambur,1 - 4,36.9,MDR,Nilambur - Valamthodu Road (KPWD/MDR/503020403/11,11.32223,76.19252
+G. H. S. S. Kadanchery,Tirur,Edappal,Ponnani,1 - 12,37.0,MDR,Nadakkavu - Nariparamba Road (KPWD/MDR/503020102/8,10.82585,75.98763
+G H S Meenadathur,Thirurangadi,Tanur,Tanur,1 -10,37.1,MDR,Payyanangadi Tanalur Road (KPWD/MDR/503020301/21,10.942207,75.910048
+Vadapuram GMLPS,Wandoor,Nilambur,Wandoor,1 - 4,37.5,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/2,11.258116,76.20282
+GLPS Kunnakkavu,Malappuram,Perinthalmanna,Perinthalmanna,1 - 4,37.6,MDR,Cherukara Muthukurussi Road (KPWD/MDR/503020201/4,10.90472,76.24743
+GHSS Peruvallur,Thirurangadi,Vengara,Tirurangadi,1 - 12,37.7,MDR,University Parambil Peedika Road (KPWD/MDR/503020303/26,11.10531,75.92466
+G.L.P.S. Kara,Wandoor,Melattur,Perinthalmanna,1 - 4,37.7,MDR,Karyavattam Alamallur Road (KPWD/MDR/503020203/18,11.00977,76.32209
+G.L.P.S. Thelakkad,Wandoor,Melattur,Perinthalmanna,1 - 4,38.2,MDR,Karyavattam Alamallur Road (KPWD/MDR/503020203/5,11.02292,76.25808
+G. L. P. S. Mookkuthala,Tirur,Edappal,Perumpadappa,1 - 4,38.5,MDR,Kanhoor Naranipuzha Road (KPWD/MDR/503020101/10,10.73319,76.01244
+G. L. P. S. Kanhiramukku,Tirur,Ponnani,Perumpadappa,1 - 5,38.9,SH,Guruvayoor - Althara - Ponnani Road (KPWD/MPM/SH/62/2,10.75871,75.96689
+G L P S Meenarkuzhi,Malappuram,Mankada,Mankada,1 - 4,39.3,MDR,Kuruva - Chattiparamba Road (KPWD/MDR/503020201/7,11.00891,76.105324
+G. L. P. S. Tanur,Thirurangadi,Tanur,,1 - 5,39.4,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020301/43,10.974337,75.8792
+G H S Aliparamba,Malappuram,Perinthalmanna,Perinthalmanna,1 - 12,39.8,MDR,Poovathani Pallikunnu Kampram Mannothil Kadavu Road (KPWD/MDR/503020201/24,10.918934,76.312984
+G. U. P. S. Othalur,Tirur,Edappal,Perumpadappa,1 - 7,40.2,MDR,Othaloor Pavittapuram Road (KPWD/MDR/503020101/14,10.71227,76.0475
+G.M.L.P.S. Chappanangadi,Malappuram,Malappuram,Malappuram,1 - 4,40.6,MDR,Kottakkal - Chappanangadi Road (KPWD/MDR/503020402/5,11.004902,76.042617
+G. L. P. S. Thuyyam,Tirur,Edappal,Ponnani,1 - 4,40.8,MDR,Palakkad - Ponnani Road (KPWD/MDR/503020101/15,10.78511,75.98425
+GUPS Moorkanad,Wandoor,Areacode,Areacode,1 - 7,40.8,MDR,Pathananapuram - Moorkanad Road (KPWD/MDR/503020401/16,11.24091,76.05748
+Mampad North GMLPS,Wandoor,Nilambur,Wandoor,1 - 4,41.0,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/2,11.247311,76.180297
+GMLPS Pookalathur,Malappuram,Kizhisseri,Areacode,1 - 4,41.3,MDR,Karaparamba - Pokkalathur - Mongam Road (KPWD/MDR/503020402/4,11.1575,76.05687
+G. L. P. S. Pariyapuram,Thirurangadi,Tanur,,1 - 5,41.6,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020301/64,11.00222,75.87384
+G G V H S S Wandoor,Wandoor,Wandoor,Wandoor,1 - 12,42.0,MDR,Thirkkalangodu - Thiruvali - Wandoor - Kalikavu Road (KPWD/MDR/503020202/7,11.19562,76.234259
+GLPS Valamangalam,Malappuram,Kizhisseri,Areacode,1 - 4,42.3,MDR,Valluvambram - Valamangalam - Pookolathur Road (KPWD/MDR/503020401/50,11.13874,76.05661
+GMLPS Nilambur,Wandoor,Nilambur,,1 - 4,43.1,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/2,11.284931,76.23748
+G. L. P. S. Edappal,Tirur,Edappal,Ponnani,1 - 4,44.0,MDR,Edappal Tavanoor Road (KPWD/MDR/503020101/8,10.78845,75.99628
+G. L. P. S. K.Puram,Thirurangadi,Tanur,Tanur,1 - 5,44.2,MDR,Pathampad - Vattathani Road (KPWD/MDR/503020301/40,10.95149,75.89791
+G.M.L.P.S. Karakunnu,Malappuram,Manjeri,Wandoor,1 - 4,44.3,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.169844,76.131066
+Thuvvur GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,44.8,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.111585,76.284165
+G. U. P. S. Karingappara,Thirurangadi,Tanur,Tanur,1 - 7,45.0,MDR,Vylathur Kozhichena Road (KPWD/MDR/503020301/33,10.9862,75.94249
+G.M.L.P.S. Manjeri,Malappuram,Manjeri,,1 - 4,45.7,MDR,Manjeri - Olipuzha Road (KPWD/MDR/503020401/73,11.119506,76.12179
+G.W.U.P.S. Nediyiruppu,Malappuram,Kondotty,,1 - 7,46.2,MDR,Musliyarangadi - Moochikkundu - N.H Colony Cheruppadi Road (KPWD/MDR/503020402/39,11.1077,75.99778
+Kooripoyil GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,46.7,MDR,Udhirampoyil - Maliyekkal Road (KPWD/MDR11/503020202/14,11.199853,76.297753
+Myladi GUPS,Wandoor,Nilambur,Nilambur,1 - 7,46.9,MDR,Nilambur - Valamthodu Road (KPWD/MDR/503020403/11,11.30432,76.23129
+Chadangamkulam GLPS,Wandoor,Wandoor,Wandoor,1 - 5,47.0,SH,Valancheri â€“ Angadipuram-Wandoor-Vadapuram-Nilamboor Road (KPWD/MPM/SH/73/4,11.217016,76.221099
+G H S S Kadungapuram,Malappuram,Mankada,Mankada,1 - 12,47.1,MDR,Angadippuram Cherukulamba Road (KPWD/MDR/503020201/3,10.98095,76.13832
+GMLPS Puthur,Thirurangadi,Vengara,Malappuram,1 - 4,47.9,MDR,Kottakkal - Chappanangadi Road (KPWD/MDR/503020402/5,11.0036,76.01524
+GMUPS Valapuram,Malappuram,Perinthalmanna,Perinthalmanna,1 - 7,48.5,MDR,Vengad Chemmalassery Road (KPWD/MDR/503020201/13,10.921364,76.165784
+Nilambur GMUPS,Wandoor,Nilambur,,1 - 7,48.9,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/2,11.27587,76.22294
+G.M.U.P.S. Chirayil,Malappuram,Kondotty,,1 - 7,49.2,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/2,11.12842,75.97477
+G.M.U.P.S. Vazhakkad,Malappuram,Kondotty,Kondotty,1 - 7,49.2,MDR,Kondotti Vazhakkad Road (KPWD/MDR/503020302/8,11.24721,75.9523
+G.U.P.S. Manjeri,Malappuram,Manjeri,,1 - 7,49.4,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.120277,76.115769
+GUPS Klari,Thirurangadi,Vengara,Vengara,1 - 7,49.7,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/1,10.99273,75.97987
+G.L.P.S. Arukizhaya,Malappuram,Manjeri,,1 - 4,49.8,SH,Manjery By Pass Second Reach (KPWD/SH/503020401/74,11.123878,76.12379
+Pullengode GMLPS,Wandoor,Wandoor,Kalikavu,1 - 4,49.9,SH,Perumbilavu - Nilamboor Road (KPWD/SH39/503020403/14,11.200585,76.337047
+G. L. P. S. Ozhur,Thirurangadi,Tanur,Tanur,1 - 5,50.1,MDR,Ozhur Pandimuttam Road (KPWD/MDR/503020301/18,10.966,75.90611
+G.U.P.S. Veembur,Malappuram,Manjeri,,1 - 7,50.6,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.119429,76.089154
+Amapoyil GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,50.8,MDR,Thuvur - Puttamanna (KPWD/MDR13/503020202/13,11.161726,76.308576
+G.L.P.S. Manjeri,Malappuram,Manjeri,,1 - 4,51.3,SH,Tirur - Malappuram - Manjeri road (KPWD/MPM/SH/71/4,11.116944,76.119939
+GLPS Kuniyil,Wandoor,Areacode,Areacode,1 - 4,51.6,MDR,Kuttoli - Pannicode Road (KPWD/MDR/503020401/9,11.25558,76.01938
+GLPS Olakara,Thirurangadi,Vengara,Tirurangadi,1 - 4,52.4,MDR,Kollanchina Pukayoor Road (KPWD/MDR/503020303/11,11.083855,75.930001
+G. L. P. S. Karaikkad,Tirur,Kuttippuram,Kuttippuram,1 - 4,52.7,MDR,Moodal - Kavumpuram - Kadampuzha Road (KPWD/MDR/503020102/27,10.926926,76.055676
+G.L.P.S. Chemmaniyode,Wandoor,Melattur,Perinthalmanna,1 - 5,53.0,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/5,11.04589,76.2827
+G L P S Kuruva,Malappuram,Mankada,Mankada,1 - 4,54.0,MDR,Vettichira Koottilangadi Road (KPWD/MDR/503020201/26,11.007169,76.113227
+G. M. L. P. S. Parappanangadi Town,Thirurangadi,Parappanangadi,Tirurangadi,1 - 5,55.5,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020303/37,11.04823,75.85857
+GMLPS Kakkooth,Malappuram,Perinthalmanna,,1 - 4,55.9,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/4,10.983306,76.224638
+G. L. P. S. Kalpakancheri,Tirur,Kuttippuram,Kuttippuram,1 - 4,56.1,MDR,Kadungathukundu Panampalam Road (KPWD/MDR/503020301/10,10.93859,75.97679
+G.L.P.S. Cherukulam,Malappuram,Manjeri,Wandoor,1 - 4,56.4,MDR,Kuttippara - Cherukode Road (KPWD/MDR/503020401/8,11.13093,76.17933
+Perumbathur GLPS,Wandoor,Nilambur,Nilambur,1 - 4,56.4,MDR,Akampadom - Pathar Road (KPWD/MDR/503020403/1,11.34724,76.21509
+G. L. P. S. Kulakkad,Tirur,Kuttippuram,Kuttippuram,1 - 4,57.2,MDR,PH Centre - Mukkilapeedika Road (KPWD/MDR/503020102/12,10.851369,76.04091
+G. H. S. Trikkulam,Thirurangadi,Parappanangadi,,1 -10,57.9,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/1,11.04218,75.90944
+Santhinagar GLPS,Wandoor,Wandoor,Wandoor,1 - 4,58.0,MDR,Parakkulam Kootumunda - Santhinagar (KPWD/MDR/503020202/4,11.208766,76.260674
+G. F. L. P. S. Ponnani,Tirur,Ponnani,,1 - 4,58.3,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/2,10.74474,75.93421
+G.L.P.S. Pookkuth,Malappuram,Manjeri,Wandoor,1 - 5,58.7,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.099745,76.261683
+G.M.L.P.S. Edavanna,Malappuram,Manjeri,Areacode,1 - 4,58.8,MDR,Edavanna - Tiruvali Road (KPWD/MDR/503020202/2,11.216576,76.142188
+GLPS Vilayil Parappur,Malappuram,Kizhisseri,Areacode,1 - 4,58.9,MDR,Kadungallur - Vilayil - Chaliyappuram Road (KPWD/MDR/503020302/6,11.218949,76.000931
+G. U. P. S. Purathur,Tirur,Tirur,Tirur,1 - 7,59.3,MDR,Alathiyoor Pallikkadavu Road (KPWD/MDR/503020301/1,10.80417,75.92182
+CHAKKEERI AHAMMED KUTTY MEMORIAL G.M.U.P.S.CHERUR,Thirurangadi,Vengara,Vengara,1 - 7,59.9,MDR,Vengara Kunnumpuram Road (KPWD/MDR/503020303/28,11.0683,75.98593
+G U P S Odakkayam,Wandoor,Areacode,Areacode,1 - 7,61.3,MDR,Therattummal - Vdakkummuri - Odakkayam Road (KPWD/MDR/503020401/46,11.274431,76.128997
+G. M. L. P. S. Edakadappuram,Thirurangadi,Tanur,Tanur,1 - 4,61.7,MDR,Tippu Sulthan Road (KPWD/MDR/503020301/28,10.96927,75.872743
+G.M.L.P.S. Odompatta,Malappuram,Manjeri,Wandoor,1 - 4,62.7,MDR,Poolamanna - Vaniyambalam Road (KPWD/MDR/503020202/5,11.122876,76.267975
+G. M. U. P. S. Tanur Town,Thirurangadi,Tanur,,1 - 7,62.8,MDR,Tippu Sulthan Road (KPWD/MDR/503020301/28,10.97752,75.871183
+G.L.P.S. Ramankulam,Malappuram,Manjeri,,1 - 4,62.9,SH,Manjery By Pass First Reach (S.H 28) (KPWD/SH/503020401/35,11.124845,76.111281
+G.H.S. Chaliyappuram,Malappuram,Kondotty,Kondotty,1 -10,63.8,MDR,Edavannappara - Elamaram Road (KPWD/MDR/503020302/4,11.24727,75.97841
+GLPS Pulpatta,Malappuram,Kizhisseri,Areacode,1 - 4,64.0,MDR,Manjeri - Kizhisseri Road (KPWD/MDR/503020401/56,11.14741,76.08168
+G.L.P.S. Karad,Malappuram,Kondotty,Kondotty,1 - 4,65.9,MDR,Feroke College Vazhakkad Road (KPWD/MDR/503020302/32,11.20628,75.87741
+Mampattumoola GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,66.4,MDR,Thachangode - Koorad - Kallamoola Road (KPWD/MDR/503020202/6,11.221497,76.317112
+GLPS Parathakkad,Malappuram,Kizhisseri,Kondotty,1 - 4,66.7,MDR,Kizhisseri - Teacherpadi Road (KPWD/MDR/503020302/21,11.17908,75.97024
+G M L P S Vadakkangara,Malappuram,Mankada,Mankada,1 - 4,67.1,MDR,Makkarapparamba Mankada Road (KPWD/MDR/503020201/8,11.01785,76.15089
+G. M. U. P. S. Paravanna,Tirur,Tirur,Tirur,1 - 7,67.2,MDR,Tippu Sulthan Road (KPWD/MDR/503020301/28,10.900722,75.89231
+G. L. P. S. Mankeri,Tirur,Kuttippuram,Kuttippuram,1 - 4,69.6,MDR,Variyathupady Mankeri Vendalloor Road 2 (KPWD/MDR/503020102/15,10.85354,76.08205
+GLPS Nottappuram,Thirurangadi,Vengara,Vengara,1 - 4,70.2,MDR,Vengara - Achanambalam Road (KPWD/MDR/503020303/27,11.063657,75.974144
+GLPS Thattancherimala,Thirurangadi,Vengara,Vengara,1 - 4,70.4,MDR,Vengara Kooriyad Road (KPWD/MDR/503020303/29,11.045565,75.945858
+G H S Kuruka,Thirurangadi,Vengara,Vengara,1 -10,71.1,MDR,Vengara Kooriyad Road (KPWD/MDR/503020303/29,11.03964,75.96862
+G. M. L. P. S. Kuttippala,Thirurangadi,Tanur,Tanur,1 - 5,71.2,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/1,10.96675,75.96111
+G. M. L. P. S. Kuttayi North,Tirur,Tirur,Tirur,1 - 4,72.3,MDR,Tippu Sulthan Road (KPWD/MDR/503020301/28,10.849138,75.901949
+Uthirampoyil GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,72.5,SH,Perumbilavu - Nilamboor Road (KPWD/SH39/503020403/14,11.187986,76.326545
+G.M.L.P.S. Kodasseri,Malappuram,Manjeri,Wandoor,1 - 4,72.9,SH,Valancheri â€“ Angadipuram-Wandoor-Vadapuram-Nilamboor Road (KPWD/MPM/SH/73/4,11.123438,76.233539
+G.L.P.S. Arimbra Melmuri,Malappuram,Kondotty,Malappuram,1 - 4,73.4,MDR,Morayur Arimbra Pookkottur Road (KPWD/MDR/503020402/58,11.106578,76.024071
+G.L.P.S. Cheruvannur,Malappuram,Manjeri,Wandoor,1 - 4,73.5,MDR,Kuttippara - Cherukode Road (KPWD/MDR/503020401/8,11.143501,76.190853
+Kizhakkethala GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,75.3,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.124123,76.341958
+G.H.S Anchachavadi,Wandoor,Wandoor,Kalikavu,1 -10,76.4,MDR,Thirkkalangodu - Thiruvali - Wandoor - Kalikavu Road (KPWD/MDR/503020202/18,11.18653,76.29057
+G M L P S Mariyad,Malappuram,Manjeri,,1 - 4,77.8,MDR,N.S.S. College Road - Manjeri (KPWD/MDR/503020401/14,11.11729,76.127867
+G L P S Padinhattummuri,Malappuram,Mankada,Mankada,1 - 5,79.6,MDR,Panambattachala Vennakkode Vellila (KPWD/MDR/503020402/47,11.05881,76.11072
+G.U.P.S. Ponmala,Malappuram,Malappuram,Malappuram,1 - 7,80.4,MDR,Vattaparamba - Kadampuzha (KPWD/MDR/503020402/52,10.983657,76.06755
+G L P S Puthanangadi,Malappuram,Mankada,Perinthalmanna,1 - 4,80.9,SH,Valancheri â€“ Angadipuram-Wandoor-Vadapuram-Nilamboor Road (KPWD/MPM/SH/73/2,10.96752,76.188931
+GMLPS Perinthalmanna Central,Malappuram,Perinthalmanna,,1 - 4,81.0,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/4,10.978076,76.22629
+G L P S Palakaparambil,Malappuram,Mankada,Mankada,1 - 4,81.4,MDR,Kolathur Malappuram (KPWD/MDR/503020201/15,10.97117,76.11529
+G.M.L.P.S. Pathappiriyam,Malappuram,Manjeri,Areacode,1 - 4,82.7,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.199875,76.135465
+G.H. S. S. Kokkur,Tirur,Edappal,Perumpadappa,1 - 12,83.0,MDR,Kolikkara Kokkur Road (KPWD/MDR/503020102/5,10.730907,76.060525
+G. M. L. P. S. Valavannur,Thirurangadi,Tanur,Tanur,1 - 4,85.7,MDR,Kadungathukundu Edarikkode (KPWD/MDR/503020301/9,10.958043,75.976714
+G.M.L.P.S. Nenmini,Wandoor,Melattur,Perinthalmanna,1 - 4,86.0,MDR,Areekadampakku Nenmini Road (KPWD/MDR/503020203/4,11.05346,76.2094
+G. U. P. S. Randathani,Tirur,Kuttippuram,Kuttippuram,1 - 7,86.9,NH,NH 66 - Kooriyad Puthanathani (KPWD/NH66/302010503/1,10.96144,76.00752
+G. H. S. Athavanad,Tirur,Kuttippuram,Kuttippuram,1 -10,87.8,MDR,Patternadakkavu - Kanjippura Road (KPWD/MDR/503020301/41,10.89707,76.02314
+Karuvarakundu GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,88.9,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.112713,76.327713
+Valanthode GTLPS,Wandoor,Nilambur,Nilambur,1 - 4,89.4,MDR,Nilambur - Valamthodu Road (KPWD/MDR/503020403/11,11.3254,76.19236
+G. M. U. P. S. Kodinhi,Thirurangadi,Tanur,Tirurangadi,1 - 7,90.0,MDR,Trikulam Thayyala Road (KPWD/MDR/503020303/25,11.01703,75.91072
+G.M.U.P.S. Arimbra,Malappuram,Kondotty,Malappuram,1 - 7,90.8,MDR,Morayur Arimbra Pookkottur Road (KPWD/MDR/503020402/58,11.11546,76.01882
+G.M.L.P.S. Pallikuth,Wandoor,Melattur,Perinthalmanna,1 - 4,91.0,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/5,11.01528,76.22959
+Maliyekkal GUPS,Wandoor,Wandoor,Kalikavu,1 - 7,91.1,MDR,Udhirampoyil - Maliyekkal Road (KPWD/MDR11/503020202/14,11.194906,76.308246
+GLPS Pavanna,Wandoor,Areacode,Areacode,1 - 4,94.9,MDR,Moorkanad - Mythra - Valiyaventek Road (KPWD/MDR/503020401/36,11.2204,76.09844
+GMLPS Edakkaparamba,Thirurangadi,Vengara,Vengara,1 - 4,97.0,MDR,Vengara Kunnumpuram Road (KPWD/MDR/503020303/28,11.0863,75.96675
+GLPS Pallikunnu,Malappuram,Perinthalmanna,Perinthalmanna,1 - 4,98.7,MDR,Thootha - Vettathur Road (KPWD/MDR/503020203/16,10.99871,76.32037
+GLPS Thencheri,Wandoor,Areacode,Areacode,1 - 4,98.9,MDR,Moorkanad - Mythra - Valiyaventek Road (KPWD/MDR/503020401/36,11.23171,76.09292
+GLPS Kuzhimanna II South,Malappuram,Kizhisseri,Areacode,1 - 4,101.3,MDR,Morayur Edapparamb Kizhisseri Road (KPWD/MDR/503020302/26,11.16318,76.01003
+G.L.P.S. Thottupoyil,Malappuram,Manjeri,,1 - 4,101.9,MDR,Manjeri - Olipuzha Road (KPWD/MDR/503020401/73,11.123352,76.125459
+G. W. U. P. S. Trikkulam,Thirurangadi,Parappanangadi,,1 - 7,103.0,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/1,11.04346,75.90143
+Kalikavu Bazar G M U P S,Wandoor,Wandoor,Kalikavu,1 - 7,104.3,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.1686,76.32662
+G. M. L. P. S. Velimukku,Thirurangadi,Parappanangadi,Tirurangadi,1 - 5,106.5,NH,NH 66 - Idimuzhikkal Kooriyad (KPWD/NH66/302010502/1,11.099083,75.89457
+G. M. L. P. S. Mangalam,Tirur,Tirur,Tirur,1 - 4,109.5,MDR,Alathiyoor Pallikkadavu Road (KPWD/MDR/503020301/59,10.854956,75.920976
+G H S Neelanchery,Wandoor,Wandoor,Kalikavu,1 -10,116.0,MDR,Karuvarakundu - Kuttathi - Neelancheri - Kalikavu (KPWD/MDR15/503020202/10,11.145257,76.322666
+GLPS Ponnad,Malappuram,Kizhisseri,Areacode,1 - 4,120.0,MDR,Kondotti Vazhakkad Road (KPWD/MDR/503020302/8,11.224771,75.971171
+Vaniyambalam CKAGLPS,Wandoor,Wandoor,Wandoor,1 - 4,122.0,MDR,Thirkkalangodu - Thiruvali - Wandoor - Kalikavu Road (KPWD/MDR/503020202/18,11.188604,76.262534
+GLPS Kuthuparamba,Wandoor,Areacode,Areacode,1 - 4,122.4,MDR,Moorkanad - Mythra - Valiyaventek Road (KPWD/MDR/503020401/36,11.22863,76.07874
+G. M. U. P. S. Edappal,Tirur,Edappal,Ponnani,1 - 7,123.8,MDR,Palakkad - Ponnani Road (KPWD/MDR/503020101/15,10.78435,76.00155
+G. B. L. P. S. Mudur,Tirur,Edappal,Ponnani,1 - 4,127.5,MDR,Kaladi Anakkara Road (KPWD/MDR/503020102/4,10.80417,76.02645
+G.M.L.P.S. Ponmala,Malappuram,Malappuram,Malappuram,1 - 4,128.0,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/2,11.028299,76.0411
+G.M.L.P.S. Melangadi,Malappuram,Kondotty,,1 - 4,131.6,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/2,11.14257,75.9606
+G U P S Koottilangadi,Malappuram,Mankada,Mankada,1 - 7,135.6,MDR,Koottilangadi - Vallikkapetta Road (KPWD/MDR/503020402/55,11.03428,76.1045
+GLPS Pukayur,Thirurangadi,Vengara,Vengara,1 - 4,135.6,MDR,Thottasseriyara Valiyaparamba Road (KPWD/MDR/503020303/20,11.073853,75.91443
+Mampuzha GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,141.2,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.121202,76.312344
+GMUPS Areacode,Wandoor,Areacode,Areacode,1 - 7,143.7,SH,Koyilandy Thamarassery Mukkom Areacode Edavanna Road up to Erannyamakkal (KPWD/MPM/SH/34/6,11.23652,76.05182
+G. M. U. P. S. Puthan Kadappuram,Thirurangadi,Parappanangadi,,1 - 7,149.0,MDR,Parappanangadi Tippu Sulthan Road (KPWD/MDR/503020303/17,11.04971,75.85147
+G. W. L. P. S. Irimbliyam,Tirur,Kuttippuram,Kuttippuram,1 - 4,150.1,MDR,Variyathupady Mankeri Vendalloor Road (KPWD/MDR/503020102/46,10.85739,76.09339
+G.M.L.P.S. Manhapatta,Malappuram,Manjeri,Wandoor,1 - 4,150.2,MDR,Manjeri - Elamkur - Wandoor Road (KPWD/MDR/503020401/34,11.153943,76.151528
+GLPS Kattumunda East,Wandoor,Nilambur,Wandoor,1 - 4,153.7,SH,Valancheri â€“ Angadipuram-Wandoor-Vadapuram-Nilamboor Road (KPWD/MPM/SH/73/4,11.234498,76.208361
+GHSS Puthuparamba,Thirurangadi,Vengara,Vengara,1 - 12,154.1,MDR,Edarikode Puthuparamba Road (KPWD/MDR/503020303/7,11.02323,75.97062
+Chokkad GMUPS,Wandoor,Wandoor,Kalikavu,1 - 7,154.1,SH,Perumbilavu - Nilamboor Road (KPWD/SH39/503020403/14,11.22275,76.33407
+G L P S Pooppalam Valambur,Malappuram,Mankada,Perinthalmanna,1 - 4,155.6,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/5,10.999484,76.223165
+GUPS Kadungallur,Malappuram,Kizhisseri,Areacode,1 - 7,155.8,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/2,11.19836,76.02383
+G. L. P. S. Chellur,Tirur,Kuttippuram,Kuttippuram,1 - 4,158.4,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/1,10.86938,76.04234
+GMVHSS Vengara Town,Thirurangadi,Vengara,Vengara,1 - 12,159.1,SH,Malappuram - Parappanangadi Road (KPWD/MPM/SH/72/2,11.049436,75.977941
+GMLPS Puthalam,Wandoor,Areacode,Areacode,1 - 4,160.5,SH,Koyilandy Thamarassery Mukkom Areacode Edavanna Road up to Erannyamakkal (KPWD/MPM/SH/34/6,11.226101,76.054243
+GMLPS Koyappa,Thirurangadi,Vengara,Tirurangadi,1 - 5,164.2,NH,NH 66 - Idimuzhikkal Kooriyad (KPWD/NH66/302010502/1,11.12188,75.89622
+G. M. L. P. S. Kanancheri,Tirur,Kuttippuram,Kuttippuram,1 - 4,164.3,NH,NH 66 - Kooriyad Puthanathani (KPWD/NH66/302010503/1,10.9492,76.00376
+GLPS Kuniyil South,Wandoor,Areacode,Areacode,1 - 4,164.7,MDR,Keezhuparamba - Nellarkadavu Road (KPWD/MDR/503020401/61,11.24197,76.02106
+G L P S Pathanapuram,Wandoor,Areacode,Areacode,1 - 4,167.6,SH,Koyilandy Thamarassery Mukkom Areacode Edavanna Road up to Erannyamakkal (KPWD/MPM/SH/34/6,11.24532,76.04459
+G.L.P.S. Pattikkad,Wandoor,Melattur,Perinthalmanna,1 - 4,173.2,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/5,11.01924,76.23566
+G. M. L. P. S. Parappanangadi,Thirurangadi,Parappanangadi,,1 - 4,173.4,MDR,Parappanangadi Tippu Sulthan Road (KPWD/MDR/503020303/17,11.060829,75.84904
+G.M.L.P.S. Nellikuth North,Malappuram,Manjeri,,1 - 4,176.0,MDR,Manjeri - Olipuzha Road (KPWD/MDR/503020401/73,11.10863,76.182198
+G.L.P.S. Kizhakkuparamba,Malappuram,Manjeri,Malappuram,1 - 4,178.0,MDR,Nariyattupara - Nenmeni Church Road (KPWD/MDR/503020401/15,11.075779,76.18996
+G.U.P.S. Vettekkode,Malappuram,Manjeri,,1 - 7,179.1,SH,Manjery By Pass Third Reach (KPWD/SH/503020401/13,11.114443,76.123285
+GMLPS Thootha,Malappuram,Perinthalmanna,Perinthalmanna,1 - 4,179.7,SH,Palakkad  Perinthalmanna Road (KPWD/MPM/SH/53/4,10.9188,76.28679
+G.L.P.S. Valayapuram,Wandoor,Melattur,Perinthalmanna,1 - 4,179.8,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/5,11.04503,76.27342
+Thiruvali GLPS,Wandoor,Wandoor,Wandoor,1 - 4,181.8,MDR,Edavanna - Tiruvali Road (KPWD/MDR/503020202/2,11.200862,76.170914
+Mundakkode GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,183.0,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.103337,76.269121
+GLPS Kozhakottur,Wandoor,Areacode,Areacode,1 - 4,183.4,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/2,11.22002,76.04539
+G. L. P. S. Nannambra,Thirurangadi,Tanur,Tirurangadi,1 - 4,184.4,MDR,Velliyamburam - Kunnumpuram Road (KPWD/MDR/503020303/38,10.99566,75.90959
+G.M.L.P.S. Kumminiparamba,Malappuram,Kondotty,Kondotty,1 - 4,186.7,MDR,Kohinoor - Puthurpallikal - Kumminiparamba Road (KPWD/MDR/503020302/7,11.13256,75.9373
+G. L. P. S. Veliyancode Gramam,Tirur,Ponnani,Perumpadappa,1 - 4,187.0,MDR,Edakazhiyoor Veliyancode Road (KPWD/MDR/503020101/6,10.71558,75.96
+G. U. P. S. Purathupadinjarekkara,Tirur,Tirur,Tirur,1 - 7,187.5,MDR,Tippu Sulthan Road (KPWD/MDR/503020301/28,10.80976,75.90925
+GUPS Maithra,Wandoor,Areacode,Areacode,1 - 7,188.7,MDR,Moorkanad - Mythra - Valiyaventek Road (KPWD/MDR/503020401/36,11.22801,76.06381
+G. M. L. P. S. Valancheri,Tirur,Kuttippuram,,1 - 4,192.3,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/1,10.88393,76.06842
+G. H. S. S. Perassannur,Tirur,Kuttippuram,Kuttippuram,1 - 12,193.4,MDR,PH Centre - Mukkilapeedika Road (KPWD/MDR/503020102/12,10.85232,76.06766
+G L P S Vellila,Malappuram,Mankada,Mankada,1 - 4,194.8,MDR,Tirurkad Anakayam Road (KPWD/MDR/503020203/11,11.04219,76.15606
+G.U.P.S. Anakkayam,Malappuram,Manjeri,Malappuram,1 - 7,202.4,MDR,Anakkayam - Oravambram Road (KPWD/MDR/503020401/2,11.08786,76.12341
+G. M. L. P. S. Pallikara,Tirur,Edappal,Perumpadappa,1 - 4,203.2,MDR,Changaramkulam Cheruvallur Road (KPWD/MDR/503020101/5,10.727149,76.029348
+G L P S Karkidakam,Malappuram,Mankada,Mankada,1 - 4,207.6,MDR,Tirurkad Anakayam Road (KPWD/MDR/503020203/11,11.02328,76.16835
+GMLPS Areacode West,Wandoor,Areacode,Areacode,1 - 4,211.3,SH,Koyilandy Thamarassery Mukkom Areacode Edavanna Road up to Erannyamakkal (KPWD/MPM/SH/34/6,11.23918,76.048717
+G.U.P.S. Kottakkal,Malappuram,Malappuram,,1 - 7,212.6,MDR,Kottakkal - Kottappadi ( Kovilakam Road ) (KPWD/MDR/503020402/24,10.99176,76.00782
+GMLPS Thavanur,Malappuram,Kizhisseri,Kondotty,1 - 4,213.1,MDR,Vadakkeparambu - Pothuvettippara - Mundakkulam Road (KPWD/MDR/503020302/13,11.194,75.98994
+G. U. P. S. Kololamba,Tirur,Edappal,Ponnani,1 - 7,216.2,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/1,10.782252,75.947046
+G. M. L. P. S. Iringavoor,Thirurangadi,Tanur,Tanur,1 - 4,226.0,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/1,10.93993,75.93952
+G. M. L. P. S. Manalipuzha,Thirurangadi,Tanur,Tanur,1 - 4,226.8,MDR,Athanikkal Theyyala Road (KPWD/MDR/503020301/3,10.99046,75.92562
+GMLPS Thazhekode,Malappuram,Perinthalmanna,Perinthalmanna,1 - 4,228.8,NH,NH 966 (KPWD/NH966/302010303/2,10.95695,76.30481
+G.U.P.S. Pathappiriyam,Malappuram,Manjeri,Areacode,1 - 7,235.6,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.192846,76.135081
+G. H. S. S. Trikkavu,Tirur,Ponnani,,1 - 12,237.7,MDR,T.B.Road upto Kacherippadi Road (KPWD/MDR/503020101/27,10.778978,75.931124
+G. H. W. L. P. S. Maravancheri,Tirur,Edappal,Ponnani,1 - 5,240.5,MDR,Edappal Tavanoor Road (KPWD/MDR/503020101/25,10.831856,75.997436
+GLPS Peruvallur,Thirurangadi,Vengara,Tirurangadi,1 - 4,240.7,MDR,Kadappadi - Pathikkuzhi - Puthur Pallikkal Road (KPWD/MDR/503020303/31,11.11383,75.92521
+G.L.P.S. Chembakuth,Malappuram,Manjeri,Areacode,1 - 4,245.3,MDR,Edavanna - Tiruvali Road (KPWD/MDR/503020202/2,11.206241,76.149153
+Edivanna Estate GLPS,Wandoor,Nilambur,Nilambur,1 - 4,246.5,MDR,Nilambur - Valamthodu Road (KPWD/MDR/503020403/11,11.31663,76.20428
+G.M.L.P.S. Mapprom,Malappuram,Kondotty,Kondotty,1 - 4,247.6,MDR,Valillappuzha - Elamaram - Irattamoozhi Road (KPWD/MDR/503020302/14,11.2591,75.96899
+G. M. U. P. S. Edakkanad,Tirur,Tirur,Tirur,1 - 7,248.1,MDR,Alathiyoor Pallikkadavu Road (KPWD/MDR/503020301/1,10.82337,75.92015
+Kallamoola GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,249.6,SH,Perumbilavu - Nilamboor Road (KPWD/SH39/503020403/14,11.21466,76.3377
+GMLPS Panthalingal,Wandoor,Nilambur,Wandoor,1 - 4,252.3,MDR,Thiruvaly Kottola Kottumala Road (KPWD/MDR/503020202/8,11.22118,76.19803
+G. L. P. S. Cheruparamba,Tirur,Kuttippuram,Kuttippuram,1 - 4,266.7,MDR,Vettichira - Chelakkuthu - Randathani Road (KPWD/MDR/503020102/16,10.94788,76.02513
+G. L. P. S. Melmuri,Tirur,Kuttippuram,Kuttippuram,1 - 4,281.0,MDR,Kottakkal - Ampara -Kadampuzha Road (KPWD/MDR/503020402/23,10.96109,76.02548
+G.L.P.S. Pathirikode,Wandoor,Melattur,Kalikavu,1 - 4,287.0,MDR,Anjilangadi Eppikkad Road (KPWD/MDR/503020203/2,11.06791,76.30332
+G. M. H. S. Karippole,Tirur,Kuttippuram,Kuttippuram,1 -10,287.7,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/1,10.9222,76.0301
+Veettikuth GLPS,Wandoor,Nilambur,,1 - 4,292.1,MDR,Nilambur - Naduvath Road (KPWD/MDR/503020403/10,11.27405,76.22877
+G. M. U. P. S. Venniyur,Thirurangadi,Parappanangadi,,1 - 7,298.5,NH,NH 66 - Kooriyad Puthanathani (KPWD/NH66/302010503/1,11.015067,75.953727
+GMLPS Cherukunnu,Thirurangadi,Vengara,Malappuram,1 - 4,310.2,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/2,11.012736,76.011487
+GLPS Perinthalmanna East,Malappuram,Perinthalmanna,,1 - 4,313.6,NH,NH 966 (KPWD/NH966/302010303/2,10.971887,76.232647
+GLPS Parapurathparamba,Malappuram,Kizhisseri,Areacode,1 - 4,314.7,MDR,Araekod Vazhakad Road (KPWD/MDR/503020302/2,11.236104,76.008255
+GLPS Chemrakattur,Wandoor,Areacode,Areacode,1 - 4,319.6,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/2,11.20933,76.03961
+G.L.P.S. Cherankuth,Malappuram,Manjeri,Wandoor,1 - 5,330.4,MDR,Malamkulam - Cheramkuthu - Cherukulam Road (KPWD/MDR/503020401/33,11.142098,76.156858
+GLPS Kodalikundu,Thirurangadi,Vengara,Vengara,1 - 4,331.2,SH,Malappuram - Parappanangadi Road (KPWD/MPM/SH/72/1,11.06051,76.0025
+G L P S Chengara,Wandoor,Areacode,Areacode,1 - 4,336.3,MDR,Kavanoor - Vadakkummala - Karaparamba Road (KPWD/MDR/503020401/7,11.17579,76.07964
+G.L.P.S. Kombamkallu,Wandoor,Melattur,Kalikavu,1 - 4,352.4,MDR,Olappara - Kombankallu - Alungal (KPWD/MDR/503020203/14,11.051583,76.304587
+Eranhimangad GUPS,Wandoor,Nilambur,Nilambur,1 - 7,353.5,MDR,Mannuppadam - Eranjimangad - Athikode - Vettekkode Road (KPWD/MDR/503020403/22,11.30661,76.21019
+GLPS Kappumugham,Malappuram,Perinthalmanna,Perinthalmanna,1 - 4,353.6,NH,NH 966 (KPWD/NH966/302010303/2,10.96044,76.28634
+G. L. P. S. Rayirimangalam East,Thirurangadi,Tanur,,1 - 4,357.5,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020301/64,10.990609,75.877507
+G. M. U. P. S. Veliyancode South,Tirur,Ponnani,Perumpadappa,1 - 7,360.4,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/1,10.72548,75.95257
+G.M.L.P.S. Eranhikode,Malappuram,Manjeri,Areacode,1 - 4,362.4,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.226293,76.157294
+GUPS Thenhippalam,Thirurangadi,Vengara,Tirurangadi,1 - 7,363.4,MDR,University - Kadakkattupara - Olippramkadavu - Mukkathu Kadavu Road (KPWD/MDR/503020303/39,11.12959,75.87162
+K. M. G. U. P. S. Thavanur,Tirur,Edappal,Ponnani,1 - 7,367.1,MDR,Tavanur - Thirunavaya Road (KPWD/MDR/503020101/18,10.85258,75.98382
+G.L.P.S. Paravoor,Malappuram,Kondotty,Kondotty,1 - 4,370.9,MDR,Pulikkal Chavittanikunnu Vettukad Road (KPWD/MDR/503020302/41,11.17921,75.9219
+GUPS Chundathumpoyil,Wandoor,Areacode,Areacode,1 - 7,371.5,MDR,Thottumukkom - Vettilappara Road (KPWD/MDR/503020401/65,11.282532,76.067241
+G.L.P.S. Kizhakkumpadam,Wandoor,Melattur,Perinthalmanna,1 - 4,372.3,MDR,Anjilangadi Melattur Road (KPWD/MDR/503020203/3,11.07034,76.28655
+Pattanamkundu GLPS,Wandoor,Wandoor,Wandoor,1 - 4,376.7,MDR,Cherukulam - Pelepuram - Pathiriyal Road (KPWD/MDR/503020401/55,11.157699,76.179054
+G. W. L. P. S. Purathur,Tirur,Tirur,Tirur,1 - 5,393.6,MDR,Alathiyoor Pallikkadavu Road (KPWD/MDR/503020301/1,10.80058,75.91946
+G. L. P. S. Velleri,Tirur,Ponnani,,1 - 5,409.8,MDR,Karma Road (KPWD/MDR/503020101/21,10.783648,75.931891
+G. M. L. P. S. Panangattur,Thirurangadi,Tanur,,1 - 4,431.0,MDR,Tanur Theyyala Road (KPWD/MDR/503020301/27,10.99021,75.89738
+G. L. P. S. Kuttippuram,Tirur,Kuttippuram,Kuttippuram,1 - 4,435.5,MDR,BP Angadi Kuttippuram Road (KPWD/MDR/503020102/37,10.845313,76.035837
+G.L.P.S. Elamaram,Malappuram,Kondotty,Kondotty,1 - 4,439.7,MDR,Valillappuzha - Elamaram - Irattamoozhi Road (KPWD/MDR/503020302/14,11.25007,75.95897
+Govt. U P School Pang,Malappuram,Mankada,Mankada,1 - 7,446.4,MDR,Vettichira Koottilangadi Road (KPWD/MDR/503020201/25,10.97188,76.09979
+G. M. L. P. S. Manhachola,Tirur,Kuttippuram,Kuttippuram,1 - 4,455.0,MDR,Tanalur Puthanathani Road (KPWD/MDR/503020301/52,10.9421,75.99398
+G. M. L. P. S. Kalpakancheri,Tirur,Kuttippuram,Kuttippuram,1 - 4,468.1,NH,NH 66 - Kooriyad Puthanathani (KPWD/NH66/302010503/1,10.947,75.99864
+Akkarakulam GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,499.7,MDR,Thuvur - Puttamanna (KPWD/MDR13/503020202/13,11.12351,76.292331
+G. M. L. P. S. Paravannur,Tirur,Kuttippuram,Tanur,1 - 4,518.0,MDR,Kallingal - Dhamodharanpadi Road (KPWD/MDR/503020301/38,10.927588,75.991885
+G.L.P.S. Theyyampadikuth,Malappuram,Manjeri,Wandoor,1 - 4,518.6,MDR,Poolamanna - Vaniyambalam Road (KPWD/MDR/503020202/5,11.14216,76.253545
+GLPS Kannamangalam,Thirurangadi,Vengara,Vengara,1 - 4,527.7,MDR,Vengara Kunnumpuram Road (KPWD/MDR/503020303/28,11.07684,75.96965
+G. L. P. S. Nariparamba,Tirur,Edappal,Ponnani,1 - 4,529.7,MDR,Nariparamba Pothanoor Road (KPWD/MDR/503020101/26,10.815314,75.964247
+G.L.P.S. Cheriparamba,Wandoor,Melattur,Kalikavu,1 - 4,555.5,MDR,Anjilangadi Melattur Road (KPWD/MDR/503020203/3,11.06386,76.32604
+G. L. P. S. Vadakkumbram,Tirur,Kuttippuram,Kuttippuram,1 - 4,556.2,MDR,Kolamangalam Karakkad Road 2 (KPWD/MDR/503020102/47,10.947849,76.077233
+G. M. L. P. S. Veliyancode,Tirur,Ponnani,Perumpadappa,1 - 4,572.9,MDR,Edakazhiyoor Veliyancode Road (KPWD/MDR/503020101/6,10.74894,75.946814
+G. F. U. P. S. Palapetty,Tirur,Ponnani,Perumpadappa,1 - 7,585.1,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/1,10.703471,75.952635
+Adakkakundu GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,596.0,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.163786,76.347608
+G. L. P. S. Klari West,Thirurangadi,Tanur,Tanur,1 - 4,611.6,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/1,10.98592,75.96797
+GLPS Arakkuparamba,Malappuram,Perinthalmanna,Perinthalmanna,1 - 4,625.3,MDR,Thootha - Vettathur Road (KPWD/MDR/503020203/16,10.99145,76.32638
+G. M. L. P. S. Kallarmangalam,Tirur,Kuttippuram,Kuttippuram,1 - 4,629.8,MDR,Vettichira - Chelakkuthu - Randathani Road (KPWD/MDR/503020102/16,10.94542,76.02988
+GLPS Parappur,Malappuram,Kizhisseri,Kondotty,1 - 4,631.8,MDR,Kadungallur - Vilayil - Chaliyappuram Road (KPWD/MDR/503020302/6,11.208943,76.002117
+GLPS Kavanur,Wandoor,Areacode,Areacode,1 - 4,637.9,MDR,Perakamanna - Kuzhiyamparamba Road (KPWD/MDR/503020401/42,11.197194,76.055282
+G.M.L.P.S. Kanhiraparamba,Malappuram,Kondotty,,1 - 4,644.2,NH,NH 966 (KPWD/NH966/302010301/5,11.14676,75.95462
+Pulvetta GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,647.6,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.113843,76.338093
+GLPS Kizhuparamba South,Wandoor,Areacode,Areacode,1 - 4,650.1,MDR,Keezhuparamba - Nellarkadavu Road (KPWD/MDR/503020401/60,11.24387,76.01281
+G.M.L.P.S. Karippur,Malappuram,Kondotty,Kondotty,1 - 4,662.1,MDR,Diversion Road Kondotty - Tirurangadi Road 2 (KPWD/MDR/503020302/3,11.15096,75.94028
+G.L.P.S. Pezhumthara,Wandoor,Melattur,Kalikavu,1 - 4,664.6,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/5,11.05796,76.2899
+G L P S Pang,Malappuram,Mankada,Mankada,1 - 4,677.7,MDR,Vettichira Koottilangadi Road (KPWD/MDR/503020201/25,10.97204,76.10226
+G. F. L. P. S. Veliyancode,Tirur,Ponnani,Perumpadappa,1 - 5,716.4,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/1,10.720422,75.943878
+GLPS Klari,Thirurangadi,Vengara,Vengara,1 - 4,718.9,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/1,10.98731,75.98458
+G. M. L. P. S. Muttannur,Tirur,Tirur,Tirur,1 - 4,719.6,MDR,Alathiyoor Pallikkadavu Road (KPWD/MDR/503020301/1,10.83277,75.91496
+Tharish GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,727.0,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/6,11.125284,76.349711
+G. L. P. S. Polpakkara,Tirur,Edappal,Ponnani,1 - 4,728.6,MDR,Palakkad - Ponnani Road (KPWD/MDR/503020101/15,10.792126,75.985552
+GLPS Vilayil,Malappuram,Kizhisseri,Areacode,1 - 4,751.9,MDR,Vilayil - Yatheemkhana Road (KPWD/MDR/503020302/33,11.22543,76.00992
+G. M. L. P. S. Parappuram,Tirur,Kuttippuram,Kuttippuram,1 - 4,755.1,NH,NH 66 - Kooriyad Puthanathani (KPWD/NH66/302010503/1,10.955848,76.000038
+G.L.P.S. Melkulangara,Wandoor,Melattur,Perinthalmanna,1 - 4,785.0,MDR,Karyavattam Alamallur Road (KPWD/MDR/503020203/5,11.01389,76.26571
+G L P S Chovana,Malappuram,Mankada,Mankada,1 - 4,797.4,MDR,Angadippuram Cherukulamba Road (KPWD/MDR/503020201/3,10.989385,76.136606
+G.U.P.S. Elankur,Malappuram,Manjeri,Wandoor,1 - 7,824.6,MDR,Kuttippara - Cherukode Road (KPWD/MDR/503020401/8,11.161189,76.182628
+G U P S Cholakundu,Thirurangadi,Vengara,Vengara,1 - 7,844.5,MDR,Kottakkal Vengara Road (KPWD/MDR/503020303/12,11.01839,75.98502
+G V H S S Nellikuth,Malappuram,Manjeri,,1 - 12,846.1,MDR,Manjeri - Olipuzha Road (KPWD/MDR/503020401/73,11.097388,76.182278
+Chokkad Girijan Colony GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,883.5,MDR,Pookkottupadam - Chettippadam - TK Colony Road (KPWD/MDR/503020403/16,11.235471,76.355498
+G. F. U. P. S. Kadavanad,Tirur,Ponnani,,1 - 7,894.8,MDR,Edakazhiyoor Veliyancode Road (KPWD/MDR/503020101/6,10.754025,75.94154
+GLPS Parakkalmukku,Malappuram,Perinthalmanna,Perinthalmanna,1 - 4,896.0,MDR,Cherukara Muthukurussi Road (KPWD/MDR/503020201/4,10.915345,76.235166
+G. H. S. S. Kattilangadi,Thirurangadi,Tanur,,1 - 12,915.1,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020301/43,10.97254,75.89182
+G. L .P. S. Melodiparamba,Thirurangadi,Parappanangadi,Tirurangadi,1 - 4,927.5,MDR,Chelari - Olakara Peruvallur Road (KPWD/MDR/503020303/4,11.106254,75.90489
+G.L.P.S. Pulath,Malappuram,Manjeri,Wandoor,1 - 4,938.3,MDR,Cherukulam - Pelepuram - Pathiriyal Road (KPWD/MDR/503020401/54,11.16824,76.14862
+G. L. P. S. Maniyankad,Tirur,Kuttippuram,Kuttippuram,1 - 4,995.7,MDR,Thirunavaya Kalpakanchery Road (KPWD/MDR/503020301/48,10.87679,75.99665
+G. M. L. P. S. Thiruthy,Thirurangadi,Tanur,Tirurangadi,1 - 4,1006.3,MDR,Trikulam Thayyala Road (KPWD/MDR/503020303/25,11.01611,75.90044
+GMLPS Puthur,Malappuram,Perinthalmanna,Perinthalmanna,1 - 4,1010.4,MDR,Alanallur Puthur Nattukal Road (KPWD/MDR/503010502/4,10.98731,76.34923
+V.M.D Memorial Govt L.P.S Porur,Wandoor,Wandoor,Wandoor,1 - 4,1021.1,MDR,Poolamanna - Vaniyambalam Road (KPWD/MDR/503020202/5,11.163351,76.249634
+G.L.P.S. Edappatta,Wandoor,Melattur,Kalikavu,1 - 4,1031.7,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/5,11.08461,76.27665
+G.L.P.S. Valarad,Malappuram,Manjeri,Wandoor,1 - 4,1031.8,SH,Valancheri â€“ Angadipuram-Wandoor-Vadapuram-Nilamboor Road (KPWD/MPM/SH/73/4,11.08377,76.230474
+GMLPS Koomanna,Thirurangadi,Vengara,Tirurangadi,1 - 4,1032.5,MDR,Chelari - Olakara Peruvallur Road (KPWD/MDR/503020303/4,11.0874,75.91355
+G. L. P. S. Naduvattam,Tirur,Kuttippuram,Kuttippuram,1 - 4,1057.0,MDR,Chempi - Parathi Road (KPWD/MDR/503020102/3,10.88021,76.00875
+G. L. P. S. Kanmanam,Thirurangadi,Tanur,Tanur,1 - 4,1058.9,MDR,Tirur Kuttikalathani Road (KPWD/MDR/503020301/29,10.906296,75.982985
+G. U. P. S. Koodasseri,Tirur,Kuttippuram,Kuttippuram,1 - 7,1077.4,MDR,Thirunavaya Kalpakanchery Road (KPWD/MDR/503020301/48,10.91525,76.0068
+Pedayenthal GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,1100.1,SH,Perumbilavu - Nilamboor Road (KPWD/SH39/503020403/14,11.229359,76.340071
+G. L. P. S. Kattipparuthi,Tirur,Kuttippuram,,1 - 4,1101.6,NH,NH 66 - Puthanathani to Kappirikkad (KPWD/NH66/302010501/1,10.88288,76.0575
+G.L.P.S. Puthucode,Malappuram,Kondotty,Kondotty,1 - 4,1128.9,MDR,Pengad Alunkal Road (KPWD/MDR/503020302/12,11.19074,75.88201
+G.L.P.S. Chalippadam,Malappuram,Manjeri,Areacode,1 - 4,1143.4,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.21894,76.163261
+GMUPS Mundambra,Wandoor,Areacode,Areacode,1 - 7,1149.4,MDR,Araekod Vazhakad Road (KPWD/MDR/503020302/2,11.22539,76.02762
+G. M. L. P. S. Parapputhadam,Thirurangadi,Tanur,Tanur,1 - 4,1178.3,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/1,10.93466,75.94725
+Govt L.P.School Kololomba,Tirur,Edappal,Ponnani,1 - 5,1293.1,MDR,Edappal Kanhiramukku Road (KPWD/MDR/503020101/7,10.75936,75.99509
+G.M.L.P.S. Vazhayur,Malappuram,Kondotty,Kondotty,1 - 4,1388.9,MDR,Feroke College Vazhakkad Road (KPWD/MDR/503020302/32,11.22444,75.88737
+M.P.G.L.P.S. Puthanpally,Wandoor,Melattur,Perinthalmanna,1 - 4,1407.9,MDR,Karyavattam Alamallur Road (KPWD/MDR/503020203/5,11.03177,76.28002
+Poongode GLPS,Wandoor,Wandoor,Kalikavu,1 - 4,1835.4,MDR,Thirkkalangodu - Thiruvali - Wandoor - Kalikavu Road (KPWD/MDR/503020202/18,11.170319,76.278984
