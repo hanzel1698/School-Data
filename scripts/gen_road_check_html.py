@@ -468,7 +468,10 @@ function initMap(s) {
       mapTypeIds: ["roadmap", "satellite", "hybrid"]
     },
     streetViewControl: true,
-    fullscreenControl: false
+    fullscreenControl: true,
+    fullscreenControlOptions: {
+      position: google.maps.ControlPosition.TOP_LEFT
+    }
   });
 
   const dbMarker = new google.maps.Marker({
