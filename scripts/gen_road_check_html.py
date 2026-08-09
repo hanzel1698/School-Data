@@ -461,6 +461,7 @@ function initMap(s) {
   const map = new google.maps.Map(el, {
     center: dbPos,
     zoom: 14,
+    mapTypeId: "satellite",
     mapTypeControl: true,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
