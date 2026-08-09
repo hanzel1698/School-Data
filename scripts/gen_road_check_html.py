@@ -146,6 +146,13 @@ HTML_TEMPLATE = r"""<!doctype html>
   .map-fs-btn.db { background: var(--success); }
   .map-fs-btn.google { background: var(--accent); }
 
+  .map-fs-search { display: none; align-items: center;
+    background: rgba(20,22,26,0.82); backdrop-filter: blur(4px);
+    padding: 6px 10px; border-radius: 999px; margin: 10px 0 0;
+    width: min(88vw, 380px); }
+  .map-fs-search.show { display: flex; }
+  .map-fs-search gmp-place-autocomplete { flex: 1 1 auto; width: 100%; }
+
   #list { padding: 10px; display: flex; flex-direction: column; gap: 8px; }
   .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
   .card-head { display: flex; align-items: center; gap: 8px; padding: 10px 12px; cursor: pointer; }
@@ -510,8 +517,10 @@ function initMap(s) {
   const readout = document.getElementById(`tap-${s.id}`);
   const saveBtn = document.getElementById(`saveTap-${s.id}`);
   const overlayEl = makeFullscreenOverlay(s);
+  const searchEl = makeSearchOverlay(s.id, map);
   map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(overlayEl);
-  const mi = { map, candidateMarker: null, mapEl: el, overlayEl };
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(searchEl);
+  const mi = { map, candidateMarker: null, referenceMarker: null, mapEl: el, overlayEls: [overlayEl, searchEl] };
   mapInstances[s.id] = mi;
 
   const rev = getReview(s.id);
@@ -548,6 +557,44 @@ function makeFullscreenOverlay(s) {
   return wrap;
 }
 
+function makeSearchOverlay(id, map) {
+  const wrap = document.createElement("div");
+  wrap.className = "map-fs-search";
+  const pac = document.createElement("gmp-place-autocomplete");
+  pac.setAttribute("placeholder", "Search places…");
+  wrap.appendChild(pac);
+
+  pac.addEventListener("gmp-select", async (ev) => {
+    try {
+      const prediction = ev.placePrediction;
+      const place = prediction.toPlace();
+      await place.fetchFields({ fields: ["location", "displayName"] });
+      if (!place.location) return;
+      map.panTo(place.location);
+      map.setZoom(18);
+      dropReferenceMarker(id, { lat: place.location.lat(), lng: place.location.lng() });
+    } catch (e) { /* ignore - place lookup failed */ }
+  });
+
+  return wrap;
+}
+
+function dropReferenceMarker(id, pos) {
+  const mi = mapInstances[id];
+  if (!mi) return;
+  const map = mi.map;
+  const lat = +pos.lat.toFixed(6);
+  const lng = +pos.lng.toFixed(6);
+  if (mi.referenceMarker) {
+    mi.referenceMarker.setPosition({ lat, lng });
+  } else {
+    mi.referenceMarker = new google.maps.Marker({
+      position: { lat, lng }, map, title: "Search result",
+      icon: { path: google.maps.SymbolPath.CIRCLE, scale: 8, fillColor: "#8b5cf6", fillOpacity: 1, strokeColor: "#fff", strokeWeight: 2 }
+    });
+  }
+}
+
 function getFullscreenElement() {
   return document.fullscreenElement || document.webkitFullscreenElement ||
     document.mozFullScreenElement || document.msFullscreenElement || null;
@@ -570,9 +617,9 @@ function exitFullscreenSafely() {
     const fsEl = getFullscreenElement();
     Object.keys(mapInstances).forEach(id => {
       const mi = mapInstances[id];
-      if (!mi || !mi.overlayEl || !mi.mapEl) return;
+      if (!mi || !mi.overlayEls || !mi.mapEl) return;
       const isFs = !!fsEl && (fsEl === mi.mapEl || mi.mapEl.contains(fsEl));
-      mi.overlayEl.classList.toggle("show", isFs);
+      mi.overlayEls.forEach(el => el.classList.toggle("show", isFs));
     });
   });
 });
@@ -637,7 +684,7 @@ function loadGoogleMapsScript(key) {
   s.id = "gmapsScript";
   s.async = true;
   s.defer = true;
-  s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(key) + "&callback=initGoogleMaps";
+  s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(key) + "&libraries=places&callback=initGoogleMaps";
   s.onerror = () => {
     document.getElementById("keyError").textContent = "Could not load Google Maps — check your internet connection and the key.";
     showKeyPanel();
