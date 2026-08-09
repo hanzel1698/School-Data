@@ -136,6 +136,16 @@ HTML_TEMPLATE = r"""<!doctype html>
   #toggleKeyVis { flex: 0 0 auto; border: 1px solid var(--border); background: #fff; border-radius: 8px; font-size: 15px; padding: 0 12px; cursor: pointer; }
   .key-error { font-size: 12px; color: var(--danger); margin-top: 8px; min-height: 14px; }
 
+  .map-fs-overlay { display: none; flex-direction: column; align-items: center; gap: 8px;
+    background: rgba(20,22,26,0.82); backdrop-filter: blur(4px); color: #fff;
+    padding: 10px 14px 14px; border-radius: 12px; margin: 0 0 12px; max-width: min(92vw, 420px); }
+  .map-fs-overlay.show { display: flex; }
+  .map-fs-name { font-size: 14px; font-weight: 700; text-align: center; line-height: 1.3; }
+  .map-fs-btns { display: flex; gap: 8px; }
+  .map-fs-btn { font-size: 13px; font-weight: 700; padding: 10px 14px; border-radius: 8px; border: none; cursor: pointer; color: #fff; }
+  .map-fs-btn.db { background: var(--success); }
+  .map-fs-btn.google { background: var(--accent); }
+
   #list { padding: 10px; display: flex; flex-direction: column; gap: 8px; }
   .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
   .card-head { display: flex; align-items: center; gap: 8px; padding: 10px 12px; cursor: pointer; }
@@ -362,6 +372,7 @@ function renderCard(id) {
   const el = document.getElementById(`card-${id}`);
   if (!el) return;
   const wasOpen = el.classList.contains("open");
+  delete mapInstances[id];
   const s = SCHOOLS.find(x => x.id == id);
   const html = cardHtml(s);
   const tmp = document.createElement("div");
@@ -498,7 +509,9 @@ function initMap(s) {
 
   const readout = document.getElementById(`tap-${s.id}`);
   const saveBtn = document.getElementById(`saveTap-${s.id}`);
-  const mi = { map, candidateMarker: null };
+  const overlayEl = makeFullscreenOverlay(s);
+  map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(overlayEl);
+  const mi = { map, candidateMarker: null, mapEl: el, overlayEl };
   mapInstances[s.id] = mi;
 
   const rev = getReview(s.id);
@@ -510,6 +523,59 @@ function initMap(s) {
     dropCandidate(s.id, { lat: ev.latLng.lat(), lng: ev.latLng.lng() });
   });
 }
+
+function makeFullscreenOverlay(s) {
+  const wrap = document.createElement("div");
+  wrap.className = "map-fs-overlay";
+  wrap.innerHTML = `
+    <div class="map-fs-name">${escapeHtml(s.school)}</div>
+    <div class="map-fs-btns">
+      <button type="button" class="map-fs-btn db">✓ DB Correct</button>
+      <button type="button" class="map-fs-btn google">✓ Google Correct</button>
+    </div>`;
+  wrap.querySelector(".db").addEventListener("click", (e) => {
+    e.stopPropagation();
+    exitFullscreenSafely().then(() => {
+      setReview(s.id, { status: "db_correct", correctedLat: null, correctedLng: null });
+    });
+  });
+  wrap.querySelector(".google").addEventListener("click", (e) => {
+    e.stopPropagation();
+    exitFullscreenSafely().then(() => {
+      setReview(s.id, { status: "google_correct", correctedLat: null, correctedLng: null });
+    });
+  });
+  return wrap;
+}
+
+function getFullscreenElement() {
+  return document.fullscreenElement || document.webkitFullscreenElement ||
+    document.mozFullScreenElement || document.msFullscreenElement || null;
+}
+
+function exitFullscreenSafely() {
+  const exit = document.exitFullscreen || document.webkitExitFullscreen ||
+    document.mozCancelFullScreen || document.msExitFullscreen;
+  if (exit && getFullscreenElement()) {
+    try {
+      const p = exit.call(document);
+      if (p && p.then) return p.catch(() => {});
+    } catch (e) { /* ignore */ }
+  }
+  return Promise.resolve();
+}
+
+["fullscreenchange", "webkitfullscreenchange", "mozfullscreenchange", "MSFullscreenChange"].forEach(evt => {
+  document.addEventListener(evt, () => {
+    const fsEl = getFullscreenElement();
+    Object.keys(mapInstances).forEach(id => {
+      const mi = mapInstances[id];
+      if (!mi || !mi.overlayEl || !mi.mapEl) return;
+      const isFs = !!fsEl && (fsEl === mi.mapEl || mi.mapEl.contains(fsEl));
+      mi.overlayEl.classList.toggle("show", isFs);
+    });
+  });
+});
 
 function dropCandidate(id, pos) {
   const mi = mapInstances[id];
