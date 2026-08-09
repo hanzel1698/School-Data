@@ -464,9 +464,9 @@ function initMap(s) {
     mapTypeId: "hybrid",
     mapTypeControl: true,
     mapTypeControlOptions: {
-      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
       position: google.maps.ControlPosition.TOP_RIGHT,
-      mapTypeIds: ["roadmap", "satellite", "hybrid"]
+      mapTypeIds: ["roadmap", "hybrid"]
     },
     streetViewControl: true,
     fullscreenControl: true,
