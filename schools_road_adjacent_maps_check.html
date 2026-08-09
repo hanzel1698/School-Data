@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Road-Adjacent Schools Check</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --card-bg: #ffffff;
+    --text: #1c1e21;
+    --muted: #667085;
+    --border: #e3e5e9;
+    --accent: #2563eb;
+    --accent-text: #ffffff;
+    --danger: #d64545;
+    --success: #3a9d5d;
+    --warn: #c99a2e;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body { padding-bottom: 40px; }
+  header { position: sticky; top: 0; z-index: 20; background: var(--card-bg);
+    border-bottom: 1px solid var(--border); padding: 10px 12px 8px; }
+  h1 { font-size: 17px; margin: 0 0 8px; }
+  .progress-wrap { margin-bottom: 8px; }
+  .progress-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--accent); width: 0%; transition: width .2s; }
+  .progress-label { font-size: 12px; color: var(--muted); margin-top: 4px; display: flex; justify-content: space-between; }
+  #search { width: 100%; padding: 9px 10px; font-size: 14px; border: 1px solid var(--border);
+    border-radius: 8px; margin-bottom: 8px; background: #fafafa; }
+  .chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; }
+  .chip { flex: 0 0 auto; font-size: 12px; padding: 6px 10px; border-radius: 999px;
+    border: 1px solid var(--border); background: #fff; color: var(--text); white-space: nowrap; cursor: pointer; }
+  .chip.active { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .maps-status { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  .maps-status a, .maps-status button.link { color: var(--accent); background: none; border: none; padding: 0;
+    font-size: 11px; cursor: pointer; text-decoration: underline; }
+
+  .key-panel { margin: 10px 12px; padding: 12px; border: 1px solid var(--border); border-radius: 10px;
+    background: var(--card-bg); display: none; }
+  .key-panel.show { display: block; }
+  .key-panel-title { font-weight: 700; font-size: 14px; margin-bottom: 6px; }
+  .key-panel-body { font-size: 12px; color: var(--muted); margin-bottom: 10px; line-height: 1.5; }
+  .key-panel-body a { color: var(--accent); }
+  .key-panel-row { display: flex; gap: 6px; margin-bottom: 8px; }
+  #apiKeyInput { flex: 1 1 auto; min-width: 0; padding: 9px 10px; font-size: 14px; border: 1px solid var(--border);
+    border-radius: 8px; background: #fafafa; }
+  #toggleKeyVis { flex: 0 0 auto; border: 1px solid var(--border); background: #fff; border-radius: 8px; font-size: 15px; padding: 0 12px; cursor: pointer; }
+  .key-error { font-size: 12px; color: var(--danger); margin-top: 8px; min-height: 14px; }
+
+  #list { padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+  .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .card-head { display: flex; align-items: center; gap: 8px; padding: 10px 12px; cursor: pointer; }
+  .bucket-dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 auto; }
+  .card-title { flex: 1 1 auto; min-width: 0; }
+  .card-title .name { font-size: 14px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .card-title .sub { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .dist-badge { font-size: 11px; font-weight: 600; color: var(--muted); flex: 0 0 auto; text-align: right; }
+  .status-badge { font-size: 10px; padding: 2px 7px; border-radius: 999px; font-weight: 600; margin-top: 3px; display: inline-block; }
+  .status-unreviewed { background: #eef0f3; color: var(--muted); }
+  .status-db_correct { background: #e2f3e8; color: var(--success); }
+  .status-google_correct { background: #e2ecfb; color: var(--accent); }
+  .status-corrected { background: #fde9d0; color: #a15b0a; }
+  .status-flagged { background: #fbe4e4; color: var(--danger); }
+  .chevron { transition: transform .15s; color: var(--muted); }
+  .card.open .chevron { transform: rotate(90deg); }
+
+  .card-body { display: none; border-top: 1px solid var(--border); padding: 10px 12px 14px; }
+  .card.open .card-body { display: block; }
+  .map { width: 100%; height: 260px; border-radius: 8px; margin-bottom: 10px; background: #eee; }
+  .tap-readout { font-size: 12px; color: var(--muted); margin-bottom: 8px; min-height: 16px; }
+  .info-grid { font-size: 12.5px; color: var(--text); display: grid; grid-template-columns: auto 1fr; gap: 3px 8px; margin-bottom: 10px; }
+  .info-grid .k { color: var(--muted); }
+  .info-grid a { color: var(--accent); text-decoration: none; }
+  .btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+  .btn-row.single { grid-template-columns: 1fr; }
+  button.action { font-size: 12.5px; padding: 9px 6px; border-radius: 8px; border: 1px solid var(--border);
+    background: #fff; color: var(--text); cursor: pointer; font-weight: 600; }
+  button.action.primary { background: var(--success); color: #fff; border-color: var(--success); }
+  button.action.blue { background: var(--accent); color: #fff; border-color: var(--accent); }
+  button.action.warn { background: var(--warn); color: #fff; border-color: var(--warn); }
+  button.action.ghost { background: #fff; color: var(--danger); border-color: var(--danger); }
+  button.action.neutral { background: #f4f5f7; color: var(--muted); }
+  textarea.note { width: 100%; font-size: 12.5px; border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px; resize: vertical; min-height: 44px; font-family: inherit; }
+  .note-label { font-size: 11px; color: var(--muted); margin: 6px 0 3px; }
+
+  .toolbar { display: flex; gap: 6px; padding: 0 12px 8px; flex-wrap: wrap; }
+  .toolbar button { flex: 1 1 auto; font-size: 12.5px; padding: 9px 8px; border-radius: 8px;
+    border: 1px solid var(--border); background: #fff; font-weight: 600; cursor: pointer; }
+  #importFile { display: none; }
+  .empty { text-align: center; color: var(--muted); font-size: 13px; padding: 30px 10px; }
+
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111317; --card-bg:#1b1e24; --text:#e8e9ec; --muted:#9aa1ac; --border:#2a2d34; }
+    #search { background:#20232a; color: var(--text); }
+    .chip { background:#1b1e24; color: var(--text); }
+    .status-unreviewed { background:#262a31; }
+    .map { background:#222; }
+    button.action { background:#20232a; color: var(--text); }
+    button.action.neutral { background:#20232a; }
+    .toolbar button { background:#20232a; color: var(--text); }
+    #apiKeyInput { background:#20232a; color: var(--text); }
+    #toggleKeyVis { background:#20232a; color: var(--text); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Road-Adjacent Schools Check</h1>
+  <div class="progress-wrap">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-label"><span id="progressText">0 / 0 reviewed</span><span id="progressPct">0%</span></div>
+  </div>
+  <input id="search" type="search" placeholder="Search school, sub-district, block...">
+  <div class="chips" id="chips"></div>
+  <div class="maps-status" id="mapsStatus"></div>
+</header>
+
+<div id="keyPanel" class="key-panel">
+  <div class="key-panel-title">🔑 Google Maps API key required</div>
+  <div class="key-panel-body">
+    Paste a Google Maps <b>JavaScript API</b> key to load maps. It's saved only in this
+    browser (localStorage) — never sent anywhere else, never stored in this file/repo.
+    <a href="https://console.cloud.google.com/google/maps-apis/credentials" target="_blank" rel="noopener">Get a key</a>.
+  </div>
+  <div class="key-panel-row">
+    <input id="apiKeyInput" type="password" placeholder="AIza…" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+    <button id="toggleKeyVis" type="button" title="Show/hide">👁</button>
+  </div>
+  <button id="loadMapsBtn" class="action blue" style="width:100%">Save &amp; Load Maps</button>
+  <div id="keyError" class="key-error"></div>
+</div>
+
+<div class="toolbar">
+  <button id="exportCsvBtn">⬇ Export CSV</button>
+  <button id="exportJsonBtn">⬇ Export JSON</button>
+  <button id="importBtn">⬆ Import JSON</button>
+  <input id="importFile" type="file" accept="application/json">
+</div>
+
+<div id="list"></div>
+
+<script>
+const SCHOOLS = [{"id": 0, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. M. L. P. S. Ponnani Town", "subdistrict": "Ponnani", "block": "", "dbLat": 10.775853, "dbLng": 75.922213, "googleName": "Theyyangad Govt. LP School Ponnani", "googleLat": 10.77846, "googleLng": 75.944793, "distance": 2483.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 1, "bucket": "Credible Error Candidate (300m-3km)", "school": "G L P S Pothukundu", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 11.01726, "dbLng": 76.12361, "googleName": "GLP School Pothukundu", "googleLat": 11.029151, "googleLng": 76.14116, "distance": 2327.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 2, "bucket": "Credible Error Candidate (300m-3km)", "school": "G U P S Pullur", "subdistrict": "Manjeri", "block": "", "dbLat": 11.123529, "dbLng": 76.118215, "googleName": "GUPS (Government UP School) Pulloor", "googleLat": 11.13909, "googleLng": 76.104083, "distance": 2317.6, "similarity": 0.769, "mismatch": "", "notes": ""}, {"id": 3, "bucket": "Credible Error Candidate (300m-3km)", "school": "GLPS Chungathara Panchayath", "subdistrict": "Nilambur", "block": "Nilambur", "dbLat": 11.352719, "dbLng": 76.265172, "googleName": "Chungathara Grama Panchayath Office", "googleLat": 11.336427, "googleLng": 76.276917, "distance": 2218.4, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 4, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.L.P.S. Arukizhaya", "subdistrict": "Manjeri", "block": "", "dbLat": 11.123878, "dbLng": 76.12379, "googleName": "G.L.P.School Arukizhaya", "googleLat": 11.10569, "googleLng": 76.11887, "distance": 2092.4, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 5, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.U.P.S. Veembur", "subdistrict": "Manjeri", "block": "", "dbLat": 11.119429, "dbLng": 76.089154, "googleName": "Gups School VEEMBOOR", "googleLat": 11.118733, "googleLng": 76.070136, "distance": 2076.4, "similarity": 0.8, "mismatch": "", "notes": ""}, {"id": 6, "bucket": "Credible Error Candidate (300m-3km)", "school": "GHSS Peruvallur", "subdistrict": "Vengara", "block": "Tirurangadi", "dbLat": 11.10531, "dbLng": 75.92466, "googleName": "GHSS PERUVALLUR", "googleLat": 11.106723, "googleLng": 75.942901, "distance": 1996.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 7, "bucket": "Credible Error Candidate (300m-3km)", "school": "GMLPS Orakam Kizhmuri", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.050383, "dbLng": 76.011311, "googleName": "GLPS OORAKAM KIZHUMURI,KUTTALOOR", "googleLat": 11.052102, "googleLng": 75.993214, "distance": 1984.2, "similarity": 0.941, "mismatch": "", "notes": ""}, {"id": 8, "bucket": "Credible Error Candidate (300m-3km)", "school": "G M L P S Karathode", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.063009, "dbLng": 76.013635, "googleName": "GMLP SCHOOL KARATHODE", "googleLat": 11.063613, "googleLng": 76.031753, "distance": 1978.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 9, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.L.P.S. Thadathilparamba", "subdistrict": "Kondotty", "block": "Kondotty", "dbLat": 11.20271, "dbLng": 75.95149, "googleName": "GHSS Thadathilparamba", "googleLat": 11.216642, "googleLng": 75.940427, "distance": 1963.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 10, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. U. P. S. Pothanur", "subdistrict": "Edappal", "block": "Ponnani", "dbLat": 10.821579, "dbLng": 75.984728, "googleName": "GUPS Pothannur", "googleLat": 10.805936, "googleLng": 75.979061, "distance": 1846.3, "similarity": 0.941, "mismatch": "", "notes": ""}, {"id": 11, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. M. L. P. S. Parappanangadi Town", "subdistrict": "Parappanangadi", "block": "Tirurangadi", "dbLat": 11.04823, "dbLng": 75.85857, "googleName": "GMLP School Parappanangadi,Angadi beach", "googleLat": 11.060804, "googleLng": 75.847733, "distance": 1831.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 12, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.M.L.P.S. Chappanangadi", "subdistrict": "Malappuram", "block": "Malappuram", "dbLat": 11.004902, "dbLng": 76.042617, "googleName": "GMLP SCHOOL CHAPPANANGADI", "googleLat": 11.000981, "googleLng": 76.056681, "distance": 1595.9, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 13, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.M.L.P.S. Nenmini", "subdistrict": "Melattur", "block": "Perinthalmanna", "dbLat": 11.05346, "dbLng": 76.2094, "googleName": "GMLPS Nenmini", "googleLat": 11.040719, "googleLng": 76.207352, "distance": 1434.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 14, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. M. L. P. S. Valavannur", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.958043, "dbLng": 75.976714, "googleName": "GMLPS Valavannur", "googleLat": 10.946176, "googleLng": 75.97313, "distance": 1376.4, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 15, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.L.P.S. Kara", "subdistrict": "Melattur", "block": "Perinthalmanna", "dbLat": 11.00977, "dbLng": 76.32209, "googleName": "G.L.P.S KARA", "googleLat": 11.021401, "googleLng": 76.323792, "distance": 1306.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 16, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. L. P. S. Rayirimangalam", "subdistrict": "Tanur", "block": "", "dbLat": 10.99357, "dbLng": 75.8731, "googleName": "GMLPS RAYIRIMANGALAM", "googleLat": 10.982107, "googleLng": 75.873166, "distance": 1274.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 17, "bucket": "Credible Error Candidate (300m-3km)", "school": "G L P S Meenarkuzhi", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 11.00891, "dbLng": 76.105324, "googleName": "G L P School meenarkuzhi", "googleLat": 11.016975, "googleLng": 76.098114, "distance": 1193.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 18, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. M. L. P. S. Vadakkummuri", "subdistrict": "Edappal", "block": "Perumpadappa", "dbLat": 10.737365, "dbLng": 76.010027, "googleName": "GMLPS VADAKKUMURI", "googleLat": 10.732188, "googleLng": 76.000544, "distance": 1185.2, "similarity": 0.957, "mismatch": "", "notes": ""}, {"id": 19, "bucket": "Credible Error Candidate (300m-3km)", "school": "Mooleppadam GLPS", "subdistrict": "Nilambur", "block": "Nilambur", "dbLat": 11.32223, "dbLng": 76.19252, "googleName": "GLPS MOOLEPPADAM", "googleLat": 11.315162, "googleLng": 76.199422, "distance": 1088.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 20, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. L. P. S. Kalpakancheri", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.93859, "dbLng": 75.97679, "googleName": "GLPS KALPAKANCHERY", "googleLat": 10.938687, "googleLng": 75.986319, "distance": 1040.4, "similarity": 0.923, "mismatch": "", "notes": ""}, {"id": 21, "bucket": "Credible Error Candidate (300m-3km)", "school": "G M L P S Pandallur", "subdistrict": "Manjeri", "block": "Malappuram", "dbLat": 11.085446, "dbLng": 76.175403, "googleName": "GLP School Pandallur", "googleLat": 11.084254, "googleLng": 76.16641, "distance": 990.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 22, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.L.P.S. Manjeri", "subdistrict": "Manjeri", "block": "", "dbLat": 11.116944, "dbLng": 76.119939, "googleName": "GLPS MANJERI", "googleLat": 11.10845, "googleLng": 76.121905, "distance": 968.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 23, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.M.U.P.S. Melakkam", "subdistrict": "Manjeri", "block": "", "dbLat": 11.122684, "dbLng": 76.119386, "googleName": "GMUPS MELAKKAM", "googleLat": 11.130722, "googleLng": 76.120694, "distance": 905.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 24, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. L. P. S. Sukapuram", "subdistrict": "Edappal", "block": "Ponnani", "dbLat": 10.77321, "dbLng": 76.01494, "googleName": "Sukapuram Hospital", "googleLat": 10.778851, "googleLng": 76.009096, "distance": 894.9, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 25, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. U. P. S. Cheruvayikkara", "subdistrict": "Ponnani", "block": "", "dbLat": 10.7891, "dbLng": 75.96361, "googleName": "Cheruvayikkara", "googleLat": 10.792441, "googleLng": 75.957257, "distance": 787.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 26, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. L. P. S. Edappal", "subdistrict": "Edappal", "block": "Ponnani", "dbLat": 10.78845, "dbLng": 75.99628, "googleName": "GHSS Edappal", "googleLat": 10.787038, "googleLng": 76.003285, "distance": 781.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 27, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. J. B. S. Vattamkulam", "subdistrict": "Edappal", "block": "Ponnani", "dbLat": 10.785135, "dbLng": 76.01586, "googleName": "GJB LP School Vattamkulam(GJBS Vattamkulam)", "googleLat": 10.785584, "googleLng": 76.022552, "distance": 732.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 28, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. F. L. P. S. Parappanangadi", "subdistrict": "Parappanangadi", "block": "", "dbLat": 11.070636, "dbLng": 75.847279, "googleName": "GLPS Parappanangadi", "googleLat": 11.069399, "googleLng": 75.85373, "distance": 717.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 29, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. L. P. S. Kulakkad", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.851369, "dbLng": 76.04091, "googleName": "GLP SCHOOL KULAKKAD", "googleLat": 10.857317, "googleLng": 76.043298, "distance": 710.9, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 30, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.L.P.S. Narukara", "subdistrict": "Manjeri", "block": "", "dbLat": 11.120787, "dbLng": 76.096863, "googleName": "GLP SCHOOL NARUKARA", "googleLat": 11.119864, "googleLng": 76.090929, "distance": 655.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 31, "bucket": "Credible Error Candidate (300m-3km)", "school": "Thuvvur GLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.111585, "dbLng": 76.284165, "googleName": "Govt HSS Tuvvur", "googleLat": 11.110113, "googleLng": 76.279027, "distance": 584.0, "similarity": 0.923, "mismatch": "", "notes": ""}, {"id": 32, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.M.L.P.S. Manjeri South", "subdistrict": "Manjeri", "block": "", "dbLat": 11.120905, "dbLng": 76.12658, "googleName": "GMLPS Manjeri", "googleLat": 11.12161, "googleLng": 76.121441, "distance": 566.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 33, "bucket": "Credible Error Candidate (300m-3km)", "school": "Pookkulam GLPS", "subdistrict": "Wandoor", "block": "Wandoor", "dbLat": 11.18966, "dbLng": 76.234066, "googleName": "Pookulam Government LP School", "googleLat": 11.18562, "googleLng": 76.23235, "distance": 486.7, "similarity": 0.941, "mismatch": "", "notes": ""}, {"id": 34, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.L.P.S. Mundumuzhi", "subdistrict": "Kondotty", "block": "Kondotty", "dbLat": 11.24633, "dbLng": 75.93915, "googleName": "GLPS Mundumuzhi", "googleLat": 11.245947, "googleLng": 75.934868, "distance": 468.9, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 35, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. M. L. P. S. Rayirimangalam", "subdistrict": "Tanur", "block": "", "dbLat": 10.98098, "dbLng": 75.87693, "googleName": "GMLPS RAYIRIMANGALAM", "googleLat": 10.982107, "googleLng": 75.873166, "distance": 429.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 36, "bucket": "Credible Error Candidate (300m-3km)", "school": "G. L. P. S. Chottur", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.9161, "dbLng": 76.03964, "googleName": "Chottur Government Lower Primary School (GLP School)", "googleLat": 10.912492, "googleLng": 76.039014, "distance": 407.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 37, "bucket": "Credible Error Candidate (300m-3km)", "school": "G.M.L.P.S. Manjeri East", "subdistrict": "Manjeri", "block": "", "dbLat": 11.121499, "dbLng": 76.125117, "googleName": "GMLPS Manjeri", "googleLat": 11.12161, "googleLng": 76.121441, "distance": 401.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 38, "bucket": "Credible Error Candidate (300m-3km)", "school": "Pallisseri GLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.179967, "dbLng": 76.303281, "googleName": "GLPS PALLISSERI GROUND", "googleLat": 11.176816, "googleLng": 76.30403, "distance": 359.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 39, "bucket": "Credible Error Candidate (300m-3km)", "school": "G M L P S Vadakkangara", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 11.01785, "dbLng": 76.15089, "googleName": "GMLP School Vadakkangara", "googleLat": 11.019928, "googleLng": 76.148643, "distance": 337.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 40, "bucket": "Credible Error Candidate (300m-3km)", "school": "G H S Aliparamba", "subdistrict": "Perinthalmanna", "block": "Perinthalmanna", "dbLat": 10.918934, "dbLng": 76.312984, "googleName": "GHSS Aliparamba", "googleLat": 10.920848, "googleLng": 76.315289, "distance": 329.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 41, "bucket": "Probably Match Noise (>3km)", "school": "G. L. P. S. Mankeri", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.85354, "dbLng": 76.08205, "googleName": "GLPS MANJERI", "googleLat": 11.10845, "googleLng": 76.121905, "distance": 28676.7, "similarity": 0.857, "mismatch": "", "notes": ""}, {"id": 42, "bucket": "Probably Match Noise (>3km)", "school": "Koithakundu GLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.134268, "dbLng": 76.32921, "googleName": "GLP School Pothukundu", "googleLat": 11.029151, "googleLng": 76.14116, "distance": 23615.8, "similarity": 0.762, "mismatch": "", "notes": ""}, {"id": 43, "bucket": "Probably Match Noise (>3km)", "school": "G U P S Odakkayam", "subdistrict": "Areacode", "block": "Areacode", "dbLat": 11.274431, "dbLng": 76.128997, "googleName": "GUPS Ground Anakkayam", "googleLat": 11.087858, "googleLng": 76.122945, "distance": 20756.5, "similarity": 0.778, "mismatch": "", "notes": ""}, {"id": 44, "bucket": "Probably Match Noise (>3km)", "school": "G. U. P. S. Othalur", "subdistrict": "Edappal", "block": "Perumpadappa", "dbLat": 10.71227, "dbLng": 76.0475, "googleName": "GUPS Pothannur", "googleLat": 10.805936, "googleLng": 75.979061, "distance": 12820.7, "similarity": 0.75, "mismatch": "", "notes": ""}, {"id": 45, "bucket": "Probably Match Noise (>3km)", "school": "Naduvakkad GLPS", "subdistrict": "Nilambur", "block": "Wandoor", "dbLat": 11.24277, "dbLng": 76.19103, "googleName": "Naduvakkad Glps", "googleLat": 11.322458, "googleLng": 76.270394, "distance": 12386.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 46, "bucket": "Probably Match Noise (>3km)", "school": "Valanthode GTLPS", "subdistrict": "Nilambur", "block": "Nilambur", "dbLat": 11.3254, "dbLng": 76.19236, "googleName": "Govt Tribal LP School Valamthode", "googleLat": 11.346671, "googleLng": 76.102883, "distance": 10037.9, "similarity": 0.9, "mismatch": "", "notes": ""}, {"id": 47, "bucket": "Probably Match Noise (>3km)", "school": "GLPS Orakam Melmuri", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.063756, "dbLng": 76.031395, "googleName": "GLPS OORAKAM KIZHUMURI,KUTTALOOR", "googleLat": 11.052102, "googleLng": 75.993214, "distance": 4363.5, "similarity": 0.923, "mismatch": "", "notes": ""}, {"id": 48, "bucket": "Probably Match Noise (>3km)", "school": "G.U.P.S. Ponmala", "subdistrict": "Malappuram", "block": "Malappuram", "dbLat": 10.983657, "dbLng": 76.06755, "googleName": "G.U.P. School Ponmala Muttipalam", "googleLat": 11.017105, "googleLng": 76.05269, "distance": 4057.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 49, "bucket": "Probably Match Noise (>3km)", "school": "G. F. L. P. S. Ponnani", "subdistrict": "Ponnani", "block": "", "dbLat": 10.74474, "dbLng": 75.93421, "googleName": "GFLPS PONNANI", "googleLat": 10.777479, "googleLng": 75.918243, "distance": 4036.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 50, "bucket": "Probably Match Noise (>3km)", "school": "G H S S Kadungapuram", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 10.98095, "dbLng": 76.13832, "googleName": "GHSS Kadungapuram - HS Wing", "googleLat": 10.995456, "googleLng": 76.171181, "distance": 3932.9, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 51, "bucket": "Probably Match Noise (>3km)", "school": "G. L. P. S. Thrikkanapuram", "subdistrict": "Edappal", "block": "Ponnani", "dbLat": 10.839666, "dbLng": 75.988633, "googleName": "G.L.P.S. Thrikkanapuram", "googleLat": 10.82864, "googleLng": 76.019516, "distance": 3588.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 52, "bucket": "Probably Match Noise (>3km)", "school": "G.M.L.P.S. Kidangazhi", "subdistrict": "Manjeri", "block": "", "dbLat": 11.122817, "dbLng": 76.11537, "googleName": "GMLP school ,kidangazhi", "googleLat": 11.146627, "googleLng": 76.099639, "distance": 3155.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 53, "bucket": "Low-Confidence / Unverifiable", "school": "Pazhedam Panampoyil GLPS", "subdistrict": "Wandoor", "block": "Wandoor", "dbLat": 11.21106, "dbLng": 76.292804, "googleName": "G.L.P School", "googleLat": 11.047688, "googleLng": 76.072302, "distance": 30145.9, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 54, "bucket": "Low-Confidence / Unverifiable", "school": "G. L. P. S. Perumparamba Moodal", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.8702, "dbLng": 76.04659, "googleName": "GLP SCHOOL PUKAYOOR", "googleLat": 11.07465, "googleLng": 75.913139, "distance": 27000.9, "similarity": 0.286, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 55, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Panikkarapuraya", "subdistrict": "Kondotty", "block": "Kondotty", "dbLat": 11.24498, "dbLng": 75.96972, "googleName": "G.L.P School", "googleLat": 11.047688, "googleLng": 76.072302, "distance": 24627.6, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 56, "bucket": "Low-Confidence / Unverifiable", "school": "G.M.L.P.S. Pallikuth", "subdistrict": "Melattur", "block": "Perinthalmanna", "dbLat": 11.01528, "dbLng": 76.22959, "googleName": "GMLPS Pookolathur", "googleLat": 11.157582, "googleLng": 76.056844, "distance": 24610.9, "similarity": 0.4, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 57, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Chemmaniyode", "subdistrict": "Melattur", "block": "Perinthalmanna", "dbLat": 11.04589, "dbLng": 76.2827, "googleName": "G.L.P School", "googleLat": 11.047688, "googleLng": 76.072302, "distance": 22962.5, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 58, "bucket": "Low-Confidence / Unverifiable", "school": "Pullengode GMLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.200585, "dbLng": 76.337047, "googleName": "Government Muslim LP School", "googleLat": 11.169593, "googleLng": 76.131001, "distance": 22738.8, "similarity": 0.25, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 59, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Vettam Pallippuram", "subdistrict": "Tirur", "block": "Tirur", "dbLat": 10.82254, "dbLng": 75.95126, "googleName": "G.M.L.P. School", "googleLat": 11.022538, "googleLng": 75.924359, "distance": 22431.8, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 60, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Kuttayi North", "subdistrict": "Tirur", "block": "Tirur", "dbLat": 10.849138, "dbLng": 75.901949, "googleName": "G.M.L.P. School", "googleLat": 11.022538, "googleLng": 75.924359, "distance": 19435.8, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 61, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Palappatta", "subdistrict": "Areacode", "block": "Areacode", "dbLat": 11.213015, "dbLng": 76.120174, "googleName": "GLPS", "googleLat": 11.249899, "googleLng": 75.959818, "distance": 17963.7, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 62, "bucket": "Low-Confidence / Unverifiable", "school": "GMLPS Puthur", "subdistrict": "Vengara", "block": "Malappuram", "dbLat": 11.0036, "dbLng": 76.01524, "googleName": "GMLPS Pookolathur", "googleLat": 11.157582, "googleLng": 76.056844, "distance": 17713.7, "similarity": 0.588, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 63, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Arimbra Melmuri", "subdistrict": "Kondotty", "block": "Malappuram", "dbLat": 11.106578, "dbLng": 76.024071, "googleName": "GLPS", "googleLat": 11.249899, "googleLng": 75.959818, "distance": 17409.8, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 64, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Pookkuth", "subdistrict": "Manjeri", "block": "Wandoor", "dbLat": 11.099745, "dbLng": 76.261683, "googleName": "GLP School", "googleLat": 11.120985, "googleLng": 76.114752, "distance": 16204.8, "similarity": 0.182, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 65, "bucket": "Low-Confidence / Unverifiable", "school": "GMLPS Kizhuparamba", "subdistrict": "Areacode", "block": "Areacode", "dbLat": 11.24977, "dbLng": 76.01347, "googleName": "Government Muslim LP School", "googleLat": 11.169593, "googleLng": 76.131001, "distance": 15614.8, "similarity": 0.222, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 66, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Nediyiruppu", "subdistrict": "Kondotty", "block": "", "dbLat": 11.1326, "dbLng": 75.99311, "googleName": "GLPS", "googleLat": 11.249899, "googleLng": 75.959818, "distance": 13539.2, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 67, "bucket": "Low-Confidence / Unverifiable", "school": "GMLPS C.U. Campus", "subdistrict": "Vengara", "block": "Tirurangadi", "dbLat": 11.13099, "dbLng": 75.89186, "googleName": "G.M.L.P. School", "googleLat": 11.022538, "googleLng": 75.924359, "distance": 12570.0, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 68, "bucket": "Low-Confidence / Unverifiable", "school": "G.M.L.P.S. Kodasseri", "subdistrict": "Manjeri", "block": "Wandoor", "dbLat": 11.123438, "dbLng": 76.233539, "googleName": "GLPS MANJERI", "googleLat": 11.10845, "googleLng": 76.121905, "distance": 12293.7, "similarity": 0.5, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 69, "bucket": "Low-Confidence / Unverifiable", "school": "G.M.L.P.S. Kolmanna", "subdistrict": "Malappuram", "block": "", "dbLat": 11.050419, "dbLng": 76.057563, "googleName": "GMLPS Pookolathur", "googleLat": 11.157582, "googleLng": 76.056844, "distance": 11916.3, "similarity": 0.421, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 70, "bucket": "Low-Confidence / Unverifiable", "school": "K.M Musthafa Memorial G.L.P.S. Mundengara", "subdistrict": "Manjeri", "block": "Areacode", "dbLat": 11.223766, "dbLng": 76.140821, "googleName": "H M Yatheem Khana Manjeri", "googleLat": 11.1203, "googleLng": 76.124172, "distance": 11647.4, "similarity": 0.533, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 71, "bucket": "Low-Confidence / Unverifiable", "school": "G. L. P. S. Venniyur", "subdistrict": "Parappanangadi", "block": "", "dbLat": 11.014938, "dbLng": 75.938959, "googleName": "GLPS Anappadi", "googleLat": 11.075775, "googleLng": 75.856508, "distance": 11257.5, "similarity": 0.25, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 72, "bucket": "Low-Confidence / Unverifiable", "school": "G.M.L.P.S. Edavanna", "subdistrict": "Manjeri", "block": "Areacode", "dbLat": 11.216576, "dbLng": 76.142188, "googleName": "GMLPS Manjeri", "googleLat": 11.12161, "googleLng": 76.121441, "distance": 10799.6, "similarity": 0.267, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 73, "bucket": "Low-Confidence / Unverifiable", "school": "G.M.L.P.S. Akkode", "subdistrict": "Kondotty", "block": "Kondotty", "dbLat": 11.23451, "dbLng": 75.91487, "googleName": "GMLPS Kanjeeraparamba", "googleLat": 11.144918, "googleLng": 75.951987, "distance": 10753.5, "similarity": 0.19, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 74, "bucket": "Low-Confidence / Unverifiable", "school": "GMLPS Kilinakode", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.07687, "dbLng": 76.00053, "googleName": "G.M.L.P. School", "googleLat": 11.022538, "googleLng": 75.924359, "distance": 10276.3, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 75, "bucket": "Low-Confidence / Unverifiable", "school": "G. L. P. S. Athippetta", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.90529, "dbLng": 76.11195, "googleName": "GLPS Kuttippuram North", "googleLat": 10.853716, "googleLng": 76.037568, "distance": 9942.7, "similarity": 0.476, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 76, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Kottakkal", "subdistrict": "Malappuram", "block": "", "dbLat": 10.99879, "dbLng": 76.00815, "googleName": "G.L.P School", "googleLat": 11.047688, "googleLng": 76.072302, "distance": 8865.0, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 77, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Ponmundam South", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.94892, "dbLng": 75.95095, "googleName": "GMLPS EDAKKADAPPURAM", "googleLat": 10.969338, "googleLng": 75.872701, "distance": 8838.8, "similarity": 0.261, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 78, "bucket": "Low-Confidence / Unverifiable", "school": "G.M.L.P.S. Pathappiriyam", "subdistrict": "Manjeri", "block": "Areacode", "dbLat": 11.199875, "dbLng": 76.135465, "googleName": "GMLPS Manjeri", "googleLat": 11.12161, "googleLng": 76.121441, "distance": 8836.2, "similarity": 0.3, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 79, "bucket": "Low-Confidence / Unverifiable", "school": "Chadangamkulam GLPS", "subdistrict": "Wandoor", "block": "Wandoor", "dbLat": 11.217016, "dbLng": 76.221099, "googleName": "GLP SCHOOL cheruvannur", "googleLat": 11.14354, "googleLng": 76.190762, "distance": 8814.9, "similarity": 0.4, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 80, "bucket": "Low-Confidence / Unverifiable", "school": "G L P S Palakaparambil", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 10.97117, "dbLng": 76.11529, "googleName": "GLPS KARKIDAKAM", "googleLat": 11.023319, "googleLng": 76.168338, "distance": 8194.6, "similarity": 0.417, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 81, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Thalakadathur", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.939, "dbLng": 75.93746, "googleName": "GMLPS EDAKKADAPPURAM", "googleLat": 10.969338, "googleLng": 75.872701, "distance": 7833.3, "similarity": 0.519, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 82, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Pulpatta", "subdistrict": "Kizhisseri", "block": "Areacode", "dbLat": 11.14741, "dbLng": 76.08168, "googleName": "GLPS Kuzhimanna Kuzhiyamparamb", "googleLat": 11.17136, "googleLng": 76.018077, "distance": 7432.2, "similarity": 0.364, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 83, "bucket": "Low-Confidence / Unverifiable", "school": "G L P S Padinhattummuri", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 11.05881, "dbLng": 76.11072, "googleName": "GLPS KARKIDAKAM", "googleLat": 11.023319, "googleLng": 76.168338, "distance": 7424.0, "similarity": 0.32, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 84, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Cherumukku", "subdistrict": "Tanur", "block": "Tirurangadi", "dbLat": 11.02253, "dbLng": 75.92435, "googleName": "GMLPS RAYIRIMANGALAM", "googleLat": 10.982107, "googleLng": 75.873166, "distance": 7170.5, "similarity": 0.167, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 85, "bucket": "Low-Confidence / Unverifiable", "school": "G. L. P. S. Karaikkad", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.926926, "dbLng": 76.055676, "googleName": "Pakaranellur", "googleLat": 10.871486, "googleLng": 76.022811, "distance": 7133.0, "similarity": 0.381, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 86, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Cherukulam", "subdistrict": "Manjeri", "block": "Wandoor", "dbLat": 11.13093, "dbLng": 76.17933, "googleName": "GLP School", "googleLat": 11.120985, "googleLng": 76.114752, "distance": 7132.1, "similarity": 0.154, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 87, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Kuniyil", "subdistrict": "Areacode", "block": "Areacode", "dbLat": 11.25558, "dbLng": 76.01938, "googleName": "GLPS", "googleLat": 11.249899, "googleLng": 75.959818, "distance": 6526.3, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 88, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Pavanna", "subdistrict": "Areacode", "block": "Areacode", "dbLat": 11.2204, "dbLng": 76.09844, "googleName": "GLP SCHOOL GROUND THAVARAPARAMB", "googleLat": 11.188534, "googleLng": 76.049136, "distance": 6440.3, "similarity": 0.4, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 89, "bucket": "Low-Confidence / Unverifiable", "school": "Konamunda GLPS", "subdistrict": "Nilambur", "block": "Nilambur", "dbLat": 11.32322, "dbLng": 76.21861, "googleName": "GLP School Mankuth", "googleLat": 11.286871, "googleLng": 76.262882, "distance": 6296.0, "similarity": 0.25, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 90, "bucket": "Low-Confidence / Unverifiable", "school": "Perumbathur GLPS", "subdistrict": "Nilambur", "block": "Nilambur", "dbLat": 11.34724, "dbLng": 76.21509, "googleName": "GLP School Karimpuzha", "googleLat": 11.304786, "googleLng": 76.251024, "distance": 6134.7, "similarity": 0.286, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 91, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Paranki Moochikkal", "subdistrict": "Malappuram", "block": "Malappuram", "dbLat": 11.006385, "dbLng": 76.041245, "googleName": "G.L.P School", "googleLat": 11.047688, "googleLng": 76.072302, "distance": 5708.1, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 92, "bucket": "Low-Confidence / Unverifiable", "school": "G.W.U.P.S. Nediyiruppu", "subdistrict": "Kondotty", "block": "", "dbLat": 11.1077, "dbLng": 75.99778, "googleName": "G M U P SCHOOL KONDOTTY", "googleLat": 11.147694, "googleLng": 75.967058, "distance": 5568.8, "similarity": 0.316, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 93, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Valamangalam", "subdistrict": "Kizhisseri", "block": "Areacode", "dbLat": 11.13874, "dbLng": 76.05661, "googleName": "GLPS Kuzhimanna Kuzhiyamparamb", "googleLat": 11.17136, "googleLng": 76.018077, "distance": 5552.3, "similarity": 0.385, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 94, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Parathakkad", "subdistrict": "Kizhisseri", "block": "Kondotty", "dbLat": 11.17908, "dbLng": 75.97024, "googleName": "GLPS Kuzhimanna Kuzhiyamparamb", "googleLat": 11.17136, "googleLng": 76.018077, "distance": 5288.5, "similarity": 0.32, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 95, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Korad", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.98109, "dbLng": 75.91401, "googleName": "GMLPS EDAKKADAPPURAM", "googleLat": 10.969338, "googleLng": 75.872701, "distance": 4694.9, "similarity": 0.316, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 96, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Thelakkad", "subdistrict": "Melattur", "block": "Perinthalmanna", "dbLat": 11.02292, "dbLng": 76.25808, "googleName": "GLPS Melkulangara", "googleLat": 11.003172, "googleLng": 76.283686, "distance": 3554.2, "similarity": 0.381, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 97, "bucket": "Low-Confidence / Unverifiable", "school": "Uthirampoyil GLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.187986, "dbLng": 76.326545, "googleName": "Govt LP School Amapoyil", "googleLat": 11.161619, "googleLng": 76.308176, "distance": 3551.2, "similarity": 0.7, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 98, "bucket": "Low-Confidence / Unverifiable", "school": "Uliyathu Aboobacker Memmorial  G. L. P. S. Vadakkummuri", "subdistrict": "Edappal", "block": "Perumpadappa", "dbLat": 10.72425, "dbLng": 75.99978, "googleName": "GUPS Kololamba", "googleLat": 10.754558, "googleLng": 76.000886, "distance": 3372.3, "similarity": 0.316, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 99, "bucket": "Low-Confidence / Unverifiable", "school": "Myladi GUPS", "subdistrict": "Nilambur", "block": "Nilambur", "dbLat": 11.30432, "dbLng": 76.23129, "googleName": "Gups Playground", "googleLat": 11.276315, "googleLng": 76.22279, "distance": 3249.1, "similarity": 0.375, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 100, "bucket": "Low-Confidence / Unverifiable", "school": "G L P S Vallikkapatta", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 11.06234, "dbLng": 76.14056, "googleName": "GLPS VELLILA", "googleLat": 11.042297, "googleLng": 76.15603, "distance": 2795.9, "similarity": 0.5, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 101, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Nottappuram", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.063657, "dbLng": 75.974144, "googleName": "GLP School Edakkaparamba", "googleLat": 11.086342, "googleLng": 75.966622, "distance": 2652.7, "similarity": 0.417, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 102, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Kizhisseri", "subdistrict": "Kizhisseri", "block": "Areacode", "dbLat": 11.17617, "dbLng": 75.99761, "googleName": "GLPS Kuzhimanna Kuzhiyamparamb", "googleLat": 11.17136, "googleLng": 76.018077, "distance": 2295.8, "similarity": 0.417, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 103, "bucket": "Low-Confidence / Unverifiable", "school": "G. L. P. S. K.Puram", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.95149, "dbLng": 75.89791, "googleName": "Sabine Hospitals - Tanur", "googleLat": 10.967026, "googleLng": 75.88561, "distance": 2187.9, "similarity": 0.4, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 104, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Puthiyakadppuram North", "subdistrict": "Tanur", "block": "", "dbLat": 10.950653, "dbLng": 75.877138, "googleName": "GMLPS EDAKKADAPPURAM", "googleLat": 10.969338, "googleLng": 75.872701, "distance": 2133.4, "similarity": 0.667, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 105, "bucket": "Low-Confidence / Unverifiable", "school": "G.M.L.P.S. Nediyiruppu", "subdistrict": "Kondotty", "block": "", "dbLat": 11.137528, "dbLng": 75.983587, "googleName": "G M U P SCHOOL KONDOTTY", "googleLat": 11.147694, "googleLng": 75.967058, "distance": 2128.3, "similarity": 0.316, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 106, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Meppadam", "subdistrict": "Nilambur", "block": "Wandoor", "dbLat": 11.22918, "dbLng": 76.18182, "googleName": "GMLP SCHOOL MAMPAD NORTH", "googleLat": 11.247399, "googleLng": 76.180186, "distance": 2033.7, "similarity": 0.571, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 107, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Cheruvannur", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.928094, "dbLng": 75.97306, "googleName": "GMLPS Valavannur", "googleLat": 10.946176, "googleLng": 75.97313, "distance": 2010.6, "similarity": 0.571, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 108, "bucket": "Low-Confidence / Unverifiable", "school": "G. L. P. S. Tanur", "subdistrict": "Tanur", "block": "", "dbLat": 10.974337, "dbLng": 75.8792, "googleName": "GLP School Rayarimangalam East", "googleLat": 10.990597, "googleLng": 75.877274, "distance": 1820.3, "similarity": 0.211, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 109, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Karuvambrum West", "subdistrict": "Manjeri", "block": "", "dbLat": 11.127181, "dbLng": 76.101832, "googleName": "GLP School", "googleLat": 11.120985, "googleLng": 76.114752, "distance": 1569.0, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 110, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Tanur North", "subdistrict": "Tanur", "block": "", "dbLat": 10.98312, "dbLng": 75.869813, "googleName": "GMLPS EDAKKADAPPURAM", "googleLat": 10.969338, "googleLng": 75.872701, "distance": 1564.5, "similarity": 0.316, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 111, "bucket": "Low-Confidence / Unverifiable", "school": "GMUPS Kannamangalam", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.07803, "dbLng": 75.97556, "googleName": "Government Mappila UP School", "googleLat": 11.068525, "googleLng": 75.985974, "distance": 1552.0, "similarity": 0.4, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 112, "bucket": "Low-Confidence / Unverifiable", "school": "G. M. L. P. S. Thirurangadi", "subdistrict": "Parappanangadi", "block": "", "dbLat": 11.035572, "dbLng": 75.926976, "googleName": "G.M.L.P. School", "googleLat": 11.022538, "googleLng": 75.924359, "distance": 1477.2, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 113, "bucket": "Low-Confidence / Unverifiable", "school": "G L P S Mankada", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 11.01547, "dbLng": 76.1772, "googleName": "GLPS KARKIDAKAM", "googleLat": 11.023319, "googleLng": 76.168338, "distance": 1302.8, "similarity": 0.471, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 114, "bucket": "Low-Confidence / Unverifiable", "school": "G M L P S Mariyad", "subdistrict": "Manjeri", "block": "", "dbLat": 11.11729, "dbLng": 76.127867, "googleName": "GLPS MANJERI", "googleLat": 11.10845, "googleLng": 76.121905, "distance": 1178.7, "similarity": 0.571, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 115, "bucket": "Low-Confidence / Unverifiable", "school": "GLPS Vilayil Parappur", "subdistrict": "Kizhisseri", "block": "Areacode", "dbLat": 11.218949, "dbLng": 76.000931, "googleName": "VPAUPS VILAYIL PARAPPUR", "googleLat": 11.209471, "googleLng": 76.003462, "distance": 1089.5, "similarity": 1.0, "mismatch": "GOVT vs AIDED", "notes": "LOW_CONFIDENCE_MATCH (different Govt/Aided institution)"}, {"id": 116, "bucket": "Low-Confidence / Unverifiable", "school": "GMLPS Muthiramanna", "subdistrict": "Perinthalmanna", "block": "Perinthalmanna", "dbLat": 10.95579, "dbLng": 76.29689, "googleName": "G M L P SCHOOL", "googleLat": 10.949799, "googleLng": 76.2982, "distance": 681.4, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 117, "bucket": "Low-Confidence / Unverifiable", "school": "G G V H S S Wandoor", "subdistrict": "Wandoor", "block": "Wandoor", "dbLat": 11.19562, "dbLng": 76.234259, "googleName": "VMC Govt. Higher Secondary School Ground", "googleLat": 11.198337, "googleLng": 76.229383, "distance": 611.7, "similarity": 0.308, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 118, "bucket": "Low-Confidence / Unverifiable", "school": "GMLPS Cherur", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.073861, "dbLng": 75.985242, "googleName": "Government Mappila UP School", "googleLat": 11.068525, "googleLng": 75.985974, "distance": 598.7, "similarity": 0.0, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 119, "bucket": "Low-Confidence / Unverifiable", "school": "GMLPS Kakkooth", "subdistrict": "Perinthalmanna", "block": "", "dbLat": 10.983306, "dbLng": 76.224638, "googleName": "GMLP school Perinthalmanna", "googleLat": 10.978219, "googleLng": 76.226191, "distance": 590.6, "similarity": 0.182, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 120, "bucket": "Low-Confidence / Unverifiable", "school": "G.L.P.S. Ramankulam", "subdistrict": "Manjeri", "block": "", "dbLat": 11.124845, "dbLng": 76.111281, "googleName": "GLP School", "googleLat": 11.120985, "googleLng": 76.114752, "distance": 572.4, "similarity": 0.154, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 121, "bucket": "Low-Confidence / Unverifiable", "school": "GUPS AR Nagar", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.07172, "dbLng": 75.94703, "googleName": "G.U.P.SCHOOL KAKKADAMPURAM", "googleLat": 11.07515, "googleLng": 75.945646, "distance": 410.2, "similarity": 0.333, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 122, "bucket": "Low-Confidence / Unverifiable", "school": "A. M. L. P. S. Kormanthala", "subdistrict": "Tanur", "block": "", "dbLat": 10.98716, "dbLng": 75.867883, "googleName": "AMLP School", "googleLat": 10.988732, "googleLng": 75.866836, "distance": 208.8, "similarity": 0.267, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 123, "bucket": "Low-Confidence / Unverifiable", "school": "Santhinagar GLPS", "subdistrict": "Wandoor", "block": "Wandoor", "dbLat": 11.208766, "dbLng": 76.260674, "googleName": "GLP School Santhi Nagar", "googleLat": 11.209179, "googleLng": 76.260633, "distance": 46.1, "similarity": 0.706, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 124, "bucket": "Low-Confidence / Unverifiable", "school": "G.M.L.P.S. Karakunnu", "subdistrict": "Manjeri", "block": "Wandoor", "dbLat": 11.169844, "dbLng": 76.131066, "googleName": "Government Muslim LP School", "googleLat": 11.169593, "googleLng": 76.131001, "distance": 28.8, "similarity": 0.133, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 125, "bucket": "Low-Confidence / Unverifiable", "school": "G L P S Othukkungal", "subdistrict": "Vengara", "block": "Malappuram", "dbLat": 11.02562, "dbLng": 76.02641, "googleName": "GMLP SCHOOL", "googleLat": 11.025538, "googleLng": 76.026584, "distance": 21.1, "similarity": 0.267, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 126, "bucket": "Low-Confidence / Unverifiable", "school": "GMLPS Nilambur", "subdistrict": "Nilambur", "block": "", "dbLat": 11.284931, "dbLng": 76.23748, "googleName": "GMLP School CHANDAKKUNNU", "googleLat": 11.284983, "googleLng": 76.237562, "distance": 10.7, "similarity": 0.3, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 127, "bucket": "Low-Confidence / Unverifiable", "school": "G. L. P. S. Thirurangadi", "subdistrict": "Parappanangadi", "block": "", "dbLat": 11.044321, "dbLng": 75.923696, "googleName": "GLP School", "googleLat": 11.044315, "googleLng": 75.923687, "distance": 1.2, "similarity": 0.133, "mismatch": "", "notes": "LOW_CONFIDENCE_MATCH"}, {"id": 128, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Kanhiramukku", "subdistrict": "Ponnani", "block": "Perumpadappa", "dbLat": 10.75871, "dbLng": 75.96689, "googleName": "GLPS Kanhiramukku", "googleLat": 10.756456, "googleLng": 75.968313, "distance": 295.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 129, "bucket": "Likely Correct (<=300m)", "school": "G. M. L. P. S. Kuttippala", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.96675, "dbLng": 75.96111, "googleName": "Kuttippala GMLP School", "googleLat": 10.964214, "googleLng": 75.961649, "distance": 288.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 130, "bucket": "Likely Correct (<=300m)", "school": "G L P S Kuruva", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 11.007169, "dbLng": 76.113227, "googleName": "GLPS KURUVA", "googleLat": 11.004694, "googleLng": 76.112621, "distance": 283.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 131, "bucket": "Likely Correct (<=300m)", "school": "G.L.P.S. Vettathur", "subdistrict": "Kondotty", "block": "Kondotty", "dbLat": 11.25618, "dbLng": 75.98985, "googleName": "G.L.P.S Vettathoor", "googleLat": 11.254476, "googleLng": 75.988128, "distance": 266.7, "similarity": 0.842, "mismatch": "", "notes": ""}, {"id": 132, "bucket": "Likely Correct (<=300m)", "school": "GLPS Thattancherimala", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.045565, "dbLng": 75.945858, "googleName": "GLP School - Thattancheri Mala", "googleLat": 11.043215, "googleLng": 75.946301, "distance": 265.8, "similarity": 0.857, "mismatch": "", "notes": ""}, {"id": 133, "bucket": "Likely Correct (<=300m)", "school": "G. M. U. P. S. Kakkad", "subdistrict": "Parappanangadi", "block": "", "dbLat": 11.03522, "dbLng": 75.93824, "googleName": "Kakkad GMUP School Road", "googleLat": 11.033425, "googleLng": 75.936985, "distance": 242.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 134, "bucket": "Likely Correct (<=300m)", "school": "G.M.L.P.S. Manjeri", "subdistrict": "Manjeri", "block": "", "dbLat": 11.119506, "dbLng": 76.12179, "googleName": "GMLPS Manjeri", "googleLat": 11.12161, "googleLng": 76.121441, "distance": 237.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 135, "bucket": "Likely Correct (<=300m)", "school": "G.M.L.P.S. Kondotty", "subdistrict": "Kondotty", "block": "", "dbLat": 11.14756, "dbLng": 75.96498, "googleName": "G M U P SCHOOL KONDOTTY", "googleLat": 11.147694, "googleLng": 75.967058, "distance": 227.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 136, "bucket": "Likely Correct (<=300m)", "school": "G.M.U.P.S. Arimbra", "subdistrict": "Kondotty", "block": "Malappuram", "dbLat": 11.11546, "dbLng": 76.01882, "googleName": "GMUPS Arimbra", "googleLat": 11.113938, "googleLng": 76.019766, "distance": 198.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 137, "bucket": "Likely Correct (<=300m)", "school": "G. F. L. P. S. Puthuponnani", "subdistrict": "Ponnani", "block": "", "dbLat": 10.778658, "dbLng": 75.919522, "googleName": "GFLPS PONNANI", "googleLat": 10.777479, "googleLng": 75.918243, "distance": 191.6, "similarity": 0.737, "mismatch": "", "notes": ""}, {"id": 138, "bucket": "Likely Correct (<=300m)", "school": "GMLPS Perinthalmanna Central", "subdistrict": "Perinthalmanna", "block": "", "dbLat": 10.978076, "dbLng": 76.22629, "googleName": "GMHSS Perinthalmanna", "googleLat": 10.976639, "googleLng": 76.227211, "distance": 188.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 139, "bucket": "Likely Correct (<=300m)", "school": "GMLPS Mampuram", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.0561, "dbLng": 75.92042, "googleName": "GMLP SCHOOL MAMPURAM", "googleLat": 11.054404, "googleLng": 75.920487, "distance": 188.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 140, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Chiyanur", "subdistrict": "Edappal", "block": "Perumpadappa", "dbLat": 10.73833, "dbLng": 76.0303, "googleName": "GLP School Chiyanoor", "googleLat": 10.739409, "googleLng": 76.03158, "distance": 184.3, "similarity": 0.824, "mismatch": "", "notes": ""}, {"id": 141, "bucket": "Likely Correct (<=300m)", "school": "GLPS Thencheri", "subdistrict": "Areacode", "block": "Areacode", "dbLat": 11.23171, "dbLng": 76.09292, "googleName": "Thenjeri", "googleLat": 11.23034, "googleLng": 76.092523, "distance": 158.4, "similarity": 0.824, "mismatch": "", "notes": ""}, {"id": 142, "bucket": "Likely Correct (<=300m)", "school": "GLPS Thavarapparamba", "subdistrict": "Areacode", "block": "Areacode", "dbLat": 11.189739, "dbLng": 76.048509, "googleName": "GLP SCHOOL GROUND THAVARAPARAMB", "googleLat": 11.188534, "googleLng": 76.049136, "distance": 150.5, "similarity": 0.929, "mismatch": "", "notes": ""}, {"id": 143, "bucket": "Likely Correct (<=300m)", "school": "G. U. P. S. Randathani", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.96144, "dbLng": 76.00752, "googleName": "GUPSchool,Randathani", "googleLat": 10.962656, "googleLng": 76.007369, "distance": 136.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 144, "bucket": "Likely Correct (<=300m)", "school": "G.U.P.S. Manjeri", "subdistrict": "Manjeri", "block": "", "dbLat": 11.120277, "dbLng": 76.115769, "googleName": "G U P School Chullakkad Manjeri", "googleLat": 11.120898, "googleLng": 76.11477, "distance": 129.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 145, "bucket": "Likely Correct (<=300m)", "school": "G. M. U. P. S. Tanur Town", "subdistrict": "Tanur", "block": "", "dbLat": 10.97752, "dbLng": 75.871183, "googleName": "GMUP School Tanur", "googleLat": 10.977241, "googleLng": 75.870441, "distance": 86.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 146, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Kattilangadi", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.89922, "dbLng": 76.01126, "googleName": "GLPS Kattilangadi", "googleLat": 10.899762, "googleLng": 76.011611, "distance": 71.4, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 147, "bucket": "Likely Correct (<=300m)", "school": "G. H. S. Trikkulam", "subdistrict": "Parappanangadi", "block": "", "dbLat": 11.04218, "dbLng": 75.90944, "googleName": "GHS Trikkulam", "googleLat": 11.042779, "googleLng": 75.909577, "distance": 68.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 148, "bucket": "Likely Correct (<=300m)", "school": "G. U. P. S. Painkannur", "subdistrict": "Kuttippuram", "block": "", "dbLat": 10.87406, "dbLng": 76.0641, "googleName": "GUPS Painkannur", "googleLat": 10.873819, "googleLng": 76.063593, "distance": 61.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 149, "bucket": "Likely Correct (<=300m)", "school": "G.M.U.P.S. Vazhakkad", "subdistrict": "Kondotty", "block": "Kondotty", "dbLat": 11.24721, "dbLng": 75.9523, "googleName": "Goverment Upper Primary School Vazhakkad", "googleLat": 11.247423, "googleLng": 75.951858, "distance": 53.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 150, "bucket": "Likely Correct (<=300m)", "school": "G.M.L.P.S. Pandikkad", "subdistrict": "Manjeri", "block": "Wandoor", "dbLat": 11.097809, "dbLng": 76.224314, "googleName": "GMLPS Pandikkad", "googleLat": 11.09823, "googleLng": 76.224515, "distance": 51.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 151, "bucket": "Likely Correct (<=300m)", "school": "G. H. S. S. Ponmundam", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.957123, "dbLng": 75.956855, "googleName": "Govt HSS Ponmundam", "googleLat": 10.957341, "googleLng": 75.957252, "distance": 49.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 152, "bucket": "Likely Correct (<=300m)", "school": "Amapoyil GLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.161726, "dbLng": 76.308576, "googleName": "Govt LP School Amapoyil", "googleLat": 11.161619, "googleLng": 76.308176, "distance": 45.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 153, "bucket": "Likely Correct (<=300m)", "school": "G. M. U. P. S. Paravanna", "subdistrict": "Tirur", "block": "Tirur", "dbLat": 10.900722, "dbLng": 75.89231, "googleName": "GMUP School Paravanna", "googleLat": 10.90069, "googleLng": 75.891912, "distance": 43.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 154, "bucket": "Likely Correct (<=300m)", "school": "GUPS Moorkanad", "subdistrict": "Areacode", "block": "Areacode", "dbLat": 11.24091, "dbLng": 76.05748, "googleName": "Govt Mappila UP School Moorkanadu", "googleLat": 11.241203, "googleLng": 76.057239, "distance": 41.9, "similarity": 0.947, "mismatch": "", "notes": ""}, {"id": 155, "bucket": "Likely Correct (<=300m)", "school": "GHS Kolappuram", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.05608, "dbLng": 75.935, "googleName": "GHS KOLAPPURAM", "googleLat": 11.056445, "googleLng": 75.935086, "distance": 41.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 156, "bucket": "Likely Correct (<=300m)", "school": "Mampattumoola GLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.221497, "dbLng": 76.317112, "googleName": "GLPS Mampattumoola", "googleLat": 11.221777, "googleLng": 76.316877, "distance": 40.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 157, "bucket": "Likely Correct (<=300m)", "school": "G.L.P.S. Pandallur", "subdistrict": "Manjeri", "block": "Malappuram", "dbLat": 11.084432, "dbLng": 76.166711, "googleName": "GLP School Pandallur", "googleLat": 11.084254, "googleLng": 76.16641, "distance": 38.4, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 158, "bucket": "Likely Correct (<=300m)", "school": "G. U. P. S. Purathur", "subdistrict": "Tirur", "block": "Tirur", "dbLat": 10.80417, "dbLng": 75.92182, "googleName": "Purathur Government Upper Primary School", "googleLat": 10.804452, "googleLng": 75.921679, "distance": 35.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 159, "bucket": "Likely Correct (<=300m)", "school": "Pazhayakadakkal GUPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.142177, "dbLng": 76.347892, "googleName": "Pazhayakadakkal", "googleLat": 11.142352, "googleLng": 76.347652, "distance": 32.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 160, "bucket": "Likely Correct (<=300m)", "school": "G.H.S Anchachavadi", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.18653, "dbLng": 76.29057, "googleName": "GHS ANCHACHAVADI", "googleLat": 11.186305, "googleLng": 76.290398, "distance": 31.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 161, "bucket": "Likely Correct (<=300m)", "school": "G. H. S. Athavanad", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.89707, "dbLng": 76.02314, "googleName": "GHS Athavanad Parithi", "googleLat": 10.897332, "googleLng": 76.023045, "distance": 31.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 162, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Pariyapuram", "subdistrict": "Tanur", "block": "", "dbLat": 11.00222, "dbLng": 75.87384, "googleName": "GLP School Pariyapuram", "googleLat": 11.002454, "googleLng": 75.873722, "distance": 29.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 163, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Anappadi", "subdistrict": "Parappanangadi", "block": "Tirurangadi", "dbLat": 11.07553, "dbLng": 75.85647, "googleName": "GLPS Anappadi", "googleLat": 11.075775, "googleLng": 75.856508, "distance": 27.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 164, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Parappanangadi", "subdistrict": "Parappanangadi", "block": "", "dbLat": 11.06918, "dbLng": 75.85364, "googleName": "GLPS Parappanangadi", "googleLat": 11.069399, "googleLng": 75.85373, "distance": 26.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 165, "bucket": "Likely Correct (<=300m)", "school": "GUPS Valiyora", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.04873, "dbLng": 75.94971, "googleName": "GUP School Valiyora ,Palasseerimadu", "googleLat": 11.04891, "googleLng": 75.949866, "distance": 26.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 166, "bucket": "Likely Correct (<=300m)", "school": "G. H. S. S. Kadanchery", "subdistrict": "Edappal", "block": "Ponnani", "dbLat": 10.82585, "dbLng": 75.98763, "googleName": "Govt HSS Kadancheri", "googleLat": 10.826049, "googleLng": 75.987505, "distance": 26.0, "similarity": 0.9, "mismatch": "", "notes": ""}, {"id": 167, "bucket": "Likely Correct (<=300m)", "school": "G H S Meenadathur", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.942207, "dbLng": 75.910048, "googleName": "GHS Meenadathur", "googleLat": 10.942421, "googleLng": 75.910141, "distance": 25.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 168, "bucket": "Likely Correct (<=300m)", "school": "G.H.S. Chaliyappuram", "subdistrict": "Kondotty", "block": "Kondotty", "dbLat": 11.24727, "dbLng": 75.97841, "googleName": "Govt. High School, Chaliyappuram", "googleLat": 11.247366, "googleLng": 75.978204, "distance": 24.9, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 169, "bucket": "Likely Correct (<=300m)", "school": "GLPS Kunnakkavu", "subdistrict": "Perinthalmanna", "block": "Perinthalmanna", "dbLat": 10.90472, "dbLng": 76.24743, "googleName": "GLP School Kunnakkavu", "googleLat": 10.904536, "googleLng": 76.247549, "distance": 24.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 170, "bucket": "Likely Correct (<=300m)", "school": "G.L.P.S. Morayur", "subdistrict": "Kondotty", "block": "Malappuram", "dbLat": 11.13574, "dbLng": 76.0211, "googleName": "GLP SCHOOL MORAYUR VALENCHERY", "googleLat": 11.13579, "googleLng": 76.021309, "distance": 23.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 171, "bucket": "Likely Correct (<=300m)", "school": "Nilambur GMUPS", "subdistrict": "Nilambur", "block": "", "dbLat": 11.27587, "dbLng": 76.22294, "googleName": "GMUPS NILAMBUR", "googleLat": 11.275664, "googleLng": 76.222932, "distance": 23.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 172, "bucket": "Likely Correct (<=300m)", "school": "G.L.P.S. Karad", "subdistrict": "Kondotty", "block": "Kondotty", "dbLat": 11.20628, "dbLng": 75.87741, "googleName": "GLP school karad", "googleLat": 11.206439, "googleLng": 75.877282, "distance": 22.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 173, "bucket": "Likely Correct (<=300m)", "school": "G L P S Puthanangadi", "subdistrict": "Mankada", "block": "Perinthalmanna", "dbLat": 10.96752, "dbLng": 76.188931, "googleName": "GLP School Puthanangadi", "googleLat": 10.967671, "googleLng": 76.188802, "distance": 21.9, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 174, "bucket": "Likely Correct (<=300m)", "school": "GMUPS Kizhisseri", "subdistrict": "Kizhisseri", "block": "Areacode", "dbLat": 11.17007, "dbLng": 75.99138, "googleName": "GMUP SCHOOL KIZHISSERI ALINCHUVADU", "googleLat": 11.169887, "googleLng": 75.991428, "distance": 21.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 175, "bucket": "Likely Correct (<=300m)", "school": "G.M.U.P.S. Chirayil", "subdistrict": "Kondotty", "block": "", "dbLat": 11.12842, "dbLng": 75.97477, "googleName": "GMUP School, Chirayil Chunkam", "googleLat": 11.128561, "googleLng": 75.974891, "distance": 20.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 176, "bucket": "Likely Correct (<=300m)", "school": "G.M.U.P.S. Kottakkal", "subdistrict": "Malappuram", "block": "", "dbLat": 10.99913, "dbLng": 76.00788, "googleName": "GMUP School, Kottakkal", "googleLat": 10.999174, "googleLng": 76.008062, "distance": 20.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 177, "bucket": "Likely Correct (<=300m)", "school": "G.G.H.S.S. Manjeri", "subdistrict": "Manjeri", "block": "", "dbLat": 11.120218, "dbLng": 76.118038, "googleName": "Government Girls Higher Secondary School, Manjeri", "googleLat": 11.120297, "googleLng": 76.117873, "distance": 20.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 178, "bucket": "Likely Correct (<=300m)", "school": "G.H. S. S. Kokkur", "subdistrict": "Edappal", "block": "Perumpadappa", "dbLat": 10.730907, "dbLng": 76.060525, "googleName": "GHS Kokkur", "googleLat": 10.731063, "googleLng": 76.06044, "distance": 19.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 179, "bucket": "Likely Correct (<=300m)", "school": "Kooripoyil GLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.199853, "dbLng": 76.297753, "googleName": "Govt LP School Kooripoyil", "googleLat": 11.199848, "googleLng": 76.297933, "distance": 19.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 180, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Ozhur", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.966, "dbLng": 75.90611, "googleName": "GLP School Ozhur", "googleLat": 10.965976, "googleLng": 75.906285, "distance": 19.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 181, "bucket": "Likely Correct (<=300m)", "school": "G. M. U. P. S. Kodinhi", "subdistrict": "Tanur", "block": "Tirurangadi", "dbLat": 11.01703, "dbLng": 75.91072, "googleName": "Kodinhi GMUP School Kottathangadi", "googleLat": 11.016981, "googleLng": 75.910887, "distance": 19.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 182, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Thuyyam", "subdistrict": "Edappal", "block": "Ponnani", "dbLat": 10.78511, "dbLng": 75.98425, "googleName": "Govt.LP School Thuyyam", "googleLat": 10.785231, "googleLng": 75.984132, "distance": 18.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 183, "bucket": "Likely Correct (<=300m)", "school": "Karuvarakundu GLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.112713, "dbLng": 76.327713, "googleName": "GLPS Karuvarakkund", "googleLat": 11.112546, "googleLng": 76.327715, "distance": 18.5, "similarity": 0.923, "mismatch": "", "notes": ""}, {"id": 184, "bucket": "Likely Correct (<=300m)", "school": "G. M. L. P. S. Ayirani", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.93784, "dbLng": 75.98762, "googleName": "Gmlp School Ayirani", "googleLat": 10.93778, "googleLng": 75.987465, "distance": 18.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 185, "bucket": "Likely Correct (<=300m)", "school": "GUPS Klari", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 10.99273, "dbLng": 75.97987, "googleName": "GUPS Klari", "googleLat": 10.992576, "googleLng": 75.979819, "distance": 18.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 186, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Kuttippuram North", "subdistrict": "Kuttippuram", "block": "Kuttippuram", "dbLat": 10.85369, "dbLng": 76.03773, "googleName": "GLPS Kuttippuram North", "googleLat": 10.853716, "googleLng": 76.037568, "distance": 17.9, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 187, "bucket": "Likely Correct (<=300m)", "school": "G.L.P.S. Vettikkattiri", "subdistrict": "Manjeri", "block": "Wandoor", "dbLat": 11.095161, "dbLng": 76.213942, "googleName": "GLP School Vettikkattiri", "googleLat": 11.095288, "googleLng": 76.213853, "distance": 17.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 188, "bucket": "Likely Correct (<=300m)", "school": "GMLPS Iringallur", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.02338, "dbLng": 76.00708, "googleName": "GMLP School Iringallur Kuzhippuram", "googleLat": 11.023522, "googleLng": 76.007048, "distance": 16.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 189, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Kaladi", "subdistrict": "Edappal", "block": "Ponnani", "dbLat": 10.81377, "dbLng": 76.01296, "googleName": "GLP School Kaladi", "googleLat": 10.813843, "googleLng": 76.013088, "distance": 16.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 190, "bucket": "Likely Correct (<=300m)", "school": "Mampad North GMLPS", "subdistrict": "Nilambur", "block": "Wandoor", "dbLat": 11.247311, "dbLng": 76.180297, "googleName": "GMLP SCHOOL MAMPAD NORTH", "googleLat": 11.247399, "googleLng": 76.180186, "distance": 15.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 191, "bucket": "Likely Correct (<=300m)", "school": "GMLPS Edakkaparamba", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.0863, "dbLng": 75.96675, "googleName": "GLP School Edakkaparamba", "googleLat": 11.086342, "googleLng": 75.966622, "distance": 14.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 192, "bucket": "Likely Correct (<=300m)", "school": "G.M.U.P.S. Ozhukur", "subdistrict": "Kondotty", "block": "Malappuram", "dbLat": 11.15409, "dbLng": 76.01258, "googleName": "G.M.U.P School Ozhukur, Neravath", "googleLat": 11.154101, "googleLng": 76.01245, "distance": 14.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 193, "bucket": "Likely Correct (<=300m)", "school": "GLPS Kuzhimanna", "subdistrict": "Kizhisseri", "block": "Areacode", "dbLat": 11.17135, "dbLng": 76.01795, "googleName": "GLPS Kuzhimanna Kuzhiyamparamb", "googleLat": 11.17136, "googleLng": 76.018077, "distance": 13.9, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 194, "bucket": "Likely Correct (<=300m)", "school": "G.M.L.P.S. Morayur", "subdistrict": "Kondotty", "block": "Malappuram", "dbLat": 11.13366, "dbLng": 76.01528, "googleName": "G.M.L.P School, Morayur", "googleLat": 11.13375, "googleLng": 76.015368, "distance": 13.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 195, "bucket": "Likely Correct (<=300m)", "school": "GLPS Orakam Kizhumuri", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.052021, "dbLng": 75.993125, "googleName": "GLPS OORAKAM KIZHUMURI,KUTTALOOR", "googleLat": 11.052102, "googleLng": 75.993214, "distance": 13.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 196, "bucket": "Likely Correct (<=300m)", "school": "GLPS Thachanna", "subdistrict": "Areacode", "block": "Areacode", "dbLat": 11.2406, "dbLng": 76.07077, "googleName": "Govt. LP School Thachanna", "googleLat": 11.240615, "googleLng": 76.070654, "distance": 12.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 197, "bucket": "Likely Correct (<=300m)", "school": "G. U. P. S. Karingappara", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.9862, "dbLng": 75.94249, "googleName": "Govt. Upper Primary School Karingappara", "googleLat": 10.986168, "googleLng": 75.9426, "distance": 12.6, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 198, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Mookkuthala", "subdistrict": "Edappal", "block": "Perumpadappa", "dbLat": 10.73319, "dbLng": 76.01244, "googleName": "GLP School Mookkuthala", "googleLat": 10.733271, "googleLng": 76.012518, "distance": 12.4, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 199, "bucket": "Likely Correct (<=300m)", "school": "G.M.U.P.S. Oravambram", "subdistrict": "Melattur", "block": "Perinthalmanna", "dbLat": 11.08214, "dbLng": 76.21665, "googleName": "GMUP School Oravampuram", "googleLat": 11.082037, "googleLng": 76.216611, "distance": 12.2, "similarity": 0.857, "mismatch": "", "notes": ""}, {"id": 200, "bucket": "Likely Correct (<=300m)", "school": "Padikkal KalyaniAMMA Memorial G L P S Kallurma", "subdistrict": "Edappal", "block": "Perumpadappa", "dbLat": 10.71287, "dbLng": 76.01779, "googleName": "GLP School Kallurma", "googleLat": 10.712979, "googleLng": 76.017794, "distance": 12.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 201, "bucket": "Likely Correct (<=300m)", "school": "GLPS Olakara", "subdistrict": "Vengara", "block": "Tirurangadi", "dbLat": 11.083855, "dbLng": 75.930001, "googleName": "G L P School - Olakara", "googleLat": 11.083879, "googleLng": 75.929897, "distance": 11.7, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 202, "bucket": "Likely Correct (<=300m)", "school": "G U P S Mankada Pallippuram", "subdistrict": "Mankada", "block": "Mankada", "dbLat": 11.06096, "dbLng": 76.12727, "googleName": "GUPS Mankada Pallippuram", "googleLat": 11.060864, "googleLng": 76.127309, "distance": 11.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 203, "bucket": "Likely Correct (<=300m)", "school": "G.M.L.P.S. Kondotty Chungam", "subdistrict": "Kondotty", "block": "", "dbLat": 11.14417, "dbLng": 75.96867, "googleName": "GMLP School, Kondotty - Chungam", "googleLat": 11.144181, "googleLng": 75.968771, "distance": 11.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 204, "bucket": "Likely Correct (<=300m)", "school": "GLPS Pallikunnu", "subdistrict": "Perinthalmanna", "block": "Perinthalmanna", "dbLat": 10.99871, "dbLng": 76.32037, "googleName": "GLP School Pallikunnu", "googleLat": 10.998754, "googleLng": 76.320279, "distance": 11.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 205, "bucket": "Likely Correct (<=300m)", "school": "G.L.P.S. Cheruvannur", "subdistrict": "Manjeri", "block": "Wandoor", "dbLat": 11.143501, "dbLng": 76.190853, "googleName": "GLP SCHOOL cheruvannur", "googleLat": 11.14354, "googleLng": 76.190762, "distance": 10.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 206, "bucket": "Likely Correct (<=300m)", "school": "Vadapuram GMLPS", "subdistrict": "Nilambur", "block": "Wandoor", "dbLat": 11.258116, "dbLng": 76.20282, "googleName": "Vadapuram GMLP School", "googleLat": 11.258075, "googleLng": 76.20291, "distance": 10.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 207, "bucket": "Likely Correct (<=300m)", "school": "GMLPS Pookalathur", "subdistrict": "Kizhisseri", "block": "Areacode", "dbLat": 11.1575, "dbLng": 76.05687, "googleName": "GMLPS Pookolathur", "googleLat": 11.157582, "googleLng": 76.056844, "distance": 9.6, "similarity": 0.909, "mismatch": "", "notes": ""}, {"id": 208, "bucket": "Likely Correct (<=300m)", "school": "Maliyekkal GUPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.194906, "dbLng": 76.308246, "googleName": "Maliyekkal GUP School", "googleLat": 11.19495, "googleLng": 76.308321, "distance": 9.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 209, "bucket": "Likely Correct (<=300m)", "school": "CHAKKEERI AHAMMED KUTTY MEMORIAL G.M.U.P.S.CHERUR", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.0683, "dbLng": 75.98593, "googleName": "Chakkeeri Hammed Kutty Memorial Up School", "googleLat": 11.068257, "googleLng": 75.986002, "distance": 9.2, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 210, "bucket": "Likely Correct (<=300m)", "school": "G. M. L. P. S. Edakadappuram", "subdistrict": "Tanur", "block": "Tanur", "dbLat": 10.96927, "dbLng": 75.872743, "googleName": "GMLPS EDAKKADAPPURAM", "googleLat": 10.969338, "googleLng": 75.872701, "distance": 8.9, "similarity": 0.963, "mismatch": "", "notes": ""}, {"id": 211, "bucket": "Likely Correct (<=300m)", "school": "G H S Kuruka", "subdistrict": "Vengara", "block": "Vengara", "dbLat": 11.03964, "dbLng": 75.96862, "googleName": "Kuruka Govt High School", "googleLat": 11.039644, "googleLng": 75.968698, "distance": 8.5, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 212, "bucket": "Likely Correct (<=300m)", "school": "G. L. P. S. Perumparamba", "subdistrict": "Edappal", "block": "Ponnani", "dbLat": 10.8015, "dbLng": 75.99547, "googleName": "GLP School Perumparamba", "googleLat": 10.801505, "googleLng": 75.995546, "distance": 8.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 213, "bucket": "Likely Correct (<=300m)", "school": "G. H. S. S. Maranchery", "subdistrict": "Ponnani", "block": "Perumpadappa", "dbLat": 10.74075, "dbLng": 75.97083, "googleName": "Govt HSS Maranchery", "googleLat": 10.740678, "googleLng": 75.97082, "distance": 8.1, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 214, "bucket": "Likely Correct (<=300m)", "school": "Pullippadam GLPS", "subdistrict": "Nilambur", "block": "Wandoor", "dbLat": 11.24638, "dbLng": 76.17012, "googleName": "GLP SCHOOL Pullippadam", "googleLat": 11.246411, "googleLng": 76.170064, "distance": 7.0, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 215, "bucket": "Likely Correct (<=300m)", "school": "GMUPS Valapuram", "subdistrict": "Perinthalmanna", "block": "Perinthalmanna", "dbLat": 10.921364, "dbLng": 76.165784, "googleName": "G M U P School Valapuram", "googleLat": 10.921332, "googleLng": 76.165731, "distance": 6.8, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 216, "bucket": "Likely Correct (<=300m)", "school": "Kizhakkethala GLPS", "subdistrict": "Wandoor", "block": "Kalikavu", "dbLat": 11.124123, "dbLng": 76.341958, "googleName": "GLPS Kizhakkethala", "googleLat": 11.124134, "googleLng": 76.341995, "distance": 4.3, "similarity": 1.0, "mismatch": "", "notes": ""}, {"id": 217, "bucket": "Likely Correct (<=300m)", "school": "G.M.L.P.S. Odompatta", "subdistrict": "Manjeri", "block": "Wandoor", "dbLat": 11.122876, "dbLng": 76.267975, "googleName": "GMLP School Odompatta", "googleLat": 11.122874, "googleLng": 76.267977, "distance": 0.3, "similarity": 1.0, "mismatch": "", "notes": ""}];
+const BUCKET_META = {"Credible Error Candidate (300m-3km)": {"short": "Credible Error", "color": "#d64545"}, "Probably Match Noise (>3km)": {"short": "Match Noise", "color": "#8a8f98"}, "Low-Confidence / Unverifiable": {"short": "Low-Confidence", "color": "#c99a2e"}, "Likely Correct (<=300m)": {"short": "Likely Correct", "color": "#3a9d5d"}};
+const BUCKET_ORDER = ["Credible Error Candidate (300m-3km)", "Probably Match Noise (>3km)", "Low-Confidence / Unverifiable", "Likely Correct (<=300m)"];
+const STORAGE_KEY = "roadCheckReviews_v1";
+
+let reviews = {};
+try { reviews = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); } catch (e) { reviews = {}; }
+
+function saveReviews() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
+}
+function getReview(id) {
+  return reviews[id] || { status: "unreviewed", correctedLat: null, correctedLng: null, note: "" };
+}
+function setReview(id, patch) {
+  const cur = getReview(id);
+  reviews[id] = Object.assign({}, cur, patch, { reviewedAt: new Date().toISOString() });
+  saveReviews();
+  renderCard(id);
+  renderProgress();
+}
+
+const STATUS_LABEL = {
+  unreviewed: "Unreviewed",
+  db_correct: "DB Confirmed",
+  google_correct: "Google Confirmed",
+  corrected: "Corrected",
+  flagged: "Flagged"
+};
+
+let activeBucket = "All";
+let searchTerm = "";
+let mapsReady = false;
+const mapInstances = {};
+
+function matchesFilter(s) {
+  if (activeBucket !== "All" && s.bucket !== activeBucket) return false;
+  if (searchTerm) {
+    const hay = (s.school + " " + s.subdistrict + " " + s.block).toLowerCase();
+    if (!hay.includes(searchTerm)) return false;
+  }
+  return true;
+}
+
+function renderChips() {
+  const chips = document.getElementById("chips");
+  const counts = { All: SCHOOLS.length };
+  BUCKET_ORDER.forEach(b => counts[b] = SCHOOLS.filter(s => s.bucket === b).length);
+  const items = ["All", ...BUCKET_ORDER];
+  chips.innerHTML = items.map(b => {
+    const label = b === "All" ? "All" : BUCKET_META[b].short;
+    return `<div class="chip ${b === activeBucket ? "active" : ""}" data-bucket="${escapeAttr(b)}">${label} (${counts[b]})</div>`;
+  }).join("");
+  chips.querySelectorAll(".chip").forEach(el => {
+    el.addEventListener("click", () => {
+      activeBucket = el.getAttribute("data-bucket");
+      renderChips();
+      renderList();
+    });
+  });
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function escapeAttr(str) { return escapeHtml(str); }
+
+function gmapsLink(lat, lng) {
+  return `https://www.google.com/maps?q=${lat},${lng}`;
+}
+
+function cardHtml(s) {
+  const rev = getReview(s.id);
+  const meta = BUCKET_META[s.bucket];
+  return `
+  <div class="card" id="card-${s.id}" data-id="${s.id}">
+    <div class="card-head">
+      <div class="bucket-dot" style="background:${meta.color}"></div>
+      <div class="card-title">
+        <div class="name">${escapeHtml(s.school)}</div>
+        <div class="sub">${escapeHtml(s.subdistrict)}${s.block ? " · " + escapeHtml(s.block) : ""}</div>
+        <span class="status-badge status-${rev.status}">${STATUS_LABEL[rev.status]}</span>
+      </div>
+      <div class="dist-badge">${s.distance.toLocaleString()} m<div class="chevron">▸</div></div>
+    </div>
+    <div class="card-body">
+      <div class="map" id="map-${s.id}"></div>
+      <div class="tap-readout" id="tap-${s.id}">Tap the map to drop a candidate pin, or use your GPS below.</div>
+      <div class="info-grid">
+        <div class="k">DB coords</div><div>${s.dbLat}, ${s.dbLng} — <a href="${gmapsLink(s.dbLat, s.dbLng)}" target="_blank" rel="noopener">open</a></div>
+        <div class="k">Google match</div><div>${escapeHtml(s.googleName)} — <a href="${gmapsLink(s.googleLat, s.googleLng)}" target="_blank" rel="noopener">open</a></div>
+        <div class="k">Google coords</div><div>${s.googleLat}, ${s.googleLng}</div>
+        <div class="k">Distance</div><div>${s.distance.toLocaleString()} m</div>
+        <div class="k">Name similarity</div><div>${s.similarity}</div>
+        ${s.mismatch ? `<div class="k">Mismatch</div><div>${escapeHtml(s.mismatch)}</div>` : ""}
+        ${s.notes ? `<div class="k">Notes</div><div>${escapeHtml(s.notes)}</div>` : ""}
+        ${rev.status === "corrected" && rev.correctedLat != null ? `<div class="k">Corrected</div><div>${rev.correctedLat}, ${rev.correctedLng} — <a href="${gmapsLink(rev.correctedLat, rev.correctedLng)}" target="_blank" rel="noopener">open</a></div>` : ""}
+      </div>
+      <div class="btn-row">
+        <button class="action primary" data-act="confirm-db">✓ DB is Correct</button>
+        <button class="action blue" data-act="confirm-google">✓ Google is Correct</button>
+      </div>
+      <div class="btn-row">
+        <button class="action warn" data-act="use-gps">📍 Use My GPS Location</button>
+        <button class="action neutral" data-act="save-tap" id="saveTap-${s.id}" disabled>💾 Save Tapped Pin</button>
+      </div>
+      <div class="btn-row">
+        <button class="action ghost" data-act="flag">🚩 Flag / Unclear</button>
+        <button class="action neutral" data-act="reset">↺ Reset</button>
+      </div>
+      <div class="note-label">Your note</div>
+      <textarea class="note" data-act="note" placeholder="Optional notes...">${escapeHtml(rev.note || "")}</textarea>
+    </div>
+  </div>`;
+}
+
+function renderList() {
+  const list = document.getElementById("list");
+  const filtered = SCHOOLS.filter(matchesFilter);
+  if (!filtered.length) {
+    list.innerHTML = `<div class="empty">No schools match this filter/search.</div>`;
+    return;
+  }
+  list.innerHTML = filtered.map(cardHtml).join("");
+  filtered.forEach(s => wireCard(s));
+}
+
+function renderCard(id) {
+  const el = document.getElementById(`card-${id}`);
+  if (!el) return;
+  const wasOpen = el.classList.contains("open");
+  const s = SCHOOLS.find(x => x.id == id);
+  const html = cardHtml(s);
+  const tmp = document.createElement("div");
+  tmp.innerHTML = html;
+  const newEl = tmp.firstElementChild;
+  if (wasOpen) newEl.classList.add("open");
+  el.replaceWith(newEl);
+  wireCard(s);
+  if (wasOpen && mapsReady) initMap(s);
+}
+
+function wireCard(s) {
+  const el = document.getElementById(`card-${s.id}`);
+  const head = el.querySelector(".card-head");
+  head.addEventListener("click", () => {
+    const isOpen = el.classList.contains("open");
+    if (isOpen) {
+      el.classList.remove("open");
+      return;
+    }
+    el.classList.add("open");
+    if (mapsReady) {
+      setTimeout(() => initMap(s), 30);
+    }
+  });
+
+  el.querySelector('[data-act="confirm-db"]').addEventListener("click", (e) => {
+    e.stopPropagation();
+    setReview(s.id, { status: "db_correct", correctedLat: null, correctedLng: null });
+  });
+  el.querySelector('[data-act="confirm-google"]').addEventListener("click", (e) => {
+    e.stopPropagation();
+    setReview(s.id, { status: "google_correct", correctedLat: null, correctedLng: null });
+  });
+  el.querySelector('[data-act="flag"]').addEventListener("click", (e) => {
+    e.stopPropagation();
+    setReview(s.id, { status: "flagged" });
+  });
+  el.querySelector('[data-act="reset"]').addEventListener("click", (e) => {
+    e.stopPropagation();
+    delete reviews[s.id];
+    saveReviews();
+    renderCard(s.id);
+    renderProgress();
+  });
+  el.querySelector('[data-act="note"]').addEventListener("change", (e) => {
+    const cur = getReview(s.id);
+    reviews[s.id] = Object.assign({}, cur, { note: e.target.value, reviewedAt: new Date().toISOString() });
+    saveReviews();
+  });
+  el.querySelector('[data-act="use-gps"]').addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (!navigator.geolocation) {
+      alert("GPS not available on this device/browser.");
+      return;
+    }
+    const btn = e.currentTarget;
+    btn.textContent = "📍 Locating…";
+    navigator.geolocation.getCurrentPosition((pos) => {
+      btn.textContent = "📍 Use My GPS Location";
+      const lat = +pos.coords.latitude.toFixed(6);
+      const lng = +pos.coords.longitude.toFixed(6);
+      placeCandidate(s.id, lat, lng);
+    }, () => {
+      btn.textContent = "📍 Use My GPS Location";
+      alert("Couldn't get GPS location. Check location permissions.");
+    }, { enableHighAccuracy: true, timeout: 10000 });
+  });
+  el.querySelector('[data-act="save-tap"]').addEventListener("click", (e) => {
+    e.stopPropagation();
+    const mi = mapInstances[s.id];
+    if (!mi || !mi.candidateMarker) return;
+    const pos = mi.candidateMarker.getPosition();
+    setReview(s.id, {
+      status: "corrected",
+      correctedLat: +pos.lat().toFixed(6),
+      correctedLng: +pos.lng().toFixed(6)
+    });
+  });
+}
+
+function renderProgress() {
+  const total = SCHOOLS.length;
+  const reviewed = SCHOOLS.filter(s => getReview(s.id).status !== "unreviewed").length;
+  const pct = total ? Math.round((reviewed / total) * 100) : 0;
+  document.getElementById("progressFill").style.width = pct + "%";
+  document.getElementById("progressText").textContent = `${reviewed} / ${total} reviewed`;
+  document.getElementById("progressPct").textContent = pct + "%";
+}
+
+// ---- Google Maps ----
+function initMap(s) {
+  const el = document.getElementById(`map-${s.id}`);
+  if (!el || mapInstances[s.id]) return;
+  const dbPos = { lat: s.dbLat, lng: s.dbLng };
+  const gPos = { lat: s.googleLat, lng: s.googleLng };
+  const map = new google.maps.Map(el, {
+    center: dbPos,
+    zoom: 14,
+    mapTypeControl: false,
+    streetViewControl: true,
+    fullscreenControl: false
+  });
+
+  const dbMarker = new google.maps.Marker({
+    position: dbPos, map, title: "DB Location: " + s.school,
+    icon: { path: google.maps.SymbolPath.CIRCLE, scale: 8, fillColor: "#d64545", fillOpacity: 1, strokeColor: "#fff", strokeWeight: 2 }
+  });
+  const gMarker = new google.maps.Marker({
+    position: gPos, map, title: "Google Match: " + s.googleName,
+    icon: { path: google.maps.SymbolPath.CIRCLE, scale: 8, fillColor: "#2563eb", fillOpacity: 1, strokeColor: "#fff", strokeWeight: 2 }
+  });
+  new google.maps.Polyline({
+    path: [dbPos, gPos], map, strokeColor: "#8a8f98", strokeOpacity: 0.8, strokeWeight: 2,
+    icons: [{ icon: { path: "M 0,-1 0,1", strokeOpacity: 1, scale: 3 }, offset: "0", repeat: "12px" }]
+  });
+
+  const bounds = new google.maps.LatLngBounds();
+  bounds.extend(dbPos);
+  bounds.extend(gPos);
+  map.fitBounds(bounds, 60);
+  google.maps.event.addListenerOnce(map, "idle", () => {
+    if (map.getZoom() > 17) map.setZoom(17);
+  });
+
+  const readout = document.getElementById(`tap-${s.id}`);
+  const saveBtn = document.getElementById(`saveTap-${s.id}`);
+  const mi = { map, candidateMarker: null };
+  mapInstances[s.id] = mi;
+
+  const rev = getReview(s.id);
+  if (rev.status === "corrected" && rev.correctedLat != null) {
+    dropCandidate(s.id, { lat: rev.correctedLat, lng: rev.correctedLng });
+  }
+
+  map.addListener("click", (ev) => {
+    dropCandidate(s.id, { lat: ev.latLng.lat(), lng: ev.latLng.lng() });
+  });
+}
+
+function dropCandidate(id, pos) {
+  const mi = mapInstances[id];
+  if (!mi) return;
+  const map = mi.map;
+  const lat = +pos.lat.toFixed(6);
+  const lng = +pos.lng.toFixed(6);
+  if (mi.candidateMarker) {
+    mi.candidateMarker.setPosition({ lat, lng });
+  } else {
+    mi.candidateMarker = new google.maps.Marker({
+      position: { lat, lng }, map, draggable: true, title: "Candidate location (drag to fine-tune)",
+      icon: { path: google.maps.SymbolPath.CIRCLE, scale: 9, fillColor: "#3a9d5d", fillOpacity: 1, strokeColor: "#fff", strokeWeight: 2 }
+    });
+    mi.candidateMarker.addListener("dragend", (ev) => {
+      updateReadout(id, ev.latLng.lat(), ev.latLng.lng());
+    });
+  }
+  updateReadout(id, lat, lng);
+}
+
+function placeCandidate(id, lat, lng) {
+  const mi = mapInstances[id];
+  if (!mi) return;
+  mi.map.panTo({ lat, lng });
+  dropCandidate(id, { lat, lng });
+}
+
+function updateReadout(id, lat, lng) {
+  lat = +lat.toFixed(6); lng = +lng.toFixed(6);
+  const readout = document.getElementById(`tap-${id}`);
+  const saveBtn = document.getElementById(`saveTap-${id}`);
+  if (readout) readout.textContent = `Candidate pin: ${lat}, ${lng}`;
+  if (saveBtn) saveBtn.disabled = false;
+}
+
+const API_KEY_STORAGE = "gmapsApiKey_v1";
+
+window.initGoogleMaps = function () {
+  mapsReady = true;
+  document.getElementById("keyPanel").classList.remove("show");
+  const statusEl = document.getElementById("mapsStatus");
+  statusEl.innerHTML = 'Google Maps ready — tap a school to open its map. <button class="link" id="changeKeyBtn" type="button">change key</button>';
+  document.getElementById("changeKeyBtn").addEventListener("click", showKeyPanel);
+};
+
+window.gm_authFailure = function () {
+  mapsReady = false;
+  localStorage.removeItem(API_KEY_STORAGE);
+  document.getElementById("keyError").textContent =
+    "Google rejected this key (invalid, restricted, or Maps JavaScript API not enabled). Fix it in Cloud Console and try again.";
+  showKeyPanel();
+};
+
+function loadGoogleMapsScript(key) {
+  const existing = document.getElementById("gmapsScript");
+  if (existing) existing.remove();
+  const s = document.createElement("script");
+  s.id = "gmapsScript";
+  s.async = true;
+  s.defer = true;
+  s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(key) + "&callback=initGoogleMaps";
+  s.onerror = () => {
+    document.getElementById("keyError").textContent = "Could not load Google Maps — check your internet connection and the key.";
+    showKeyPanel();
+  };
+  document.head.appendChild(s);
+  document.getElementById("mapsStatus").textContent = "Loading Google Maps…";
+}
+
+function showKeyPanel() {
+  document.getElementById("keyPanel").classList.add("show");
+  const stored = localStorage.getItem(API_KEY_STORAGE);
+  if (stored) document.getElementById("apiKeyInput").value = stored;
+}
+
+document.getElementById("loadMapsBtn").addEventListener("click", () => {
+  const key = document.getElementById("apiKeyInput").value.trim();
+  document.getElementById("keyError").textContent = "";
+  if (!key) {
+    document.getElementById("keyError").textContent = "Paste a key first.";
+    return;
+  }
+  localStorage.setItem(API_KEY_STORAGE, key);
+  loadGoogleMapsScript(key);
+});
+
+document.getElementById("toggleKeyVis").addEventListener("click", () => {
+  const input = document.getElementById("apiKeyInput");
+  input.type = input.type === "password" ? "text" : "password";
+});
+
+(function bootMaps() {
+  const stored = localStorage.getItem(API_KEY_STORAGE);
+  if (stored) {
+    loadGoogleMapsScript(stored);
+  } else {
+    showKeyPanel();
+  }
+})();
+
+// ---- search ----
+document.getElementById("search").addEventListener("input", (e) => {
+  searchTerm = e.target.value.trim().toLowerCase();
+  renderList();
+});
+
+// ---- export / import ----
+function currentExportRows() {
+  return SCHOOLS.map(s => {
+    const r = getReview(s.id);
+    return {
+      Bucket: s.bucket,
+      "School Name": s.school,
+      "Educational Sub-District": s.subdistrict,
+      "Block Name": s.block,
+      "DB Latitude": s.dbLat,
+      "DB Longitude": s.dbLng,
+      "Google Matched Name": s.googleName,
+      "Google Latitude": s.googleLat,
+      "Google Longitude": s.googleLng,
+      "Distance Meters": s.distance,
+      "Name Similarity": s.similarity,
+      "Management Mismatch": s.mismatch,
+      "Notes": s.notes,
+      "Review Status": STATUS_LABEL[r.status],
+      "Corrected Latitude": r.correctedLat ?? "",
+      "Corrected Longitude": r.correctedLng ?? "",
+      "Reviewer Note": r.note || "",
+      "Reviewed At": r.reviewedAt || ""
+    };
+  });
+}
+
+function downloadBlob(content, filename, type) {
+  const blob = new Blob([content], { type });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+document.getElementById("exportCsvBtn").addEventListener("click", () => {
+  const rows = currentExportRows();
+  const headers = Object.keys(rows[0]);
+  const csvEsc = (v) => {
+    const s = String(v ?? "");
+    return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  };
+  const csv = [headers.join(",")].concat(rows.map(r => headers.map(h => csvEsc(r[h])).join(","))).join("\n");
+  downloadBlob(csv, "schools_road_adjacent_maps_check_reviewed.csv", "text/csv");
+});
+
+document.getElementById("exportJsonBtn").addEventListener("click", () => {
+  downloadBlob(JSON.stringify(reviews, null, 2), "schools_road_adjacent_maps_reviews.json", "application/json");
+});
+
+document.getElementById("importBtn").addEventListener("click", () => {
+  document.getElementById("importFile").click();
+});
+document.getElementById("importFile").addEventListener("change", (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const imported = JSON.parse(reader.result);
+      reviews = Object.assign({}, reviews, imported);
+      saveReviews();
+      renderList();
+      renderProgress();
+      alert("Import complete.");
+    } catch (err) {
+      alert("Could not read that file as valid review JSON.");
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = "";
+});
+
+// ---- init ----
+renderChips();
+renderList();
+renderProgress();
+</script>
+</body>
+</html>
