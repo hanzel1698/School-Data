@@ -2,16 +2,23 @@ School Name,Educational Sub-District,Block Name,School Code,Class 1 Total,Class 
 GUPS Klari,Vengara,Vengara,19866,205,191,218,188,802
 GLPS Kizhisseri,Kizhisseri,Areacode,18204,152,209,172,178,711
 CHAKKEERI AHAMMED KUTTY MEMORIAL G.M.U.P.S.CHERUR,Vengara,Vengara,19862,123,143,170,172,608
+G. U. P. S. Ariyallur,Parappanangadi,Tirurangadi,19439,125,153,182,116,576
 G. L. P. S. Kalpakancheri,Kuttippuram,Kuttippuram,19317,125,127,129,137,518
+G.M.U.P.S. Melmuri,Malappuram,,18474,120,127,144,100,491
 G.M.U.P.S. Ozhukur,Kondotty,Malappuram,18375,95,123,126,138,482
 G M L P S Karathode,Vengara,Vengara,19828,124,100,139,91,454
 GLPS Orakam Kizhumuri,Vengara,Vengara,19855,94,112,129,117,452
+G. U. P. S. Chamravattam,Tirur,Tirur,19769,87,102,139,115,443
+G.M.U.P.S. Irumbuzhi,Malappuram,Malappuram,18472,99,99,121,102,421
 GLPS Olakara,Vengara,Tirurangadi,19833,111,92,106,95,404
 GMLPS Edakkaparamba,Vengara,Vengara,19808,79,109,129,86,403
+G. M. U. P. S. BP Angadi,Tirur,Tirur,19767,79,84,113,109,385
 G. M. L. P. S. Cherumukku,Tanur,Tirurangadi,19602,73,94,99,109,375
+G. M. U. P. S. Tirur,Tirur,,19779,78,80,109,108,375
 G.L.P.S. Paranki Moochikkal,Malappuram,Malappuram,18440,76,98,108,85,367
 G.L.P.S. Manjeri,Manjeri,,18532,84,98,92,91,365
 GMLPS C.U. Campus,Vengara,Tirurangadi,19805,55,68,123,115,361
+G.L.P.S. Pookottur Old,Malappuram,Malappuram,18443,83,97,108,68,356
 G. U. P. S. Karingappara,Tanur,Tanur,19667,62,96,84,113,355
 G L P S Padinhattummuri,Mankada,Mankada,18657,85,81,94,94,354
 G H S Meenadathur,Tanur,Tanur,19671,67,68,93,125,353
@@ -48,6 +55,8 @@ G. L. P. S. Ozhur,Tanur,Tanur,19662,43,71,63,84,261
 GMLPS Pookalathur,Kizhisseri,Areacode,18221,61,62,64,72,259
 G.M.L.P.S. Chappanangadi,Malappuram,Malappuram,18447,56,66,65,70,257
 GUPS Valiyora,Vengara,Vengara,19872,49,70,65,73,257
+G.M.L.P.S. Irumbuzhi,Malappuram,Malappuram,18448,61,68,63,64,256
+GHS CHERIYAM MANKADA,Mankada,Mankada,18150,52,73,58,64,247
 GMUPS Kannamangalam,Vengara,Vengara,19864,52,70,59,64,245
 GHSS Peruvallur,Vengara,Tirurangadi,19073,50,62,67,64,243
 G.U.P.S. Ponmala,Malappuram,Malappuram,18477,51,62,59,70,242
@@ -55,6 +64,7 @@ G. L. P. S. Karaikkad,Kuttippuram,Kuttippuram,19319,49,55,72,61,237
 G M L P S Pandallur,Manjeri,Malappuram,18542,57,53,65,59,234
 G M L P S Vadakkangara,Mankada,Mankada,18645,47,63,68,56,234
 GLPS Nottappuram,Vengara,Vengara,19826,44,60,68,56,228
+G.L.P.S. Melmuri North,Malappuram,,18438,45,67,61,54,227
 G.M.U.P.S. Vazhakkad,Kondotty,Kondotty,18380,42,62,56,63,223
 G L P S Othukkungal,Vengara,Malappuram,19820,44,55,63,61,223
 G.L.P.S. Arimbra Melmuri,Kondotty,Malappuram,18305,55,57,46,64,222
@@ -72,16 +82,19 @@ G.L.P.S. Morayur,Kondotty,Malappuram,18331,40,49,49,67,205
 G. L. P. S. Parappanangadi,Parappanangadi,,19433,43,67,47,46,203
 G. L. P. S. Thrikkanapuram,Edappal,Ponnani,19229,49,49,61,40,199
 G. M. L. P. S. Tanur North,Tanur,,19640,45,40,64,48,197
+G. U. P. S. Moonniyur,Parappanangadi,Tirurangadi,19443,38,44,61,50,193
 GLPS Orakam Melmuri,Vengara,Vengara,19830,34,50,53,52,189
 G. L. P. S. Kaladi,Edappal,Ponnani,19208,42,40,46,53,181
 GLPS Parathakkad,Kizhisseri,Kondotty,18219,37,47,52,44,180
 GUPS Moorkanad,Areacode,Areacode,48243,25,45,63,46,179
 G. L. P. S. Anappadi,Parappanangadi,Tirurangadi,19401,37,44,53,44,178
+G.M.U.P.S. Chemmankadavu,Malappuram,Malappuram,18471,33,39,49,55,176
 GMLPS Iringallur,Vengara,Vengara,19809,40,51,43,40,174
 G L P S Meenarkuzhi,Mankada,Mankada,18634,45,56,33,39,173
 G. M. U. P. S. Tanur Town,Tanur,,19673,35,35,36,62,168
 GLPS Valamangalam,Kizhisseri,Areacode,18226,42,39,52,33,166
 G.L.P.S. Ramankulam,Manjeri,,18553,39,39,39,49,166
+G.H.S.S Chullikkode,Kizhisseri,Kondotty,18138,38,32,52,35,157
 GLPS Vilayil Parappur,Kizhisseri,Areacode,18230,34,35,48,38,155
 G. F. L. P. S. Parappanangadi,Parappanangadi,,19408,37,39,34,44,154
 G. M. L. P. S. Edakadappuram,Tanur,Tanur,19607,30,37,42,44,153
@@ -111,6 +124,7 @@ G. L. P. S. Rayirimangalam,Tanur,,19629,19,21,19,41,100
 G. U. P. S. Painkannur,Kuttippuram,,19364,14,41,26,19,100
 G L P S Palakaparambil,Mankada,Mankada,18626,17,34,21,27,99
 GMLPS Mampuram,Vengara,Vengara,19822,13,23,24,38,98
+G.V.H.S.S. Pullanur,Malappuram,Malappuram,18010,18,27,21,31,97
 G. L. P. S. Mankeri,Kuttippuram,Kuttippuram,19335,18,18,32,29,97
 G.W.U.P.S. Nediyiruppu,Kondotty,,18340,16,15,34,24,89
 G. M. L. P. S. Rayirimangalam,Tanur,,19637,23,26,14,25,88
@@ -126,12 +140,14 @@ G.L.P.S. Narukara,Manjeri,,18538,16,20,14,21,71
 G.M.L.P.S. Manjeri East,Manjeri,,18531,12,18,22,9,61
 G.L.P.S. Arukizhaya,Manjeri,,18505,12,13,13,22,60
 G.L.P.S. Karuvambrum West,Manjeri,,18521,14,10,15,19,58
+G. F. L. P. S. Kadalundi,Parappanangadi,Tirurangadi,19429,15,15,19,9,58
 GMLPS Cherur,Vengara,Vengara,19802,13,14,16,15,58
 G. J. B. S. Vattamkulam,Edappal,Ponnani,19235,13,16,8,20,57
 GLPS Thattancherimala,Vengara,Vengara,19841,13,15,10,18,56
 G. M. L. P. S. Vettam Pallippuram,Tirur,Tirur,19740,8,18,13,17,56
 G. L. P. S. Thuyyam,Edappal,Ponnani,19227,12,11,13,19,55
 G.M.L.P.S. Kolmanna,Malappuram,,18449,11,14,13,16,54
+G.L.P.S. Vadakkemanna,Malappuram,Malappuram,18444,7,18,14,15,54
 GMLPS Kizhuparamba,Areacode,Areacode,48212,9,10,19,16,54
 G.M.L.P.S. Nediyiruppu,Kondotty,,18339,10,14,9,17,50
 GMLPS Kakkooth,Perinthalmanna,,18715,7,10,13,19,49
