@@ -1,4 +1,5 @@
 School Name,Educational District,Educational Sub-District,Block Name,Level Name,Distance to Nearest PWD Road (m),Nearest Road Type,Nearest Road Name/Ref,Latitude,Longitude
+G.H.S.S Chullikkode,Malappuram,Kizhisseri,Kondotty,1 - 12,12.9,MDR,Omannur Kuzhimanna Road (KPWD/MDR/503020302/11,11.1957386,75.999775
 GMUPS Kizhisseri,Malappuram,Kizhisseri,Areacode,1 - 7,23.4,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/2,11.17007,75.99138
 GLPS Kizhisseri,Malappuram,Kizhisseri,Areacode,1 - 5,27.2,MDR,Omannur Kuzhimanna Road (KPWD/MDR/503020302/11,11.17617,75.99761
 GLPS Kuzhimanna,Malappuram,Kizhisseri,Areacode,1 - 4,28.3,MDR,Manjeri - Kizhisseri Road (KPWD/MDR/503020401/57,11.17135,76.01795
@@ -24,11 +25,19 @@ G.H.S. Chaliyappuram,Malappuram,Kondotty,Kondotty,1 -10,63.8,MDR,Edavannappara -
 G.L.P.S. Arimbra Melmuri,Malappuram,Kondotty,Malappuram,1 - 4,73.4,MDR,Morayur Arimbra Pookkottur Road (KPWD/MDR/503020402/58,11.106578,76.024071
 G.M.U.P.S. Arimbra,Malappuram,Kondotty,Malappuram,1 - 7,90.8,MDR,Morayur Arimbra Pookkottur Road (KPWD/MDR/503020402/58,11.11546,76.01882
 G.L.P.S. Kottakkal,Malappuram,Malappuram,,1 - 4,13.5,MDR,Kottakkal Arya Vydya Sala Road (KPWD/MDR/503020402/25,10.99879,76.00815
+G.M.U.P.S. Irumbuzhi,Malappuram,Malappuram,Malappuram,1 - 7,18.4,SH,Tirur - Malappuram - Manjeri road (KPWD/MPM/SH/71/3,11.074846299999999,76.10218820000001
+G.M.U.P.S. Melmuri,Malappuram,Malappuram,,1 - 7,24.4,MDR,Athikarathodi - Kuttaloor Road Reach 1 (KPWD/MDR/503020402/1,11.064325499999999,76.0714955
+G.L.P.S. Melmuri North,Malappuram,Malappuram,,1 - 4,27.3,NH,NH 966 (KPWD/NH966/302010302/12,11.079761800000002,76.0701845
 G.M.L.P.S. Kolmanna,Malappuram,Malappuram,,1 - 4,29.3,SH,Malappuram - Parappanangadi Road (KPWD/MPM/SH/72/1,11.050419,76.057563
 G.M.U.P.S. Kottakkal,Malappuram,Malappuram,,1 - 7,29.5,MDR,Kottakkal Arya Vydya Sala Road (KPWD/MDR/503020402/25,10.99913,76.00788
+G.M.L.P.S. Irumbuzhi,Malappuram,Malappuram,Malappuram,1 - 4,31.0,MDR,Mullampara - Konikkallu - Irumpuzhi Road (KPWD/MDR/503020402/35,11.0856116,76.0979444
 G.L.P.S. Paranki Moochikkal,Malappuram,Malappuram,Malappuram,1 - 4,34.8,MDR,Chenathadam - Kuruppampadi (KPWD/MDR/503020402/16,11.006385,76.041245
 G.M.L.P.S. Chappanangadi,Malappuram,Malappuram,Malappuram,1 - 4,40.6,MDR,Kottakkal - Chappanangadi Road (KPWD/MDR/503020402/5,11.004902,76.042617
+G.L.P.S. Pookottur Old,Malappuram,Malappuram,Malappuram,1 - 4,61.3,NH,NH 966 (KPWD/NH966/302010302/12,11.1051456,76.0577026
+G.V.H.S.S. Pullanur,Malappuram,Malappuram,Malappuram,1 - 12,61.7,SH,Kozhikode - Nilmbur - Gudallur Road (KPWD/MPM/SH/28/1,11.1230929,76.056004
 G.U.P.S. Ponmala,Malappuram,Malappuram,Malappuram,1 - 7,80.4,MDR,Vattaparamba - Kadampuzha (KPWD/MDR/503020402/52,10.983657,76.06755
+G.L.P.S. Vadakkemanna,Malappuram,Malappuram,Malappuram,1 - 4,85.8,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/2,11.036660099999999,76.06752279999999
+G.M.U.P.S. Chemmankadavu,Malappuram,Malappuram,Malappuram,1 - 7,85.9,MDR,Kolathur Malappuram Road (KPWD/MDR/503020402/9,11.0248194,76.0664208
 G.G.H.S.S. Manjeri,Malappuram,Manjeri,,1 - 12,11.5,MDR,Manjeri - Pookottur Road (KPWD/MDR/503020401/67,11.120218,76.118038
 G U P S Pullur,Malappuram,Manjeri,,1 - 7,12.9,SH,Manjery By Pass First Reach (S.H 28) (KPWD/SH/503020401/35,11.123529,76.118215
 G.L.P.S. Karuvambrum West,Malappuram,Manjeri,,1 - 4,18.1,MDR,Manjeri - Kizhisseri Road (KPWD/MDR/503020401/56,11.127181,76.101832
@@ -50,6 +59,7 @@ G L P S Pothukundu,Malappuram,Mankada,Mankada,1 - 4,2.2,MDR,Makkarapparamba Mank
 G L P S Vallikkapatta,Malappuram,Mankada,Mankada,1 - 4,15.4,MDR,Tirurkad Anakayam Road (KPWD/MDR/503020203/11,11.06234,76.14056
 G U P S Mankada Pallippuram,Malappuram,Mankada,Mankada,1 - 7,19.9,MDR,Panambattachala Vennakkode Vellila (KPWD/MDR/503020402/47,11.06096,76.12727
 G L P S Mankada,Malappuram,Mankada,Mankada,1 - 4,21.6,MDR,Tirurkad Anakayam Road (KPWD/MDR/503020203/11,11.01547,76.1772
+GHS CHERIYAM MANKADA,Malappuram,Mankada,Mankada,1 -10,26.6,MDR,Mankada Pattikkad Road (KPWD/MDR/503020203/9,11.0281228,76.1822401
 G L P S Meenarkuzhi,Malappuram,Mankada,Mankada,1 - 4,39.3,MDR,Kuruva - Chattiparamba Road (KPWD/MDR/503020201/7,11.00891,76.105324
 G H S S Kadungapuram,Malappuram,Mankada,Mankada,1 - 12,47.1,MDR,Angadippuram Cherukulamba Road (KPWD/MDR/503020201/3,10.98095,76.13832
 G L P S Kuruva,Malappuram,Mankada,Mankada,1 - 4,54.0,MDR,Vettichira Koottilangadi Road (KPWD/MDR/503020201/26,11.007169,76.113227
@@ -60,6 +70,7 @@ G L P S Palakaparambil,Malappuram,Mankada,Mankada,1 - 4,81.4,MDR,Kolathur Malapp
 GMUPS Valapuram,Malappuram,Perinthalmanna,Perinthalmanna,1 - 7,48.5,MDR,Vengad Chemmalassery Road (KPWD/MDR/503020201/13,10.921364,76.165784
 GMLPS Kakkooth,Malappuram,Perinthalmanna,,1 - 4,55.9,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/4,10.983306,76.224638
 GMLPS Perinthalmanna Central,Malappuram,Perinthalmanna,,1 - 4,81.0,SH,Perumbilavu -Nilamboor Road (KPWD/MPM/SH/39/4,10.978076,76.22629
+G. F. L. P. S. Kadalundi,Thirurangadi,Parappanangadi,Tirurangadi,1 - 5,8.6,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020303/37,11.1132904,75.8327819
 G. M. U. P. S. Kakkad,Thirurangadi,Parappanangadi,,1 - 7,17.7,NH,NH 66 - Kooriyad Puthanathani (KPWD/NH66/302010503/1,11.03522,75.93824
 G. M. L. P. S. Thirurangadi,Thirurangadi,Parappanangadi,,1 - 4,19.3,MDR,Tirurangadi Kundoor Cherumukku Road (KPWD/MDR/503020303/23,11.035572,75.926976
 G. L. P. S. Thirurangadi,Thirurangadi,Parappanangadi,,1 - 4,19.6,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/1,11.044321,75.923696
@@ -67,6 +78,8 @@ G. L. P. S. Venniyur,Thirurangadi,Parappanangadi,,1 - 4,23.2,MDR,Venniyoor Param
 G. L. P. S. Parappanangadi,Thirurangadi,Parappanangadi,,1 - 5,24.1,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020303/37,11.06918,75.85364
 G. L. P. S. Anappadi,Thirurangadi,Parappanangadi,Tirurangadi,1 - 4,24.6,MDR,Chelari - Parappnangadi Road (KPWD/MDR/503020303/5,11.07553,75.85647
 G. F. L. P. S. Parappanangadi,Thirurangadi,Parappanangadi,,1 - 4,26.5,MDR,Chetippadi Alungal Beach Road (KPWD/MDR/503020303/6,11.070636,75.847279
+G. U. P. S. Moonniyur,Thirurangadi,Parappanangadi,Tirurangadi,1 - 7,30.9,MDR,Tirurangadi Muttichira Road (KPWD/MDR/503020303/24,11.0593167,75.9063071
+G. U. P. S. Ariyallur,Thirurangadi,Parappanangadi,Tirurangadi,1 - 7,45.1,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020303/37,11.0941011,75.8428388
 G. M. L. P. S. Parappanangadi Town,Thirurangadi,Parappanangadi,Tirurangadi,1 - 5,55.5,MDR,Tirur - Kadalundi Road (KPWD/MDR/503020303/37,11.04823,75.85857
 G. H. S. Trikkulam,Thirurangadi,Parappanangadi,,1 -10,57.9,SH,Parappanangadi  Areacode Road (KPWD/MPM/SH/65/1,11.04218,75.90944
 A. M. L. P. S. Kormanthala,Thirurangadi,Tanur,,1 - 4,6.5,MDR,Tanur Poorappuzha Tippu Sulthan Road (KPWD/MDR/503020301/26,10.98716,75.867883
@@ -138,7 +151,10 @@ G. H. S. Athavanad,Tirur,Kuttippuram,Kuttippuram,1 -10,87.8,MDR,Patternadakkavu 
 G. U. P. S. Cheruvayikkara,Tirur,Ponnani,,1 - 7,31.7,MDR,Palakkad - Ponnani Road (KPWD/MDR/503020101/15,10.7891,75.96361
 G. H. S. S. Maranchery,Tirur,Ponnani,Perumpadappa,1 - 12,32.3,SH,Guruvayoor - Althara - Ponnani Road (KPWD/MPM/SH/62/2,10.74075,75.97083
 G. L. P. S. Kanhiramukku,Tirur,Ponnani,Perumpadappa,1 - 5,38.9,SH,Guruvayoor - Althara - Ponnani Road (KPWD/MPM/SH/62/2,10.75871,75.96689
+G. U. P. S. Chamravattam,Tirur,Tirur,Tirur,1 - 7,2.6,MDR,Tirur Chammaravattom Road (KPWD/MDR/503020301/56,10.823288999999999,75.95125209999999
+G. M. U. P. S. BP Angadi,Tirur,Tirur,Tirur,1 - 7,6.0,MDR,BP Angadi Kuttippuram Road (KPWD/MDR/503020301/5,10.884412,75.9331934
 G. M. L. P. S. Vettam Pallippuram,Tirur,Tirur,Tirur,1 - 4,17.6,MDR,Tirur Chammaravattom Road (KPWD/MDR/503020301/56,10.82254,75.95126
+G. M. U. P. S. Tirur,Tirur,Tirur,,1 - 7,91.4,SH,Tirur - Malappuram - Manjeri Road (KPWD/MPM/SH/71/1,10.913992000000002,75.9228164
 GMLPS Kizhuparamba,Wandoor,Areacode,Areacode,1 - 4,9.8,MDR,Keezhuparamba - Nellarkadavu Road (KPWD/MDR/503020401/60,11.24977,76.01347
 GLPS Thavarapparamba,Wandoor,Areacode,Areacode,1 - 4,28.7,MDR,Perakamanna - Kuzhiyamparamba Road (KPWD/MDR/503020401/42,11.189739,76.048509
 GUPS Moorkanad,Wandoor,Areacode,Areacode,1 - 7,40.8,MDR,Pathananapuram - Moorkanad Road (KPWD/MDR/503020401/16,11.24091,76.05748
