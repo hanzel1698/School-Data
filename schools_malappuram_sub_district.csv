@@ -1,6 +1,6 @@
 Educational District,Educational Sub-District,School Code,School Name,Block Name,Level Name,Local Body,Revenue District,Phone,UDISE Code,Latitude,Longitude,Maps Link
 Malappuram,Kizhisseri,18232,G U P S Cheecode,Areacode,1 - 7,Cheekkode(P),Malappuram,9048037210,32050100801,,,
-Malappuram,Kizhisseri,18138,G.H.S.S Chullikkode,Kondotty,1 - 12,Muthuvallur(P),Malappuram,04832756030,32050100915,,,
+Malappuram,Kizhisseri,18138,G.H.S.S Chullikkode,Kondotty,1 - 12,Muthuvallur(P),Malappuram,04832756030,32050100915,11.1957386,75.999775,"http://maps.google.com/maps?q=11.1957386,75.999775"
 Malappuram,Kizhisseri,18204,GLPS Kizhisseri,Areacode,1 - 5,Kuzhimanna(P),Malappuram,04832755520,32050100703,11.176170000000001,75.997609999999995,"http://maps.google.com/maps?q=11.176170000000001,75.997609999999995"
 Malappuram,Kizhisseri,18205,GLPS Kuzhimanna,Areacode,1 - 4,Kuzhimanna(P),Malappuram,9746531012,32050100704,11.17135,76.017949999999999,"http://maps.google.com/maps?q=11.17135,76.017949999999999"
 Malappuram,Kizhisseri,18206,GLPS Kuzhimanna II South,Areacode,1 - 4,Kuzhimanna(P),Malappuram,04832754044,32050100705,11.163180000000001,76.01003,"http://maps.google.com/maps?q=11.163180000000001,76.01003"
@@ -47,33 +47,33 @@ Malappuram,Kondotty,18373,G.M.U.P.S. Chirayil,,1 - 7,Kondotty(M),Malappuram,0483
 Malappuram,Kondotty,18375,G.M.U.P.S. Ozhukur,Malappuram,1 - 7,Morayur(P),Malappuram,04832756611,32050200801,11.15409,76.01258,"http://maps.google.com/maps?q=11.15409,76.01258"
 Malappuram,Kondotty,18380,G.M.U.P.S. Vazhakkad,Kondotty,1 - 7,Vazhakkad(P),Malappuram,04832724750,32050200319,11.247210000000001,75.952299999999994,"http://maps.google.com/maps?q=11.247210000000001,75.952299999999994"
 Malappuram,Kondotty,18340,G.W.U.P.S. Nediyiruppu,,1 - 7,Kondotty(M),Malappuram,04832714900,32050200710,11.107699999999999,75.997780000000006,"http://maps.google.com/maps?q=11.107699999999999,75.997780000000006"
-Malappuram,Malappuram,18434,G.L.P.S. Choonur,Malappuram,1 - 4,Ponmala(P),Malappuram,9446881225,32051400303,,,
+Malappuram,Malappuram,18434,G.L.P.S. Choonur,Malappuram,1 - 4,Ponmala(P),Malappuram,9446881225,32051400303,10.9807666,76.05551299999999,"http://maps.google.com/maps?q=10.9807666,76.05551299999999"
 Malappuram,Malappuram,18435,G.L.P.S. Kodur,Malappuram,1 - 4,Kodur(P),Malappuram,04832800828,32051400502,,,
 Malappuram,Malappuram,18436,G.L.P.S. Kottakkal,,1 - 4,Kottakkal(M),Malappuram,04832744100,32051400403,10.99879,76.008150000000001,"http://maps.google.com/maps?q=10.99879,76.008150000000001"
 Malappuram,Malappuram,18437,G.L.P.S. Malappruam,,1 - 4,Malappuram(M),Malappuram,04832737642,32051400632,,,
-Malappuram,Malappuram,18438,G.L.P.S. Melmuri North,,1 - 4,Malappuram(M),Malappuram,9446671911,32051400708,,,
-Malappuram,Malappuram,18439,G.L.P.S. Melmuri South,,1 - 4,Malappuram(M),Malappuram,8547620788,32051400709,,,
+Malappuram,Malappuram,18438,G.L.P.S. Melmuri North,,1 - 4,Malappuram(M),Malappuram,9446671911,32051400708,11.079761800000002,76.0701845,"http://maps.google.com/maps?q=11.079761800000002,76.0701845"
+Malappuram,Malappuram,18439,G.L.P.S. Melmuri South,,1 - 4,Malappuram(M),Malappuram,8547620788,32051400709,11.0587951,76.0810268,"http://maps.google.com/maps?q=11.0587951,76.0810268"
 Malappuram,Malappuram,18440,G.L.P.S. Paranki Moochikkal,Malappuram,1 - 4,Ponmala(P),Malappuram,04832705677,32051400304,11.006385,76.041245000000004,"http://maps.google.com/maps?q=11.006385,76.041245000000004"
 Malappuram,Malappuram,18441,G.L.P.S. Peringottupulam,Malappuram,1 - 4,Kodur(P),Malappuram,9446666544,32051400504,,,
 Malappuram,Malappuram,18442,G.L.P.S. Pookottur New,Malappuram,1 - 4,Pookkottur(P),Malappuram,9946729908,32051400203,,,
-Malappuram,Malappuram,18443,G.L.P.S. Pookottur Old,Malappuram,1 - 4,Pookkottur(P),Malappuram,9446883884,32051400204,,,
-Malappuram,Malappuram,18444,G.L.P.S. Vadakkemanna,Malappuram,1 - 4,Kodur(P),Malappuram,04832752242,32051400505,,,
-Malappuram,Malappuram,18446,G.M.L.P.S. Athanikkal,Malappuram,1 - 4,Pookkottur(P),Malappuram,9048590619,32051400205,,,
+Malappuram,Malappuram,18443,G.L.P.S. Pookottur Old,Malappuram,1 - 4,Pookkottur(P),Malappuram,9446883884,32051400204,11.1051456,76.0577026,"http://maps.google.com/maps?q=11.1051456,76.0577026"
+Malappuram,Malappuram,18444,G.L.P.S. Vadakkemanna,Malappuram,1 - 4,Kodur(P),Malappuram,04832752242,32051400505,11.036660099999999,76.06752279999999,"http://maps.google.com/maps?q=11.036660099999999,76.06752279999999"
+Malappuram,Malappuram,18446,G.M.L.P.S. Athanikkal,Malappuram,1 - 4,Pookkottur(P),Malappuram,9048590619,32051400205,11.1172711,76.0499231,"http://maps.google.com/maps?q=11.1172711,76.0499231"
 Malappuram,Malappuram,18447,G.M.L.P.S. Chappanangadi,Malappuram,1 - 4,Ponmala(P),Malappuram,04832705466,32051400302,11.004902,76.042617000000007,"http://maps.google.com/maps?q=11.004902,76.042617000000007"
-Malappuram,Malappuram,18448,G.M.L.P.S. Irumbuzhi,Malappuram,1 - 4,Anakkayam(P),Malappuram,04832738006,32051400109,,,
+Malappuram,Malappuram,18448,G.M.L.P.S. Irumbuzhi,Malappuram,1 - 4,Anakkayam(P),Malappuram,04832738006,32051400109,11.0856116,76.0979444,"http://maps.google.com/maps?q=11.0856116,76.0979444"
 Malappuram,Malappuram,18449,G.M.L.P.S. Kolmanna,,1 - 4,Malappuram(M),Malappuram,9656241748,32051400809,11.050419,76.057563000000002,"http://maps.google.com/maps?q=11.050419,76.057563000000002"
 Malappuram,Malappuram,18450,G.M.L.P.S. Kuttasserikulamba,Malappuram,1 - 4,Kodur(P),Malappuram,04832800700,32051400503,,,
-Malappuram,Malappuram,18451,G.M.L.P.S. Melmuri Central,,1 - 4,Malappuram(M),Malappuram,04832730166,32051400702,,,
+Malappuram,Malappuram,18451,G.M.L.P.S. Melmuri Central,,1 - 4,Malappuram(M),Malappuram,04832730166,32051400702,11.0659881,76.0756469,"http://maps.google.com/maps?q=11.0659881,76.0756469"
 Malappuram,Malappuram,18452,G.M.L.P.S. Ponmala,Malappuram,1 - 4,Ponmala(P),Malappuram,7012112932,32051400305,11.028299000000001,76.0411,"http://maps.google.com/maps?q=11.028299000000001,76.0411"
 Malappuram,Malappuram,18461,G.M.L.P.S. Pookottur,Malappuram,1 - 5,Pookkottur(P),Malappuram,9747600332,32051400202,,,
-Malappuram,Malappuram,18471,G.M.U.P.S. Chemmankadavu,Malappuram,1 - 7,Kodur(P),Malappuram,04832868509,32051400501,,,
-Malappuram,Malappuram,18472,G.M.U.P.S. Irumbuzhi,Malappuram,1 - 7,Anakkayam(P),Malappuram,9496829936,32051400101,,,
+Malappuram,Malappuram,18471,G.M.U.P.S. Chemmankadavu,Malappuram,1 - 7,Kodur(P),Malappuram,04832868509,32051400501,11.0248194,76.0664208,"http://maps.google.com/maps?q=11.0248194,76.0664208"
+Malappuram,Malappuram,18472,G.M.U.P.S. Irumbuzhi,Malappuram,1 - 7,Anakkayam(P),Malappuram,9496829936,32051400101,11.074846299999999,76.10218820000001,"http://maps.google.com/maps?q=11.074846299999999,76.10218820000001"
 Malappuram,Malappuram,18473,G.M.U.P.S. Kottakkal,,1 - 7,Kottakkal(M),Malappuram,04832744181,32051400402,10.999129999999999,76.00788,"http://maps.google.com/maps?q=10.999129999999999,76.00788"
-Malappuram,Malappuram,18474,G.M.U.P.S. Melmuri,,1 - 7,Malappuram(M),Malappuram,04832734008,32051400633,,,
+Malappuram,Malappuram,18474,G.M.U.P.S. Melmuri,,1 - 7,Malappuram(M),Malappuram,04832734008,32051400633,11.064325499999999,76.0714955,"http://maps.google.com/maps?q=11.064325499999999,76.0714955"
 Malappuram,Malappuram,18475,G.U.P.S. Kottakkal,,1 - 7,Kottakkal(M),Malappuram,04832745952,32051400401,10.991759999999999,76.007819999999995,"http://maps.google.com/maps?q=10.991759999999999,76.007819999999995"
-Malappuram,Malappuram,18476,G.U.P.S. Muthiriparamba,Malappuram,1 - 7,Pookkottur(P),Malappuram,04832775100,32051400201,,,
+Malappuram,Malappuram,18476,G.U.P.S. Muthiriparamba,Malappuram,1 - 7,Pookkottur(P),Malappuram,04832775100,32051400201,11.1077665,76.0641933,"http://maps.google.com/maps?q=11.1077665,76.0641933"
 Malappuram,Malappuram,18477,G.U.P.S. Ponmala,Malappuram,1 - 7,Ponmala(P),Malappuram,04832753700,32051400301,10.983656999999999,76.067549999999997,"http://maps.google.com/maps?q=10.983656999999999,76.067549999999997"
-Malappuram,Malappuram,18010,G.V.H.S.S. Pullanur,Malappuram,1 - 12,Pookkottur(P),Malappuram,04832773925,32051400211,,,
+Malappuram,Malappuram,18010,G.V.H.S.S. Pullanur,Malappuram,1 - 12,Pookkottur(P),Malappuram,04832773925,32051400211,11.1230929,76.056004,"http://maps.google.com/maps?q=11.1230929,76.056004"
 Malappuram,Manjeri,18535,G M L P S Mariyad,,1 - 4,Manjeri(M),Malappuram,9048447917,32050600613,11.117290000000001,76.127866999999995,"http://maps.google.com/maps?q=11.117290000000001,76.127866999999995"
 Malappuram,Manjeri,18542,G M L P S Pandallur,Malappuram,1 - 4,Anakkayam(P),Malappuram,,32050601214,11.085445999999999,76.175403000000003,"http://maps.google.com/maps?q=11.085445999999999,76.175403000000003"
 Malappuram,Manjeri,18574,G U P S Pullur,,1 - 7,Manjeri(M),Malappuram,04832764104,32050600701,11.123529,76.118215000000006,"http://maps.google.com/maps?q=11.123529,76.118215000000006"
@@ -118,8 +118,8 @@ Malappuram,Manjeri,18575,G.U.P.S. Manjeri,,1 - 7,Manjeri(M),Malappuram,086060331
 Malappuram,Manjeri,18578,G.U.P.S. Pathappiriyam,Areacode,1 - 7,Edavanna(P),Malappuram,04832704604,32050600201,11.192845999999999,76.135081,"http://maps.google.com/maps?q=11.192845999999999,76.135081"
 Malappuram,Manjeri,18583,G.U.P.S. Veembur,,1 - 7,Manjeri(M),Malappuram,9946770793,32050600702,11.119429,76.089153999999994,"http://maps.google.com/maps?q=11.119429,76.089153999999994"
 Malappuram,Manjeri,18562,G.U.P.S. Vettekkode,,1 - 7,Manjeri(M),Malappuram,9048804260,32050600618,11.114443,76.123284999999996,"http://maps.google.com/maps?q=11.114443,76.123284999999996"
-Malappuram,Manjeri,18590,GLPS ANAKKOTTUPURAM,Wandoor,1 - 4,Trikkalangode(P),Malappuram,9995892484,32050600505,,,
-Malappuram,Manjeri,18592,GMLP School ANAKKAYAM,Malappuram,1 - 4,Anakkayam(P),Malappuram,9447353139,32050600102,,,
+Malappuram,Manjeri,18590,GLPS ANAKKOTTUPURAM,Wandoor,1 - 4,Trikkalangode(P),Malappuram,9995892484,32050600505,11.165400199999999,76.1119294,"http://maps.google.com/maps?q=11.165400199999999,76.1119294"
+Malappuram,Manjeri,18592,GMLP School ANAKKAYAM,Malappuram,1 - 4,Anakkayam(P),Malappuram,9447353139,32050600102,11.087612799999999,76.12989619999999,"http://maps.google.com/maps?q=11.087612799999999,76.12989619999999"
 Malappuram,Manjeri,18566,K.M Musthafa Memorial G.L.P.S. Mundengara,Areacode,1 - 5,Edavanna(P),Malappuram,04832700250,32050600206,11.223765999999999,76.140821000000003,"http://maps.google.com/maps?q=11.223765999999999,76.140821000000003"
 Malappuram,Mankada,18078,G H S S Kadungapuram,Mankada,1 - 12,Puzhakkattiri(P),Malappuram,04933254270,32051500510,10.98095,76.138319999999993,"http://maps.google.com/maps?q=10.98095,76.138319999999993"
 Malappuram,Mankada,18607,G L P S Chovana,Mankada,1 - 4,Puzhakkattiri(P),Malappuram,9495123933,32051500506,10.989385,76.136606,"http://maps.google.com/maps?q=10.989385,76.136606"
@@ -138,7 +138,7 @@ Malappuram,Mankada,18653,G L P S Vellila,Mankada,1 - 4,Mankada(P),Malappuram,049
 Malappuram,Mankada,18645,G M L P S Vadakkangara,Mankada,1 - 4,Makkaraparamba(P),Malappuram,04933284088,32051500607,11.017849999999999,76.150890000000004,"http://maps.google.com/maps?q=11.017849999999999,76.150890000000004"
 Malappuram,Mankada,18660,G U P S Koottilangadi,Mankada,1 - 7,Koottilangadi(P),Malappuram,6238971416,32051500303,11.034280000000001,76.104500000000002,"http://maps.google.com/maps?q=11.034280000000001,76.104500000000002"
 Malappuram,Mankada,18664,G U P S Mankada Pallippuram,Mankada,1 - 7,Koottilangadi(P),Malappuram,04933241092,32051500301,11.06096,76.127269999999996,"http://maps.google.com/maps?q=11.06096,76.127269999999996"
-Malappuram,Mankada,18150,GHS CHERIYAM MANKADA,Mankada,1 -10,Mankada(P),Malappuram,04933236020,32051500201,,,
+Malappuram,Mankada,18150,GHS CHERIYAM MANKADA,Mankada,1 -10,Mankada(P),Malappuram,04933236020,32051500201,11.0281228,76.1822401,"http://maps.google.com/maps?q=11.0281228,76.1822401"
 Malappuram,Mankada,18666,Govt. U P School Pang,Mankada,1 - 7,Kuruva(P),Malappuram,04933243765,32051500407,10.971880000000001,76.099789999999999,"http://maps.google.com/maps?q=10.971880000000001,76.099789999999999"
 Malappuram,Perinthalmanna,18097,G H S Aliparamba,Perinthalmanna,1 - 12,Aliparamba(P),Malappuram,04933234214,32050500215,10.918934,76.312984,"http://maps.google.com/maps?q=10.918934,76.312984"
 Malappuram,Perinthalmanna,18705,GLPS Arakkuparamba,Perinthalmanna,1 - 4,Thazhekode(P),Malappuram,04933233800,32050500801,10.99145,76.32638,"http://maps.google.com/maps?q=10.99145,76.32638"
@@ -147,7 +147,7 @@ Malappuram,Perinthalmanna,18716,GLPS Kunnakkavu,Perinthalmanna,1 - 4,Elamkulam(P
 Malappuram,Perinthalmanna,18725,GLPS Pallikunnu,Perinthalmanna,1 - 4,Thazhekode(P),Malappuram,04933233700,32050500804,10.998710000000001,76.320369999999997,"http://maps.google.com/maps?q=10.998710000000001,76.320369999999997"
 Malappuram,Perinthalmanna,18728,GLPS Parakkalmukku,Perinthalmanna,1 - 4,Elamkulam(P),Malappuram,9605318771,32050500402,10.915345,76.235166000000007,"http://maps.google.com/maps?q=10.915345,76.235166000000007"
 Malappuram,Perinthalmanna,18731,GLPS Perinthalmanna East,,1 - 4,Perinthalmanna(M),Malappuram,7025297710,32050500103,10.971887000000001,76.232647,"http://maps.google.com/maps?q=10.971887000000001,76.232647"
-Malappuram,Perinthalmanna,18732,GLPS Perinthalmanna West,,1 - 4,Perinthalmanna(M),Malappuram,04933227704,32050500104,,,
+Malappuram,Perinthalmanna,18732,GLPS Perinthalmanna West,,1 - 4,Perinthalmanna(M),Malappuram,04933227704,32050500104,10.9791786,76.21605339999999,"http://maps.google.com/maps?q=10.9791786,76.21605339999999"
 Malappuram,Perinthalmanna,18715,GMLPS Kakkooth,,1 - 4,Perinthalmanna(M),Malappuram,04933220310,32050500101,10.983306000000001,76.224637999999999,"http://maps.google.com/maps?q=10.983306000000001,76.224637999999999"
 Malappuram,Perinthalmanna,18723,GMLPS Muthiramanna,Perinthalmanna,1 - 4,Thazhekode(P),Malappuram,9605727576,32050500803,10.95579,76.296890000000005,"http://maps.google.com/maps?q=10.95579,76.296890000000005"
 Malappuram,Perinthalmanna,18730,GMLPS Perinthalmanna Central,,1 - 4,Perinthalmanna(M),Malappuram,9400730787,32050500102,10.978076,76.226290000000006,"http://maps.google.com/maps?q=10.978076,76.226290000000006"
@@ -155,7 +155,7 @@ Malappuram,Perinthalmanna,18736,GMLPS Puthur,Perinthalmanna,1 - 4,Thazhekode(P),
 Malappuram,Perinthalmanna,18737,GMLPS Thazhekode,Perinthalmanna,1 - 4,Thazhekode(P),Malappuram,04933250459,32050500806,10.956950000000001,76.304810000000003,"http://maps.google.com/maps?q=10.956950000000001,76.304810000000003"
 Malappuram,Perinthalmanna,18739,GMLPS Thootha,Perinthalmanna,1 - 4,Aliparamba(P),Malappuram,,32050500201,10.918799999999999,76.286789999999996,"http://maps.google.com/maps?q=10.918799999999999,76.286789999999996"
 Malappuram,Perinthalmanna,18758,GMUPS Valapuram,Perinthalmanna,1 - 7,Pulamanthole(P),Malappuram,9495454253,32050500701,10.921364000000001,76.165784000000002,"http://maps.google.com/maps?q=10.921364000000001,76.165784000000002"
-Thirurangadi,Parappanangadi,19429,G. F. L. P. S. Kadalundi,Tirurangadi,1 - 5,Vallikkunnu(P),Malappuram,04942474888,32051200301,,,
+Thirurangadi,Parappanangadi,19429,G. F. L. P. S. Kadalundi,Tirurangadi,1 - 5,Vallikkunnu(P),Malappuram,04942474888,32051200301,11.1132904,75.8327819,"http://maps.google.com/maps?q=11.1132904,75.8327819"
 Thirurangadi,Parappanangadi,19408,G. F. L. P. S. Parappanangadi,,1 - 4,Parappanangadi(M),Malappuram,04942940357,32051200102,11.070636,75.847279,"http://maps.google.com/maps?q=11.070636,75.847279"
 Thirurangadi,Parappanangadi,19451,G. H. S. Trikkulam,,1 -10,Tirurangadi(M),Malappuram,04942460655,32051200206,11.04218,75.909440000000004,"http://maps.google.com/maps?q=11.04218,75.909440000000004"
 Thirurangadi,Parappanangadi,19430,G. L .P. S. Melodiparamba,Tirurangadi,1 - 4,Moonniyur(P),Malappuram,9526903832,32051200520,11.106254,75.904889999999995,"http://maps.google.com/maps?q=11.106254,75.904889999999995"
@@ -172,7 +172,7 @@ Thirurangadi,Parappanangadi,19441,G. M. U. P. S. Kakkad,,1 - 7,Tirurangadi(M),Ma
 Thirurangadi,Parappanangadi,19447,G. M. U. P. S. Parakkadavu,Tirurangadi,1 - 7,Moonniyur(P),Malappuram,04942464069,32051200502,,,
 Thirurangadi,Parappanangadi,19410,G. M. U. P. S. Puthan Kadappuram,,1 - 7,Parappanangadi(M),Malappuram,9747012322,32051200108,11.049709999999999,75.851470000000006,"http://maps.google.com/maps?q=11.049709999999999,75.851470000000006"
 Thirurangadi,Parappanangadi,19453,G. M. U. P. S. Venniyur,,1 - 7,Tirurangadi(M),Malappuram,9947050306,32051200204,11.015067,75.953727000000001,"http://maps.google.com/maps?q=11.015067,75.953727000000001"
-Thirurangadi,Parappanangadi,19439,G. U. P. S. Ariyallur,Tirurangadi,1 - 7,Vallikkunnu(P),Malappuram,04942474240,32051200302,,,
+Thirurangadi,Parappanangadi,19439,G. U. P. S. Ariyallur,Tirurangadi,1 - 7,Vallikkunnu(P),Malappuram,04942474240,32051200302,11.0941011,75.8428388,"http://maps.google.com/maps?q=11.0941011,75.8428388"
 Thirurangadi,Parappanangadi,19443,G. U. P. S. Moonniyur,Tirurangadi,1 - 7,Moonniyur(P),Malappuram,04942477153,32051200503,11.0593167,75.9063071,"http://maps.google.com/maps?q=11.0593167,75.9063071"
 Thirurangadi,Parappanangadi,19449,G. W. U. P. S. Trikkulam,,1 - 7,Tirurangadi(M),Malappuram,04942465200,32051200207,11.04346,75.901430000000005,"http://maps.google.com/maps?q=11.04346,75.901430000000005"
 Thirurangadi,Parappanangadi,19445,GHS Neduva,Tirurangadi,1 -10,Parappanangadi(P),Malappuram,04942415088,32051200106,11.0589667,75.857083,"http://maps.google.com/maps?q=11.0589667,75.857083"
@@ -313,18 +313,18 @@ Tirur,Ponnani,19054,G. H. S. S. Maranchery,Perumpadappa,1 - 12,Maranchery(P),Mal
 Tirur,Ponnani,19045,G. H. S. S. Trikkavu,,1 - 12,Ponnani(M),Malappuram,04942669580,32050900510,10.778978,75.931123999999997,"http://maps.google.com/maps?q=10.778978,75.931123999999997"
 Tirur,Ponnani,19533,G. L. P. S. Kanhiramukku,Perumpadappa,1 - 5,Maranchery(P),Malappuram,9846288441,32050900313,10.758710000000001,75.966890000000006,"http://maps.google.com/maps?q=10.758710000000001,75.966890000000006"
 Tirur,Ponnani,19509,G. L. P. S. Purang,Perumpadappa,1 - 4,Maranchery(P),Malappuram,9745126767,32050900307,,,
-Tirur,Ponnani,19512,G. L. P. S. Theyyangad,,1 - 4,Ponnani(M),Malappuram,9446164129,32050900110,,,
+Tirur,Ponnani,19512,G. L. P. S. Theyyangad,,1 - 4,Ponnani(M),Malappuram,9446164129,32050900110,10.778460299999999,75.9447928,"http://maps.google.com/maps?q=10.778460299999999,75.9447928"
 Tirur,Ponnani,19516,G. L. P. S. Veliyancode Gramam,Perumpadappa,1 - 4,Veliyancode(P),Malappuram,9846456575,32050900202,10.715579999999999,75.959999999999994,"http://maps.google.com/maps?q=10.715579999999999,75.959999999999994"
-Tirur,Ponnani,19514,G. L. P. S. Veliyancode New,Perumpadappa,1 - 4,Veliyancode(P),Malappuram,04942679911,32050900203,,,
+Tirur,Ponnani,19514,G. L. P. S. Veliyancode New,Perumpadappa,1 - 4,Veliyancode(P),Malappuram,04942679911,32050900203,10.741980199999999,75.9431449,"http://maps.google.com/maps?q=10.741980199999999,75.9431449"
 Tirur,Ponnani,19537,G. L. P. S. Velleri,,1 - 5,Ponnani(M),Malappuram,04942664480,32050900504,10.783647999999999,75.931890999999993,"http://maps.google.com/maps?q=10.783647999999999,75.931890999999993"
 Tirur,Ponnani,19507,G. M. L. P. S. Ponnani Town,,1 - 4,Ponnani(M),Malappuram,9446541189,32050900503,10.775853,75.922212999999999,"http://maps.google.com/maps?q=10.775853,75.922212999999999"
 Tirur,Ponnani,19519,G. M. L. P. S. Veliyancode,Perumpadappa,1 - 4,Veliyancode(P),Malappuram,04942672060,32050900204,10.748939999999999,75.946814000000003,"http://maps.google.com/maps?q=10.748939999999999,75.946814000000003"
 Tirur,Ponnani,19543,G. M. U. P. S. Veliyancode South,Perumpadappa,1 - 7,Veliyancode(P),Malappuram,04942677289,32050900215,10.725479999999999,75.952569999999994,"http://maps.google.com/maps?q=10.725479999999999,75.952569999999994"
 Tirur,Ponnani,19539,G. U. P. S. Cheruvayikkara,,1 - 7,Ponnani(M),Malappuram,2664420,32050900101,10.789099999999999,75.963610000000003,"http://maps.google.com/maps?q=10.789099999999999,75.963610000000003"
-Tirur,Ponnani,19556,GLPS Kadavanad,,1 - 4,Ponnani(M),Malappuram,7306318013,32050900103,,,
+Tirur,Ponnani,19556,GLPS Kadavanad,,1 - 4,Ponnani(M),Malappuram,7306318013,32050900103,10.763287499999999,75.9363906,"http://maps.google.com/maps?q=10.763287499999999,75.9363906"
 Tirur,Tirur,19764,G. L. P. S. Annara,,1 - 5,Thirur(M),Malappuram,04942429840,32051000646,,,
-Tirur,Tirur,19704,G. L. P. S. B. P. Angadi,Tirur,1 - 4,Thalakkad(P),Malappuram,09895974243,32051000402,,,
-Tirur,Tirur,19721,G. L. P. S. Mangattiri,Tirur,1 - 4,Thalakkad(P),Malappuram,8075452825,32051000403,,,
+Tirur,Tirur,19704,G. L. P. S. B. P. Angadi,Tirur,1 - 4,Thalakkad(P),Malappuram,09895974243,32051000402,10.886384000000001,75.92812459999999,"http://maps.google.com/maps?q=10.886384000000001,75.92812459999999"
+Tirur,Tirur,19721,G. L. P. S. Mangattiri,Tirur,1 - 4,Thalakkad(P),Malappuram,8075452825,32051000403,10.888214,75.91931989999999,"http://maps.google.com/maps?q=10.888214,75.91931989999999"
 Tirur,Tirur,19730,G. L. P. S. Thekkankuttur,Tirur,1 - 4,Thalakkad(P),Malappuram,9446659401,32051000404,,,
 Tirur,Tirur,19732,G. L. P. S. Thekkummuri,,1 - 4,Thirur(M),Malappuram,04942940621,32051000603,,,
 Tirur,Tirur,19734,G. L. P. S. Thiruthi,Tirur,1 - 4,Thirunavaya(P),Malappuram,9497410438,32051000304,,,
@@ -339,22 +339,22 @@ Tirur,Tirur,19725,G. M. L. P. S. Pachattiri,Tirur,1 - 4,Vettom(P),Malappuram,944
 Tirur,Tirur,19727,G. M. L. P. S. SouthPallar,Tirur,1 - 4,Thirunavaya(P),Malappuram,6238843404,32051000303,,,
 Tirur,Tirur,19738,G. M. L. P. S. Valiya Parappur,Tirur,1 - 4,Thirunavaya(P),Malappuram,04942572345,32051000305,,,
 Tirur,Tirur,19740,G. M. L. P. S. Vettam Pallippuram,Tirur,1 - 4,Triprangode(P),Malappuram,04942561100,32051000102,10.82254,75.951260000000005,"http://maps.google.com/maps?q=10.82254,75.951260000000005"
-Tirur,Tirur,19767,G. M. U. P. S. BP Angadi,Tirur,1 - 7,Thalakkad(P),Malappuram,04942431033,32051000401,,,
+Tirur,Tirur,19767,G. M. U. P. S. BP Angadi,Tirur,1 - 7,Thalakkad(P),Malappuram,04942431033,32051000401,10.884412,75.9331934,"http://maps.google.com/maps?q=10.884412,75.9331934"
 Tirur,Tirur,19774,G. M. U. P. S. Edakkanad,Tirur,1 - 7,Purathur(P),Malappuram,04942562492,32051000201,10.823370000000001,75.920150000000007,"http://maps.google.com/maps?q=10.823370000000001,75.920150000000007"
 Tirur,Tirur,19781,G. M. U. P. S. Paravanna,Tirur,1 - 7,Vettom(P),Malappuram,9846190709,32051000524,10.900722,75.892309999999995,"http://maps.google.com/maps?q=10.900722,75.892309999999995"
-Tirur,Tirur,19779,G. M. U. P. S. Tirur,,1 - 7,Thirur(M),Malappuram,9846665996,32051000601,,,
-Tirur,Tirur,19769,G. U. P. S. Chamravattam,Tirur,1 - 7,Triprangode(P),Malappuram,04942562660,32051000101,,,
+Tirur,Tirur,19779,G. M. U. P. S. Tirur,,1 - 7,Thirur(M),Malappuram,9846665996,32051000601,10.913992000000002,75.9228164,"http://maps.google.com/maps?q=10.913992000000002,75.9228164"
+Tirur,Tirur,19769,G. U. P. S. Chamravattam,Tirur,1 - 7,Triprangode(P),Malappuram,04942562660,32051000101,10.823288999999999,75.95125209999999,"http://maps.google.com/maps?q=10.823288999999999,75.95125209999999"
 Tirur,Tirur,19777,G. U. P. S. Purathupadinjarekkara,Tirur,1 - 7,Purathur(P),Malappuram,9497344062,32051000203,10.809760000000001,75.90925,"http://maps.google.com/maps?q=10.809760000000001,75.90925"
 Tirur,Tirur,19775,G. U. P. S. Purathur,Tirur,1 - 7,Purathur(P),Malappuram,04942563278,32051000202,10.804169999999999,75.921819999999997,"http://maps.google.com/maps?q=10.804169999999999,75.921819999999997"
 Tirur,Tirur,19765,G. W. L. P. S. Purathur,Tirur,1 - 5,Purathur(P),Malappuram,04942563087,32051000205,10.80058,75.919460000000001,"http://maps.google.com/maps?q=10.80058,75.919460000000001"
-Wandoor,Areacode,48141,G H S Perakamanna,Areacode,1 -10,Edavanna(P),Malappuram,04832216919,32050100401,,,
-Wandoor,Areacode,48137,G H S Vettilappara,Areacode,1 -10,Urangattiri(P),Malappuram,04832759410,32050100303,,,
+Wandoor,Areacode,48141,G H S Perakamanna,Areacode,1 -10,Edavanna(P),Malappuram,04832216919,32050100401,11.229928899999999,76.12262659999999,"http://maps.google.com/maps?q=11.229928899999999,76.12262659999999"
+Wandoor,Areacode,48137,G H S Vettilappara,Areacode,1 -10,Urangattiri(P),Malappuram,04832759410,32050100303,11.268585,76.0836693,"http://maps.google.com/maps?q=11.268585,76.0836693"
 Wandoor,Areacode,48205,G L P S Chengara,Areacode,1 - 4,Kavannur(P),Malappuram,8589858943,32050100203,11.175789999999999,76.079639999999998,"http://maps.google.com/maps?q=11.175789999999999,76.079639999999998"
 Wandoor,Areacode,48221,G L P S Pathanapuram,Areacode,1 - 4,Keezhuparamba(P),Malappuram,04832851625,32050100503,11.24532,76.044589999999999,"http://maps.google.com/maps?q=11.24532,76.044589999999999"
-Wandoor,Areacode,48276,G L P S West Pathanapuram,Areacode,1 - 4,Keezhuparamba(P),Malappuram,9446781568,32050100520,,,
+Wandoor,Areacode,48276,G L P S West Pathanapuram,Areacode,1 - 4,Keezhuparamba(P),Malappuram,9446781568,32050100520,11.2412479,76.0401114,"http://maps.google.com/maps?q=11.2412479,76.0401114"
 Wandoor,Areacode,48245,G U P S Odakkayam,Areacode,1 - 7,Urangattiri(P),Malappuram,8921529503,32050100301,11.274431,76.128996999999998,"http://maps.google.com/maps?q=11.274431,76.128996999999998"
-Wandoor,Areacode,48134,G. H. S Pannippara,Areacode,1 -10,Edavanna(P),Malappuram,9544488857,32050101102,,,
-Wandoor,Areacode,48140,GHS Vadasseri,Areacode,1 -10,Kavannur(P),Malappuram,04832862030,32050100202,,,
+Wandoor,Areacode,48134,G. H. S Pannippara,Areacode,1 -10,Edavanna(P),Malappuram,9544488857,32050101102,11.209698399999999,76.1038998,"http://maps.google.com/maps?q=11.209698399999999,76.1038998"
+Wandoor,Areacode,48140,GHS Vadasseri,Areacode,1 -10,Kavannur(P),Malappuram,04832862030,32050100202,11.2122739,76.0860974,"http://maps.google.com/maps?q=11.2122739,76.0860974"
 Wandoor,Areacode,48203,GLPS Chemrakattur,Areacode,1 - 4,Areacode(P),Malappuram,9946889792,32050100104,11.20933,76.039609999999996,"http://maps.google.com/maps?q=11.20933,76.039609999999996"
 Wandoor,Areacode,48210,GLPS Kavanur,Areacode,1 - 4,Kavannur(P),Malappuram,9447393447,32050100204,11.197194,76.055282000000005,"http://maps.google.com/maps?q=11.197194,76.055282000000005"
 Wandoor,Areacode,48213,GLPS Kizhuparamba South,Areacode,1 - 4,Keezhuparamba(P),Malappuram,,32050100508,11.243869999999999,76.012810000000002,"http://maps.google.com/maps?q=11.243869999999999,76.012810000000002"
@@ -375,7 +375,7 @@ Wandoor,Areacode,48244,GMUPS Mundambra,Areacode,1 - 7,Areacode(P),Malappuram,904
 Wandoor,Areacode,48238,GUPS Chundathumpoyil,Areacode,1 - 7,Urangattiri(P),Malappuram,2759378,32050100305,11.282532,76.067240999999996,"http://maps.google.com/maps?q=11.282532,76.067240999999996"
 Wandoor,Areacode,48242,GUPS Maithra,Areacode,1 - 7,Urangattiri(P),Malappuram,04832844886,32050100317,11.228009999999999,76.063810000000004,"http://maps.google.com/maps?q=11.228009999999999,76.063810000000004"
 Wandoor,Areacode,48243,GUPS Moorkanad,Areacode,1 - 7,Urangattiri(P),Malappuram,04832844755,32050100302,11.24091,76.057479999999998,"http://maps.google.com/maps?q=11.24091,76.057479999999998"
-Wandoor,Melattur,48139,G.H.S. Kappu,Perinthalmanna,1 -10,Vettathur(P),Malappuram,04933210495,32050500901,,,
+Wandoor,Melattur,48139,G.H.S. Kappu,Perinthalmanna,1 -10,Vettathur(P),Malappuram,04933210495,32050500901,11.017808100000002,76.2875092,"http://maps.google.com/maps?q=11.017808100000002,76.2875092"
 Wandoor,Melattur,48330,G.L.P.S. Chemmaniyode,Perinthalmanna,1 - 5,Melattur(P),Malappuram,04933278490,32050500601,11.04589,76.282700000000006,"http://maps.google.com/maps?q=11.04589,76.282700000000006"
 Wandoor,Melattur,48304,G.L.P.S. Cheriparamba,Kalikavu,1 - 4,Edappatta(P),Malappuram,6235701138,32050500303,11.06386,76.326040000000006,"http://maps.google.com/maps?q=11.06386,76.326040000000006"
 Wandoor,Melattur,48339,G.L.P.S. Edappatta,Kalikavu,1 - 4,Edappatta(P),Malappuram,9539218900,32050500304,11.08461,76.276650000000004,"http://maps.google.com/maps?q=11.08461,76.276650000000004"
@@ -394,13 +394,13 @@ Wandoor,Melattur,48333,G.M.U.P.S. Oravambram,Perinthalmanna,1 - 7,Keezhattur(P),
 Wandoor,Melattur,48326,M.P.G.L.P.S. Puthanpally,Perinthalmanna,1 - 4,Melattur(P),Malappuram,9497659670,32050500609,11.03177,76.280019999999993,"http://maps.google.com/maps?q=11.03177,76.280019999999993"
 Wandoor,Nilambur,48401,Amarambalam GLPS,Kalikavu,1 - 4,Amarambalam(P),Malappuram,04931262060,32050400805,11.2425562,76.2872681,"http://maps.google.com/maps?q=11.2425562,76.2872681"
 Wandoor,Nilambur,48452,Amarambalam South GUPS,Kalikavu,1 - 7,Amarambalam(P),Malappuram,04931260028,32050400801,11.2259438,76.269326,"http://maps.google.com/maps?q=11.2259438,76.269326"
-Wandoor,Nilambur,48406,Cholamunda GLPS,Nilambur,1 - 4,Moothedam(P),Malappuram,9495133776,32050402601,,,
-Wandoor,Nilambur,48407,Chungathara G L P S,Nilambur,1 - 4,Chungathara(P),Malappuram,04931230091,32050400407,,,
+Wandoor,Nilambur,48406,Cholamunda GLPS,Nilambur,1 - 4,Moothedam(P),Malappuram,9495133776,32050402601,11.323619599999999,76.3412891,"http://maps.google.com/maps?q=11.323619599999999,76.3412891"
+Wandoor,Nilambur,48407,Chungathara G L P S,Nilambur,1 - 4,Chungathara(P),Malappuram,04931230091,32050400407,11.336909,76.2786746,"http://maps.google.com/maps?q=11.336909,76.2786746"
 Wandoor,Nilambur,48410,Edivanna Estate GLPS,Nilambur,1 - 4,Chaliyar(P),Malappuram,04931208120,32050402503,11.31663,76.204279999999997,"http://maps.google.com/maps?q=11.31663,76.204279999999997"
 Wandoor,Nilambur,48455,Eranhimangad GUPS,Nilambur,1 - 7,Chaliyar(P),Malappuram,04931206055,32050400407,11.306609999999999,76.210189999999997,"http://maps.google.com/maps?q=11.306609999999999,76.210189999999997"
-Wandoor,Nilambur,48077,G H S S Moothedath,Nilambur,1 - 12,Moothedam(P),Malappuram,04931276698,32050402605,,,
-Wandoor,Nilambur,48144,GHS Marutha,Nilambur,1 -10,Vazhikkadavu(P),Malappuram,04931288560,32050400103,,,
-Wandoor,Nilambur,48138,GHS Munderi,Nilambur,1 -10,Pothukkal(P),Malappuram,04931208282,32050402703,,,
+Wandoor,Nilambur,48077,G H S S Moothedath,Nilambur,1 - 12,Moothedam(P),Malappuram,04931276698,32050402605,11.331393799999999,76.3123548,"http://maps.google.com/maps?q=11.331393799999999,76.3123548"
+Wandoor,Nilambur,48144,GHS Marutha,Nilambur,1 -10,Vazhikkadavu(P),Malappuram,04931288560,32050400103,11.4194176,76.32127779999999,"http://maps.google.com/maps?q=11.4194176,76.32127779999999"
+Wandoor,Nilambur,48138,GHS Munderi,Nilambur,1 -10,Pothukkal(P),Malappuram,04931208282,32050402703,11.4436035,76.2510479,"http://maps.google.com/maps?q=11.4436035,76.2510479"
 Wandoor,Nilambur,48100,GHSS Edakkara,Nilambur,1 - 12,Edakkara(P),Malappuram,04931275729,32050400206,11.3590447,76.3113979,"http://maps.google.com/maps?q=11.3590447,76.3113979"
 Wandoor,Nilambur,48408,GLPS Chungathara Panchayath,Nilambur,1 - 4,Chungathara(P),Malappuram,04931232233,32050400411,11.352719,76.265172000000007,"http://maps.google.com/maps?q=11.352719,76.265172000000007"
 Wandoor,Nilambur,48414,GLPS Kattumunda East,Wandoor,1 - 4,Mampad(P),Malappuram,9497345025,32050400904,11.234498,76.208360999999996,"http://maps.google.com/maps?q=11.234498,76.208360999999996"
@@ -408,14 +408,14 @@ Wandoor,Nilambur,48423,GLPS Meppadam,Wandoor,1 - 4,Mampad(P),Malappuram,94473548
 Wandoor,Nilambur,48426,GMLPS Mukkatta,,1 - 4,Nilambur(M),Malappuram,04931223938,32050400707,,,
 Wandoor,Nilambur,48431,GMLPS Nilambur,,1 - 4,Nilambur(M),Malappuram,04931225575,32050400708,11.284931,76.237480000000005,"http://maps.google.com/maps?q=11.284931,76.237480000000005"
 Wandoor,Nilambur,48413,GMLPS Panthalingal,Wandoor,1 - 4,Mampad(P),Malappuram,9497873961,32050400905,11.22118,76.198030000000003,"http://maps.google.com/maps?q=11.22118,76.198030000000003"
-Wandoor,Nilambur,48129,I G M M R S Nilambur,,1 - 12,Nilambur(M),Malappuram,04931224194,32050400720,,,
+Wandoor,Nilambur,48129,I G M M R S Nilambur,,1 - 12,Nilambur(M),Malappuram,04931224194,32050400720,11.298004599999999,76.24578509999999,"http://maps.google.com/maps?q=11.298004599999999,76.24578509999999"
 Wandoor,Nilambur,48411,Karimbuzha GMLPS,,1 - 4,Nilambur(M),Malappuram,04931222033,32050400705,,,
 Wandoor,Nilambur,48415,Kavalamukkatta GLPS,Kalikavu,1 - 4,Amarambalam(P),Malappuram,04931261070,32050400806,,,
 Wandoor,Nilambur,48416,Konamunda GLPS,Nilambur,1 - 4,Chaliyar(P),Malappuram,9496807317,32050402505,11.323219999999999,76.218609999999998,"http://maps.google.com/maps?q=11.323219999999999,76.218609999999998"
 Wandoor,Nilambur,48457,Kurumbalangode GUPS,Nilambur,1 - 7,Chungathara(P),Malappuram,04931255754,32050400401,,,
 Wandoor,Nilambur,48419,Mamankara GLPS,Nilambur,1 - 4,Vazhikkadavu(P),Malappuram,04931287040,32050400107,,,
 Wandoor,Nilambur,48420,Mampad North GMLPS,Wandoor,1 - 4,Mampad(P),Malappuram,04931201600,32050400906,11.247311,76.180296999999996,"http://maps.google.com/maps?q=11.247311,76.180296999999996"
-Wandoor,Nilambur,48422,Mankuth GLPS,,1 - 4,Nilambur(M),Malappuram,04931223712,32050400706,,,
+Wandoor,Nilambur,48422,Mankuth GLPS,,1 - 4,Nilambur(M),Malappuram,04931223712,32050400706,11.286871,76.2628821,"http://maps.google.com/maps?q=11.286871,76.2628821"
 Wandoor,Nilambur,48425,Mooleppadam GLPS,Nilambur,1 - 4,Chaliyar(P),Malappuram,9946889594,32050402507,11.322229999999999,76.192520000000002,"http://maps.google.com/maps?q=11.322229999999999,76.192520000000002"
 Wandoor,Nilambur,48463,Myladi GUPS,Nilambur,1 - 7,Chaliyar(P),Malappuram,04931206800,32050402501,11.304320000000001,76.231290000000001,"http://maps.google.com/maps?q=11.304320000000001,76.231290000000001"
 Wandoor,Nilambur,48429,Naduvakkad GLPS,Wandoor,1 - 4,Mampad(P),Malappuram,9048135369,32050400908,11.24277,76.191029999999998,"http://maps.google.com/maps?q=11.24277,76.191029999999998"
@@ -423,7 +423,7 @@ Wandoor,Nilambur,48430,Nedungayam GTLPS,Nilambur,1 - 4,Moothedam(P),Malappuram,9
 Wandoor,Nilambur,48466,Nilambur GMUPS,,1 - 7,Nilambur(M),Malappuram,04931220410,32050400701,11.275869999999999,76.222939999999994,"http://maps.google.com/maps?q=11.275869999999999,76.222939999999994"
 Wandoor,Nilambur,48468,Pallikuth GUPS,Nilambur,1 - 7,Chungathara(P),Malappuram,04931231718,32050400448,,,
 Wandoor,Nilambur,48469,Paramba G U P S,Kalikavu,1 - 7,Amarambalam(P),Malappuram,9946365721,32050402605,,,
-Wandoor,Nilambur,48435,Pathirippadam GLPS,Nilambur,1 - 4,Edakkara(P),Malappuram,,32050400202,,,
+Wandoor,Nilambur,48435,Pathirippadam GLPS,Nilambur,1 - 4,Edakkara(P),Malappuram,,32050400202,11.3654358,76.27582919999999,"http://maps.google.com/maps?q=11.3654358,76.27582919999999"
 Wandoor,Nilambur,48436,Payampadam GLPS,Kalikavu,1 - 4,Amarambalam(P),Malappuram,04931262040,32050400807,,,
 Wandoor,Nilambur,48437,Perumbathur GLPS,Nilambur,1 - 4,Chaliyar(P),Malappuram,,32050402506,11.347239999999999,76.215090000000004,"http://maps.google.com/maps?q=11.347239999999999,76.215090000000004"
 Wandoor,Nilambur,48439,Poolappadam GLPS,Nilambur,1 - 4,Pothukkal(P),Malappuram,9446242123,32050402705,,,
