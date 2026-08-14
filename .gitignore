@@ -1,1 +1,8 @@
 *.log
+
+# Raw HTML dump from the Sametham crawl. Regenerable, large, and not source.
+# The parser is iterated against this cache, but it does not belong in git.
+data/cache/
+
+__pycache__/
+*.py[cod]

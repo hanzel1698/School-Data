@@ -1,0 +1,53 @@
+# Sametham (KITE Kerala) scraper configuration.
+#
+# Scope note: this scraper touches ONLY sametham.kite.kerala.gov.in, the public
+# school data bank. samanwaya.* and sampoorna.* are credentialed internal
+# systems and are deliberately out of scope. See README.md.
+
+base_url: "https://sametham.kite.kerala.gov.in"
+
+district:
+  # Revenue district code as used by the site's own <select name="rev_sub">.
+  # Verified empirically in Phase 0 - see output/phase0_findings.md.
+  id: 10
+  name: "Malappuram"
+
+# Finance/management type codes, from the advanced-search <select name="ftype">.
+finance_types:
+  government: "1"
+  aided: "3"
+  unaided: "4"
+  all: "All"
+
+# The working set for the aggregate. Aided is fetched too, for the comparison
+# table Phase 4 asks for; unaided is kept in the raw dump but not aggregated.
+working_management: ["government"]
+comparison_management: ["aided"]
+
+endpoints:
+  # {ftype} is a finance_types value; {district} is district.id
+  district_schools: "/publicView/schoolsLists/all/dist/{district}/{ftype}"
+  # {school_code} is the site's own school code (e.g. 18232)
+  school_detail: "/{school_code}"
+  advanced_search: "/search/advanced_search_interface"
+  robots: "/robots.txt"
+
+http:
+  # Hard rate limit: one request every N seconds. Single-threaded, no
+  # concurrency. This is a government server on public infrastructure.
+  delay_seconds: 2.0
+  timeout_seconds: 30.0
+  max_attempts: 3
+  # Exponential backoff base: sleep = backoff_base ** attempt seconds.
+  backoff_base: 3.0
+  user_agent: >-
+    sametham-staffing-research/0.1 (Malappuram LP/UP teacher staffing study;
+    contact: hanzel.h.fernandez@gmail.com)
+
+paths:
+  samples: "data/samples"
+  raw: "data/raw"
+  cache: "data/cache"
+  processed: "data/processed"
+  output: "output"
+  log_file: "logs/scrape.log"
