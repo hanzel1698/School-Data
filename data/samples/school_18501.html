@@ -1,0 +1,834 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO -->
+<meta name="keywords" content="Sametham,sametham,Sametham kite,sametham school, kite sametham,kite,KITE Sametham, Kerala School Data Bank, find school Kerala, school directory Kerala, school list Kerala, government schools Kerala, aided schools Kerala, unaided schools Kerala, school details Kerala, academic information Kerala, school infrastructure Kerala, Kerala education statistics, Kerala school database, search schools Kerala, Kerala school info, Kerala education portal" />
+    <meta name="description" content="Sametham, the official Kerala School Data Bank by KITE, provides authentic academic and infrastructure details of government, aided, and recognized unaided schools across Kerala.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="Xf-JWj9GDTaEpS4G16oQR1TZHZAvi9Qgdv-e6dPoQJo" />
+    <title>Sametham - Kerala School Data Bank | KITE</title>
+
+    <!-- IMPORTANT for Google -->
+    <meta name="robots" content="index, follow">
+    
+
+    <!-- Theme / Favicon -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="https://sametham.kite.kerala.gov.in/assets/images/favicon.ico">
+	
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/css/style.css">
+
+    <!-- Inline custom styles -->
+    <style>
+        @page {
+            size: auto;
+            margin: 3mm;
+        }
+
+        @media print {
+
+            a,
+            aside.left-panel,
+            title,
+            #header,
+            #footer,
+            .header,
+            .footer {
+                display: none !important;
+                visibility: hidden !important;
+            }
+
+            a[href]:after {
+                content: none !important;
+            }
+        }
+
+        .panhead {
+            background-color: #2980b9 !important;
+            color: #ffffff;
+        }
+
+        .border-divs {
+            border-radius: 8px !important;
+        }
+
+        .btn-2684c4 {
+            color: #fff;
+            background-color: #2684c4;
+            border-color: #2684c4;
+        }
+    </style>
+
+    <!-- jQuery -->
+    <script src="https://sametham.kite.kerala.gov.in/assets/vendors/jquery/dist/jquery.min.js"></script>
+
+    <!-- Analytics -->
+    <script>
+        var site_url = "https://sametham.kite.kerala.gov.in/";
+        var img_url = "https://sametham.kite.kerala.gov.in/";
+        var base_path = "https://sametham.kite.kerala.gov.in/";
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-90382178-3');
+
+        $(document).ready(function() {
+            $("#searchvals").focus();
+        });
+
+        var csrf_token = '';
+    </script>
+
+        </head>
+
+<body>
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="https://sametham.kite.kerala.gov.in/">
+                    <img src="https://sametham.kite.kerala.gov.in/assets/images/sametham.png" alt="Sametham">
+                </a>
+                <a class="navbar-brand hidden" href="https://sametham.kite.kerala.gov.in/"><i class="fa fa-home"></i></a>
+            </div>
+            <br>
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+  <!--  <li class="active">
+        <a href="https://sametham.kite.kerala.gov.in/"> <i class="menu-icon fa fa-home"></i>Home </a>
+    </li>-->
+    <li class="menu-item-has-children dropdown active" title="Schools -Section">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i>Schools - Section </a>
+        <ul class="sub-menu children dropdown-menu">
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/districtwise/LP">LP Schools</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/districtwise/UP">UP Schools</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/districtwise/HS">High Schools</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/schoolconsolidationhse">HSE Schools</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/schoolconsolidationvhse">VHSE Schools</a></li>
+        </ul>
+    </li>
+
+    <li class="menu-item-has-children dropdown"  title="Schools -District">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i>Schools -District</a>
+      <ul class="sub-menu children dropdown-menu">
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/1">TVM</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/2">KLM</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/3">PTN</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/4">ALP</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/5">KTM</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/6">IDK</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/7">EKM</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/8">TSR</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/9">PKD</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/10">MLP</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/11">KKD</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/12">WYD</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/13">KNR</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/14">KGD</a></li> 
+        </ul>
+    </li>
+
+
+    <li class="menu-item-has-children dropdown active" title="Schools -Section">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i><div class="nav wrapclass">Class Wise Strength</div></a>
+        <ul class="sub-menu children dropdown-menu">
+			<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsC2026">Academic Year 2026-27</a></li>
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsC2023">Academic Year 2023-24</a></li>-->
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsC2022">Academic Year 2022-23</a></li>-->
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/sixthWorkingdayC2019">Academic Year 2019-20</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/sixthWorkingdayC2018">Academic Year 2018-19</a></li>-->
+        </ul>
+    </li>
+
+    <li class="menu-item-has-children dropdown active" title="Schools -Section">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i><div class="nav wrapclass">District Wise Strength</div></a>
+        <ul class="sub-menu children dropdown-menu">
+			<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsD2026">Academic Year 2026-27</a></li>
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsD2023">Academic Year 2023-24</a></li>-->
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsD2022">Academic Year 2022-23</a></li>-->
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/sixthWorkingdayD2019">Academic Year 2019-20</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/sixthWorkingdayD2018">Academic Year 2018-19</a></li>-->
+        </ul>
+    </li>
+    <li title="HiTech Schools" class="active">
+        <a href="https://sametham.kite.kerala.gov.in/hitech/dashboard"> <i class="menu-icon fa fa-bank"></i><div class="nav wrapclass"><b>HiTech Schools</b></div></a>
+    </li>
+        <li title="HiTech Schools" class="active">
+        <a href="https://sametham.kite.kerala.gov.in/vidhyakiranam/dashboard"> <i class="menu-icon fa fa-bank"></i><div class="nav wrapclass"><b>Vidyakiranam<sup class="text-danger"> New</sup></b></div></a>
+    </li>
+    <li title="KIIFB Funded Schools" class="active">
+       <a href="https://sametham.kite.kerala.gov.in/KIIFBFundedSchools"> <i class="menu-icon fa fa-list-ul"></i><div class="nav wrapclass">Infrastructure Upgradation Projects</div></a>
+    </li>
+    <!-- <li class="menu-item-has-children dropdown active" title="Infrastructure">
+        <a href="https://sametham.kite.kerala.gov.in/KIIFBFundedSchools"><i class="menu-icon fa fa-list-ul"> KIIFB Funded Schools</a> -->
+        <!-- <ul class="sub-menu children dropdown-menu">
+        <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/KIIFBFundedSchools">KIIFB Funded Schools</a></li>
+        </ul> -->
+    <!-- </li> -->
+    <li class="menu-item-has-children dropdown active" title="Email Directory">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i><div class="nav wrapclass">Official Email Directory</div></a>
+        <ul class="sub-menu children dropdown-menu">
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/Emaildirectory/dge">DGE Office</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/Emaildirectory/dde">DDE Offices</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/Emaildirectory/deo">DEO Offices</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/Emaildirectory/aeo">AEO Offices</a></li>
+        </ul>
+    </li>
+   <!-- <li title="HiTech Schools">
+        <a href="https://sametham.kite.kerala.gov.in/hitech/dashboard"> <i class="menu-icon fa fa-bank"></i>HiTech Schools<sup class="text-warning"> New</sup> </a>
+    </li> -->
+     <li title="Advanced Search">
+        <a href="https://sametham.kite.kerala.gov.in/search/advanced_search_interface"> <i class="menu-icon fa fa-search"></i>Advanced Search </a>
+    </li>
+
+
+
+    <h3 class="menu-title">Related Links</h3><!-- /.menu-title -->
+    <li title="KITE" > <a href="http://www.kite.kerala.gov.in/" target="_blank"> <i class="menu-icon fa fa-link"></i>KITE </a></li>
+    <li title="SAMAGRA"> <a href="https://samagra.kite.kerala.gov.in/" target="_blank"> <i class="menu-icon fa fa-link"></i>SAMAGRA</a></li>
+    <li title="School Wiki"> <a href="https://schoolwiki.in/" target="_blank"> <i class="menu-icon fa fa-link"></i>School Wiki</a></li>
+    <li title="VICTERS"> <a href="https://victers.kite.kerala.gov.in/" target="_blank"> <i class="menu-icon fa fa-link"></i>VICTERS</a></li>
+    <li title="SAMPOORNA"> <a href="https://sampoorna.kite.kerala.gov.in" target="_blank"> <i class="menu-icon fa fa-link"></i>SAMPOORNA</a></li>
+    <li title="KOOL"> <a href="https://kool.kite.kerala.gov.in/" target="_blank"> <i class="menu-icon fa fa-link" ></i>KOOL</a></li>
+    <li title="Little Kites"> <a href="https://kite.kerala.gov.in/littlekites/lkms/" target="_blank"> <i class="menu-icon fa fa-link" title="KOOL"></i>Little Kite's</a></li>
+
+    <h5 class="menu-title" title="KITE State Office">Contact No</h5>
+    <li> <a href="javascript:void(0)"> <i class="menu-icon fa fa-phone" title="Contact"></i>0471 2529800</a></li>
+    <li> <a href="javascript:void(0)"> <i class="menu-icon fa  " title="Email"></i>contact@kite.kerala.gov.in</a></li>
+ </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header -->
+                <header id="header" class="header">
+            <div class="header-menu">
+    <form method="post" class="search-form" id="live-search-form" name="live-search-form" style="display:inline;"  action="https://sametham.kite.kerala.gov.in/search">
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-3">
+            <a id="menuToggle" style="display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+            <div class="header-left" style='margin-left:10px;'>
+                <input type="text" name="liveSearchVals" id="liveSearchVals" class="form-control" placeholder="Filter Search" style="display:inline;" autocomplete="off">
+                <input type="hidden" name="searchvals" id="searchvals" class="form-control" placeholder="Enter School Code or School Name">
+                <div id="liveSearchResults" class="dropdown-menu show" aria-labelledby="dropdownMenuButton" x-placement="bottom-start"  
+                     style="display:none;position: absolute; transform: translate3d(0px, 40px, 0px); top: 95%; left: 4%; 
+                     will-change: transform;min-width:21rem;">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-9 col-sm-9 col-xs-9" id="liveSearchDiv">
+            <input type="submit" name="" class="btn btn-primary" value="Search" id=""  style="display:inline; width:100px;margin-top:4px;margin-bottom:4px;">
+            &nbsp;&nbsp;
+            <a href="https://sametham.kite.kerala.gov.in/search/advanced_search_interface" class="btn btn-outline-primary">Advanced Search</a>
+        </div>
+        <div class="col-lg-3 col-sm-1">
+            <div class="user-area dropdown float-right">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://sametham.kite.kerala.gov.in/assets/images/kite_logo.png" style="height:60px;">
+                </a>
+            </div>
+        </div>
+    </form>
+        </header>
+        
+        <div class="content mt-3">
+            <!-- #page-title end -->
+<style>
+td{
+  text-align:left!important;
+}
+.panhead{
+	background-color:#2980b9!important;color:#ffffff;
+}
+  #infra tr td:nth-child(1) { font-weight:bold; }
+  #infra tr td:nth-child(4) { font-weight:bold; }
+  #infra tr td:nth-child(7) { font-weight:bold; }
+
+	#basic tr td:nth-child(1) { font-weight:bold; }
+	#basic tr td:nth-child(4) { font-weight:bold; }
+	#basic tr td:nth-child(7) { font-weight:bold; }
+</style>
+
+
+
+
+<div class="col-lg-12">
+  <div class="card">
+  <div class="card-body">
+ <a href="#Basic_Information" class="btn"><u><i>Basic Information</i></u></a>
+
+ <a href="#infra-lpuphs" class="btn"><u><i> Infrastructure Details (HS/LP/UP)</i></u> </a>
+
+  <a href="#staff-lpuphs" class="btn"><u><i>Staff Details (HS/LP/UP)</i></u></a>
+
+  <a href="#staff-hss" class="btn"><u><i>Staff Details - HSS</i></u></a>
+
+  <a href="#staff-vhss" class="btn"><u><i>Staff Details - VHSS</i></u></a>
+
+  <a href="#students-lpuphs" class="btn"><u><i>Students (HS/LP/UP)</i></u> </a>
+
+  <a href="#students-hss" class="btn"><u><i>Students - HSS</i></u></a>
+
+  <a href="#students-vhss" class="btn"><u><i>Students - VHSS</i></u></a>
+</div>
+</div>
+</div>
+<div class="col-lg-12" id="Basic_Information">
+    <div class="table table-responsive table-bordered"   >
+        <table class="table table-striped" id="basic">
+            <thead>
+                <tr class="panhead">
+                    <th colspan="12">Basic Information </td>
+                </tr>
+								<tr class=" ">
+                    <th colspan="12"><a target="_blank" href="https://schoolwiki.in/18501" title="school Wiki "><img  title="School Wiki " width="5%" class="imgwiki" src="https://sametham.kite.kerala.gov.in/assets/images/Schoolwiki-logo.png"></a>											<a target="_blank" href="http://maps.google.com/maps?q=11.175424,76.101636999999997"><img title="Location"  style="width:5%" src="https://sametham.kite.kerala.gov.in/assets/images/googlemap.png"> </a>										 </td>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr  >
+                    <td>School Code</td>
+                    <td>:</td>
+                    <td>18501</td>
+                    <td>HSS Code</td>
+                    <td>:</td>
+                    <td>NIL                    </td>
+                    <td>VHSE Code</td>
+                    <td>:</td>
+                    <td>910003                    </td>
+                </tr>
+
+
+
+
+
+                <tr  >
+                    <td>School Name</td>
+                    <td>:</td>
+                    <td>TECHNICAL  High<br>School  MANJERI</td>
+                    <td>School Type</td>
+                    <td>:</td>
+                    <td>Government</td>
+                    <td>School Level</td>
+                    <td>:</td>
+                    <td>8 - 10 </td>
+                </tr>
+                <tr  >
+                    <td>School Address</td>
+                    <td>:</td>
+                    <td>KARUVAMBRAM WEST</td>
+                    <td>HS Section Phone</td>
+                    <td>:</td>
+                    <td>04832766185</td>
+                    <td>HS Section Email</td>
+                    <td>:</td>
+                    <td>thsmji@gmail.com</td>
+                </tr>
+
+                <tr  >
+                    <td> &nbsp; </td>
+                    <td> &nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>HSE Section Phone</td>
+                    <td>:</td>
+                    <td></td>
+                    <td>HSE Section Email</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+
+
+                <tr  >
+                    <td>UDISE Code</td>
+                    <td> : </td>
+                    <td>32050600714</td>
+                    <td>Panchayat/ Municipality/<br> Corporation</td>
+                    <td>&nbsp;</td>
+                    <td>Manjeri<span title="Muncipality">(M)</span></td>
+                    <td>Assembly Constituency</td>
+                    <td>:</td>
+                    <td>Manjeri</td>
+                </tr>
+                <tr  >
+                    <td>Revenue District</td>
+                    <td>:</td>
+                    <td>Malappuram</td>
+                    <td>Education District</td>
+                    <td>:</td>
+                    <td>Malappuram</td>
+                    <td>Sub District</td>
+                    <td>:</td>
+                    <td>Manjeri</td>
+                </tr>
+                <tr  >
+                    <td>PIN Code</td>
+                    <td>:</td>
+                    <td>676123</td>
+                    <td>Parliament Constituency</td>
+                    <td>:</td>
+                    <td>Malappuram *
+</td>
+                    <td>Is Hilly Area</td>
+                    <td>:</td>
+                    <td>Yes                    </td>
+                </tr>
+                <tr  >
+                    <td>Is Coastal Area</td>
+                    <td>:</td>
+                    <td>Yes                    </td>
+                    <td>School Established <br>Year</td>
+                    <td>:</td>
+                    <td>1960                    </td>
+                    <td>HSE Start Year</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="col-lg-12"  id="infra-lpuphs">
+    <div class="table table-responsive">
+        <table class="table table-striped" id="infra">
+            <thead>
+                <tr class="panhead">
+                    <th colspan="12" class="font-size15"  style="font-weight:bold;">Infrastructure Details (HS/LP/UP)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. Total Area (Acre)</td>
+                    <td>:</td>
+                    <td>8.48</td>
+                    <td>2. Survey Number(s)</td>
+                    <td>:</td>
+                    <td>120/1A & 2</td>
+                    <td>3. Land Obtained for<br> Establishing School</td>
+                    <td>:</td>
+                    <td>Donated by well wishers</td>
+                </tr>
+                <tr>
+                    <td>4. Land Protected by<br>
+                    </td>
+                    <td>:</td>
+                    <td>Fully</td>
+                    <td>5. Building Type</td><td>: </td>
+                    <td>Semi Pucca                    </td>
+                    <td>6. Building Plinth Area </td><td>: </td>
+                    <td>250 sqr m                    </td>
+                </tr>
+                <tr>
+                    <td>7. Building Ownership</td><td>: </td>
+                    <td >Owned                    </td>
+                    <td>8. Library</td>
+                    <td>: </td>
+                    <td >Yes<br>No of books: 2100                    </td>
+                    <td>9. Electrification</td>
+                    <td>: </td>
+                    <td>Yes                    </td>
+                </tr>
+                <tr>
+                    <td>10. Solar Power</td>
+                    <td>: </td>
+                    <td>No                    </td>
+                    <td>11. Drinking Water</td>
+                    <td>: </td>
+                    <td>Well                    </td>
+                    <td>12. Net Connectivity</td>
+                    <td>: </td>
+                    <td >Yes                    </td>
+                </tr>
+                <tr>
+                    <td>13. Total Class Room </td><td>: </td>
+                    <td >12                    </td>
+                    <td>14. Multi Media Room</td><td>: </td>
+                    <td >Yes                    </td>
+                    <td>15. Total Smart Class Room </td><td>: </td>
+                    <td>7                    </td>
+                </tr>
+                <tr>
+                    <td>16. Little KITES </td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>17. Total Staff Room  </td><td>: </td>
+                    <td>1                    </td>
+                    <td>18. Computer Lab</td><td>: </td>
+                    <td>Yes                    </td>
+                </tr>
+                <tr>
+                    <td>19. Science Lab</td><td>: </td>
+                    <td> Yes                    </td>
+                    <td>20. Total no.of Computers <br>Available in the School </td><td>: </td>
+                    <td> 30                    </td>
+                    <td>21. Total no.of Printers <br>Available in the School </td><td>: </td>
+                    <td> 2                    </td>
+                </tr>
+                <tr>
+                    <td>22. First Aid Room</td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>23. Public Addressing system</td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>24. Kitchen </td><td>: </td>
+                    <td>Yes                    </td>
+                </tr>
+                <tr>
+                    <td>25. CCTV </td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>26. Store (Book/Stationary) </td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>27. TV Hall</td><td>: </td>
+                    <td>Yes                    </td>
+                </tr>
+                <tr>
+                    <td>28. Canteen</td><td>: </td>
+                    <td>No                    </td>
+                    <td>29. Rainwater Harvesting</td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>30. Play Ground</td><td>: </td>
+                    <td>Yes  Football                    </td>
+                </tr>
+                <tr>
+                    <td>31. Waste Management System</td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>32. Autism Park</td><td>: </td>
+                    <td>No                    </td>
+                    <td>33. Dining Hall</td><td>: </td>
+                    <td>Yes                    </td>
+                </tr>
+                <tr>
+                    <td>34. Auditorium </td><td>: </td>
+                    <td>No                    </td>
+                    <td>35. Indoor Stadium </td><td>: </td>
+                    <td>No                    </td>
+                    <td>36. Students Police </td><td>: </td>
+                    <td>No                    </td>
+                </tr>
+                <tr>
+                    <td>37. Music Class Room </td><td>: </td>
+                    <td>No                    </td>
+                    <td>38. Activities </td><td>: </td>
+                    <td> JRC                    </td>
+                    <td>39. Agricultural Activity </td><td>: </td>
+                    <td>Yes                    </td>
+                </tr>
+                <tr>
+                    <td>40. Toilet </td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>41. She Toilet </td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>42. No. of Toilets for Boys  </td><td>: </td>
+                    <td>3                    </td>
+                </tr>
+                <tr>
+                    <td>43. No. of Toilets for Girls  </td><td>: </td>
+                    <td>8                    </td>
+                    <td>44. No. of Urinals for Boys  </td><td>: </td>
+                    <td>8                    </td>
+                    <td>45. No. of Urinals for Girls  </td><td>: </td>
+                    <td>2                    </td>
+                </tr>
+                <tr>
+                    <td>46. Parking Space </td><td>: </td>
+                    <td>No                    </td>
+                    <td>47. Garden </td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>48. Transportation </td><td>: </td>
+                    <td>                    </td>
+                </tr>
+                <tr>
+                    <td>49. Hostel Facility </td><td>: </td>
+                    <td>No                    </td>
+                    <td>50. Bio-Gas </td><td>: </td>
+                    <td>Yes                    </td>
+                    <td>51. Incinerator Facility </td><td>: </td>
+                    <td >No                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="col-lg-12" id="staff-lpuphs">
+    <div class="table table-responsive"  data-userway-font-size="14">
+        <table class="table table-striped ">
+            <thead>
+                <tr class="panhead">
+                    <th colspan="9"  class="font-size15"  style="font-weight:bold;">  Staff Details - HS</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th >Head Master Name</td>
+                    <td>:</td>
+                    <td colspan="6">ALIHASSAN KUTTY</td>
+
+                </tr>
+                                <tr>
+                    <th colspan="9" class="font-size15"   style="font-weight:bold;color:#2980b9">Number of teaching and non teaching staffs  <i style="color: #74ad69">(Click on the links to view more details)</i></td>
+                </tr>
+                <tr><td colspan='3'>
+                                         <a href='https://sametham.kite.kerala.gov.in/publicView/employees/18501/16B/0951'>Office Attendant Gr II -1 </a></td><td colspan='3'>
+                                         <a href='https://sametham.kite.kerala.gov.in/publicView/employees/18501/16B/2789'>High School Assistant Physical Science (HG) -1 </a></td></tr><tr><th  colspan="4"><a href=https://sametham.kite.kerala.gov.in/publicView/employees/18501/16B> Total Employees - 2</a></th></tr>             </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="col-lg-12"  id="staff-vhss">
+<div class="table table-responsive">
+<table class="table table-striped" >
+<thead>
+<tr class="panhead">
+<td colspan="6"  class="font-size15"  style="font-weight:bold;">Staff Details - VHSS</td>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="4" style="color:red;">No Data Found!</td></tr>
+
+</table>
+</div>
+
+</div>
+
+
+<div class="col-lg-12" id="students-lpuphs">
+    <div class="table table-responsive"  data-userway-font-size="14">
+        <table class="table table-striped"  style="text-align: center;">
+            <thead>
+                <tr class="panhead">
+                    <th colspan="16" class="font-size15"   style="font-weight:bold;">Students Details 2026-27 ( മീ‍ഡിയം അടിസ്ഥാനമാക്കിയുള്ള കുുട്ടികളുടെ എണ്ണം )</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="font-weight:bold;text-transform:uppercase;" class="font-size15">
+                    <td style="text-align: center;" rowspan="3">Standard</td>
+                </tr>
+                <tr style="font-weight:bold;text-transform:uppercase;"  class="font-size15">
+                    <td colspan="3" style="text-align: center">Malayalam</td>
+                    <td colspan="3" style="text-align: center">English</td>
+                    <td colspan="3" style="text-align: center">Tamil</td>
+                    <td colspan="3" style="text-align: center">Kannada</td>
+                    <td colspan="3" style="text-align: center">ALL</td>
+                </tr>
+                <tr style="font-weight:bold; font-size:9px;text-transform:uppercase;"  class="font-size13">
+                    <td>Boys</td>
+                    <td>Girls</td>
+                    <td>Total</td>
+                    <td>Boys</td>
+                    <td>Girls</td>
+                    <td>Total</td>
+                    <td>Boys</td>
+                    <td>Girls</td>
+                    <td>Total</td>
+                    <td>Boys</td>
+                    <td>Girls</td>
+                    <td>Total</td>
+                    <td>Boys</td>
+                    <td>Girls</td>
+                    <td>Total</td>
+                </tr>
+                                        <tr class="row-odd">
+
+                            <td style="font-weight:bold;">8</td>
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                            <td>98</td>
+                            <td>2</td>
+                            <td>100</td>
+
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                            <td>98</td>
+                            <td>2</td>
+                            <td>100</td>
+
+                        </tr>
+
+                                <tr class="row-even">
+
+                            <td style="font-weight:bold;">9</td>
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                            <td>93</td>
+                            <td>4</td>
+                            <td>97</td>
+
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                            <td>93</td>
+                            <td>4</td>
+                            <td>97</td>
+
+                        </tr>
+
+                                <tr class="row-odd">
+
+                            <td style="font-weight:bold;">10</td>
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                            <td>108</td>
+                            <td>0</td>
+                            <td>108</td>
+
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+
+                            <td>108</td>
+                            <td>0</td>
+                            <td>108</td>
+
+                        </tr>
+
+                            <tr style="font-weight:bold;"  class="row-odd" >
+                        <td align="center" colspan="">Total</td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+
+                        <td> 299 </td>
+                        <td> 6 </td>
+                        <td> 305 </td>
+
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+
+                        <td> 0 </td>
+                        <td> 0 </td>
+                        <td> 0 </td>
+
+                        <td> 299 </td>
+                        <td> 6 </td>
+                        <td style="color:blue"> 305 </td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+                        <div class="col-lg-12" id="students-vhss">
+        <div class="table table-responsive"  data-userway-font-size="14">
+            <table class="table table-striped"  style="text-align: center;">
+                <thead>
+                    <tr class="panhead">
+                        <th colspan="16" class="font-size15"   style="font-weight:bold;">Students Details of VHSS ( വി എച്ച് എസ് എസ് &nbsp; കുുട്ടികളുടെ എണ്ണം )</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="font-weight:bold;text-transform:uppercase;"  class="font-size15">
+                        <td style="text-align: center">PLUS ONE</td>
+                        <td style="text-align: center">PLUS TWO</td>
+                        <td style="text-align: center">ALL</td>
+                    </tr>
+                    <tr>
+                        <td>59</td>
+                        <td>54</td>
+                        <td>113</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://sametham.kite.kerala.gov.in/assets/js/jquery.js"></script>
+    <script src="https://sametham.kite.kerala.gov.in/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://sametham.kite.kerala.gov.in/assets/js/main.js"></script>
+    <script src="https://sametham.kite.kerala.gov.in/assets/js/dashboard.js"></script>
+    <script src="https://sametham.kite.kerala.gov.in/assets/js/widgets.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#districtwise").hide();
+            $("#classs, #list, #totalS").addClass('clr');
+            $("#graphicalview, #first, #second").hide();
+        });
+
+        function showvhseStuds(yr) {
+            $("#first, #second, #total, #graphicalview").hide();
+            $("#firstS, #totalS, #secondS, #graph").removeClass('clr');
+
+            if (yr == '1') {
+                $("#first").show();
+                $("#firstS").addClass('clr');
+            } else if (yr == '2') {
+                $("#second").show();
+                $("#secondS").addClass('clr');
+            } else if (yr == '3') {
+                $("#total").show();
+                $("#totalS").addClass('clr');
+            } else if (yr == '4') {
+                $("#graphicalview").show();
+                $("#graph").addClass('clr');
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            if ($("#VIDHYAKIRANAM_form #VIDHYAKIRANAM_school").length > 0) {
+                $("#VIDHYAKIRANAM_school").select2();
+            }
+            $('#VIDHYAKIRANAM_school').on('change', function() {
+                var selectedValue = $(this).val();
+                if (selectedValue) {
+                    $("#VIDHYAKIRANAM_form").submit();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

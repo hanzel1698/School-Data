@@ -1,0 +1,61 @@
+# Sametham (KITE Kerala) scraper configuration.
+#
+# Scope note: this scraper touches ONLY sametham.kite.kerala.gov.in, the public
+# school data bank. samanwaya.* and sampoorna.* are credentialed internal
+# systems and are deliberately out of scope. See README.md.
+
+base_url: "https://sametham.kite.kerala.gov.in"
+
+district:
+  # Revenue district code as used by the site's own <select name="rev_sub">.
+  # Verified empirically in Phase 0 - see output/phase0_findings.md.
+  id: 10
+  name: "Malappuram"
+
+# Finance/management type codes, from the advanced-search <select name="ftype">.
+finance_types:
+  government: "1"
+  aided: "3"
+  unaided: "4"
+  all: "All"
+
+# Only Government schools are fetched and aggregated. Aided and unaided rows
+# are kept in the Phase 1 raw dump but are never fetched.
+working_management: ["government"]
+comparison_management: []
+
+working_set:
+  # Skip schools whose approved class range starts at or above this standard.
+  # A school beginning at class 8 has no LP (1-4) or UP (5-7) section, so it
+  # cannot hold LP/UP teaching posts. Empirically consistent with sample 18501
+  # (level "8 - 10"), whose staff list is one HSA plus one office attendant.
+  # In Malappuram this excludes 37 of 556 Government schools.
+  skip_if_lowest_class_at_least: 8
+
+endpoints:
+  # {ftype} is a finance_types value; {district} is district.id
+  district_schools: "/publicView/schoolsLists/all/dist/{district}/{ftype}"
+  # {school_code} is the site's own school code (e.g. 18232)
+  school_detail: "/{school_code}"
+  advanced_search: "/search/advanced_search_interface"
+  robots: "/robots.txt"
+
+http:
+  # Hard rate limit: one request every N seconds. Single-threaded, no
+  # concurrency. This is a government server on public infrastructure.
+  delay_seconds: 2.0
+  timeout_seconds: 30.0
+  max_attempts: 3
+  # Exponential backoff base: sleep = backoff_base ** attempt seconds.
+  backoff_base: 3.0
+  user_agent: >-
+    sametham-staffing-research/0.1 (Malappuram LP/UP teacher staffing study;
+    contact: hanzel.h.fernandez@gmail.com)
+
+paths:
+  samples: "data/samples"
+  raw: "data/raw"
+  cache: "data/cache"
+  processed: "data/processed"
+  output: "output"
+  log_file: "logs/scrape.log"

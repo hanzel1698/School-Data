@@ -1,0 +1,792 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO -->
+<meta name="keywords" content="Sametham,sametham,Sametham kite,sametham school, kite sametham,kite,KITE Sametham, Kerala School Data Bank, find school Kerala, school directory Kerala, school list Kerala, government schools Kerala, aided schools Kerala, unaided schools Kerala, school details Kerala, academic information Kerala, school infrastructure Kerala, Kerala education statistics, Kerala school database, search schools Kerala, Kerala school info, Kerala education portal" />
+    <meta name="description" content="Sametham, the official Kerala School Data Bank by KITE, provides authentic academic and infrastructure details of government, aided, and recognized unaided schools across Kerala.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="Xf-JWj9GDTaEpS4G16oQR1TZHZAvi9Qgdv-e6dPoQJo" />
+    <title>Sametham - Kerala School Data Bank | KITE</title>
+
+    <!-- IMPORTANT for Google -->
+    <meta name="robots" content="index, follow">
+    
+
+    <!-- Theme / Favicon -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="https://sametham.kite.kerala.gov.in/assets/images/favicon.ico">
+	
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://sametham.kite.kerala.gov.in/assets/css/style.css">
+
+    <!-- Inline custom styles -->
+    <style>
+        @page {
+            size: auto;
+            margin: 3mm;
+        }
+
+        @media print {
+
+            a,
+            aside.left-panel,
+            title,
+            #header,
+            #footer,
+            .header,
+            .footer {
+                display: none !important;
+                visibility: hidden !important;
+            }
+
+            a[href]:after {
+                content: none !important;
+            }
+        }
+
+        .panhead {
+            background-color: #2980b9 !important;
+            color: #ffffff;
+        }
+
+        .border-divs {
+            border-radius: 8px !important;
+        }
+
+        .btn-2684c4 {
+            color: #fff;
+            background-color: #2684c4;
+            border-color: #2684c4;
+        }
+    </style>
+
+    <!-- jQuery -->
+    <script src="https://sametham.kite.kerala.gov.in/assets/vendors/jquery/dist/jquery.min.js"></script>
+
+    <!-- Analytics -->
+    <script>
+        var site_url = "https://sametham.kite.kerala.gov.in/";
+        var img_url = "https://sametham.kite.kerala.gov.in/";
+        var base_path = "https://sametham.kite.kerala.gov.in/";
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-90382178-3');
+
+        $(document).ready(function() {
+            $("#searchvals").focus();
+        });
+
+        var csrf_token = '';
+    </script>
+
+        </head>
+
+<body>
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="https://sametham.kite.kerala.gov.in/">
+                    <img src="https://sametham.kite.kerala.gov.in/assets/images/sametham.png" alt="Sametham">
+                </a>
+                <a class="navbar-brand hidden" href="https://sametham.kite.kerala.gov.in/"><i class="fa fa-home"></i></a>
+            </div>
+            <br>
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+  <!--  <li class="active">
+        <a href="https://sametham.kite.kerala.gov.in/"> <i class="menu-icon fa fa-home"></i>Home </a>
+    </li>-->
+    <li class="menu-item-has-children dropdown active" title="Schools -Section">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i>Schools - Section </a>
+        <ul class="sub-menu children dropdown-menu">
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/districtwise/LP">LP Schools</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/districtwise/UP">UP Schools</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/districtwise/HS">High Schools</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/schoolconsolidationhse">HSE Schools</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/publicView/schoolconsolidationvhse">VHSE Schools</a></li>
+        </ul>
+    </li>
+
+    <li class="menu-item-has-children dropdown"  title="Schools -District">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i>Schools -District</a>
+      <ul class="sub-menu children dropdown-menu">
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/1">TVM</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/2">KLM</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/3">PTN</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/4">ALP</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/5">KTM</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/6">IDK</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/7">EKM</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/8">TSR</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/9">PKD</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/10">MLP</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/11">KKD</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/12">WYD</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/13">KNR</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/search/districtWiseSchools/14">KGD</a></li> 
+        </ul>
+    </li>
+
+
+    <li class="menu-item-has-children dropdown active" title="Schools -Section">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i><div class="nav wrapclass">Class Wise Strength</div></a>
+        <ul class="sub-menu children dropdown-menu">
+			<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsC2026">Academic Year 2026-27</a></li>
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsC2023">Academic Year 2023-24</a></li>-->
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsC2022">Academic Year 2022-23</a></li>-->
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/sixthWorkingdayC2019">Academic Year 2019-20</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/sixthWorkingdayC2018">Academic Year 2018-19</a></li>-->
+        </ul>
+    </li>
+
+    <li class="menu-item-has-children dropdown active" title="Schools -Section">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i><div class="nav wrapclass">District Wise Strength</div></a>
+        <ul class="sub-menu children dropdown-menu">
+			<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsD2026">Academic Year 2026-27</a></li>
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsD2023">Academic Year 2023-24</a></li>-->
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/studsD2022">Academic Year 2022-23</a></li>-->
+            <!--<li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/sixthWorkingdayD2019">Academic Year 2019-20</a></li>
+            <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/welcome/sixthWorkingdayD2018">Academic Year 2018-19</a></li>-->
+        </ul>
+    </li>
+    <li title="HiTech Schools" class="active">
+        <a href="https://sametham.kite.kerala.gov.in/hitech/dashboard"> <i class="menu-icon fa fa-bank"></i><div class="nav wrapclass"><b>HiTech Schools</b></div></a>
+    </li>
+        <li title="HiTech Schools" class="active">
+        <a href="https://sametham.kite.kerala.gov.in/vidhyakiranam/dashboard"> <i class="menu-icon fa fa-bank"></i><div class="nav wrapclass"><b>Vidyakiranam<sup class="text-danger"> New</sup></b></div></a>
+    </li>
+    <li title="KIIFB Funded Schools" class="active">
+       <a href="https://sametham.kite.kerala.gov.in/KIIFBFundedSchools"> <i class="menu-icon fa fa-list-ul"></i><div class="nav wrapclass">Infrastructure Upgradation Projects</div></a>
+    </li>
+    <!-- <li class="menu-item-has-children dropdown active" title="Infrastructure">
+        <a href="https://sametham.kite.kerala.gov.in/KIIFBFundedSchools"><i class="menu-icon fa fa-list-ul"> KIIFB Funded Schools</a> -->
+        <!-- <ul class="sub-menu children dropdown-menu">
+        <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/KIIFBFundedSchools">KIIFB Funded Schools</a></li>
+        </ul> -->
+    <!-- </li> -->
+    <li class="menu-item-has-children dropdown active" title="Email Directory">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i><div class="nav wrapclass">Official Email Directory</div></a>
+        <ul class="sub-menu children dropdown-menu">
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/Emaildirectory/dge">DGE Office</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/Emaildirectory/dde">DDE Offices</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/Emaildirectory/deo">DEO Offices</a></li>
+          <li><i class="fa fa-file"></i><a href="https://sametham.kite.kerala.gov.in/Emaildirectory/aeo">AEO Offices</a></li>
+        </ul>
+    </li>
+   <!-- <li title="HiTech Schools">
+        <a href="https://sametham.kite.kerala.gov.in/hitech/dashboard"> <i class="menu-icon fa fa-bank"></i>HiTech Schools<sup class="text-warning"> New</sup> </a>
+    </li> -->
+     <li title="Advanced Search">
+        <a href="https://sametham.kite.kerala.gov.in/search/advanced_search_interface"> <i class="menu-icon fa fa-search"></i>Advanced Search </a>
+    </li>
+
+
+
+    <h3 class="menu-title">Related Links</h3><!-- /.menu-title -->
+    <li title="KITE" > <a href="http://www.kite.kerala.gov.in/" target="_blank"> <i class="menu-icon fa fa-link"></i>KITE </a></li>
+    <li title="SAMAGRA"> <a href="https://samagra.kite.kerala.gov.in/" target="_blank"> <i class="menu-icon fa fa-link"></i>SAMAGRA</a></li>
+    <li title="School Wiki"> <a href="https://schoolwiki.in/" target="_blank"> <i class="menu-icon fa fa-link"></i>School Wiki</a></li>
+    <li title="VICTERS"> <a href="https://victers.kite.kerala.gov.in/" target="_blank"> <i class="menu-icon fa fa-link"></i>VICTERS</a></li>
+    <li title="SAMPOORNA"> <a href="https://sampoorna.kite.kerala.gov.in" target="_blank"> <i class="menu-icon fa fa-link"></i>SAMPOORNA</a></li>
+    <li title="KOOL"> <a href="https://kool.kite.kerala.gov.in/" target="_blank"> <i class="menu-icon fa fa-link" ></i>KOOL</a></li>
+    <li title="Little Kites"> <a href="https://kite.kerala.gov.in/littlekites/lkms/" target="_blank"> <i class="menu-icon fa fa-link" title="KOOL"></i>Little Kite's</a></li>
+
+    <h5 class="menu-title" title="KITE State Office">Contact No</h5>
+    <li> <a href="javascript:void(0)"> <i class="menu-icon fa fa-phone" title="Contact"></i>0471 2529800</a></li>
+    <li> <a href="javascript:void(0)"> <i class="menu-icon fa  " title="Email"></i>contact@kite.kerala.gov.in</a></li>
+ </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header -->
+                <header id="header" class="header">
+            <div class="header-menu">
+    <form method="post" class="search-form" id="live-search-form" name="live-search-form" style="display:inline;"  action="https://sametham.kite.kerala.gov.in/search">
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-3">
+            <a id="menuToggle" style="display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+            <div class="header-left" style='margin-left:10px;'>
+                <input type="text" name="liveSearchVals" id="liveSearchVals" class="form-control" placeholder="Filter Search" style="display:inline;" autocomplete="off">
+                <input type="hidden" name="searchvals" id="searchvals" class="form-control" placeholder="Enter School Code or School Name">
+                <div id="liveSearchResults" class="dropdown-menu show" aria-labelledby="dropdownMenuButton" x-placement="bottom-start"  
+                     style="display:none;position: absolute; transform: translate3d(0px, 40px, 0px); top: 95%; left: 4%; 
+                     will-change: transform;min-width:21rem;">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-9 col-sm-9 col-xs-9" id="liveSearchDiv">
+            <input type="submit" name="" class="btn btn-primary" value="Search" id=""  style="display:inline; width:100px;margin-top:4px;margin-bottom:4px;">
+            &nbsp;&nbsp;
+            <a href="https://sametham.kite.kerala.gov.in/search/advanced_search_interface" class="btn btn-outline-primary">Advanced Search</a>
+        </div>
+        <div class="col-lg-3 col-sm-1">
+            <div class="user-area dropdown float-right">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://sametham.kite.kerala.gov.in/assets/images/kite_logo.png" style="height:60px;">
+                </a>
+            </div>
+        </div>
+    </form>
+        </header>
+        
+        <div class="content mt-3">
+            <!--
+<div class="col-sm-12">
+    <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
+-->
+<style>
+.firstcharacter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-left: 3px;
+  color: #de3685 ;
+}
+
+.fulljustify {
+    	text-align:justify!important;
+    }
+    .fulljustify:after {
+        content: "";
+        display: inline-block;
+     }
+    #tagline {
+        height: 80px;
+        overflow: hidden;
+  /* vert-center */
+    }
+ </style>
+
+
+                                                <div class="col-lg-8" style="text-align:justify">
+                                                    <div class="card">
+                                                        <div class="card-header bg-secondary">
+                                                            <strong class="card-title text-light">About Sametham</strong>
+                                                        </div>
+                                                        <div class="card-body card-block">
+                                                                <div class="form-group">
+                                                                    <div  id="tagline"   class="input-group fulljustify" style="display:inline;">
+                                                                      <span class="firstcharacter">S</span>ametham is an initiative from   KITE   to share the authentic data of academic and infrastructural details of Govt, Aided and Recognized UnAided schools in Kerala. Sametham opens the doors to view the basic details of schools including its physical infrastructure, governing mechanisms etc. Details which are available in Sametham include the approved classes in each school, details of students in each class, teachers and non-teaching staff (without personal details) etc   which can be used for various report generations at school, educational sub-district, educational district, revenue district and state level.
+                                                                      </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-4">
+                                                    <div class="card">
+                                                      <div class="card-header bg-secondary">
+                                                          <strong class="card-title text-light">Video Tutorial</strong>
+                                                      </div>
+                                                        <div class="card-body card-block">
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                      <video   controls style="width:300px; height:160px;">
+                                                                      <source src="https://sametham.kite.kerala.gov.in/assets/videos/tutorialsH.mp4" type="video/mp4">
+                                                                      </video>
+
+                                                                    </div>
+                                                                 <span style="color:blue">   <a  target="_blank" href="https://sametham.kite.kerala.gov.in/assets/documents/GO Rt 436 19 KITE Sametham Online School Data Bank.pdf">Govt.Order</a> and <a href="https://sametham.kite.kerala.gov.in/assets/documents/usermanual.pdf" target="_blank">User Manual</a></span>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+<div class="col-lg-12">
+<div class="card">
+    <div class="card-header bg-secondary">
+        <strong class="card-title text-light">Schools</strong>
+	<span class="card-title text-light" style="float:right;font-size:14px">Data updated on 27 Jun 2026</span>    </div>
+    <div class="card-body">
+        <div class="col-sm-6 col-lg-3 ">
+            <div class="card text-white bg-flat-color-1 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">9,634</span>
+                    </h4>
+                    <p class="text-light bold">LP, UP Schools</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-2 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">3,126</span>
+                    </h4>
+                    <p class="text-light bold">HS Schools</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-3 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">2,065</span>
+                    </h4>
+                    <p class="text-light bold">HSS Schools</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-4 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">389</span>
+                    </h4>
+                    <p class="text-light bold">VHSE Schools</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr style="text-align:left">
+                        <th style="text-align:left" scope="col">Type</th>
+                        <th scope="col">LP</th>
+                        <th scope="col">UP</th>
+                        <th scope="col">HS</th>
+                        <th scope="col">HSS</th>
+                        <th scope="col">VHSE</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                                <tbody>
+                    <tr>
+                        <th width="20%" style="text-align:left" scope="row">Govt</th>
+                        <td  width="12%" >2,590</td>
+                        <td  width="12%" >874</td>
+                        <td  width="12%" >1,229</td>
+                        <td  width="12%" >857</td>
+                        <td  width="12%" >261</td>
+                        <td  width="12%"  style="border-bottom: 1px solid #dee2e6;">5811</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:left" scope="row">Aided</th>
+                        <td>3,799</td>
+                        <td>1,846</td>
+                        <td>1,430</td>
+                        <td>846</td>
+                        <td>128</td>
+                        <td>8049</td>
+                    </tr>
+                   <tr>
+                        <th style="text-align:left" scope="row">Unaided Recognised</th>
+                        <td>298</td>
+                        <td>227</td>
+                        <td>467</td>
+                        <td>362</td>
+                        <td>NA</td>
+                        <td>1354</td>
+                    </tr> 
+
+                    <tr  style="border-bottom: 1px solid #dee2e6;">
+                        <th style="text-align:left" scope="row" >Total</th>
+                        <td><a style="font-size:16px;" href="https://sametham.kite.kerala.gov.in/publicView/districtwise/LP" class=" ">6687</a></td>
+                        <td><a style="font-size:16px;" href="https://sametham.kite.kerala.gov.in/publicView/districtwise/UP" class=" ">2947</a></td>
+                        <td><a style="font-size:16px;" href="https://sametham.kite.kerala.gov.in/publicView/districtwise/HS" class=" ">3126</a></td>
+                        <td><a style="font-size:16px;" href="https://sametham.kite.kerala.gov.in/publicView/schoolconsolidationhse" class=" ">2065</a></td>
+                        <td><a style="font-size:16px;" href="https://sametham.kite.kerala.gov.in/publicView/schoolconsolidationvhse" class=" ">389</a></td>
+                        <td><span class="badge badge-success">15214</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="card">
+    <div class="card-header bg-secondary">
+        <strong class="card-title text-light">Students Strength 2026-27</strong><span class="card-title text-light" style="float:right;font-size:14px">Data updated on 27 Jun 2026</span>    </div>
+    <div class="card-body">
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-1 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">21,73,123</span>
+                    </h4>
+                    <p class="text-light bold">LP, UP Students</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-2 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">12,38,075</span>
+                    </h4>
+                    <p class="text-light bold">HS Students</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-3 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">7,68,106</span>
+                    </h4>
+                    <p class="text-light bold">HSS Students</p>
+                </div>
+            </div>
+        </div> 
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-4 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">54,503</span>
+                    </h4>
+                    <p class="text-light bold">VHSE Students</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-12">
+           <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="text-align:left" scope="col">Type</th>
+                        <th scope="col">LP</th>
+                        <th scope="col">UP</th>
+                        <th scope="col">HS</th>
+                 
+                        <th scope="col">HSS</th>
+                    
+                        <th scope="col">VHSE</th>
+            
+                        <th scope="col">Total</th>
+              
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th width="20%" style="text-align:left" scope="row">Govt</th>
+                        <td width="12%">3,49,076</td>
+                        <td width="12%">2,82,882</td>
+                        <td width="12%">4,01,051</td>
+                       
+                        <td width="12%">3,56,632</td> 
+                      
+                        <td width="12%">35,655</td>
+                  
+                        <td width="12%">14,25,296</td>
+            
+                    </tr>
+                    <tr>
+                        <th style="text-align:left" scope="row">Aided</th>
+                        <td>6,11,533</td>
+                        <td>6,45,702</td>
+                        <td>7,40,381</td>
+                    
+                        <td>3,70,023</td> 
+
+                        <td>18,848</td>
+             
+                        <td>23,86,487</td>
+                       
+                    </tr>
+                    <tr>
+                        <th style="text-align:left" scope="row">Unaided Recognised</th>
+                        <td>1,80,855</td>
+                        <td>1,03,075</td>
+                        <td>96,643</td>
+                   
+                        <td>41,451</td> 
+                   
+                        <td>NA</td>
+                     
+                        <td>4,22,024</td>
+                     
+                    </tr>
+                    <tr  style="border-bottom: 1px solid #dee2e6;">
+                        <th style="text-align:left" scope="row">Total</th>
+                        <td>11,41,464</td>
+                        <td>10,31,659</td>
+                        <td>12,38,075</td>
+                     
+                        <td>7,68,106</td> 
+             
+                        <td>54,503</td>
+          
+                        <td><span class="badge badge-success">42,33,807</span></td>
+      
+                    </tr>
+
+                </tbody>
+            </table>
+           </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="card">
+    <div class="card-header bg-secondary">
+        <strong class="card-title text-light">Teaching Staff</strong>
+    </div>
+    <div class="card-body">
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-1 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">82,025</span>
+                    </h4>
+                    <p class="text-light bold">LP, UP Teachers</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-2 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">44,789</span>
+                    </h4>
+                    <p class="text-light bold">HS Teachers</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-3 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">30,224</span>
+                    </h4>
+                    <p class="text-light bold">HSS Teachers</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-4 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">5,945</span>
+                    </h4>
+                    <p class="text-light bold">VHSE Teachers</p>
+                </div>
+            </div>
+        </div> 
+        <div class="col-lg-12">
+           <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="text-align:left" scope="col">Type</th>
+                        <th scope="col">LP</th>
+                        <th scope="col">UP</th>
+                        <th scope="col">HS</th>
+                        <th scope="col">HSS</th>
+                        <th scope="col">VHSE</th> 
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="text-align:left" scope="row">Govt</th>
+                        <td>21,314</td>
+                        <td>12,834</td>
+                        <td>19,849</td>
+                        <td>13,965</td>
+                        <td>2,277</td> 
+                        <td>70,239</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:left" scope="row">Aided</th>
+                        <td>24,760</td>
+                        <td>23,117</td>
+                        <td>24,940</td>
+                        <td>16,259</td>
+                        <td>3,668</td>
+                        <td>92,744</td>
+                    </tr>
+                    <!--  <tr>
+                        <th scope="row">Unaided</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      <!--   <td>0</td>
+                        <td>NA</td> 
+                        <td>4,22,024</td>
+                    </tr> -->
+                    <tr>
+                        <th style="text-align:left" scope="row">Total</th>
+                        <td>46074</td>
+                        <td>35951</td>
+                        <td>44789</td>
+                        <td>30224</td>
+                        <td>5945</td>
+                        <td><span class="badge badge-success">1,62,983</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+           </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="col-lg-12">
+<div class="card">
+    <div class="card-header bg-secondary">
+        <strong class="card-title text-light">Non Teaching Staff</strong>
+    </div>
+    <div class="card-body">
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-1 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">4,444</span>
+                    </h4>
+                    <p class="text-light bold">LP, UP Non Teaching</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="card text-white bg-flat-color-2 border-divs">
+                <div class="card-body pb-0">
+                    <h4 class="mb-0">
+                        <span class="bold">9,382</span>
+                    </h4>
+                    <p class="text-light bold">HS Non Teaching</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-lg-12">
+           <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="text-align:left" scope="col">Type</th>
+                        <th scope="col">LP</th>
+                        <th scope="col">UP</th>
+                        <th scope="col">HS</th>
+                <!--    <th scope="col">HSS</th>
+                        <th scope="col">VHSE</th> -->
+                        <th scope="col">Total</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="text-align:left" scope="row">Govt</th>
+                        <td>1,888</td>
+                        <td>1,112</td>
+                        <td>4,374</td>
+                                      <td>7,374</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align:left" scope="row">Aided</th>
+                        <td>15</td>
+                        <td>1,429</td>
+                        <td>5,008</td>
+                                  <td>6,452</td>
+                    </tr>
+                  <!--  <tr>
+                        <th scope="row">Unaided</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td> 
+                         <td>0</td> 
+                        <td>NA</td> 
+                        <td>4,22,024</td>
+                    </tr> -->
+                    <tr>
+                        <th style="text-align:left" scope="row">Total</th>
+                        <td>1903</td>
+                        <td>2541</td>
+                        <td>9382</td>
+                                            <td><span class="badge badge-success">13,826</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+           </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://sametham.kite.kerala.gov.in/assets/js/jquery.js"></script>
+    <script src="https://sametham.kite.kerala.gov.in/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://sametham.kite.kerala.gov.in/assets/js/main.js"></script>
+    <script src="https://sametham.kite.kerala.gov.in/assets/js/dashboard.js"></script>
+    <script src="https://sametham.kite.kerala.gov.in/assets/js/widgets.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#districtwise").hide();
+            $("#classs, #list, #totalS").addClass('clr');
+            $("#graphicalview, #first, #second").hide();
+        });
+
+        function showvhseStuds(yr) {
+            $("#first, #second, #total, #graphicalview").hide();
+            $("#firstS, #totalS, #secondS, #graph").removeClass('clr');
+
+            if (yr == '1') {
+                $("#first").show();
+                $("#firstS").addClass('clr');
+            } else if (yr == '2') {
+                $("#second").show();
+                $("#secondS").addClass('clr');
+            } else if (yr == '3') {
+                $("#total").show();
+                $("#totalS").addClass('clr');
+            } else if (yr == '4') {
+                $("#graphicalview").show();
+                $("#graph").addClass('clr');
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            if ($("#VIDHYAKIRANAM_form #VIDHYAKIRANAM_school").length > 0) {
+                $("#VIDHYAKIRANAM_school").select2();
+            }
+            $('#VIDHYAKIRANAM_school').on('change', function() {
+                var selectedValue = $(this).val();
+                if (selectedValue) {
+                    $("#VIDHYAKIRANAM_form").submit();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
