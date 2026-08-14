@@ -19,10 +19,18 @@ finance_types:
   unaided: "4"
   all: "All"
 
-# The working set for the aggregate. Aided is fetched too, for the comparison
-# table Phase 4 asks for; unaided is kept in the raw dump but not aggregated.
+# Only Government schools are fetched and aggregated. Aided and unaided rows
+# are kept in the Phase 1 raw dump but are never fetched.
 working_management: ["government"]
-comparison_management: ["aided"]
+comparison_management: []
+
+working_set:
+  # Skip schools whose approved class range starts at or above this standard.
+  # A school beginning at class 8 has no LP (1-4) or UP (5-7) section, so it
+  # cannot hold LP/UP teaching posts. Empirically consistent with sample 18501
+  # (level "8 - 10"), whose staff list is one HSA plus one office attendant.
+  # In Malappuram this excludes 37 of 556 Government schools.
+  skip_if_lowest_class_at_least: 8
 
 endpoints:
   # {ftype} is a finance_types value; {district} is district.id

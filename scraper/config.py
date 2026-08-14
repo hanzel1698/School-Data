@@ -34,6 +34,7 @@ class Config:
     finance_types: dict[str, str]
     working_management: list[str]
     comparison_management: list[str]
+    skip_if_lowest_class_at_least: int
     endpoints: dict[str, str]
     http: HttpConfig
     paths: dict[str, Path]
@@ -73,7 +74,10 @@ def load_config(config_path: Path | None = None) -> Config:
         district_name=raw["district"]["name"],
         finance_types=dict(raw["finance_types"]),
         working_management=list(raw["working_management"]),
-        comparison_management=list(raw["comparison_management"]),
+        comparison_management=list(raw["comparison_management"] or []),
+        skip_if_lowest_class_at_least=int(
+            raw["working_set"]["skip_if_lowest_class_at_least"]
+        ),
         endpoints=dict(raw["endpoints"]),
         http=HttpConfig(
             delay_seconds=float(http_raw["delay_seconds"]),
