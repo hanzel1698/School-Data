@@ -15,6 +15,12 @@ Assistant`, `UP School Assistant`, …), so these are designation-level counts
 rather than raw headcount. That is closer to a post count than the task
 anticipated — but it is still filled posts only.
 
+The sanctioned establishment and the vacancy position have to come from the
+department itself. `rti_toolkit.md` sets out that route — which office holds the
+staff fixation order, how to ask for it so it cannot be refused as "creating
+information", and ready-to-send RTI drafts. `rti_toolkit_malayalam.md` is the
+Malayalam version.
+
 ## Headline
 
 Across **519 Government schools** in Malappuram that have an LP
@@ -41,6 +47,25 @@ If you need one citable number, the defensible statement is:
 > Malappuram's 519 Government schools that have such sections, of whom
 > 3202 hold LP-specific posts, 1598 hold UP-specific posts, and
 > 1288 hold posts spanning both.
+
+### A narrower scope is used for the RTI
+
+`rti_toolkit.md` deliberately works on a narrower scope — **class-teacher posts
+only**: LP School Assistant and UP School Assistant at all grades, excluding
+language-teacher posts (Arabic, Sanskrit, Urdu, Hindi) and Headmaster LP/UP. On
+that scope the ranges above do not arise at all:
+
+| | Filled posts |
+|---|---:|
+| LP School Assistant (all grades) | 3202 |
+| UP School Assistant (all grades) | 1598 |
+| **Total** | **4800** |
+
+The 1288 shared posts drop out **whole**, because every language and Headmaster
+post falls in the shared bucket and the LP-only and UP-only buckets contain
+none of either. So 4800 and 6088 are both correct on their own scopes, and the
+difference between them is exactly the 1288 shared posts — not a revision, a
+disagreement, or a recount.
 
 ## Scope
 
@@ -172,7 +197,8 @@ post designation.
 
 **It is not:**
 
-- a count of *sanctioned* LPST/UPST posts — vacancies are invisible here;
+- a count of *sanctioned* LPST/UPST posts — vacancies are invisible here; see
+  `rti_toolkit.md` for how to obtain the sanctioned and vacant figures;
 - a teacher *headcount* usable for pupil–teacher ratio without care — part-time
   and shared posts are counted as posts;
 - complete for higher secondary — HSS/VHSS staff are not published at all;
