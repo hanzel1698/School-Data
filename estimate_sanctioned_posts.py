@@ -11,18 +11,28 @@ compare against who is actually in place.
 
 ## The rule
 
-The division tables below are transcribed from the Kerala staff-fixation ready
-reckoner and strength-wise division tables in data/sources/, cross-checked
-against muralipanamanna.in. They are not flat ratios: LP plateaus at 5
-divisions across the whole 121-200 band and then moves in steps of 40 rather
-than 30. Per standard those upper bands are almost never reached, so on this
-data the tables and a flat ceil(n/ratio) differ by only a division or two
-district-wide - but the tables are what the rule says, so the tables are used.
+Statutory basis: KER Chapter XXIII rule 12, as substituted by the Kerala
+Education (Amendment) Rules, 2022 (data/sources/). Sub-rule (1) requires the
+Educational Officer to issue staff fixation orders through SAMANWAYA by 15 July
+each year, "after finalizing the number of **divisions in each class** based on
+the strength of pupils on the roll having Unique Identification Number (UID) as
+on the sixth working day from the reopening day in June", taken from Sampoorna.
+"In each class" is why this script counts divisions per standard rather than
+per section, and the phrase settles what the validation had already indicated.
 
-The ratio bands do **not** line up with the sections. The reckoner applies
-1:30 to standards I-V and 1:35 to VI-VIII, so standard 5 sits in the UP section
-but forms divisions at the LP ratio. Modelling it that way rather than by
-section is worth a little accuracy (AUC 0.879 against 0.878).
+The same amendment inserts rule 23A: the teacher-pupil ratio for standards I to
+VIII is the SCHEDULE to the RTE Act, 2009, and confines the old rule 23 class
+maximum to standards IX and X. That schedule is the shape of the LP table -
+61-90 three, 91-120 four, **121-200 five**, and above 200 a ratio not exceeding
+1:40. The plateau and the 40-pupil step are not transcription quirks; they are
+the RTE Schedule. The schedule's floors (two teachers for a primary section,
+one per class plus subject minimums for upper primary) are already satisfied by
+per-standard counting on this data and never bind.
+
+The ratio bands do **not** line up with the sections: 1:30 covers standards I-V
+and 1:35 covers VI-VIII, so standard 5 sits in the UP section but forms
+divisions at the LP ratio. Modelling that rather than the section split is
+worth a little accuracy (AUC 0.879 against 0.878).
 
 Three further choices were tested against the department's decisions rather
 than assumed, and one of them overturned this script's first attempt:
@@ -63,6 +73,17 @@ than assumed, and one of them overturned this script's first attempt:
 
 The result is a signed **imbalance**, not a vacancy count. Positive means more
 teachers in place than divisions earn; negative means fewer. Both are common.
+
+A negative imbalance is not automatically an unfilled vacancy, and rule 12 as
+amended says why. Sub-rule (3) gives ordinary fixation effect from 15 July but
+puts **additional divisions and additional posts in effect only from 1 October**,
+and only after the Educational Officer's surprise verification, the Director's
+on-the-spot check and a Government sanction due by 30 September (sub-rules 4 to
+6). A school whose enrolment earns more divisions than it holds staff for may
+therefore be mid-procedure rather than short. Sub-rule (8) runs the other way:
+a fall in strength up to 31 January can have divisions or posts withdrawn. The
+entitlement this script computes is a position at one instant in a process that
+moves twice a year.
 
 ## Validation
 

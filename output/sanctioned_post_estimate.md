@@ -1,10 +1,10 @@
 # Estimating LP/UP division entitlement, and testing it against the department
 
 Produced by `estimate_sanctioned_posts.py`. Enrolment re-crawled from Sametham
-on 2026-08-15 (519 schools). Division rules from the Kerala staff-fixation
-ready reckoner and strength-wise division tables (`data/sources/`), cross-checked
-against muralipanamanna.in. Validated against the DDE Malappuram staff-fixation
-order of 14.07.2026.
+on 2026-08-15 (519 schools). Rules from the Kerala Education (Amendment) Rules,
+2022, the staff-fixation ready reckoner and the strength-wise division tables
+(all in `data/sources/`), cross-checked against muralipanamanna.in. Validated
+against the DDE Malappuram staff-fixation order of 14.07.2026.
 
 > The re-crawl reproduced the staff side **byte-identically** to the 14.08.2026
 > crawl — all 519 schools, every designation count unchanged, 6,088 LP/UP posts
@@ -48,23 +48,51 @@ schools, not recruiting into empty ones.
 
 ## The rule, as the sources actually state it
 
-The tables are **not** flat ratios:
+**Statutory basis: KER Chapter XXIII rule 12, as substituted by the Kerala
+Education (Amendment) Rules, 2022.** Sub-rule (1) requires the Educational
+Officer to issue fixation orders through SAMANWAYA **by 15 July** each year,
 
-- **LP (1:30)** — 1–30 → 1 division, 31–60 → 2, 61–90 → 3, 91–120 → 4, then a
-  plateau: **121–200 all give 5 divisions**, after which it moves in steps of
-  40, not 30.
-- **UP (1:35)** — a clean 1:35 throughout, 1–35 → 1, 36–70 → 2, and so on.
-- **HS (1:45)** — 1–50 → 1, then steps of 45. Out of scope here.
+> "after finalizing the number of **divisions in each class** based on the
+> strength of pupils on the roll having Unique Identification Number (UID) as
+> on the sixth working day from the reopening day in June. The UID strength
+> shall be taken from Sampoorna."
 
-The ratio bands **do not line up with the sections**. The reckoner applies
-1:30 to **standards I–V** and 1:35 to **VI–VIII**. Standard 5 therefore sits in
-the UP section but forms its divisions at the LP ratio. Modelling that
-correctly is worth a little accuracy (AUC 0.879 against 0.878 for a naive
-section split).
+Three things fall out of that single sentence:
 
-Per standard, the upper bands are almost never reached, so the tables and a
-flat `ceil(n / ratio)` differ by only a division or two district-wide. The
-tables are used anyway, because they are what the rule says.
+- **"Divisions in each class"** settles the per-standard question in the rule
+  itself, not just empirically.
+- The basis is **UID strength on the sixth working day, from Sampoorna** —
+  confirming the enrolment we compute on is the same input the department used.
+- The **15 July** deadline is why the DDE order is dated 14.07.2026 and takes
+  effect the 15th. It was issued on the statutory date.
+
+The same amendment inserts **rule 23A**: the teacher-pupil ratio for standards
+I–VIII is the **SCHEDULE to the RTE Act, 2009**, and confines the old rule 23
+class maximum to standards IX–X. That schedule is the shape of the LP table:
+
+| LP strength | Divisions |
+|---|---:|
+| 1–30 | 1 |
+| 31–60 | 2 |
+| 61–90 | 3 |
+| 91–120 | 4 |
+| **121–200** | **5** |
+| above 200 | ratio not exceeding 1:40 |
+
+So the plateau across 121–200 and the switch to 40-pupil steps are not
+transcription quirks — they are the RTE Schedule, incorporated into KER in
+2022. UP is a clean 1:35 throughout; HS is 1:45 and out of scope.
+
+The schedule's minimum-teacher floors (two for a primary section; one per class
+plus subject minimums for upper primary) were tested and **never bind** — a
+school with four LP standards already earns at least four divisions. That the
+floors are automatically satisfied is a further check that per-standard is the
+right granularity.
+
+The ratio bands **do not line up with the sections**: 1:30 covers **standards
+I–V** and 1:35 covers **VI–VIII**, so standard 5 sits in the UP section but
+forms divisions at the LP ratio (AUC 0.879 against 0.878 for a naive section
+split).
 
 ## Three corrections to the method as originally proposed — one of them to my own
 
@@ -123,6 +151,25 @@ Sweeping the ratios from 1:24 to 1:45 peaks at LP 1:31 / UP 1:35 (AUC 0.884).
 The rule's own 1:30 / 1:35 scores 0.879 — inside the noise — so the rule is
 kept rather than a fitted approximation to it. That the sweep lands on the
 statutory values from a standing start is itself corroboration.
+
+## A shortfall is not automatically a vacancy
+
+The 2022 amendment adds the most important qualification to how the 184 short
+schools should be read. Rule 12(3) gives ordinary fixation effect from 15 July,
+but puts **additional divisions and additional posts in effect only from
+1 October** — and only after the Educational Officer's surprise verification,
+the Director's on-the-spot check, and a Government sanction due by 30 September
+(sub-rules 4–6). The Explanatory Note is explicit that this machinery exists to
+curb divisions created through bogus admissions.
+
+So a school whose enrolment earns more divisions than it holds staff for may be
+**mid-procedure rather than short**. Our snapshot sits before both dates:
+enrolment from the sixth working day of June, staff from roughly the 27.06.2026
+sync.
+
+Rule 12(8) runs the other way: a fall in strength any time up to 31 January can
+have divisions or posts **withdrawn**. Entitlement is a position in a process
+that moves twice a year, not a standing figure.
 
 ## What is still not modelled
 
