@@ -143,6 +143,10 @@ class SchoolDetail:
     staff: list[StaffEntry] = field(default_factory=list)
     reported_totals: dict[str, int] = field(default_factory=dict)
     students_by_standard: dict[str, int] = field(default_factory=dict)
+    # {standard: {medium: pupils}}. Kerala forms class divisions per standard
+    # *and* per medium, so staff-fixation arithmetic needs this granularity -
+    # students_by_standard above is only the cross-medium "ALL" column.
+    students_by_standard_medium: dict[str, dict[str, int]] = field(default_factory=dict)
     students_total: int | None = None
     staff_tables_seen: list[str] = field(default_factory=list)
     staff_tables_empty: list[str] = field(default_factory=list)
@@ -220,18 +224,34 @@ def _parse_staff_table(table: Tag, establishment: str) -> tuple[list[StaffEntry]
     return entries, reported_total
 
 
-def _parse_students_table(table: Tag) -> tuple[dict[str, int], int | None]:
-    """Read the per-standard 'ALL' total column from the students table.
+def _parse_students_table(
+    table: Tag,
+) -> tuple[dict[str, int], dict[str, dict[str, int]], int | None]:
+    """Read the students table by standard, and by standard x medium.
 
-    Layout is Standard | (medium x Boys/Girls/Total) x 4 | ALL Boys/Girls/Total,
-    so the last cell of each data row is that standard's total across media.
+    Layout is Standard | (medium x Boys/Girls/Total) x N | ALL Boys/Girls/Total,
+    so the last cell of each data row is that standard's total across media and
+    every third cell before it closes one medium's block.
+
+    The medium names come off the header row rather than being assumed, since
+    the set of media varies by school (Malayalam/English everywhere, Tamil and
+    Kannada only in some districts).
     """
     by_standard: dict[str, int] = {}
+    by_standard_medium: dict[str, dict[str, int]] = {}
+    media: list[str] = []
     grand_total: int | None = None
 
     for tr in table.find_all("tr"):
         cells = [_clean(c.get_text(" ")) for c in tr.find_all(["td", "th"])]
-        if len(cells) < 16:
+
+        # Header row naming the media, e.g. [Malayalam, English, Tamil, Kannada, ALL].
+        if not media and len(cells) >= 2 and cells[-1].upper() == "ALL":
+            media = cells[:-1]
+            continue
+
+        expected = 1 + 3 * (len(media) + 1) if media else 16
+        if len(cells) < expected:
             continue
 
         label = cells[0]
@@ -243,8 +263,15 @@ def _parse_students_table(table: Tag) -> tuple[dict[str, int], int | None]:
             grand_total = int(last)
         elif label.isdigit():
             by_standard[label] = int(last)
+            if media:
+                # Each medium contributes Boys/Girls/Total; take the Total.
+                by_standard_medium[label] = {
+                    medium: int(cells[3 + 3 * position])
+                    for position, medium in enumerate(media)
+                    if cells[3 + 3 * position].isdigit()
+                }
 
-    return by_standard, grand_total
+    return by_standard, by_standard_medium, grand_total
 
 
 def parse_school_detail(html: str) -> SchoolDetail:
@@ -281,9 +308,11 @@ def parse_school_detail(html: str) -> SchoolDetail:
             # student tables are a different population and are skipped.
             if "of hss" in lowered or "of vhss" in lowered:
                 continue
-            by_standard, total = _parse_students_table(table)
+            by_standard, by_standard_medium, total = _parse_students_table(table)
             if by_standard:
                 detail.students_by_standard = by_standard
+            if by_standard_medium:
+                detail.students_by_standard_medium = by_standard_medium
             if total is not None:
                 detail.students_total = total
 

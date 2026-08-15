@@ -189,6 +189,15 @@ fixation — 49 LPST and 42 UPST, the department's own LP/UP split. It is a floo
 on posts lost: an abolished post that was already vacant produces no redeployed
 teacher and appears in no source used here.
 
+**An entitlement estimate, validated 2026-08-15** — see
+`output/sanctioned_post_estimate.md`. Reconstructing division entitlement from
+standard × medium enrolment gives **6,621 divisions against 6,088 filled LP/UP
+posts, a district shortfall of roughly 300–530 posts** depending on the division
+strength assumed. The method separates the department's own 2026-27 verdicts
+with AUC 0.862 (held-out 0.838) across 134 labelled schools, so it ranks schools
+by likely shortfall reliably — but it gets the sign wrong on 16% of known cases
+and must not be cited as a per-school vacancy count.
+
 UDISE+ counts teachers in position too, so it does not soften the sanctioned-post
 caveat at the top of this document.
 
