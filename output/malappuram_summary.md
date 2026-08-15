@@ -149,8 +149,26 @@ LP/UP figure rather than guessed into a bucket. See
 
 Beyond outright absence, some published records look **under-populated**: for
 example school 18501 (Technical High School Manjeri) reports `Total Employees
-- 2` for an entire high school. These are not distinguishable from genuinely
-tiny establishments without an external source, so they are left as published.
+- 2` for an entire high school. These are left as published.
+
+**Cross-checked against UDISE+ on 2026-08-15** — see `output/udise_crosscheck.md`.
+Two results bear on this figure:
+
+1. **No systematic under-publication.** Sametham's own Kerala-wide Government
+   LP+UP total (34 148) and UDISE+'s independently collected Kerala figure for
+   Government primary/upper-primary schools (31 817) agree to within 7.3%, and
+   the residual runs in the direction the definitions predict — Sametham counts
+   by post designation, so LP/UP posts inside secondary schools are included,
+   while UDISE counts by school category.
+2. **Per-school completeness is narrowed, not resolved.** UDISE+ publishes no
+   district or school rows on its public API, so no per-school join is
+   possible. An internal pupil-teacher-ratio screen instead leaves 1 school
+   with LP/UP pupils and no LP/UP teacher listed, and 9 schools above twice the
+   district median ratio — a review shortlist, not a set of confirmed gaps.
+   Ranked list in `data/processed/malappuram_ptr_check.csv`.
+
+UDISE+ counts teachers in position too, so it does not soften the sanctioned-post
+caveat at the top of this document.
 
 Every school with staff data reconciles exactly against Sametham's own
 `Total Employees` line — the parser is not dropping or double-counting rows.

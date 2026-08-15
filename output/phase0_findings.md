@@ -422,3 +422,8 @@ On your go-ahead I'll build Phases 1–3 and run the crawl.
 Only `sametham.kite.kerala.gov.in` was contacted. `samanwaya.kite.kerala.gov.in`
 and `sampoorna.kite.kerala.gov.in` were never resolved, requested, or probed,
 and nothing in the code references them.
+
+**Scope extended 2026-08-15, on request:** `udiseplus.gov.in` and its public
+dashboard API `api.udiseplus.gov.in/open-services` were added for the
+cross-check in `output/udise_crosscheck.md`. Read-only, public endpoints only,
+national and state aggregates. The credentialed systems above remain untouched.
