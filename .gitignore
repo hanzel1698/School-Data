@@ -6,3 +6,7 @@ data/cache/
 
 __pycache__/
 *.py[cod]
+
+# Malayalam fonts copied from the system font directory on first run by
+# rti_app/generate_rti.py. Regenerable, and not ours to vendor.
+rti_app/fonts/

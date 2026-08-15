@@ -1,0 +1,102 @@
+# ===========================================================================
+#  THE ONLY FILE YOU NEED TO EDIT.
+#
+#  Fill in the five fields under `applicant:` marked REQUIRED, choose what to
+#  generate under `generate:`, then run:
+#
+#      python rti_app/generate_rti.py
+#
+#  Everything else has a working default.
+# ===========================================================================
+
+applicant:
+  # --- REQUIRED -----------------------------------------------------------
+
+  # Your name in Malayalam, exactly as it should appear on the application.
+  name_ml: ""
+
+  # Full postal address. Use a multi-line block (the "|" is part of YAML).
+  address_ml: |
+
+
+  phone: ""
+
+  # The reply is requested as a CSV to this address, so get it right.
+  email: ""
+
+  # Place written above the date, e.g. "മലപ്പുറം"
+  place_ml: ""
+
+  # --- OPTIONAL -----------------------------------------------------------
+
+  # Printed in brackets after the Malayalam name. Leave blank to omit.
+  name_en: ""
+
+  # ISO date (2026-08-15). Blank = today's date when you run the script.
+  date: ""
+
+  # true if you hold a BPL card: the fee paragraph switches to the exemption
+  # and the enclosure list asks for a card copy instead of the fee.
+  bpl: false
+
+
+request:
+  # Which staff fixation years to ask for. The second is requested only "if
+  # already issued", so leaving both is safe.
+  academic_years:
+    - "2025–26"
+    - "2026–27"
+
+  # Start of the period for the vacancy statements sent to the PSC.
+  vacancy_period_from_ml: "2024 ജനുവരി 1"
+
+  # Start of the period for the KPSC application (item C).
+  kpsc_period_from_ml: "2022 ജനുവരി 1"
+
+
+generate:
+  # Round 1: one application to the DDE covering the whole revenue district,
+  # plus one to the PSC for the recruitment side. This is the cheap start.
+  dde: true
+  kpsc: true
+
+  # Round 2, only if Round 1 is deflected: one application per AEO.
+  # Set `aeo: true` and list the sub-districts, or use "all" for all 17.
+  #
+  #   Kizhisseri  Kondotty  Malappuram  Manjeri  Mankada  Perinthalmanna
+  #   Parappanangadi  Tanur  Vengara
+  #   Edappal  Kuttippuram  Ponnani  Tirur
+  #   Areacode  Melattur  Nilambur  Wandoor
+  aeo: false
+  aeo_list: ["all"]
+
+  # A blank first-appeal application to keep on file for day 31.
+  appeal_template: true
+
+  # Append the school list (Annexure-I) to each application as landscape
+  # pages, filtered to that office's jurisdiction.
+  include_annexure: true
+
+
+# ===========================================================================
+#  OFFICE ADDRESSES
+#
+#  CONFIRM THESE BEFORE POSTING - do not trust a guessed address. Check the
+#  office's own letterhead or the department website.
+#
+#  Any key left out prints a visible "<confirm the office address>" placeholder
+#  rather than a wrong address, so an unfilled entry cannot pass unnoticed.
+#
+#  Keys: A_DDE_Malappuram, C_KPSC, and B_AEO_<SubDistrict> for each AEO.
+# ===========================================================================
+
+offices:
+  A_DDE_Malappuram: |
+
+
+  C_KPSC: |
+
+
+  # B_AEO_Manjeri: |
+  #   ഉപജില്ലാ വിദ്യാഭ്യാസ ഓഫീസ്, മഞ്ചേരി
+  #   മലപ്പുറം ജില്ല - 676121
