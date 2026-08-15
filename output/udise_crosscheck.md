@@ -122,6 +122,14 @@ which is the thing the underlying study is trying to measure. Nothing here
 distinguishes the two without checking the school. The full ranked list is in
 `data/processed/malappuram_ptr_check.csv`.
 
+> **Resolved 2026-08-15 — see `output/staff_data_currency.md`.** The DDE
+> Malappuram staff-fixation order of 14.07.2026 sent redeployed LPST/UPST
+> teachers to **8 of the 10 schools flagged above**, including the one with no
+> LP/UP teacher listed at all, against a 13.7% base rate (P ≈ 4×10⁻⁶). The
+> ratios were real, the department had already acted on them, and Sametham had
+> not yet published the result. Read these as schools whose staffing was
+> corrected on 15.07.2026, not as bad records.
+
 ## What this changes in the summary
 
 `output/malappuram_summary.md` said under-populated records are "not

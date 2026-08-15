@@ -6,3 +6,6 @@ data/cache/
 
 __pycache__/
 *.py[cod]
+
+# Employee rosters fetched for the currency check. Personal data, not source.
+data/cache_rosters/

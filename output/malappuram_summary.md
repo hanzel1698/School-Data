@@ -15,6 +15,15 @@ Assistant`, `UP School Assistant`, …), so these are designation-level counts
 rather than raw headcount. That is closer to a post count than the task
 anticipated — but it is still filled posts only.
 
+**These figures predate the 2026-27 staff fixation.** Sametham's staff data was
+dated externally on 2026-08-15 against a redeployment order of known effect
+(`output/staff_data_currency.md`): 91 Malappuram LPST/UPST teachers moved school
+on 15.07.2026, and seven of eight sampled are still listed at the school they
+left. So although this data was *retrieved* on 14 Aug 2026, it reflects roughly
+the 27.06.2026 sync — before the fixation took effect. The district totals below
+are unaffected, since the redeployment moves teachers within the district, but
+**per-school figures for the 137 schools named in that order are out of date.**
+
 ## Headline
 
 Across **519 Government schools** in Malappuram that have an LP
@@ -166,6 +175,19 @@ Two results bear on this figure:
    with LP/UP pupils and no LP/UP teacher listed, and 9 schools above twice the
    district median ratio — a review shortlist, not a set of confirmed gaps.
    Ranked list in `data/processed/malappuram_ptr_check.csv`.
+
+**Then largely explained, 2026-08-15** — see `output/staff_data_currency.md`.
+**8 of those 10 flagged schools received redeployed LPST/UPST teachers** on
+15.07.2026 under the DDE's staff-fixation order, against a base rate of 13.7%
+(P ≈ 4×10⁻⁶). The screen was detecting a real shortfall that the department had
+already corrected and Sametham had not yet published — not a parsing fault, and
+in most cases not a permanently under-staffed school.
+
+**A number for the sanctioned-post gap.** That same order redeploys **91 filled
+LPST/UPST posts** abolished across 68 Malappuram schools in the 2026-27
+fixation — 49 LPST and 42 UPST, the department's own LP/UP split. It is a floor
+on posts lost: an abolished post that was already vacant produces no redeployed
+teacher and appears in no source used here.
 
 UDISE+ counts teachers in position too, so it does not soften the sanctioned-post
 caveat at the top of this document.

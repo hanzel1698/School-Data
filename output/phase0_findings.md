@@ -389,6 +389,16 @@ school-typed field:
 Upstream in SPARK the record changes on every joining, transfer and
 retirement — continuously — but that date is not exposed anywhere in Sametham.
 
+> **Answered 2026-08-15 — see `output/staff_data_currency.md`.** The
+> "measure it" route below was taken, using the DDE Malappuram redeployment
+> order of 14.07.2026 as a probe: it moved 91 named LPST/UPST teachers between
+> named schools on 15.07.2026. Of eight sampled, **seven are still listed at
+> the school they left** and none has unambiguously appeared at the school they
+> joined. Sametham's staff data therefore predates 15.07.2026, consistent with
+> the 27.06.2026 stamp on the homepage's other panels, and the staffing figures
+> in this repository describe the establishment *before* the 2026-27 staff
+> fixation took effect.
+
 ### What we can defensibly cite
 
 **The retrieval date, and only the retrieval date.** Every school in
