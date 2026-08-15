@@ -1,520 +1,520 @@
-school_code,school_name,category,sub_district,students_lp,students_up,divisions_lp,divisions_up,divisions_total,naive_divisions_total,staff_lp,staff_up,staff_lp_up_shared,staff_division_based,imbalance,verdict,fixation_2026_27
-19453,G. M. U. P. S. Venniyur,UPS,Parappanangadi,832,1124,33,34,67,61,17,16,6,39,-28,shortfall,
-19866,GUPS Klari,UPS,Vengara,802,1088,31,34,65,59,14,19,7,40,-25,shortfall,received teachers
-19439,G. U. P. S. Ariyallur,UPS,Parappanangadi,576,673,23,22,45,40,15,13,5,33,-12,shortfall,received teachers
-18021,G B H S S Manjeri,VHSE,Manjeri,0,593,0,20,20,17,1,6,3,10,-10,shortfall,received teachers
-18204,GLPS Kizhisseri,UPS,Kizhisseri,711,142,28,5,33,29,19,0,4,23,-10,shortfall,
-48457,Kurumbalangode GUPS,UPS,Nilambur,286,417,13,15,28,22,6,8,4,18,-10,shortfall,
-19856,GLPS Parambilpeedika,LPS,Vengara,754,0,30,0,30,26,19,0,2,21,-9,shortfall,
-19447,G. M. U. P. S. Parakkadavu,UPS,Parappanangadi,524,651,21,23,44,37,14,15,7,36,-8,shortfall,
-18476,G.U.P.S. Muthiriparamba,UPS,Malappuram,262,223,12,10,22,16,9,2,4,15,-7,shortfall,
-18576,G.M.U.P.S. Melakkam,UPS,Manjeri,105,111,8,6,14,8,4,1,2,7,-7,shortfall,received teachers
-19077,GHSS Puthuparamba,HSS,Vengara,555,533,22,20,42,35,19,11,5,35,-7,shortfall,
-19669,G. M. U. P. S. Kodinhi,UPS,Tanur,269,621,13,21,34,27,10,12,5,27,-7,shortfall,received teachers
-19769,G. U. P. S. Chamravattam,UPS,Tirur,443,611,20,20,40,33,13,13,7,33,-7,shortfall,received teachers
-48129,I G M M R S Nilambur,HSS,Nilambur,64,129,4,5,9,7,2,0,0,2,-7,shortfall,
-18023,G.G.H.S.S. Manjeri,HSS,Manjeri,19,133,4,6,10,5,3,1,0,4,-6,shortfall,received teachers
-18365,G.M.U.P.S. Arimbra,UPS,Kondotty,298,429,12,15,27,23,9,7,5,21,-6,shortfall,received teachers
-18475,G.U.P.S. Kottakkal,UPS,Malappuram,285,315,14,12,26,19,11,6,3,20,-6,shortfall,
-18525,G.M.L.P.S. Kodasseri,LPS,Manjeri,378,0,18,0,18,13,10,0,2,12,-6,shortfall,received teachers
-19244,G. H. W. L. P. S. Maravancheri,UPS,Edappal,137,29,8,2,10,6,4,0,0,4,-6,shortfall,received teachers
-19317,G. L. P. S. Kalpakancheri,LPS,Kuttippuram,518,0,21,0,21,18,12,0,3,15,-6,shortfall,
-19816,GMLPS Koomanna,LPS,Vengara,223,0,13,0,13,8,7,0,0,7,-6,shortfall,
-19859,GUPS AR Nagar,UPS,Vengara,319,314,13,13,26,20,10,5,5,20,-6,shortfall,received teachers
-19864,GMUPS Kannamangalam,UPS,Vengara,245,262,14,12,26,17,8,7,5,20,-6,shortfall,
-48047,VMCGHSS Wandoor,HSS,Wandoor,0,325,0,12,12,10,0,6,0,6,-6,shortfall,received teachers
-48051,G H S S Thiruvali,HSS,Wandoor,0,541,0,19,19,16,1,9,3,13,-6,shortfall,
-48052,G H S S Karuvarakundu,HSS,Wandoor,0,764,0,26,26,22,2,14,4,20,-6,shortfall,received teachers
-48532,Santhinagar GLPS,LPS,Wandoor,315,0,14,0,14,11,6,0,2,8,-6,shortfall,received teachers
-48536,Thiruvali GLPS,LPS,Wandoor,397,0,16,0,16,14,9,0,1,10,-6,shortfall,
-48553,Kalikavu Bazar G M U P S,UPS,Wandoor,639,563,26,19,45,39,19,12,8,39,-6,shortfall,
-18032,G.R.H.S.S Kottakkal,HSS,Malappuram,0,597,0,21,21,18,0,12,4,16,-5,shortfall,
-18072,G.H.S.S. Kottappuram,HSS,Kondotty,0,228,0,10,10,7,0,4,1,5,-5,shortfall,received teachers
-18219,GLPS Parathakkad,LPS,Kizhisseri,180,0,12,0,12,6,5,0,2,7,-5,shortfall,
-18438,G.L.P.S. Melmuri North,LPS,Malappuram,227,0,10,0,10,8,4,0,1,5,-5,shortfall,received teachers
-18461,G.M.L.P.S. Pookottur,UPS,Malappuram,61,13,8,1,9,4,4,0,0,4,-5,shortfall,
-18474,G.M.U.P.S. Melmuri,UPS,Malappuram,491,404,22,13,35,29,15,8,7,30,-5,shortfall,
-18542,G M L P S Pandallur,LPS,Manjeri,234,0,13,0,13,8,7,0,1,8,-5,shortfall,
-18569,G.U.P.S. Anakkayam,UPS,Manjeri,146,268,8,12,20,13,7,4,4,15,-5,shortfall,
-18730,GMLPS Perinthalmanna Central,LPS,Perinthalmanna,290,0,15,0,15,10,8,0,2,10,-5,shortfall,
-19828,G M L P S Karathode,LPS,Vengara,454,0,19,0,19,16,11,0,3,14,-5,shortfall,
-19853,GMLPS Koyappa,UPS,Vengara,89,22,8,2,10,4,3,0,2,5,-5,shortfall,received teachers
-19855,GLPS Orakam Kizhumuri,UPS,Vengara,452,131,20,5,25,20,18,0,2,20,-5,shortfall,
-19871,GUPS Thenhippalam,UPS,Vengara,255,379,13,15,28,20,8,10,5,23,-5,shortfall,received teachers
-48317,G.M.L.P.S. Nenmini,LPS,Melattur,268,0,13,0,13,9,6,0,2,8,-5,shortfall,
-48531,Pulvetta GLPS,LPS,Wandoor,290,0,14,0,14,10,7,0,2,9,-5,shortfall,
-48533,Tharish GLPS,LPS,Wandoor,446,0,19,0,19,15,11,0,3,14,-5,shortfall,
-48551,Chokkad GMUPS,UPS,Wandoor,206,210,12,9,21,13,8,5,3,16,-5,shortfall,
-48558,G H S Neelanchery,HS,Wandoor,346,324,15,13,28,22,9,11,3,23,-5,shortfall,lost posts
-18013,G.B.H.S.S Malappuram,HSS,Malappuram,0,144,0,7,7,5,0,2,1,3,-4,shortfall,received teachers
-18057,G H S S Pulamanthole,HSS,Perinthalmanna,0,353,0,13,13,11,0,7,2,9,-4,shortfall,
-18058,G H S S Perintalmanna,HSS,Perinthalmanna,0,216,0,9,9,7,0,3,2,5,-4,shortfall,
-18078,G H S S Kadungapuram,HSS,Mankada,131,646,8,20,28,24,6,11,7,24,-4,shortfall,lost posts
-18356,G.L.P.S. ThurakkaL,LPS,Kondotty,245,0,12,0,12,9,6,0,2,8,-4,shortfall,
-18473,G.M.U.P.S. Kottakkal,UPS,Malappuram,289,431,13,16,29,23,11,8,6,25,-4,shortfall,received teachers
-18477,G.U.P.S. Ponmala,UPS,Malappuram,242,348,11,13,24,19,9,8,3,20,-4,shortfall,received teachers
-18535,G M L P S Mariyad,LPS,Manjeri,149,0,8,0,8,5,3,0,1,4,-4,shortfall,
-18660,G U P S Koottilangadi,UPS,Mankada,230,259,10,10,20,16,8,4,4,16,-4,shortfall,received teachers
-19214,G. L. P. S. Mookkuthala,LPS,Edappal,180,0,12,0,12,6,7,0,1,8,-4,shortfall,
-19229,G. L. P. S. Thrikkanapuram,LPS,Edappal,199,0,9,0,9,7,5,0,0,5,-4,shortfall,received teachers
-19449,G. W. U. P. S. Trikkulam,UPS,Parappanangadi,194,170,10,7,17,12,6,5,2,13,-4,shortfall,received teachers
-19804,GMLPS Cherukunnu,LPS,Vengara,82,0,7,0,7,3,3,0,0,3,-4,shortfall,
-19833,GLPS Olakara,LPS,Vengara,404,0,17,0,17,14,11,1,1,13,-4,shortfall,
-48077,G H S S Moothedath,HSS,Nilambur,248,263,12,11,23,17,11,5,3,19,-4,shortfall,received teachers
-48141,G H S Perakamanna,HS,Areacode,245,415,12,14,26,21,9,9,4,22,-4,shortfall,
-48463,Myladi GUPS,UPS,Nilambur,176,139,11,6,17,10,7,3,3,13,-4,shortfall,received teachers
-48502,Akkarakulam GLPS,LPS,Wandoor,200,0,11,0,11,7,6,0,1,7,-4,shortfall,
-48513,Karuvarakundu GLPS,LPS,Wandoor,511,0,22,0,22,18,14,0,4,18,-4,shortfall,
-48516,Koithakundu GLPS,LPS,Wandoor,192,0,9,0,9,7,3,0,2,5,-4,shortfall,
-48520,Mampuzha GLPS,LPS,Wandoor,338,0,16,0,16,12,9,0,3,12,-4,shortfall,
-48538,Thuvvur GLPS,LPS,Wandoor,445,0,20,0,20,15,13,0,3,16,-4,shortfall,
-48540,Vaniyambalam CKAGLPS,LPS,Wandoor,402,0,18,0,18,14,12,0,2,14,-4,shortfall,
-18027,G H S S Pandikkad,HSS,Manjeri,0,857,0,27,27,25,0,19,5,24,-3,shortfall,
-18065,G H S S Mankada,VHSE,Mankada,0,419,0,15,15,12,0,8,4,12,-3,shortfall,
-18205,GLPS Kuzhimanna,LPS,Kizhisseri,280,0,13,0,13,10,10,0,0,10,-3,shortfall,
-18221,GMLPS Pookalathur,LPS,Kizhisseri,259,0,12,0,12,9,7,0,2,9,-3,shortfall,
-18316,G.L.P.S. Karad,LPS,Kondotty,267,0,13,0,13,9,9,0,1,10,-3,shortfall,
-18352,G.L.P.S. Puthucode,LPS,Kondotty,208,0,11,0,11,7,7,0,1,8,-3,shortfall,
-18368,G.H.S. Chaliyappuram,HS,Kondotty,322,340,16,12,28,21,11,10,4,25,-3,shortfall,
-18440,G.L.P.S. Paranki Moochikkal,LPS,Malappuram,367,0,15,0,15,13,9,0,3,12,-3,shortfall,
-18505,G.L.P.S. Arukizhaya,LPS,Manjeri,60,0,4,0,4,2,1,0,0,1,-3,shortfall,received teachers
-18528,G.M.L.P.S. Mangalasseri,LPS,Manjeri,322,0,16,0,16,11,11,0,2,13,-3,shortfall,
-18548,G.M.L.P.S. Pathappiriyam,LPS,Manjeri,232,0,10,0,10,8,6,0,1,7,-3,shortfall,received teachers
-18574,G U P S Pullur,UPS,Manjeri,324,611,15,20,35,29,11,14,7,32,-3,shortfall,
-18657,G L P S Padinhattummuri,UPS,Mankada,354,84,16,4,20,15,15,0,2,17,-3,shortfall,
-18739,GMLPS Thootha,LPS,Perinthalmanna,153,0,9,0,9,6,4,0,2,6,-3,shortfall,
-19002,G M H S S C U Campus,HSS,Vengara,0,379,0,14,14,11,0,7,4,11,-3,shortfall,lost posts
-19034,G. H. S. S. Kadanchery,HSS,Edappal,41,165,4,6,10,7,1,6,0,7,-3,shortfall,received teachers
-19042,G. H. S. S. Perassannur,HSS,Kuttippuram,145,228,8,9,17,12,7,5,2,14,-3,shortfall,
-19359,G. M. H. S. Karippole,HS,Kuttippuram,328,404,15,14,29,23,9,13,4,26,-3,shortfall,
-19417,G. L. P. S. Venniyur,LPS,Parappanangadi,149,0,8,0,8,5,4,0,1,5,-3,shortfall,received teachers
-19434,G. M. L. P. S. Parappanangadi Town,UPS,Parappanangadi,262,48,12,2,14,11,8,1,2,11,-3,shortfall,received teachers
-19436,G. M. L. P. S. Velimukku,UPS,Parappanangadi,121,34,8,2,10,6,7,0,0,7,-3,shortfall,
-19443,G. U. P. S. Moonniyur,UPS,Parappanangadi,193,237,10,10,20,14,8,5,4,17,-3,shortfall,
-19451,G. H. S. Trikkulam,HS,Parappanangadi,281,432,14,15,29,23,10,11,5,26,-3,shortfall,lost posts
-19663,G. L. P. S. Pariyapuram,UPS,Tanur,220,51,11,2,13,10,9,0,1,10,-3,shortfall,
-19820,G L P S Othukkungal,LPS,Vengara,223,0,12,0,12,8,7,0,2,9,-3,shortfall,
-19867,GHS Kolappuram,HS,Vengara,320,281,15,12,27,20,11,9,4,24,-3,shortfall,lost posts
-48138,GHS Munderi,HS,Nilambur,155,255,8,11,19,14,7,7,2,16,-3,shortfall,received teachers
-48205,G L P S Chengara,LPS,Areacode,228,0,11,0,11,8,7,0,1,8,-3,shortfall,
-48226,GLPS Thavarapparamba,LPS,Areacode,343,0,15,0,15,12,10,0,2,12,-3,shortfall,
-48411,Karimbuzha GMLPS,LPS,Nilambur,173,0,10,0,10,6,6,0,1,7,-3,shortfall,
-48419,Mamankara GLPS,LPS,Nilambur,506,0,20,0,20,17,14,0,3,17,-3,shortfall,received teachers
-48441,Pullippadam GLPS,LPS,Nilambur,157,0,8,0,8,6,4,0,1,5,-3,shortfall,lost posts
-48452,Amarambalam South GUPS,UPS,Nilambur,152,234,8,9,17,13,6,5,3,14,-3,shortfall,received teachers
-48478,Kattumunda East GUPS,UPS,Nilambur,0,770,0,26,26,22,0,18,5,23,-3,shortfall,
-48501,Adakkakundu GLPS,LPS,Wandoor,160,0,9,0,9,6,4,0,2,6,-3,shortfall,
-48527,Pookkulam GLPS,LPS,Wandoor,202,0,11,0,11,7,7,0,1,8,-3,shortfall,
-48528,Poongode GLPS,LPS,Wandoor,313,0,13,0,13,11,9,0,1,10,-3,shortfall,
-48545,Chadangamkulam GLPS,UPS,Wandoor,253,73,12,3,15,12,10,0,2,12,-3,shortfall,
-18008,G.V.H.S.S. Kondotty,VHSE,Kondotty,0,239,0,10,10,7,0,6,2,8,-2,shortfall,
-18012,G.G.H.S.S. Malappuram,HSS,Malappuram,0,265,0,10,10,8,0,5,3,8,-2,shortfall,lost posts
-18069,S H M G V H S S Edavanna,VHSE,Manjeri,0,277,0,12,12,8,0,9,1,10,-2,shortfall,
-18220,GLPS Ponnad,LPS,Kizhisseri,324,0,15,0,15,11,11,0,2,13,-2,shortfall,
-18332,G.M.L.P.S. Morayur,LPS,Kondotty,269,0,13,0,13,9,8,0,3,11,-2,shortfall,
-18349,G.L.P.S. Paravoor,LPS,Kondotty,54,0,4,0,4,2,2,0,0,2,-2,shortfall,received teachers
-18354,G.L.P.S. Thadathilparamba,LPS,Kondotty,134,0,9,0,9,5,5,0,2,7,-2,shortfall,
-18362,G.L.P.S. Vettathur,LPS,Kondotty,219,0,11,0,11,8,7,0,2,9,-2,shortfall,
-18435,G.L.P.S. Kodur,LPS,Malappuram,63,0,4,0,4,3,1,0,1,2,-2,shortfall,received teachers
-18436,G.L.P.S. Kottakkal,LPS,Malappuram,120,0,6,0,6,4,2,0,2,4,-2,shortfall,
-18437,G.L.P.S. Malappruam,LPS,Malappuram,261,0,12,0,12,9,8,0,2,10,-2,shortfall,
-18442,G.L.P.S. Pookottur New,LPS,Malappuram,214,0,12,0,12,8,8,0,2,10,-2,shortfall,
-18449,G.M.L.P.S. Kolmanna,LPS,Malappuram,54,0,5,0,5,2,3,0,0,3,-2,shortfall,
-18541,G.L.P.S. Pandallur,LPS,Manjeri,290,0,12,0,12,10,7,0,3,10,-2,shortfall,
-18557,G.L.P.S. Valarad,LPS,Manjeri,136,0,8,0,8,5,4,0,2,6,-2,shortfall,
-18562,G.U.P.S. Vettekkode,UPS,Manjeri,147,171,9,8,17,10,8,4,3,15,-2,shortfall,received teachers
-18567,G.M.L.P.S. Pandikkad,UPS,Manjeri,152,27,9,1,10,7,6,0,2,8,-2,shortfall,
-18607,G L P S Chovana,LPS,Mankada,113,0,8,0,8,4,4,0,2,6,-2,shortfall,received teachers
-18626,G L P S Palakaparambil,LPS,Mankada,99,0,5,0,5,4,1,0,2,3,-2,shortfall,
-18634,G L P S Meenarkuzhi,LPS,Mankada,173,0,9,0,9,6,5,0,2,7,-2,shortfall,
-18637,G L P S Pothukundu,LPS,Mankada,106,0,7,0,7,4,3,0,2,5,-2,shortfall,received teachers
-18653,G L P S Vellila,LPS,Mankada,326,0,15,0,15,11,11,0,2,13,-2,shortfall,
-18723,GMLPS Muthiramanna,LPS,Perinthalmanna,69,0,4,0,4,3,1,0,1,2,-2,shortfall,
-18731,GLPS Perinthalmanna East,LPS,Perinthalmanna,171,0,9,0,9,6,5,0,2,7,-2,shortfall,
-18737,GMLPS Thazhekode,LPS,Perinthalmanna,511,0,21,0,21,18,16,0,3,19,-2,shortfall,received teachers
-19043,P. C. N. G. H. S. S. Mookkuthala,HSS,Edappal,0,509,0,17,17,15,0,12,3,15,-2,shortfall,
-19054,G. H. S. S. Maranchery,HSS,Ponnani,47,316,4,12,16,12,4,7,3,14,-2,shortfall,received teachers
-19067,G. H. S. S. Cheriyamundam,HSS,Tanur,0,114,0,6,6,4,0,3,1,4,-2,shortfall,
-19208,G. L. P. S. Kaladi,LPS,Edappal,181,0,10,0,10,7,6,0,2,8,-2,shortfall,
-19216,G. B. L. P. S. Mudur,LPS,Edappal,75,0,4,0,4,3,1,0,1,2,-2,shortfall,
-19225,G. L. P. S. Sukapuram,LPS,Edappal,43,0,4,0,4,2,1,0,1,2,-2,shortfall,
-19249,G. U. P. S. Kololamba,UPS,Edappal,114,231,5,11,16,11,4,7,3,14,-2,shortfall,
-19255,G. U. P. S. Vellanchery,UPS,Edappal,122,110,8,6,14,9,6,4,2,12,-2,shortfall,
-19301,G. L. P. S. Athippetta,LPS,Kuttippuram,78,0,4,0,4,3,1,0,1,2,-2,shortfall,
-19308,G. L. P. S. Cheruparamba,LPS,Kuttippuram,212,0,10,0,10,8,6,0,2,8,-2,shortfall,received teachers
-19310,G. L. P. S. Chottur,LPS,Kuttippuram,211,0,10,0,10,8,6,0,2,8,-2,shortfall,received teachers
-19313,G. M. L. P. S. Kallarmangalam,LPS,Kuttippuram,157,0,8,0,8,6,5,0,1,6,-2,shortfall,
-19329,G. L. P. S. Kuttippuram,LPS,Kuttippuram,21,0,4,0,4,1,2,0,0,2,-2,shortfall,
-19445,GHS Neduva,HS,Parappanangadi,137,330,9,13,22,15,9,9,2,20,-2,shortfall,lost posts
-19537,G. L. P. S. Velleri,UPS,Ponnani,57,19,4,1,5,3,3,0,0,3,-2,shortfall,
-19605,G. M. L. P. S. Cheruvannur,LPS,Tanur,268,0,14,0,14,9,10,0,2,12,-2,shortfall,received teachers
-19661,G. M. L. P. S. Kuttippala,UPS,Tanur,206,51,10,2,12,9,8,0,2,10,-2,shortfall,
-19781,G. M. U. P. S. Paravanna,UPS,Tirur,306,305,13,11,24,20,11,6,5,22,-2,shortfall,
-19808,GMLPS Edakkaparamba,LPS,Vengara,403,0,16,0,16,14,13,0,1,14,-2,shortfall,lost posts
-19824,GMLPS Orakam Kizhmuri,LPS,Vengara,311,0,13,0,13,11,10,0,1,11,-2,shortfall,
-19838,GMLPS Puthur,LPS,Vengara,128,0,8,0,8,5,5,0,1,6,-2,shortfall,
-19862,CHAKKEERI AHAMMED KUTTY MEMORIAL G.M.U.P.S.CHERUR,UPS,Vengara,608,719,24,22,46,42,20,16,8,44,-2,shortfall,
-19872,GUPS Valiyora,UPS,Vengara,257,265,12,12,24,17,12,6,4,22,-2,shortfall,
-48063,G.H.S.S. Pattikkad,HSS,Melattur,0,317,0,12,12,10,0,8,2,10,-2,shortfall,
-48203,GLPS Chemrakattur,LPS,Areacode,340,0,15,0,15,12,10,0,3,13,-2,shortfall,received teachers
-48210,GLPS Kavanur,LPS,Areacode,244,0,12,0,12,9,7,0,3,10,-2,shortfall,
-48214,GLPS Kozhakottur,LPS,Areacode,208,0,11,0,11,7,6,0,3,9,-2,shortfall,
-48224,GMLPS Puthalam,LPS,Areacode,115,0,7,0,7,4,4,0,1,5,-2,shortfall,
-48227,GLPS Thencheri,LPS,Areacode,278,0,14,0,14,10,8,1,3,12,-2,shortfall,
-48304,G.L.P.S. Cheriparamba,LPS,Melattur,132,0,8,0,8,5,5,0,1,6,-2,shortfall,
-48410,Edivanna Estate GLPS,LPS,Nilambur,217,0,10,0,10,8,6,0,2,8,-2,shortfall,
-48425,Mooleppadam GLPS,LPS,Nilambur,6,0,2,0,2,1,0,0,0,0,-2,shortfall,received teachers
-48435,Pathirippadam GLPS,LPS,Nilambur,167,0,10,0,10,6,7,0,1,8,-2,shortfall,
-48439,Poolappadam GLPS,LPS,Nilambur,146,0,10,0,10,5,5,0,3,8,-2,shortfall,received teachers
-48445,Vadapuram GMLPS,LPS,Nilambur,112,0,7,0,7,4,3,0,2,5,-2,shortfall,lost posts
-48469,Paramba G U P S,UPS,Nilambur,368,483,16,17,33,27,14,11,6,31,-2,shortfall,
-48479,Konnamanna GUPS,UPS,Nilambur,0,97,0,6,6,3,0,2,2,4,-2,shortfall,
-48504,Amapoyil GLPS,LPS,Wandoor,202,0,11,0,11,7,7,0,2,9,-2,shortfall,
-48510,Chokkad Girijan Colony GLPS,LPS,Wandoor,10,0,4,0,4,1,1,0,1,2,-2,shortfall,
-48519,Mampattumoola GLPS,LPS,Wandoor,336,0,14,0,14,12,10,0,2,12,-2,shortfall,
-48530,Pullengode GMLPS,LPS,Wandoor,192,0,10,0,10,7,7,0,1,8,-2,shortfall,
-18011,G H S S Kuzhimanna,HSS,Kizhisseri,0,88,0,6,6,3,0,5,0,5,-1,shortfall,
-18139,Govt High School Muthuvallur,HSS,Kizhisseri,158,157,8,8,16,11,7,5,3,15,-1,shortfall,
-18223,GMLPS Thavanur,LPS,Kizhisseri,223,0,11,0,11,8,8,0,2,10,-1,shortfall,
-18230,GLPS Vilayil Parappur,LPS,Kizhisseri,155,0,8,0,8,6,5,0,2,7,-1,shortfall,
-18301,G.M.L.P.S. Akkode,LPS,Kondotty,81,0,4,0,4,3,2,0,1,3,-1,shortfall,
-18302,G.M.L.P.S. Alparamba,LPS,Kondotty,141,0,9,0,9,5,6,0,2,8,-1,shortfall,lost posts
-18326,G.M.L.P.S. Kumminiparamba,LPS,Kondotty,170,0,9,0,9,6,6,0,2,8,-1,shortfall,
-18330,G.M.L.P.S. Melangadi,LPS,Kondotty,344,0,15,0,15,12,12,0,2,14,-1,shortfall,
-18335,G.L.P.S. Mundumuzhi,LPS,Kondotty,113,0,6,0,6,4,5,0,0,5,-1,shortfall,
-18388,G.U.P.S. Neerad,UPS,Kondotty,0,142,0,8,8,5,0,4,3,7,-1,shortfall,
-18434,G.L.P.S. Choonur,LPS,Malappuram,166,0,8,0,8,6,6,0,1,7,-1,shortfall,
-18448,G.M.L.P.S. Irumbuzhi,LPS,Malappuram,256,0,12,0,12,9,9,0,2,11,-1,shortfall,
-18507,G.L.P.S. Chembakuth,LPS,Manjeri,53,0,4,0,4,2,2,0,1,3,-1,shortfall,
-18514,G.M.L.P.S. Edavanna,LPS,Manjeri,160,0,9,0,9,6,7,0,1,8,-1,shortfall,
-18531,G.M.L.P.S. Manjeri East,LPS,Manjeri,61,0,4,0,4,3,3,0,0,3,-1,shortfall,
-18539,G.M.L.P.S. Nellikuth North,LPS,Manjeri,227,0,11,0,11,8,7,0,3,10,-1,shortfall,
-18555,G.L.P.S. Thottupoyil,LPS,Manjeri,154,0,9,0,9,6,7,0,1,8,-1,shortfall,
-18563,G.L.P.S. Vettikkattiri,LPS,Manjeri,107,0,6,0,6,4,4,0,1,5,-1,shortfall,
-18588,G.M.U.P.S. Vettikattiri,UPS,Manjeri,0,198,0,9,9,6,0,5,3,8,-1,shortfall,lost posts
-18592,GMLP School ANAKKAYAM,LPS,Manjeri,57,0,4,0,4,2,2,0,1,3,-1,shortfall,
-18612,G L P S Karkidakam,LPS,Mankada,130,0,6,0,6,5,3,0,2,5,-1,shortfall,received teachers
-18640,G L P S Puthanangadi,LPS,Mankada,129,0,7,0,7,5,4,0,2,6,-1,shortfall,received teachers
-18664,G U P S Mankada Pallippuram,UPS,Mankada,317,330,14,11,25,21,11,7,6,24,-1,shortfall,
-18715,GMLPS Kakkooth,LPS,Perinthalmanna,49,0,4,0,4,2,2,0,1,3,-1,shortfall,
-19040,G. H. S. S. Kuttippuram,HSS,Kuttippuram,0,183,0,9,9,6,0,7,1,8,-1,shortfall,
-19201,G. L. P. S. Alankode,LPS,Edappal,44,0,4,0,4,2,1,0,2,3,-1,shortfall,
-19205,G. L. P. S. Chiyanur,LPS,Edappal,83,0,4,0,4,3,2,0,1,3,-1,shortfall,
-19218,G. L. P. S. Nariparamba,LPS,Edappal,34,0,4,0,4,2,3,0,0,3,-1,shortfall,received teachers
-19220,G. M. L. P. S. Pallikara,LPS,Edappal,35,0,4,0,4,2,2,0,1,3,-1,shortfall,
-19227,G. L. P. S. Thuyyam,LPS,Edappal,55,0,4,0,4,2,2,0,1,3,-1,shortfall,
-19235,G. J. B. S. Vattamkulam,LPS,Edappal,57,0,4,0,4,2,2,0,1,3,-1,shortfall,
-19312,G. W. L. P. S. Irimbliyam,LPS,Kuttippuram,109,0,6,0,6,4,3,0,2,5,-1,shortfall,
-19322,G. L. P. S. Kattipparuthi,LPS,Kuttippuram,69,0,4,0,4,3,2,0,1,3,-1,shortfall,received teachers
-19324,G. M. L. P. S. Kanancheri,LPS,Kuttippuram,82,0,4,0,4,3,2,0,1,3,-1,shortfall,
-19339,G. L. P. S. Naduvattam,LPS,Kuttippuram,222,0,10,0,10,8,6,0,3,9,-1,shortfall,
-19350,G. M. L. P. S. Valancheri,LPS,Kuttippuram,46,0,4,0,4,2,1,0,2,3,-1,shortfall,
-19365,G. U. P. S. Randathani,UPS,Kuttippuram,148,264,8,9,17,13,8,4,4,16,-1,shortfall,
-19401,G. L. P. S. Anappadi,LPS,Parappanangadi,178,0,11,0,11,6,8,0,2,10,-1,shortfall,
-19429,G. F. L. P. S. Kadalundi,UPS,Parappanangadi,58,31,4,1,5,3,3,0,1,4,-1,shortfall,
-19509,G. L. P. S. Purang,LPS,Ponnani,165,0,8,0,8,6,5,0,2,7,-1,shortfall,
-19516,G. L. P. S. Veliyancode Gramam,LPS,Ponnani,47,0,4,0,4,2,3,0,0,3,-1,shortfall,
-19519,G. M. L. P. S. Veliyancode,LPS,Ponnani,89,0,4,0,4,3,3,0,0,3,-1,shortfall,lost posts
-19533,G. L. P. S. Kanhiramukku,UPS,Ponnani,24,6,4,1,5,2,4,0,0,4,-1,shortfall,
-19539,G. U. P. S. Cheruvayikkara,UPS,Ponnani,48,98,5,4,9,5,4,3,1,8,-1,shortfall,
-19543,G. M. U. P. S. Veliyancode South,UPS,Ponnani,299,296,14,12,26,19,11,8,6,25,-1,shortfall,lost posts
-19544,G. F. U. P. S. Kadavanad,UPS,Ponnani,227,299,11,11,22,17,9,9,3,21,-1,shortfall,
-19556,GLPS Kadavanad,LPS,Ponnani,84,0,5,0,5,3,4,0,0,4,-1,shortfall,
-19613,G. L. P. S. Kanmanam,LPS,Tanur,103,0,5,0,5,4,3,0,1,4,-1,shortfall,
-19616,G. M. L. P. S. Korad,LPS,Tanur,266,0,13,0,13,9,9,0,3,12,-1,shortfall,
-19619,G. M. L. P. S. Manalipuzha,LPS,Tanur,68,0,5,0,5,3,3,0,1,4,-1,shortfall,received teachers
-19667,G. U. P. S. Karingappara,UPS,Tanur,355,479,17,16,33,26,14,11,7,32,-1,shortfall,
-19679,G. M. U. P. S. Cheerankadappuram,UPS,Tanur,0,573,0,19,19,17,1,14,3,18,-1,shortfall,
-19699,G. U. P. S Niramaruthur,UPS,Tanur,294,699,14,23,37,30,11,18,7,36,-1,shortfall,
-19713,G. M. L. P. S. Kuttayi North,LPS,Tirur,42,0,4,0,4,2,3,0,0,3,-1,shortfall,
-19721,G. L. P. S. Mangattiri,LPS,Tirur,48,0,4,0,4,2,3,0,0,3,-1,shortfall,
-19734,G. L. P. S. Thiruthi,LPS,Tirur,41,0,4,0,4,2,2,0,1,3,-1,shortfall,
-19774,G. M. U. P. S. Edakkanad,UPS,Tirur,169,235,9,9,18,13,8,6,3,17,-1,shortfall,
-19802,GMLPS Cherur,LPS,Vengara,58,0,4,0,4,2,3,0,0,3,-1,shortfall,
-19814,GMLPS Kilinakode,LPS,Vengara,271,0,13,0,13,10,11,0,1,12,-1,shortfall,
-19826,GLPS Nottappuram,LPS,Vengara,228,0,10,0,10,8,8,0,1,9,-1,shortfall,
-19830,GLPS Orakam Melmuri,LPS,Vengara,189,0,10,0,10,7,7,0,2,9,-1,shortfall,
-19836,GLPS Peruvallur,LPS,Vengara,183,0,9,0,9,7,7,0,1,8,-1,shortfall,
-19840,GLPS Pukayur,LPS,Vengara,164,0,8,0,8,6,7,0,0,7,-1,shortfall,
-19841,GLPS Thattancherimala,LPS,Vengara,56,0,4,0,4,2,3,0,0,3,-1,shortfall,
-19863,G U P S Cholakundu,UPS,Vengara,263,335,13,12,25,19,8,11,5,24,-1,shortfall,received teachers
-48035,G M V H S S Nilambur,VHSE,Nilambur,0,84,0,6,6,3,0,4,1,5,-1,shortfall,
-48050,G H S S Vaniyambalam,HSS,Wandoor,0,439,0,15,15,13,0,11,3,14,-1,shortfall,
-48140,GHS Vadasseri,HS,Areacode,284,360,12,14,26,21,9,11,5,25,-1,shortfall,
-48213,GLPS Kizhuparamba South,LPS,Areacode,58,0,4,0,4,2,2,0,1,3,-1,shortfall,
-48216,GLPS Kuniyil South,LPS,Areacode,242,0,12,0,12,9,8,0,3,11,-1,shortfall,
-48219,GLPS Palappatta,LPS,Areacode,102,0,5,0,5,4,2,0,2,4,-1,shortfall,received teachers
-48237,GMUPS Areacode,UPS,Areacode,342,327,13,12,25,22,9,9,6,24,-1,shortfall,
-48245,G U P S Odakkayam,UPS,Areacode,23,22,4,3,7,2,4,2,0,6,-1,shortfall,
-48310,G.L.P.S. Kizhakkumpadam,LPS,Melattur,139,0,8,0,8,5,5,0,2,7,-1,shortfall,
-48320,G.L.P.S. Kombamkallu,LPS,Melattur,92,0,5,0,5,4,4,0,0,4,-1,shortfall,
-48321,G.L.P.S. Pattikkad,LPS,Melattur,242,0,12,0,12,9,8,0,3,11,-1,shortfall,
-48326,M.P.G.L.P.S. Puthanpally,LPS,Melattur,76,0,4,0,4,3,2,0,1,3,-1,shortfall,
-48330,G.L.P.S. Chemmaniyode,UPS,Melattur,201,44,9,2,11,9,9,0,1,10,-1,shortfall,
-48407,Chungathara G L P S,LPS,Nilambur,149,0,9,0,9,5,6,0,2,8,-1,shortfall,
-48408,GLPS Chungathara Panchayath,LPS,Nilambur,132,0,8,0,8,5,5,0,2,7,-1,shortfall,received teachers
-48414,GLPS Kattumunda East,LPS,Nilambur,345,0,15,0,15,12,11,0,3,14,-1,shortfall,
-48415,Kavalamukkatta GLPS,LPS,Nilambur,156,0,8,0,8,6,6,0,1,7,-1,shortfall,
-48420,Mampad North GMLPS,LPS,Nilambur,151,0,9,0,9,6,6,0,2,8,-1,shortfall,
-48422,Mankuth GLPS,LPS,Nilambur,94,0,6,0,6,4,3,0,2,5,-1,shortfall,
-48430,Nedungayam GTLPS,LPS,Nilambur,5,0,3,0,3,1,1,0,1,2,-1,shortfall,
-48431,GMLPS Nilambur,LPS,Nilambur,533,0,21,0,21,18,15,0,5,20,-1,shortfall,
-48446,Valanthode GTLPS,LPS,Nilambur,25,0,4,0,4,1,2,0,1,3,-1,shortfall,received teachers
-48448,Veettikuth GLPS,LPS,Nilambur,262,0,12,0,12,9,9,0,2,11,-1,shortfall,
-48466,Nilambur GMUPS,UPS,Nilambur,121,307,8,13,21,14,6,8,6,20,-1,shortfall,lost posts
-48515,Kizhakkethala GLPS,LPS,Wandoor,169,0,9,0,9,6,6,0,2,8,-1,shortfall,
-48521,Mundakkode GLPS,LPS,Wandoor,108,0,5,0,5,4,2,0,2,4,-1,shortfall,
-48523,Pallisseri GLPS,LPS,Wandoor,116,0,6,0,6,4,3,0,2,5,-1,shortfall,
-48526,Pazhedam Panampoyil GLPS,LPS,Wandoor,285,0,13,0,13,10,9,0,3,12,-1,shortfall,
-48539,Uthirampoyil GLPS,LPS,Wandoor,129,0,8,0,8,5,5,0,2,7,-1,shortfall,
-48559,Pazhayakadakkal GUPS,UPS,Wandoor,375,275,15,11,26,21,10,10,5,25,-1,shortfall,lost posts
-18010,G.V.H.S.S. Pullanur,VHSE,Malappuram,97,99,5,5,10,7,2,5,3,10,0,balanced,lost posts
-18206,GLPS Kuzhimanna II South,LPS,Kizhisseri,275,0,12,0,12,10,9,0,3,12,0,balanced,
-18217,GLPS Parappur,LPS,Kizhisseri,93,0,4,0,4,4,3,0,1,4,0,balanced,
-18218,GLPS Parapurathparamba,LPS,Kizhisseri,102,0,6,0,6,4,4,0,2,6,0,balanced,
-18222,GLPS Pulpatta,LPS,Kizhisseri,140,0,8,0,8,5,7,0,1,8,0,balanced,
-18228,GLPS Vilayil,LPS,Kizhisseri,72,0,4,0,4,3,2,0,2,4,0,balanced,
-18235,GMUPS Kizhisseri,UPS,Kizhisseri,276,246,13,9,22,18,11,6,5,22,0,balanced,
-18305,G.L.P.S. Arimbra Melmuri,LPS,Kondotty,222,0,11,0,11,8,8,0,3,11,0,balanced,
-18315,G.M.L.P.S. Kanhiraparamba,LPS,Kondotty,222,0,11,0,11,8,8,0,3,11,0,balanced,
-18329,G.M.L.P.S. Mapprom,LPS,Kondotty,84,0,4,0,4,3,2,0,2,4,0,balanced,
-18331,G.L.P.S. Morayur,LPS,Kondotty,205,0,10,0,10,7,7,0,3,10,0,balanced,
-18339,G.M.L.P.S. Nediyiruppu,LPS,Kondotty,50,0,4,0,4,2,3,0,1,4,0,balanced,
-18346,G.L.P.S. Panikkarapuraya,LPS,Kondotty,107,0,6,0,6,4,5,0,1,6,0,balanced,
-18441,G.L.P.S. Peringottupulam,LPS,Malappuram,81,0,4,0,4,3,2,0,2,4,0,balanced,
-18443,G.L.P.S. Pookottur Old,LPS,Malappuram,356,0,14,0,14,12,11,0,3,14,0,balanced,
-18447,G.M.L.P.S. Chappanangadi,LPS,Malappuram,257,0,12,0,12,9,9,0,3,12,0,balanced,
-18450,G.M.L.P.S. Kuttasserikulamba,LPS,Malappuram,258,0,12,0,12,9,9,0,3,12,0,balanced,
-18506,G.L.P.S. Chalippadam,LPS,Manjeri,99,0,6,0,6,4,5,0,1,6,0,balanced,
-18510,G.L.P.S. Cheruvannur,LPS,Manjeri,230,0,10,0,10,8,9,0,1,10,0,balanced,
-18521,G.L.P.S. Karuvambrum West,LPS,Manjeri,58,0,4,0,4,2,3,0,1,4,0,balanced,
-18524,G.L.P.S. Kizhakkuparamba,LPS,Manjeri,180,0,9,0,9,6,7,0,2,9,0,balanced,
-18529,G.M.L.P.S. Manhapatta,LPS,Manjeri,200,0,9,0,9,7,7,0,2,9,0,balanced,
-18533,G.M.L.P.S. Manjeri,LPS,Manjeri,48,0,4,0,4,2,3,0,1,4,0,balanced,
-18534,G.M.L.P.S. Manjeri South,LPS,Manjeri,34,0,4,0,4,2,3,0,1,4,0,balanced,
-18551,G.L.P.S. Pulath,LPS,Manjeri,181,0,9,0,9,7,7,0,2,9,0,balanced,
-18565,G.L.P.S. Cherankuth,UPS,Manjeri,69,22,4,1,5,4,4,0,1,5,0,balanced,
-18568,G.L.P.S. Pookkuth,UPS,Manjeri,167,43,8,2,10,8,8,0,2,10,0,balanced,
-18583,G.U.P.S. Veembur,UPS,Manjeri,213,275,12,10,22,16,8,9,5,22,0,balanced,lost posts
-18590,GLPS ANAKKOTTUPURAM,LPS,Manjeri,174,0,8,0,8,6,6,0,2,8,0,balanced,
-18616,G L P S Kuruva,LPS,Mankada,212,0,10,0,10,8,8,0,2,10,0,balanced,
-18618,G L P S Mankada,LPS,Mankada,261,0,12,0,12,9,10,0,2,12,0,balanced,
-18628,G L P S Pang,LPS,Mankada,111,0,5,0,5,4,4,0,1,5,0,balanced,
-18717,GLPS Kappumugham,LPS,Perinthalmanna,129,0,7,0,7,5,5,0,2,7,0,balanced,
-18728,GLPS Parakkalmukku,LPS,Perinthalmanna,75,0,4,0,4,3,3,0,1,4,0,balanced,
-18736,GMLPS Puthur,LPS,Perinthalmanna,231,0,11,0,11,8,9,0,2,11,0,balanced,
-19008,G. H. S. S. Tirurangadi,HSS,Parappanangadi,0,422,0,15,15,13,0,13,2,15,0,balanced,
-19016,G. B. H. S. S. Tirur,HSS,Tirur,0,405,0,14,14,12,0,11,3,14,0,balanced,received teachers
-19020,Govt.V. H. S. S for Girls. Tirur,VHSE,Tirur,0,103,0,6,6,3,0,6,0,6,0,balanced,
-19045,G. H. S. S. Trikkavu,HSS,Ponnani,142,216,8,9,17,12,6,9,2,17,0,balanced,
-19222,G. L. P. S. Perumparamba,LPS,Edappal,151,0,8,0,8,6,6,0,2,8,0,balanced,
-19223,G. L. P. S. Polpakkara,LPS,Edappal,39,0,4,0,4,2,3,0,1,4,0,balanced,
-19231,Uliyathu Aboobacker Memmorial G. L. P. S. Vadakkummuri,LPS,Edappal,68,0,4,0,4,3,2,0,2,4,0,balanced,
-19233,G. M. L. P. S. Vadakkummuri,LPS,Edappal,25,0,4,0,4,1,3,0,1,4,0,balanced,received teachers
-19243,Govt L.P.School Kololomba,UPS,Edappal,30,13,4,1,5,2,3,0,2,5,0,balanced,
-19246,G. M. U. P. S. Edappal,UPS,Edappal,96,219,5,10,15,11,4,6,5,15,0,balanced,received teachers
-19251,G. U. P. S. Othalur,UPS,Edappal,66,114,4,6,10,7,4,4,2,10,0,balanced,
-19304,G. M. L. P. S. Ayirani,LPS,Kuttippuram,77,0,4,0,4,3,3,0,1,4,0,balanced,
-19315,G. M. L. P. S. Kalpakancheri,LPS,Kuttippuram,53,0,4,0,4,2,3,0,1,4,0,balanced,
-19319,G. L. P. S. Karaikkad,LPS,Kuttippuram,237,0,11,0,11,8,8,0,3,11,0,balanced,received teachers
-19332,G. M. L. P. S. Manhachola,LPS,Kuttippuram,64,0,4,0,4,3,3,0,1,4,0,balanced,
-19335,G. L. P. S. Mankeri,LPS,Kuttippuram,97,0,5,0,5,4,4,0,1,5,0,balanced,
-19343,G. M. L. P. S. Paravannur,LPS,Kuttippuram,41,0,4,0,4,2,3,0,1,4,0,balanced,
-19345,G. L. P. S. Perumparamba Moodal,LPS,Kuttippuram,148,0,8,0,8,5,5,0,3,8,0,balanced,received teachers
-19348,G. L. P. S. Vadakkumbram,LPS,Kuttippuram,237,0,11,0,11,8,9,0,2,11,0,balanced,
-19412,G. M. L. P. S. Thirurangadi,LPS,Parappanangadi,206,0,10,0,10,7,7,0,3,10,0,balanced,
-19414,G. L. P. S. Thirurangadi,LPS,Parappanangadi,325,0,13,0,13,11,11,0,2,13,0,balanced,
-19430,G. L .P. S. Melodiparamba,LPS,Parappanangadi,71,0,4,0,4,3,2,0,2,4,0,balanced,
-19433,G. L. P. S. Parappanangadi,UPS,Parappanangadi,203,42,10,2,12,9,9,0,3,12,0,balanced,
-19435,G. L. P. S. Vallikunnu,UPS,Parappanangadi,64,14,4,1,5,4,4,0,1,5,0,balanced,
-19506,G. F. L. P. S. Ponnani,LPS,Ponnani,41,0,4,0,4,2,3,0,1,4,0,balanced,
-19507,G. M. L. P. S. Ponnani Town,LPS,Ponnani,34,0,4,0,4,2,3,0,1,4,0,balanced,
-19535,G. F. L. P. S. Puthuponnani,UPS,Ponnani,43,22,4,1,5,3,4,0,1,5,0,balanced,
-19611,G. L. P. S. Klari West,LPS,Tanur,86,0,4,0,4,3,3,0,1,4,0,balanced,
-19624,G. M. L. P. S. Panangattur,LPS,Tanur,163,0,8,0,8,6,7,0,1,8,0,balanced,
-19626,G. M. L. P. S. Parapputhadam,LPS,Tanur,73,0,4,0,4,3,3,0,1,4,0,balanced,
-19633,G. M. L. P. S. Puthiyakadppuram North,LPS,Tanur,200,0,10,0,10,7,8,0,2,10,0,balanced,
-19635,G. L. P. S. Rayirimangalam East,LPS,Tanur,175,0,8,0,8,6,7,0,1,8,0,balanced,
-19640,G. M. L. P. S. Tanur North,LPS,Tanur,197,0,9,0,9,7,8,0,1,9,0,balanced,
-19644,G. M. L. P. S. Thiruthy,LPS,Tanur,60,0,4,0,4,2,3,0,1,4,0,balanced,
-19660,G. L. P. S. K.Puram,UPS,Tanur,280,81,14,3,17,13,15,0,2,17,0,balanced,lost posts
-19662,G. L. P. S. Ozhur,UPS,Tanur,261,66,11,2,13,11,11,0,2,13,0,balanced,
-19710,G. M. L. P. S. Kaithakkara,LPS,Tirur,35,0,4,0,4,2,3,0,1,4,0,balanced,
-19716,G. M. L. P. S. Kuttayi South,LPS,Tirur,101,0,5,0,5,4,4,0,1,5,0,balanced,
-19725,G. M. L. P. S. Pachattiri,LPS,Tirur,119,0,6,0,6,4,5,0,1,6,0,balanced,lost posts
-19727,G. M. L. P. S. SouthPallar,LPS,Tirur,91,0,5,0,5,4,4,0,1,5,0,balanced,
-19732,G. L. P. S. Thekkummuri,LPS,Tirur,115,0,7,0,7,4,5,0,2,7,0,balanced,lost posts
-19736,G. L. P. S. Thrikandiyur,LPS,Tirur,99,0,6,0,6,4,5,0,1,6,0,balanced,
-19738,G. M. L. P. S. Valiya Parappur,LPS,Tirur,152,0,8,0,8,6,6,0,2,8,0,balanced,
-19765,G. W. L. P. S. Purathur,UPS,Tirur,59,14,4,1,5,3,4,0,1,5,0,balanced,received teachers
-19767,G. M. U. P. S. BP Angadi,UPS,Tirur,385,666,14,20,34,33,13,14,7,34,0,balanced,
-19779,G. M. U. P. S. Tirur,UPS,Tirur,375,564,16,18,34,30,14,13,7,34,0,balanced,
-19805,GMLPS C.U. Campus,LPS,Vengara,361,0,15,0,15,13,12,0,3,15,0,balanced,lost posts
-19809,GMLPS Iringallur,LPS,Vengara,174,0,10,0,10,6,7,0,3,10,0,balanced,
-19810,GLPS Kannamangalam,LPS,Vengara,67,0,4,0,4,3,3,0,1,4,0,balanced,
-19822,GMLPS Mampuram,LPS,Vengara,98,0,5,0,5,4,4,0,1,5,0,balanced,
-19881,GUPS Mundothuparamba,UPS,Vengara,0,649,0,20,20,19,0,15,5,20,0,balanced,
-48001,G H S S Areacode,HSS,Areacode,0,255,0,10,10,8,0,7,3,10,0,balanced,received teachers
-48100,GHSS Edakkara,HSS,Nilambur,259,374,13,14,27,20,9,13,5,27,0,balanced,lost posts
-48137,G H S Vettilappara,HS,Areacode,256,318,12,12,24,19,11,9,4,24,0,balanced,received teachers
-48144,GHS Marutha,HS,Nilambur,319,385,14,14,28,22,11,12,5,28,0,balanced,
-48202,GMLPS Areacode West,LPS,Areacode,44,0,4,0,4,2,3,0,1,4,0,balanced,
-48212,GMLPS Kizhuparamba,LPS,Areacode,54,0,4,0,4,2,2,0,2,4,0,balanced,
-48238,GUPS Chundathumpoyil,UPS,Areacode,61,52,4,3,7,5,4,2,1,7,0,balanced,
-48318,G.M.L.P.S. Pallikuth,LPS,Melattur,139,0,8,0,8,5,6,0,2,8,0,balanced,
-48323,G.L.P.S. Pezhumthara,LPS,Melattur,51,0,4,0,4,2,3,0,1,4,0,balanced,
-48328,G.L.P.S. Thelakkad,LPS,Melattur,82,0,5,0,5,3,3,0,2,5,0,balanced,
-48329,G.L.P.S. Valayapuram,LPS,Melattur,34,0,4,0,4,2,3,0,1,4,0,balanced,
-48333,G.M.U.P.S. Oravambram,UPS,Melattur,244,349,11,14,25,19,8,11,6,25,0,balanced,lost posts
-48339,G.L.P.S. Edappatta,LPS,Melattur,74,0,4,0,4,3,3,0,1,4,0,balanced,
-48401,Amarambalam GLPS,LPS,Nilambur,134,0,8,0,8,5,6,0,2,8,0,balanced,
-48413,GMLPS Panthalingal,LPS,Nilambur,79,0,4,0,4,3,3,0,1,4,0,balanced,
-48416,Konamunda GLPS,LPS,Nilambur,153,0,7,0,7,6,6,0,1,7,0,balanced,
-48437,Perumbathur GLPS,LPS,Nilambur,65,0,4,0,4,3,3,0,1,4,0,balanced,
-48450,Vendekkumpotty GLPS,LPS,Nilambur,76,0,5,0,5,3,4,0,1,5,0,balanced,
-48468,Pallikuth GUPS,UPS,Nilambur,146,143,8,6,14,10,7,5,2,14,0,balanced,
-48517,Kooripoyil GLPS,LPS,Wandoor,140,0,8,0,8,5,7,0,1,8,0,balanced,
-48522,Pedayenthal GLPS,LPS,Wandoor,66,0,4,0,4,3,3,0,1,4,0,balanced,
-48525,Payyakode GLPS,LPS,Wandoor,40,0,4,0,4,2,3,0,1,4,0,balanced,
-48529,V.M.D Memorial Govt L.P.S Porur,LPS,Wandoor,116,0,6,0,6,4,5,0,1,6,0,balanced,
-18138,G.H.S.S Chullikkode,HSS,Kizhisseri,157,135,9,6,15,10,8,6,2,16,1,surplus,
-18150,GHS CHERIYAM MANKADA,HS,Mankada,247,231,11,9,20,16,10,7,4,21,1,surplus,lost posts
-18226,GLPS Valamangalam,LPS,Kizhisseri,166,0,8,0,8,6,7,0,2,9,1,surplus,
-18232,G U P S Cheecode,UPS,Kizhisseri,274,249,13,11,24,18,10,9,6,25,1,surplus,
-18311,G.L.P.S. Elamaram,LPS,Kondotty,59,0,4,0,4,2,3,0,2,5,1,surplus,
-18318,G.M.L.P.S. Karippur,LPS,Kondotty,261,0,12,0,12,9,10,0,3,13,1,surplus,received teachers
-18322,G.M.L.P.S. Kondotty Chungam,LPS,Kondotty,72,0,4,0,4,3,3,0,2,5,1,surplus,
-18323,G.M.L.P.S. Kondotty,LPS,Kondotty,86,0,5,0,5,3,4,0,2,6,1,surplus,
-18338,G.L.P.S. Nediyiruppu,UPS,Kondotty,103,32,5,2,7,5,6,0,2,8,1,surplus,
-18340,G.W.U.P.S. Nediyiruppu,UPS,Kondotty,89,69,5,3,8,5,5,2,2,9,1,surplus,
-18360,G.M.L.P.S. Vazhayur,LPS,Kondotty,77,0,5,0,5,3,4,0,2,6,1,surplus,
-18439,G.L.P.S. Melmuri South,LPS,Malappuram,86,0,4,0,4,3,4,0,1,5,1,surplus,lost posts
-18444,G.L.P.S. Vadakkemanna,LPS,Malappuram,54,0,4,0,4,2,3,0,2,5,1,surplus,
-18446,G.M.L.P.S. Athanikkal,LPS,Malappuram,69,0,4,0,4,3,3,0,2,5,1,surplus,
-18451,G.M.L.P.S. Melmuri Central,LPS,Malappuram,75,0,4,0,4,3,3,0,2,5,1,surplus,
-18452,G.M.L.P.S. Ponmala,LPS,Malappuram,51,0,4,0,4,2,3,0,2,5,1,surplus,
-18472,G.M.U.P.S. Irumbuzhi,UPS,Malappuram,421,639,17,20,37,34,12,16,10,38,1,surplus,lost posts
-18515,G.M.L.P.S. Eranhikode,LPS,Manjeri,162,0,9,0,9,6,8,0,2,10,1,surplus,lost posts
-18517,G.M.L.P.S. Karakunnu,LPS,Manjeri,179,0,9,0,9,6,8,0,2,10,1,surplus,lost posts
-18523,G.M.L.P.S. Kidangazhi,LPS,Manjeri,303,0,14,0,14,11,12,0,3,15,1,surplus,
-18532,G.L.P.S. Manjeri,LPS,Manjeri,365,0,16,0,16,13,15,0,2,17,1,surplus,lost posts
-18538,G.L.P.S. Narukara,LPS,Manjeri,71,0,4,0,4,3,3,0,2,5,1,surplus,
-18540,G.M.L.P.S. Odompatta,LPS,Manjeri,155,0,8,0,8,6,7,0,2,9,1,surplus,
-18566,K.M Musthafa Memorial G.L.P.S. Mundengara,UPS,Manjeri,80,28,4,1,5,4,4,0,2,6,1,surplus,
-18572,G.U.P.S. Elankur,UPS,Manjeri,249,201,11,7,18,15,9,7,3,19,1,surplus,received teachers
-18586,Anakkayam GP Govt. UP School Pandallur,UPS,Manjeri,0,946,0,31,31,28,0,23,9,32,1,surplus,
-18636,G L P S Pooppalam Valambur,LPS,Mankada,47,0,4,0,4,2,3,0,2,5,1,surplus,
-18645,G M L P S Vadakkangara,LPS,Mankada,234,0,10,0,10,8,8,0,3,11,1,surplus,
-18651,G L P S Vallikkapatta,LPS,Mankada,79,0,4,0,4,3,4,0,1,5,1,surplus,lost posts
-18666,Govt. U P School Pang,UPS,Mankada,279,614,13,20,33,28,13,16,5,34,1,surplus,
-18705,GLPS Arakkuparamba,LPS,Perinthalmanna,158,0,8,0,8,6,7,0,2,9,1,surplus,
-18716,GLPS Kunnakkavu,LPS,Perinthalmanna,338,0,15,0,15,12,13,0,3,16,1,surplus,lost posts
-18725,GLPS Pallikunnu,LPS,Perinthalmanna,170,0,8,0,8,6,7,0,2,9,1,surplus,
-18732,GLPS Perinthalmanna West,LPS,Perinthalmanna,50,0,4,0,4,2,3,0,2,5,1,surplus,
-19022,G. V. H. S. S. Kalpakanchery,VHSE,Kuttippuram,0,795,0,25,25,23,0,23,3,26,1,surplus,
-19026,D. G. H. S. S. Tanur,HSS,Tanur,0,892,0,29,29,26,0,24,6,30,1,surplus,received teachers
-19055,G. H. S. S. Veliancode,HSS,Ponnani,0,83,0,3,3,3,0,4,0,4,1,surplus,
-19063,G.H. S. S. Kokkur,HSS,Edappal,113,226,8,9,17,11,5,10,3,18,1,surplus,lost posts
-19073,GHSS Peruvallur,HSS,Vengara,243,363,12,13,25,20,8,12,6,26,1,surplus,received teachers
-19119,G. H. S. S. Ponmundam,HSS,Tanur,217,365,12,12,24,19,10,12,3,25,1,surplus,
-19206,G. L. P. S. Edappal,LPS,Edappal,80,0,4,0,4,3,4,0,1,5,1,surplus,lost posts
-19210,Padikkal KalyaniAMMA Memorial G L P S Kallurma,LPS,Edappal,55,0,4,0,4,2,3,0,2,5,1,surplus,
-19306,G. L. P. S. Chellur,LPS,Kuttippuram,170,0,8,0,8,6,7,0,2,9,1,surplus,
-19327,G. L. P. S. Kulakkad,LPS,Kuttippuram,44,0,4,0,4,2,3,0,2,5,1,surplus,
-19331,G. L. P. S. Kuttippuram North,LPS,Kuttippuram,124,0,6,0,6,5,5,0,2,7,1,surplus,
-19333,G. L. P. S. Maniyankad,LPS,Kuttippuram,47,0,4,0,4,2,3,0,2,5,1,surplus,
-19337,G. L. P. S. Melmuri,LPS,Kuttippuram,174,0,8,0,8,6,7,0,2,9,1,surplus,
-19341,G. M. L. P. S. Parappuram,LPS,Kuttippuram,77,0,4,0,4,3,4,0,1,5,1,surplus,lost posts
-19364,G. U. P. S. Painkannur,UPS,Kuttippuram,100,183,5,8,13,10,4,4,6,14,1,surplus,lost posts
-19410,G. M. U. P. S. Puthan Kadappuram,UPS,Parappanangadi,105,156,6,6,12,9,6,5,2,13,1,surplus,lost posts
-19514,G. L. P. S. Veliyancode New,LPS,Ponnani,183,0,9,0,9,7,8,0,2,10,1,surplus,
-19541,G. F. U. P. S. Palapetty,UPS,Ponnani,134,140,8,7,15,9,7,5,4,16,1,surplus,
-19602,G. M. L. P. S. Cherumukku,LPS,Tanur,375,0,15,0,15,13,13,0,3,16,1,surplus,
-19609,G. M. L. P. S. Iringavoor,LPS,Tanur,69,0,4,0,4,3,3,0,2,5,1,surplus,
-19622,G. L. P. S. Nannambra,LPS,Tanur,106,0,5,0,5,4,4,0,2,6,1,surplus,
-19629,G. L. P. S. Rayirimangalam,LPS,Tanur,100,0,5,0,5,4,4,0,2,6,1,surplus,
-19631,G. M. L. P. S. Ponmundam South,LPS,Tanur,111,0,5,0,5,4,4,0,2,6,1,surplus,
-19636,A. M. L. P. S. Kormanthala,LPS,Tanur,132,0,8,0,8,5,7,0,2,9,1,surplus,
-19637,G. M. L. P. S. Rayirimangalam,LPS,Tanur,88,0,4,0,4,3,4,0,1,5,1,surplus,
-19642,G. M. L. P. S. Thalakadathur,LPS,Tanur,72,0,4,0,4,3,3,0,2,5,1,surplus,
-19646,G. M. L. P. S. Valavannur,LPS,Tanur,42,0,4,0,4,2,3,0,2,5,1,surplus,
-19664,G. L. P. S. Tanur,UPS,Tanur,310,107,12,4,16,15,15,0,2,17,1,surplus,
-19707,G. M. L. P. S. Edakkulam,LPS,Tirur,116,0,6,0,6,4,6,0,1,7,1,surplus,lost posts
-19719,G. M. L. P. S. Mangalam,LPS,Tirur,56,0,4,0,4,2,3,0,2,5,1,surplus,
-19723,G. M. L. P. S. Muttannur,LPS,Tirur,141,0,8,0,8,5,7,0,2,9,1,surplus,
-19730,G. L. P. S. Thekkankuttur,LPS,Tirur,38,0,4,0,4,2,3,0,2,5,1,surplus,
-19740,G. M. L. P. S. Vettam Pallippuram,LPS,Tirur,56,0,4,0,4,2,3,0,2,5,1,surplus,
-19764,G. L. P. S. Annara,UPS,Tirur,70,23,4,1,5,4,4,0,2,6,1,surplus,
-19775,G. U. P. S. Purathur,UPS,Tirur,470,643,19,21,40,35,17,18,6,41,1,surplus,
-19777,G. U. P. S. Purathupadinjarekkara,UPS,Tirur,184,184,9,7,16,13,8,7,2,17,1,surplus,
-19812,GLPS Klari,LPS,Vengara,173,0,8,0,8,6,7,0,2,9,1,surplus,
-19818,GLPS Kodalikundu,LPS,Vengara,117,0,6,0,6,4,5,0,2,7,1,surplus,
-48038,G H S S Pullangode,HSS,Wandoor,0,285,0,10,10,9,0,10,1,11,1,surplus,lost posts
-48135,GHS Kappilkarad,HS,Wandoor,97,132,5,7,12,8,6,6,1,13,1,surplus,lost posts
-48136,C K H M G.H.S. Edappatta,HS,Melattur,0,178,0,7,7,6,0,7,1,8,1,surplus,
-48215,GLPS Kuniyil,LPS,Areacode,72,0,4,0,4,3,3,0,2,5,1,surplus,
-48217,GLPS Kuthuparamba,LPS,Areacode,136,0,8,0,8,5,7,0,2,9,1,surplus,
-48221,G L P S Pathanapuram,LPS,Areacode,65,0,4,0,4,3,3,0,2,5,1,surplus,
-48222,GLPS Pavanna,LPS,Areacode,99,0,4,0,4,4,3,0,2,5,1,surplus,
-48253,GUPS Chengara,UPS,Areacode,0,503,0,18,18,15,0,14,5,19,1,surplus,lost posts
-48309,G.L.P.S. Kara,LPS,Melattur,142,0,8,0,8,5,7,0,2,9,1,surplus,
-48315,G.L.P.S. Melkulangara,LPS,Melattur,69,0,4,0,4,3,3,0,2,5,1,surplus,
-48319,G.L.P.S. Pathirikode,LPS,Melattur,55,0,4,0,4,2,3,0,2,5,1,surplus,
-48406,Cholamunda GLPS,LPS,Nilambur,188,0,10,0,10,7,8,0,3,11,1,surplus,lost posts
-48426,GMLPS Mukkatta,LPS,Nilambur,75,0,4,0,4,3,3,0,2,5,1,surplus,
-48429,Naduvakkad GLPS,LPS,Nilambur,64,0,4,0,4,3,3,0,2,5,1,surplus,
-48436,Payampadam GLPS,LPS,Nilambur,79,0,4,0,4,3,3,0,2,5,1,surplus,
-48447,Varikkal GLPS,LPS,Nilambur,132,0,6,0,6,5,5,0,2,7,1,surplus,
-48482,Pulliyil GUPS,UPS,Nilambur,0,540,0,19,19,16,0,16,4,20,1,surplus,lost posts
-48549,G.H.S Anchachavadi,HS,Wandoor,452,443,19,16,35,29,18,11,7,36,1,surplus,
-48557,Maliyekkal GUPS,UPS,Wandoor,282,228,12,8,20,17,10,6,5,21,1,surplus,
-18009,GHSS POOKKOTTUR,HSS,Malappuram,0,412,0,15,15,12,0,15,2,17,2,surplus,
-18075,G H S S Kunnakkavu,HSS,Perinthalmanna,0,381,0,13,13,11,0,11,4,15,2,surplus,
-18097,G H S Aliparamba,HSS,Perinthalmanna,95,114,5,6,11,8,5,6,2,13,2,surplus,
-18384,G.M.U.P.S. Kondotty,UPS,Kondotty,0,811,0,26,26,24,0,20,8,28,2,surplus,lost posts
-18508,G.L.P.S. Cherukulam,LPS,Manjeri,185,0,9,0,9,7,8,0,3,11,2,surplus,
-18553,G.L.P.S. Ramankulam,LPS,Manjeri,166,0,8,0,8,6,7,0,3,10,2,surplus,
-18554,G.L.P.S. Theyyampadikuth,LPS,Manjeri,93,0,5,0,5,4,4,0,3,7,2,surplus,
-18674,G U P S Panagangara,UPS,Mankada,0,340,0,13,13,10,0,10,5,15,2,surplus,
-19013,GVHSS Vengara,VHSE,Vengara,0,276,0,10,10,8,0,10,2,12,2,surplus,lost posts
-19014,GMVHSS Vengara Town,VHSE,Vengara,132,365,8,13,21,16,8,12,3,23,2,surplus,lost posts
-19253,G. U. P. S. Pothanur,UPS,Edappal,110,147,6,6,12,9,7,4,3,14,2,surplus,lost posts
-19254,K. M. G. U. P. S. Thavanur,UPS,Edappal,317,420,14,14,28,23,14,12,4,30,2,surplus,lost posts
-19321,G. L. P. S. Kattilangadi,LPS,Kuttippuram,143,0,7,0,7,5,7,0,2,9,2,surplus,lost posts
-19408,G. F. L. P. S. Parappanangadi,LPS,Parappanangadi,154,0,8,0,8,6,8,0,2,10,2,surplus,lost posts
-19432,G. M. L. P. S. Parappanangadi,LPS,Parappanangadi,153,0,8,0,8,6,7,0,3,10,2,surplus,
-19512,G. L. P. S. Theyyangad,LPS,Ponnani,458,0,17,0,17,16,17,0,2,19,2,surplus,
-19536,G. F. L. P. S. Veliyancode,UPS,Ponnani,129,34,7,1,8,6,8,0,2,10,2,surplus,
-19607,G. M. L. P. S. Edakadappuram,LPS,Tanur,153,0,7,0,7,6,7,0,2,9,2,surplus,lost posts
-19671,G H S Meenadathur,HS,Tanur,353,577,16,19,35,29,17,15,5,37,2,surplus,lost posts
-19686,K. P. N. M. U. P. S. Tanur,UPS,Tanur,0,127,0,6,6,4,0,5,3,8,2,surplus,
-48049,G G V H S S Wandoor,VHSE,Wandoor,134,251,8,10,18,13,8,8,4,20,2,surplus,lost posts
-48090,G V H S S Kizhuparamba,VHSE,Areacode,0,205,0,9,9,6,1,7,3,11,2,surplus,
-48225,GLPS Thachanna,LPS,Areacode,326,0,12,0,12,11,11,0,3,14,2,surplus,
-48276,G L P S West Pathanapuram,LPS,Areacode,61,0,4,0,4,3,4,0,2,6,2,surplus,
-48423,GLPS Meppadam,LPS,Nilambur,111,0,6,0,6,4,6,0,2,8,2,surplus,lost posts
-48455,Eranhimangad GUPS,UPS,Nilambur,270,410,12,14,26,21,12,10,6,28,2,surplus,lost posts
-48512,Kallamoola GLPS,LPS,Wandoor,176,0,8,0,8,6,7,0,3,10,2,surplus,
-48524,Pattanamkundu GLPS,LPS,Wandoor,82,0,4,0,4,3,4,0,2,6,2,surplus,
-18028,G V H S S Nellikuth,VHSE,Manjeri,198,695,10,21,31,27,8,18,8,34,3,surplus,
-18375,G.M.U.P.S. Ozhukur,UPS,Kondotty,482,722,20,23,43,38,19,17,10,46,3,surplus,received teachers
-18471,G.M.U.P.S. Chemmankadavu,UPS,Malappuram,176,557,10,18,28,22,8,15,8,31,3,surplus,lost posts
-18575,G.U.P.S. Manjeri,UPS,Manjeri,144,158,9,7,16,10,8,8,3,19,3,surplus,lost posts
-18758,GMUPS Valapuram,UPS,Perinthalmanna,208,379,10,13,23,18,10,9,7,26,3,surplus,lost posts
-19024,G. H. S. S. Kattilangadi,HSS,Tanur,278,394,12,14,26,22,13,13,3,29,3,surplus,lost posts
-19704,G. L. P. S. B. P. Angadi,LPS,Tirur,121,0,7,0,7,5,9,0,1,10,3,surplus,lost posts
-19868,G H S Kuruka,HS,Vengara,348,445,15,15,30,25,16,14,3,33,3,surplus,lost posts
-48243,GUPS Moorkanad,UPS,Areacode,179,722,8,24,32,27,9,18,8,35,3,surplus,
-48244,GMUPS Mundambra,UPS,Areacode,340,294,15,11,26,21,13,8,8,29,3,surplus,
-18234,GUPS Kadungallur,UPS,Kizhisseri,206,226,10,9,19,14,11,6,6,23,4,surplus,
-18380,G.M.U.P.S. Vazhakkad,UPS,Kondotty,223,246,12,9,21,16,8,10,7,25,4,surplus,lost posts
-19357,G. H. S. Athavanad,HS,Kuttippuram,214,434,10,15,25,21,9,16,4,29,4,surplus,
-19363,G. U. P. S. Koodasseri,UPS,Kuttippuram,245,285,10,9,19,18,10,8,5,23,4,surplus,
-19673,G. M. U. P. S. Tanur Town,UPS,Tanur,168,434,9,14,23,19,8,14,5,27,4,surplus,
-48134,G. H. S Pannippara,HS,Areacode,301,543,13,19,32,27,13,16,7,36,4,surplus,
-48139,G.H.S. Kappu,HS,Melattur,350,413,14,13,27,24,12,13,6,31,4,surplus,
-48242,GUPS Maithra,UPS,Areacode,256,351,11,12,23,20,10,10,7,27,4,surplus,
-19441,G. M. U. P. S. Kakkad,UPS,Parappanangadi,344,375,16,14,30,23,15,13,7,35,5,surplus,lost posts
-18373,G.M.U.P.S. Chirayil,UPS,Kondotty,321,732,15,23,38,32,15,20,9,44,6,surplus,lost posts
-18578,G.U.P.S. Pathappiriyam,UPS,Manjeri,345,370,15,13,28,23,15,12,8,35,7,surplus,lost posts
-18677,MPGUP SCHOOL VADAKKANGARA,UPS,Mankada,0,482,0,16,16,14,0,16,7,23,7,surplus,
+school_code,school_name,category,sub_district,students_lp,students_up,divisions_lp,divisions_up,divisions_total,staff_lp,staff_up,staff_lp_up_shared,staff_counted,imbalance,verdict,fixation_2026_27
+19453,G. M. U. P. S. Venniyur,UPS,Parappanangadi,832,1124,22,31,53,17,16,6,39,-14,shortfall,
+19866,GUPS Klari,UPS,Vengara,802,1088,22,32,54,14,19,7,40,-14,shortfall,received teachers
+18021,G B H S S Manjeri,VHSE,Manjeri,0,593,0,18,18,1,6,3,10,-8,shortfall,received teachers
+48129,I G M M R S Nilambur,HSS,Nilambur,64,129,4,5,9,2,0,0,2,-7,shortfall,
+48457,Kurumbalangode GUPS,UPS,Nilambur,286,417,12,13,25,6,8,4,18,-7,shortfall,
+19439,G. U. P. S. Ariyallur,UPS,Parappanangadi,576,673,19,20,39,15,13,5,33,-6,shortfall,received teachers
+18023,G.G.H.S.S. Manjeri,HSS,Manjeri,19,133,4,5,9,3,1,0,4,-5,shortfall,received teachers
+18365,G.M.U.P.S. Arimbra,UPS,Kondotty,298,429,12,14,26,9,7,5,21,-5,shortfall,received teachers
+18438,G.L.P.S. Melmuri North,LPS,Malappuram,227,0,10,0,10,4,0,1,5,-5,shortfall,received teachers
+18476,G.U.P.S. Muthiriparamba,UPS,Malappuram,262,223,11,9,20,9,2,4,15,-5,shortfall,
+19317,G. L. P. S. Kalpakancheri,LPS,Kuttippuram,518,0,20,0,20,12,0,3,15,-5,shortfall,
+48047,VMCGHSS Wandoor,HSS,Wandoor,0,325,0,11,11,0,6,0,6,-5,shortfall,received teachers
+48532,Santhinagar GLPS,LPS,Wandoor,315,0,13,0,13,6,0,2,8,-5,shortfall,received teachers
+48536,Thiruvali GLPS,LPS,Wandoor,397,0,15,0,15,9,0,1,10,-5,shortfall,
+18057,G H S S Pulamanthole,HSS,Perinthalmanna,0,353,0,13,13,0,7,2,9,-4,shortfall,
+18535,G M L P S Mariyad,LPS,Manjeri,149,0,8,0,8,3,0,1,4,-4,shortfall,
+18576,G.M.U.P.S. Melakkam,UPS,Manjeri,105,111,6,5,11,4,1,2,7,-4,shortfall,received teachers
+19229,G. L. P. S. Thrikkanapuram,LPS,Edappal,199,0,9,0,9,5,0,0,5,-4,shortfall,received teachers
+19828,G M L P S Karathode,LPS,Vengara,454,0,18,0,18,11,0,3,14,-4,shortfall,
+19859,GUPS AR Nagar,UPS,Vengara,319,314,13,11,24,10,5,5,20,-4,shortfall,received teachers
+48317,G.M.L.P.S. Nenmini,LPS,Melattur,268,0,12,0,12,6,0,2,8,-4,shortfall,
+18013,G.B.H.S.S Malappuram,HSS,Malappuram,0,144,0,6,6,0,2,1,3,-3,shortfall,received teachers
+18058,G H S S Perintalmanna,HSS,Perinthalmanna,0,216,0,8,8,0,3,2,5,-3,shortfall,
+18065,G H S S Mankada,VHSE,Mankada,0,419,0,15,15,0,8,4,12,-3,shortfall,
+18072,G.H.S.S. Kottappuram,HSS,Kondotty,0,228,0,8,8,0,4,1,5,-3,shortfall,received teachers
+18078,G H S S Kadungapuram,HSS,Mankada,131,646,7,20,27,6,11,7,24,-3,shortfall,lost posts
+18204,GLPS Kizhisseri,UPS,Kizhisseri,711,142,21,5,26,19,0,4,23,-3,shortfall,
+18221,GMLPS Pookalathur,LPS,Kizhisseri,259,0,12,0,12,7,0,2,9,-3,shortfall,
+18505,G.L.P.S. Arukizhaya,LPS,Manjeri,60,0,4,0,4,1,0,0,1,-3,shortfall,received teachers
+18525,G.M.L.P.S. Kodasseri,LPS,Manjeri,378,0,15,0,15,10,0,2,12,-3,shortfall,received teachers
+18548,G.M.L.P.S. Pathappiriyam,LPS,Manjeri,232,0,10,0,10,6,0,1,7,-3,shortfall,received teachers
+18569,G.U.P.S. Anakkayam,UPS,Manjeri,146,268,8,10,18,7,4,4,15,-3,shortfall,
+19034,G. H. S. S. Kadanchery,HSS,Edappal,41,165,4,6,10,1,6,0,7,-3,shortfall,received teachers
+19244,G. H. W. L. P. S. Maravancheri,UPS,Edappal,137,29,6,1,7,4,0,0,4,-3,shortfall,received teachers
+19669,G. M. U. P. S. Kodinhi,UPS,Tanur,269,621,11,19,30,10,12,5,27,-3,shortfall,received teachers
+19833,GLPS Olakara,LPS,Vengara,404,0,16,0,16,11,1,1,13,-3,shortfall,
+48051,G H S S Thiruvali,HSS,Wandoor,0,541,0,16,16,1,9,3,13,-3,shortfall,
+48052,G H S S Karuvarakundu,HSS,Wandoor,0,764,0,23,23,2,14,4,20,-3,shortfall,received teachers
+48441,Pullippadam GLPS,LPS,Nilambur,157,0,8,0,8,4,0,1,5,-3,shortfall,lost posts
+48452,Amarambalam South GUPS,UPS,Nilambur,152,234,8,9,17,6,5,3,14,-3,shortfall,received teachers
+48516,Koithakundu GLPS,LPS,Wandoor,192,0,8,0,8,3,0,2,5,-3,shortfall,
+48528,Poongode GLPS,LPS,Wandoor,313,0,13,0,13,9,0,1,10,-3,shortfall,
+18032,G.R.H.S.S Kottakkal,HSS,Malappuram,0,597,0,18,18,0,12,4,16,-2,shortfall,
+18316,G.L.P.S. Karad,LPS,Kondotty,267,0,12,0,12,9,0,1,10,-2,shortfall,
+18349,G.L.P.S. Paravoor,LPS,Kondotty,54,0,4,0,4,2,0,0,2,-2,shortfall,received teachers
+18356,G.L.P.S. ThurakkaL,LPS,Kondotty,245,0,10,0,10,6,0,2,8,-2,shortfall,
+18435,G.L.P.S. Kodur,LPS,Malappuram,63,0,4,0,4,1,0,1,2,-2,shortfall,received teachers
+18436,G.L.P.S. Kottakkal,LPS,Malappuram,120,0,6,0,6,2,0,2,4,-2,shortfall,
+18440,G.L.P.S. Paranki Moochikkal,LPS,Malappuram,367,0,14,0,14,9,0,3,12,-2,shortfall,
+18473,G.M.U.P.S. Kottakkal,UPS,Malappuram,289,431,12,15,27,11,8,6,25,-2,shortfall,received teachers
+18474,G.M.U.P.S. Melmuri,UPS,Malappuram,491,404,18,14,32,15,8,7,30,-2,shortfall,
+18475,G.U.P.S. Kottakkal,UPS,Malappuram,285,315,11,11,22,11,6,3,20,-2,shortfall,
+18477,G.U.P.S. Ponmala,UPS,Malappuram,242,348,10,12,22,9,8,3,20,-2,shortfall,received teachers
+18541,G.L.P.S. Pandallur,LPS,Manjeri,290,0,12,0,12,7,0,3,10,-2,shortfall,
+18557,G.L.P.S. Valarad,LPS,Manjeri,136,0,8,0,8,4,0,2,6,-2,shortfall,
+18626,G L P S Palakaparambil,LPS,Mankada,99,0,5,0,5,1,0,2,3,-2,shortfall,
+18660,G U P S Koottilangadi,UPS,Mankada,230,259,9,9,18,8,4,4,16,-2,shortfall,received teachers
+18723,GMLPS Muthiramanna,LPS,Perinthalmanna,69,0,4,0,4,1,0,1,2,-2,shortfall,
+18730,GMLPS Perinthalmanna Central,LPS,Perinthalmanna,290,0,12,0,12,8,0,2,10,-2,shortfall,
+18739,GMLPS Thootha,LPS,Perinthalmanna,153,0,8,0,8,4,0,2,6,-2,shortfall,
+19002,G M H S S C U Campus,HSS,Vengara,0,379,0,13,13,0,7,4,11,-2,shortfall,lost posts
+19042,G. H. S. S. Perassannur,HSS,Kuttippuram,145,228,8,8,16,7,5,2,14,-2,shortfall,
+19043,P. C. N. G. H. S. S. Mookkuthala,HSS,Edappal,0,509,0,17,17,0,12,3,15,-2,shortfall,
+19077,GHSS Puthuparamba,HSS,Vengara,555,533,20,17,37,19,11,5,35,-2,shortfall,
+19216,G. B. L. P. S. Mudur,LPS,Edappal,75,0,4,0,4,1,0,1,2,-2,shortfall,
+19225,G. L. P. S. Sukapuram,LPS,Edappal,43,0,4,0,4,1,0,1,2,-2,shortfall,
+19301,G. L. P. S. Athippetta,LPS,Kuttippuram,78,0,4,0,4,1,0,1,2,-2,shortfall,
+19329,G. L. P. S. Kuttippuram,LPS,Kuttippuram,21,0,4,0,4,2,0,0,2,-2,shortfall,
+19365,G. U. P. S. Randathani,UPS,Kuttippuram,148,264,8,10,18,8,4,4,16,-2,shortfall,
+19417,G. L. P. S. Venniyur,LPS,Parappanangadi,149,0,7,0,7,4,0,1,5,-2,shortfall,received teachers
+19429,G. F. L. P. S. Kadalundi,UPS,Parappanangadi,58,31,4,2,6,3,0,1,4,-2,shortfall,
+19434,G. M. L. P. S. Parappanangadi Town,UPS,Parappanangadi,262,48,11,2,13,8,1,2,11,-2,shortfall,received teachers
+19436,G. M. L. P. S. Velimukku,UPS,Parappanangadi,121,34,7,2,9,7,0,0,7,-2,shortfall,
+19447,G. M. U. P. S. Parakkadavu,UPS,Parappanangadi,524,651,18,20,38,14,15,7,36,-2,shortfall,
+19537,G. L. P. S. Velleri,UPS,Ponnani,57,19,4,1,5,3,0,0,3,-2,shortfall,
+19769,G. U. P. S. Chamravattam,UPS,Tirur,443,611,16,19,35,13,13,7,33,-2,shortfall,received teachers
+19781,G. M. U. P. S. Paravanna,UPS,Tirur,306,305,13,11,24,11,6,5,22,-2,shortfall,
+19816,GMLPS Koomanna,LPS,Vengara,223,0,9,0,9,7,0,0,7,-2,shortfall,
+19824,GMLPS Orakam Kizhmuri,LPS,Vengara,311,0,13,0,13,10,0,1,11,-2,shortfall,
+19855,GLPS Orakam Kizhumuri,UPS,Vengara,452,131,17,5,22,18,0,2,20,-2,shortfall,
+48063,G.H.S.S. Pattikkad,HSS,Melattur,0,317,0,12,12,0,8,2,10,-2,shortfall,
+48141,G H S Perakamanna,HS,Areacode,245,415,10,14,24,9,9,4,22,-2,shortfall,
+48205,G L P S Chengara,LPS,Areacode,228,0,10,0,10,7,0,1,8,-2,shortfall,
+48224,GMLPS Puthalam,LPS,Areacode,115,0,7,0,7,4,0,1,5,-2,shortfall,
+48304,G.L.P.S. Cheriparamba,LPS,Melattur,132,0,8,0,8,5,0,1,6,-2,shortfall,
+48425,Mooleppadam GLPS,LPS,Nilambur,6,0,2,0,2,0,0,0,0,-2,shortfall,received teachers
+48501,Adakkakundu GLPS,LPS,Wandoor,160,0,8,0,8,4,0,2,6,-2,shortfall,
+48510,Chokkad Girijan Colony GLPS,LPS,Wandoor,10,0,4,0,4,1,0,1,2,-2,shortfall,
+48531,Pulvetta GLPS,LPS,Wandoor,290,0,11,0,11,7,0,2,9,-2,shortfall,
+48533,Tharish GLPS,LPS,Wandoor,446,0,16,0,16,11,0,3,14,-2,shortfall,
+48545,Chadangamkulam GLPS,UPS,Wandoor,253,73,11,3,14,10,0,2,12,-2,shortfall,
+48558,G H S Neelanchery,HS,Wandoor,346,324,14,11,25,9,11,3,23,-2,shortfall,lost posts
+18012,G.G.H.S.S. Malappuram,HSS,Malappuram,0,265,0,9,9,0,5,3,8,-1,shortfall,lost posts
+18027,G H S S Pandikkad,HSS,Manjeri,0,857,0,25,25,0,19,5,24,-1,shortfall,
+18205,GLPS Kuzhimanna,LPS,Kizhisseri,280,0,11,0,11,10,0,0,10,-1,shortfall,
+18219,GLPS Parathakkad,LPS,Kizhisseri,180,0,8,0,8,5,0,2,7,-1,shortfall,
+18230,GLPS Vilayil Parappur,LPS,Kizhisseri,155,0,8,0,8,5,0,2,7,-1,shortfall,
+18301,G.M.L.P.S. Akkode,LPS,Kondotty,81,0,4,0,4,2,0,1,3,-1,shortfall,
+18335,G.L.P.S. Mundumuzhi,LPS,Kondotty,113,0,6,0,6,5,0,0,5,-1,shortfall,
+18352,G.L.P.S. Puthucode,LPS,Kondotty,208,0,9,0,9,7,0,1,8,-1,shortfall,
+18362,G.L.P.S. Vettathur,LPS,Kondotty,219,0,10,0,10,7,0,2,9,-1,shortfall,
+18434,G.L.P.S. Choonur,LPS,Malappuram,166,0,8,0,8,6,0,1,7,-1,shortfall,
+18437,G.L.P.S. Malappruam,LPS,Malappuram,261,0,11,0,11,8,0,2,10,-1,shortfall,
+18448,G.M.L.P.S. Irumbuzhi,LPS,Malappuram,256,0,12,0,12,9,0,2,11,-1,shortfall,
+18449,G.M.L.P.S. Kolmanna,LPS,Malappuram,54,0,4,0,4,3,0,0,3,-1,shortfall,
+18461,G.M.L.P.S. Pookottur,UPS,Malappuram,61,13,4,1,5,4,0,0,4,-1,shortfall,
+18507,G.L.P.S. Chembakuth,LPS,Manjeri,53,0,4,0,4,2,0,1,3,-1,shortfall,
+18531,G.M.L.P.S. Manjeri East,LPS,Manjeri,61,0,4,0,4,3,0,0,3,-1,shortfall,
+18542,G M L P S Pandallur,LPS,Manjeri,234,0,9,0,9,7,0,1,8,-1,shortfall,
+18563,G.L.P.S. Vettikkattiri,LPS,Manjeri,107,0,6,0,6,4,0,1,5,-1,shortfall,
+18592,GMLP School ANAKKAYAM,LPS,Manjeri,57,0,4,0,4,2,0,1,3,-1,shortfall,
+18612,G L P S Karkidakam,LPS,Mankada,130,0,6,0,6,3,0,2,5,-1,shortfall,received teachers
+18634,G L P S Meenarkuzhi,LPS,Mankada,173,0,8,0,8,5,0,2,7,-1,shortfall,
+18637,G L P S Pothukundu,LPS,Mankada,106,0,6,0,6,3,0,2,5,-1,shortfall,received teachers
+18640,G L P S Puthanangadi,LPS,Mankada,129,0,7,0,7,4,0,2,6,-1,shortfall,received teachers
+18715,GMLPS Kakkooth,LPS,Perinthalmanna,49,0,4,0,4,2,0,1,3,-1,shortfall,
+18731,GLPS Perinthalmanna East,LPS,Perinthalmanna,171,0,8,0,8,5,0,2,7,-1,shortfall,
+19054,G. H. S. S. Maranchery,HSS,Ponnani,47,316,4,11,15,4,7,3,14,-1,shortfall,received teachers
+19201,G. L. P. S. Alankode,LPS,Edappal,44,0,4,0,4,1,0,2,3,-1,shortfall,
+19205,G. L. P. S. Chiyanur,LPS,Edappal,83,0,4,0,4,2,0,1,3,-1,shortfall,
+19218,G. L. P. S. Nariparamba,LPS,Edappal,34,0,4,0,4,3,0,0,3,-1,shortfall,received teachers
+19220,G. M. L. P. S. Pallikara,LPS,Edappal,35,0,4,0,4,2,0,1,3,-1,shortfall,
+19227,G. L. P. S. Thuyyam,LPS,Edappal,55,0,4,0,4,2,0,1,3,-1,shortfall,
+19235,G. J. B. S. Vattamkulam,LPS,Edappal,57,0,4,0,4,2,0,1,3,-1,shortfall,
+19312,G. W. L. P. S. Irimbliyam,LPS,Kuttippuram,109,0,6,0,6,3,0,2,5,-1,shortfall,
+19313,G. M. L. P. S. Kallarmangalam,LPS,Kuttippuram,157,0,7,0,7,5,0,1,6,-1,shortfall,
+19322,G. L. P. S. Kattipparuthi,LPS,Kuttippuram,69,0,4,0,4,2,0,1,3,-1,shortfall,received teachers
+19324,G. M. L. P. S. Kanancheri,LPS,Kuttippuram,82,0,4,0,4,2,0,1,3,-1,shortfall,
+19350,G. M. L. P. S. Valancheri,LPS,Kuttippuram,46,0,4,0,4,1,0,2,3,-1,shortfall,
+19359,G. M. H. S. Karippole,HS,Kuttippuram,328,404,13,14,27,9,13,4,26,-1,shortfall,
+19443,G. U. P. S. Moonniyur,UPS,Parappanangadi,193,237,9,9,18,8,5,4,17,-1,shortfall,
+19449,G. W. U. P. S. Trikkulam,UPS,Parappanangadi,194,170,8,6,14,6,5,2,13,-1,shortfall,received teachers
+19451,G. H. S. Trikkulam,HS,Parappanangadi,281,432,12,15,27,10,11,5,26,-1,shortfall,lost posts
+19509,G. L. P. S. Purang,LPS,Ponnani,165,0,8,0,8,5,0,2,7,-1,shortfall,
+19516,G. L. P. S. Veliyancode Gramam,LPS,Ponnani,47,0,4,0,4,3,0,0,3,-1,shortfall,
+19519,G. M. L. P. S. Veliyancode,LPS,Ponnani,89,0,4,0,4,3,0,0,3,-1,shortfall,lost posts
+19533,G. L. P. S. Kanhiramukku,UPS,Ponnani,24,6,4,1,5,4,0,0,4,-1,shortfall,
+19556,GLPS Kadavanad,LPS,Ponnani,84,0,5,0,5,4,0,0,4,-1,shortfall,
+19613,G. L. P. S. Kanmanam,LPS,Tanur,103,0,5,0,5,3,0,1,4,-1,shortfall,
+19619,G. M. L. P. S. Manalipuzha,LPS,Tanur,68,0,5,0,5,3,0,1,4,-1,shortfall,received teachers
+19661,G. M. L. P. S. Kuttippala,UPS,Tanur,206,51,9,2,11,8,0,2,10,-1,shortfall,
+19662,G. L. P. S. Ozhur,UPS,Tanur,261,66,11,3,14,11,0,2,13,-1,shortfall,
+19663,G. L. P. S. Pariyapuram,UPS,Tanur,220,51,9,2,11,9,0,1,10,-1,shortfall,
+19713,G. M. L. P. S. Kuttayi North,LPS,Tirur,42,0,4,0,4,3,0,0,3,-1,shortfall,
+19721,G. L. P. S. Mangattiri,LPS,Tirur,48,0,4,0,4,3,0,0,3,-1,shortfall,
+19734,G. L. P. S. Thiruthi,LPS,Tirur,41,0,4,0,4,2,0,1,3,-1,shortfall,
+19802,GMLPS Cherur,LPS,Vengara,58,0,4,0,4,3,0,0,3,-1,shortfall,
+19804,GMLPS Cherukunnu,LPS,Vengara,82,0,4,0,4,3,0,0,3,-1,shortfall,
+19808,GMLPS Edakkaparamba,LPS,Vengara,403,0,15,0,15,13,0,1,14,-1,shortfall,lost posts
+19820,G L P S Othukkungal,LPS,Vengara,223,0,10,0,10,7,0,2,9,-1,shortfall,
+19838,GMLPS Puthur,LPS,Vengara,128,0,7,0,7,5,0,1,6,-1,shortfall,
+19840,GLPS Pukayur,LPS,Vengara,164,0,8,0,8,7,0,0,7,-1,shortfall,
+19841,GLPS Thattancherimala,LPS,Vengara,56,0,4,0,4,3,0,0,3,-1,shortfall,
+48050,G H S S Vaniyambalam,HSS,Wandoor,0,439,0,15,15,0,11,3,14,-1,shortfall,
+48077,G H S S Moothedath,HSS,Nilambur,248,263,11,9,20,11,5,3,19,-1,shortfall,received teachers
+48138,GHS Munderi,HS,Nilambur,155,255,8,9,17,7,7,2,16,-1,shortfall,received teachers
+48213,GLPS Kizhuparamba South,LPS,Areacode,58,0,4,0,4,2,0,1,3,-1,shortfall,
+48219,GLPS Palappatta,LPS,Areacode,102,0,5,0,5,2,0,2,4,-1,shortfall,received teachers
+48226,GLPS Thavarapparamba,LPS,Areacode,343,0,13,0,13,10,0,2,12,-1,shortfall,
+48237,GMUPS Areacode,UPS,Areacode,342,327,13,12,25,9,9,6,24,-1,shortfall,
+48245,G U P S Odakkayam,UPS,Areacode,23,22,4,3,7,4,2,0,6,-1,shortfall,
+48310,G.L.P.S. Kizhakkumpadam,LPS,Melattur,139,0,8,0,8,5,0,2,7,-1,shortfall,
+48320,G.L.P.S. Kombamkallu,LPS,Melattur,92,0,5,0,5,4,0,0,4,-1,shortfall,
+48326,M.P.G.L.P.S. Puthanpally,LPS,Melattur,76,0,4,0,4,2,0,1,3,-1,shortfall,
+48408,GLPS Chungathara Panchayath,LPS,Nilambur,132,0,8,0,8,5,0,2,7,-1,shortfall,received teachers
+48411,Karimbuzha GMLPS,LPS,Nilambur,173,0,8,0,8,6,0,1,7,-1,shortfall,
+48415,Kavalamukkatta GLPS,LPS,Nilambur,156,0,8,0,8,6,0,1,7,-1,shortfall,
+48419,Mamankara GLPS,LPS,Nilambur,506,0,18,0,18,14,0,3,17,-1,shortfall,received teachers
+48430,Nedungayam GTLPS,LPS,Nilambur,5,0,3,0,3,1,0,1,2,-1,shortfall,
+48445,Vadapuram GMLPS,LPS,Nilambur,112,0,6,0,6,3,0,2,5,-1,shortfall,lost posts
+48446,Valanthode GTLPS,LPS,Nilambur,25,0,4,0,4,2,0,1,3,-1,shortfall,received teachers
+48448,Veettikuth GLPS,LPS,Nilambur,262,0,12,0,12,9,0,2,11,-1,shortfall,
+48463,Myladi GUPS,UPS,Nilambur,176,139,8,6,14,7,3,3,13,-1,shortfall,received teachers
+48479,Konnamanna GUPS,UPS,Nilambur,0,97,0,5,5,0,2,2,4,-1,shortfall,
+48502,Akkarakulam GLPS,LPS,Wandoor,200,0,8,0,8,6,0,1,7,-1,shortfall,
+48513,Karuvarakundu GLPS,LPS,Wandoor,511,0,19,0,19,14,0,4,18,-1,shortfall,
+48519,Mampattumoola GLPS,LPS,Wandoor,336,0,13,0,13,10,0,2,12,-1,shortfall,
+48520,Mampuzha GLPS,LPS,Wandoor,338,0,13,0,13,9,0,3,12,-1,shortfall,
+48521,Mundakkode GLPS,LPS,Wandoor,108,0,5,0,5,2,0,2,4,-1,shortfall,
+48523,Pallisseri GLPS,LPS,Wandoor,116,0,6,0,6,3,0,2,5,-1,shortfall,
+48527,Pookkulam GLPS,LPS,Wandoor,202,0,9,0,9,7,0,1,8,-1,shortfall,
+48530,Pullengode GMLPS,LPS,Wandoor,192,0,9,0,9,7,0,1,8,-1,shortfall,
+48538,Thuvvur GLPS,LPS,Wandoor,445,0,17,0,17,13,0,3,16,-1,shortfall,
+48540,Vaniyambalam CKAGLPS,LPS,Wandoor,402,0,15,0,15,12,0,2,14,-1,shortfall,
+18008,G.V.H.S.S. Kondotty,VHSE,Kondotty,0,239,0,8,8,0,6,2,8,0,balanced,
+18011,G H S S Kuzhimanna,HSS,Kizhisseri,0,88,0,5,5,0,5,0,5,0,balanced,
+18069,S H M G V H S S Edavanna,VHSE,Manjeri,0,277,0,10,10,0,9,1,10,0,balanced,
+18206,GLPS Kuzhimanna II South,LPS,Kizhisseri,275,0,12,0,12,9,0,3,12,0,balanced,
+18217,GLPS Parappur,LPS,Kizhisseri,93,0,4,0,4,3,0,1,4,0,balanced,
+18218,GLPS Parapurathparamba,LPS,Kizhisseri,102,0,6,0,6,4,0,2,6,0,balanced,
+18220,GLPS Ponnad,LPS,Kizhisseri,324,0,13,0,13,11,0,2,13,0,balanced,
+18222,GLPS Pulpatta,LPS,Kizhisseri,140,0,8,0,8,7,0,1,8,0,balanced,
+18228,GLPS Vilayil,LPS,Kizhisseri,72,0,4,0,4,2,0,2,4,0,balanced,
+18326,G.M.L.P.S. Kumminiparamba,LPS,Kondotty,170,0,8,0,8,6,0,2,8,0,balanced,
+18329,G.M.L.P.S. Mapprom,LPS,Kondotty,84,0,4,0,4,2,0,2,4,0,balanced,
+18332,G.M.L.P.S. Morayur,LPS,Kondotty,269,0,11,0,11,8,0,3,11,0,balanced,
+18339,G.M.L.P.S. Nediyiruppu,LPS,Kondotty,50,0,4,0,4,3,0,1,4,0,balanced,
+18346,G.L.P.S. Panikkarapuraya,LPS,Kondotty,107,0,6,0,6,5,0,1,6,0,balanced,
+18354,G.L.P.S. Thadathilparamba,LPS,Kondotty,134,0,7,0,7,5,0,2,7,0,balanced,
+18368,G.H.S. Chaliyappuram,HS,Kondotty,322,340,13,12,25,11,10,4,25,0,balanced,
+18441,G.L.P.S. Peringottupulam,LPS,Malappuram,81,0,4,0,4,2,0,2,4,0,balanced,
+18443,G.L.P.S. Pookottur Old,LPS,Malappuram,356,0,14,0,14,11,0,3,14,0,balanced,
+18506,G.L.P.S. Chalippadam,LPS,Manjeri,99,0,6,0,6,5,0,1,6,0,balanced,
+18514,G.M.L.P.S. Edavanna,LPS,Manjeri,160,0,8,0,8,7,0,1,8,0,balanced,
+18521,G.L.P.S. Karuvambrum West,LPS,Manjeri,58,0,4,0,4,3,0,1,4,0,balanced,
+18528,G.M.L.P.S. Mangalasseri,LPS,Manjeri,322,0,13,0,13,11,0,2,13,0,balanced,
+18533,G.M.L.P.S. Manjeri,LPS,Manjeri,48,0,4,0,4,3,0,1,4,0,balanced,
+18534,G.M.L.P.S. Manjeri South,LPS,Manjeri,34,0,4,0,4,3,0,1,4,0,balanced,
+18555,G.L.P.S. Thottupoyil,LPS,Manjeri,154,0,8,0,8,7,0,1,8,0,balanced,
+18562,G.U.P.S. Vettekkode,UPS,Manjeri,147,171,8,7,15,8,4,3,15,0,balanced,received teachers
+18565,G.L.P.S. Cherankuth,UPS,Manjeri,69,22,4,1,5,4,0,1,5,0,balanced,
+18567,G.M.L.P.S. Pandikkad,UPS,Manjeri,152,27,7,1,8,6,0,2,8,0,balanced,
+18568,G.L.P.S. Pookkuth,UPS,Manjeri,167,43,8,2,10,8,0,2,10,0,balanced,
+18572,G.U.P.S. Elankur,UPS,Manjeri,249,201,11,8,19,9,7,3,19,0,balanced,received teachers
+18574,G U P S Pullur,UPS,Manjeri,324,611,13,19,32,11,14,7,32,0,balanced,
+18588,G.M.U.P.S. Vettikattiri,UPS,Manjeri,0,198,0,8,8,0,5,3,8,0,balanced,lost posts
+18590,GLPS ANAKKOTTUPURAM,LPS,Manjeri,174,0,8,0,8,6,0,2,8,0,balanced,
+18607,G L P S Chovana,LPS,Mankada,113,0,6,0,6,4,0,2,6,0,balanced,received teachers
+18628,G L P S Pang,LPS,Mankada,111,0,5,0,5,4,0,1,5,0,balanced,
+18653,G L P S Vellila,LPS,Mankada,326,0,13,0,13,11,0,2,13,0,balanced,
+18657,G L P S Padinhattummuri,UPS,Mankada,354,84,14,3,17,15,0,2,17,0,balanced,
+18664,G U P S Mankada Pallippuram,UPS,Mankada,317,330,13,11,24,11,7,6,24,0,balanced,
+18717,GLPS Kappumugham,LPS,Perinthalmanna,129,0,7,0,7,5,0,2,7,0,balanced,
+18728,GLPS Parakkalmukku,LPS,Perinthalmanna,75,0,4,0,4,3,0,1,4,0,balanced,
+18736,GMLPS Puthur,LPS,Perinthalmanna,231,0,11,0,11,9,0,2,11,0,balanced,
+18737,GMLPS Thazhekode,LPS,Perinthalmanna,511,0,19,0,19,16,0,3,19,0,balanced,received teachers
+19016,G. B. H. S. S. Tirur,HSS,Tirur,0,405,0,14,14,0,11,3,14,0,balanced,received teachers
+19067,G. H. S. S. Cheriyamundam,HSS,Tanur,0,114,0,4,4,0,3,1,4,0,balanced,
+19208,G. L. P. S. Kaladi,LPS,Edappal,181,0,8,0,8,6,0,2,8,0,balanced,
+19214,G. L. P. S. Mookkuthala,LPS,Edappal,180,0,8,0,8,7,0,1,8,0,balanced,
+19222,G. L. P. S. Perumparamba,LPS,Edappal,151,0,8,0,8,6,0,2,8,0,balanced,
+19223,G. L. P. S. Polpakkara,LPS,Edappal,39,0,4,0,4,3,0,1,4,0,balanced,
+19231,Uliyathu Aboobacker Memmorial G. L. P. S. Vadakkummuri,LPS,Edappal,68,0,4,0,4,2,0,2,4,0,balanced,
+19233,G. M. L. P. S. Vadakkummuri,LPS,Edappal,25,0,4,0,4,3,0,1,4,0,balanced,received teachers
+19243,Govt L.P.School Kololomba,UPS,Edappal,30,13,4,1,5,3,0,2,5,0,balanced,
+19249,G. U. P. S. Kololamba,UPS,Edappal,114,231,5,9,14,4,7,3,14,0,balanced,
+19251,G. U. P. S. Othalur,UPS,Edappal,66,114,4,6,10,4,4,2,10,0,balanced,
+19304,G. M. L. P. S. Ayirani,LPS,Kuttippuram,77,0,4,0,4,3,0,1,4,0,balanced,
+19308,G. L. P. S. Cheruparamba,LPS,Kuttippuram,212,0,8,0,8,6,0,2,8,0,balanced,received teachers
+19310,G. L. P. S. Chottur,LPS,Kuttippuram,211,0,8,0,8,6,0,2,8,0,balanced,received teachers
+19315,G. M. L. P. S. Kalpakancheri,LPS,Kuttippuram,53,0,4,0,4,3,0,1,4,0,balanced,
+19332,G. M. L. P. S. Manhachola,LPS,Kuttippuram,64,0,4,0,4,3,0,1,4,0,balanced,
+19335,G. L. P. S. Mankeri,LPS,Kuttippuram,97,0,5,0,5,4,0,1,5,0,balanced,
+19339,G. L. P. S. Naduvattam,LPS,Kuttippuram,222,0,9,0,9,6,0,3,9,0,balanced,
+19343,G. M. L. P. S. Paravannur,LPS,Kuttippuram,41,0,4,0,4,3,0,1,4,0,balanced,
+19345,G. L. P. S. Perumparamba Moodal,LPS,Kuttippuram,148,0,8,0,8,5,0,3,8,0,balanced,received teachers
+19348,G. L. P. S. Vadakkumbram,LPS,Kuttippuram,237,0,11,0,11,9,0,2,11,0,balanced,
+19414,G. L. P. S. Thirurangadi,LPS,Parappanangadi,325,0,13,0,13,11,0,2,13,0,balanced,
+19430,G. L .P. S. Melodiparamba,LPS,Parappanangadi,71,0,4,0,4,2,0,2,4,0,balanced,
+19435,G. L. P. S. Vallikunnu,UPS,Parappanangadi,64,14,4,1,5,4,0,1,5,0,balanced,
+19506,G. F. L. P. S. Ponnani,LPS,Ponnani,41,0,4,0,4,3,0,1,4,0,balanced,
+19507,G. M. L. P. S. Ponnani Town,LPS,Ponnani,34,0,4,0,4,3,0,1,4,0,balanced,
+19535,G. F. L. P. S. Puthuponnani,UPS,Ponnani,43,22,4,1,5,4,0,1,5,0,balanced,
+19539,G. U. P. S. Cheruvayikkara,UPS,Ponnani,48,98,4,4,8,4,3,1,8,0,balanced,
+19544,G. F. U. P. S. Kadavanad,UPS,Ponnani,227,299,10,11,21,9,9,3,21,0,balanced,
+19611,G. L. P. S. Klari West,LPS,Tanur,86,0,4,0,4,3,0,1,4,0,balanced,
+19616,G. M. L. P. S. Korad,LPS,Tanur,266,0,12,0,12,9,0,3,12,0,balanced,
+19624,G. M. L. P. S. Panangattur,LPS,Tanur,163,0,8,0,8,7,0,1,8,0,balanced,
+19626,G. M. L. P. S. Parapputhadam,LPS,Tanur,73,0,4,0,4,3,0,1,4,0,balanced,
+19635,G. L. P. S. Rayirimangalam East,LPS,Tanur,175,0,8,0,8,7,0,1,8,0,balanced,
+19640,G. M. L. P. S. Tanur North,LPS,Tanur,197,0,9,0,9,8,0,1,9,0,balanced,
+19644,G. M. L. P. S. Thiruthy,LPS,Tanur,60,0,4,0,4,3,0,1,4,0,balanced,
+19710,G. M. L. P. S. Kaithakkara,LPS,Tirur,35,0,4,0,4,3,0,1,4,0,balanced,
+19716,G. M. L. P. S. Kuttayi South,LPS,Tirur,101,0,5,0,5,4,0,1,5,0,balanced,
+19725,G. M. L. P. S. Pachattiri,LPS,Tirur,119,0,6,0,6,5,0,1,6,0,balanced,lost posts
+19727,G. M. L. P. S. SouthPallar,LPS,Tirur,91,0,5,0,5,4,0,1,5,0,balanced,
+19736,G. L. P. S. Thrikandiyur,LPS,Tirur,99,0,6,0,6,5,0,1,6,0,balanced,
+19738,G. M. L. P. S. Valiya Parappur,LPS,Tirur,152,0,8,0,8,6,0,2,8,0,balanced,
+19765,G. W. L. P. S. Purathur,UPS,Tirur,59,14,4,1,5,4,0,1,5,0,balanced,received teachers
+19767,G. M. U. P. S. BP Angadi,UPS,Tirur,385,666,14,20,34,13,14,7,34,0,balanced,
+19810,GLPS Kannamangalam,LPS,Vengara,67,0,4,0,4,3,0,1,4,0,balanced,
+19814,GMLPS Kilinakode,LPS,Vengara,271,0,12,0,12,11,0,1,12,0,balanced,
+19822,GMLPS Mampuram,LPS,Vengara,98,0,5,0,5,4,0,1,5,0,balanced,
+19826,GLPS Nottappuram,LPS,Vengara,228,0,9,0,9,8,0,1,9,0,balanced,
+19836,GLPS Peruvallur,LPS,Vengara,183,0,8,0,8,7,0,1,8,0,balanced,
+19853,GMLPS Koyappa,UPS,Vengara,89,22,4,1,5,3,0,2,5,0,balanced,received teachers
+19856,GLPS Parambilpeedika,LPS,Vengara,754,0,21,0,21,19,0,2,21,0,balanced,
+19863,G U P S Cholakundu,UPS,Vengara,263,335,12,12,24,8,11,5,24,0,balanced,received teachers
+19864,GMUPS Kannamangalam,UPS,Vengara,245,262,10,10,20,8,7,5,20,0,balanced,
+19871,GUPS Thenhippalam,UPS,Vengara,255,379,10,13,23,8,10,5,23,0,balanced,received teachers
+48001,G H S S Areacode,HSS,Areacode,0,255,0,10,10,0,7,3,10,0,balanced,received teachers
+48202,GMLPS Areacode West,LPS,Areacode,44,0,4,0,4,3,0,1,4,0,balanced,
+48203,GLPS Chemrakattur,LPS,Areacode,340,0,13,0,13,10,0,3,13,0,balanced,received teachers
+48210,GLPS Kavanur,LPS,Areacode,244,0,10,0,10,7,0,3,10,0,balanced,
+48212,GMLPS Kizhuparamba,LPS,Areacode,54,0,4,0,4,2,0,2,4,0,balanced,
+48214,GLPS Kozhakottur,LPS,Areacode,208,0,9,0,9,6,0,3,9,0,balanced,
+48238,GUPS Chundathumpoyil,UPS,Areacode,61,52,4,3,7,4,2,1,7,0,balanced,
+48318,G.M.L.P.S. Pallikuth,LPS,Melattur,139,0,8,0,8,6,0,2,8,0,balanced,
+48321,G.L.P.S. Pattikkad,LPS,Melattur,242,0,11,0,11,8,0,3,11,0,balanced,
+48323,G.L.P.S. Pezhumthara,LPS,Melattur,51,0,4,0,4,3,0,1,4,0,balanced,
+48328,G.L.P.S. Thelakkad,LPS,Melattur,82,0,5,0,5,3,0,2,5,0,balanced,
+48329,G.L.P.S. Valayapuram,LPS,Melattur,34,0,4,0,4,3,0,1,4,0,balanced,
+48330,G.L.P.S. Chemmaniyode,UPS,Melattur,201,44,8,2,10,9,0,1,10,0,balanced,
+48339,G.L.P.S. Edappatta,LPS,Melattur,74,0,4,0,4,3,0,1,4,0,balanced,
+48407,Chungathara G L P S,LPS,Nilambur,149,0,8,0,8,6,0,2,8,0,balanced,
+48410,Edivanna Estate GLPS,LPS,Nilambur,217,0,8,0,8,6,0,2,8,0,balanced,
+48413,GMLPS Panthalingal,LPS,Nilambur,79,0,4,0,4,3,0,1,4,0,balanced,
+48416,Konamunda GLPS,LPS,Nilambur,153,0,7,0,7,6,0,1,7,0,balanced,
+48420,Mampad North GMLPS,LPS,Nilambur,151,0,8,0,8,6,0,2,8,0,balanced,
+48435,Pathirippadam GLPS,LPS,Nilambur,167,0,8,0,8,7,0,1,8,0,balanced,
+48437,Perumbathur GLPS,LPS,Nilambur,65,0,4,0,4,3,0,1,4,0,balanced,
+48439,Poolappadam GLPS,LPS,Nilambur,146,0,8,0,8,5,0,3,8,0,balanced,received teachers
+48450,Vendekkumpotty GLPS,LPS,Nilambur,76,0,5,0,5,4,0,1,5,0,balanced,
+48468,Pallikuth GUPS,UPS,Nilambur,146,143,8,6,14,7,5,2,14,0,balanced,
+48504,Amapoyil GLPS,LPS,Wandoor,202,0,9,0,9,7,0,2,9,0,balanced,
+48515,Kizhakkethala GLPS,LPS,Wandoor,169,0,8,0,8,6,0,2,8,0,balanced,
+48517,Kooripoyil GLPS,LPS,Wandoor,140,0,8,0,8,7,0,1,8,0,balanced,
+48522,Pedayenthal GLPS,LPS,Wandoor,66,0,4,0,4,3,0,1,4,0,balanced,
+48525,Payyakode GLPS,LPS,Wandoor,40,0,4,0,4,3,0,1,4,0,balanced,
+48529,V.M.D Memorial Govt L.P.S Porur,LPS,Wandoor,116,0,6,0,6,5,0,1,6,0,balanced,
+48551,Chokkad GMUPS,UPS,Wandoor,206,210,9,7,16,8,5,3,16,0,balanced,
+18010,G.V.H.S.S. Pullanur,VHSE,Malappuram,97,99,5,4,9,2,5,3,10,1,surplus,lost posts
+18139,Govt High School Muthuvallur,HSS,Kizhisseri,158,157,8,6,14,7,5,3,15,1,surplus,
+18223,GMLPS Thavanur,LPS,Kizhisseri,223,0,9,0,9,8,0,2,10,1,surplus,
+18226,GLPS Valamangalam,LPS,Kizhisseri,166,0,8,0,8,7,0,2,9,1,surplus,
+18235,GMUPS Kizhisseri,UPS,Kizhisseri,276,246,12,9,21,11,6,5,22,1,surplus,
+18302,G.M.L.P.S. Alparamba,LPS,Kondotty,141,0,7,0,7,6,0,2,8,1,surplus,lost posts
+18311,G.L.P.S. Elamaram,LPS,Kondotty,59,0,4,0,4,3,0,2,5,1,surplus,
+18315,G.M.L.P.S. Kanhiraparamba,LPS,Kondotty,222,0,10,0,10,8,0,3,11,1,surplus,
+18322,G.M.L.P.S. Kondotty Chungam,LPS,Kondotty,72,0,4,0,4,3,0,2,5,1,surplus,
+18323,G.M.L.P.S. Kondotty,LPS,Kondotty,86,0,5,0,5,4,0,2,6,1,surplus,
+18330,G.M.L.P.S. Melangadi,LPS,Kondotty,344,0,13,0,13,12,0,2,14,1,surplus,
+18331,G.L.P.S. Morayur,LPS,Kondotty,205,0,9,0,9,7,0,3,10,1,surplus,
+18338,G.L.P.S. Nediyiruppu,UPS,Kondotty,103,32,5,2,7,6,0,2,8,1,surplus,
+18340,G.W.U.P.S. Nediyiruppu,UPS,Kondotty,89,69,5,3,8,5,2,2,9,1,surplus,
+18360,G.M.L.P.S. Vazhayur,LPS,Kondotty,77,0,5,0,5,4,0,2,6,1,surplus,
+18388,G.U.P.S. Neerad,UPS,Kondotty,0,142,0,6,6,0,4,3,7,1,surplus,
+18439,G.L.P.S. Melmuri South,LPS,Malappuram,86,0,4,0,4,4,0,1,5,1,surplus,lost posts
+18442,G.L.P.S. Pookottur New,LPS,Malappuram,214,0,9,0,9,8,0,2,10,1,surplus,
+18444,G.L.P.S. Vadakkemanna,LPS,Malappuram,54,0,4,0,4,3,0,2,5,1,surplus,
+18446,G.M.L.P.S. Athanikkal,LPS,Malappuram,69,0,4,0,4,3,0,2,5,1,surplus,
+18447,G.M.L.P.S. Chappanangadi,LPS,Malappuram,257,0,11,0,11,9,0,3,12,1,surplus,
+18450,G.M.L.P.S. Kuttasserikulamba,LPS,Malappuram,258,0,11,0,11,9,0,3,12,1,surplus,
+18451,G.M.L.P.S. Melmuri Central,LPS,Malappuram,75,0,4,0,4,3,0,2,5,1,surplus,
+18452,G.M.L.P.S. Ponmala,LPS,Malappuram,51,0,4,0,4,3,0,2,5,1,surplus,
+18510,G.L.P.S. Cheruvannur,LPS,Manjeri,230,0,9,0,9,9,0,1,10,1,surplus,
+18524,G.L.P.S. Kizhakkuparamba,LPS,Manjeri,180,0,8,0,8,7,0,2,9,1,surplus,
+18529,G.M.L.P.S. Manhapatta,LPS,Manjeri,200,0,8,0,8,7,0,2,9,1,surplus,
+18538,G.L.P.S. Narukara,LPS,Manjeri,71,0,4,0,4,3,0,2,5,1,surplus,
+18539,G.M.L.P.S. Nellikuth North,LPS,Manjeri,227,0,9,0,9,7,0,3,10,1,surplus,
+18540,G.M.L.P.S. Odompatta,LPS,Manjeri,155,0,8,0,8,7,0,2,9,1,surplus,
+18551,G.L.P.S. Pulath,LPS,Manjeri,181,0,8,0,8,7,0,2,9,1,surplus,
+18566,K.M Musthafa Memorial G.L.P.S. Mundengara,UPS,Manjeri,80,28,4,1,5,4,0,2,6,1,surplus,
+18616,G L P S Kuruva,LPS,Mankada,212,0,9,0,9,8,0,2,10,1,surplus,
+18618,G L P S Mankada,LPS,Mankada,261,0,11,0,11,10,0,2,12,1,surplus,
+18636,G L P S Pooppalam Valambur,LPS,Mankada,47,0,4,0,4,3,0,2,5,1,surplus,
+18645,G M L P S Vadakkangara,LPS,Mankada,234,0,10,0,10,8,0,3,11,1,surplus,
+18651,G L P S Vallikkapatta,LPS,Mankada,79,0,4,0,4,4,0,1,5,1,surplus,lost posts
+18705,GLPS Arakkuparamba,LPS,Perinthalmanna,158,0,8,0,8,7,0,2,9,1,surplus,
+18725,GLPS Pallikunnu,LPS,Perinthalmanna,170,0,8,0,8,7,0,2,9,1,surplus,
+18732,GLPS Perinthalmanna West,LPS,Perinthalmanna,50,0,4,0,4,3,0,2,5,1,surplus,
+19008,G. H. S. S. Tirurangadi,HSS,Parappanangadi,0,422,0,14,14,0,13,2,15,1,surplus,
+19020,Govt.V. H. S. S for Girls. Tirur,VHSE,Tirur,0,103,0,5,5,0,6,0,6,1,surplus,
+19040,G. H. S. S. Kuttippuram,HSS,Kuttippuram,0,183,0,7,7,0,7,1,8,1,surplus,
+19045,G. H. S. S. Trikkavu,HSS,Ponnani,142,216,7,9,16,6,9,2,17,1,surplus,
+19055,G. H. S. S. Veliancode,HSS,Ponnani,0,83,0,3,3,0,4,0,4,1,surplus,
+19206,G. L. P. S. Edappal,LPS,Edappal,80,0,4,0,4,4,0,1,5,1,surplus,lost posts
+19210,Padikkal KalyaniAMMA Memorial G L P S Kallurma,LPS,Edappal,55,0,4,0,4,3,0,2,5,1,surplus,
+19246,G. M. U. P. S. Edappal,UPS,Edappal,96,219,5,9,14,4,6,5,15,1,surplus,received teachers
+19255,G. U. P. S. Vellanchery,UPS,Edappal,122,110,6,5,11,6,4,2,12,1,surplus,
+19306,G. L. P. S. Chellur,LPS,Kuttippuram,170,0,8,0,8,7,0,2,9,1,surplus,
+19319,G. L. P. S. Karaikkad,LPS,Kuttippuram,237,0,10,0,10,8,0,3,11,1,surplus,received teachers
+19327,G. L. P. S. Kulakkad,LPS,Kuttippuram,44,0,4,0,4,3,0,2,5,1,surplus,
+19331,G. L. P. S. Kuttippuram North,LPS,Kuttippuram,124,0,6,0,6,5,0,2,7,1,surplus,
+19333,G. L. P. S. Maniyankad,LPS,Kuttippuram,47,0,4,0,4,3,0,2,5,1,surplus,
+19337,G. L. P. S. Melmuri,LPS,Kuttippuram,174,0,8,0,8,7,0,2,9,1,surplus,
+19341,G. M. L. P. S. Parappuram,LPS,Kuttippuram,77,0,4,0,4,4,0,1,5,1,surplus,lost posts
+19410,G. M. U. P. S. Puthan Kadappuram,UPS,Parappanangadi,105,156,6,6,12,6,5,2,13,1,surplus,lost posts
+19433,G. L. P. S. Parappanangadi,UPS,Parappanangadi,203,42,9,2,11,9,0,3,12,1,surplus,
+19445,GHS Neduva,HS,Parappanangadi,137,330,7,12,19,9,9,2,20,1,surplus,lost posts
+19536,G. F. L. P. S. Veliyancode,UPS,Ponnani,129,34,7,2,9,8,0,2,10,1,surplus,
+19602,G. M. L. P. S. Cherumukku,LPS,Tanur,375,0,15,0,15,13,0,3,16,1,surplus,
+19605,G. M. L. P. S. Cheruvannur,LPS,Tanur,268,0,11,0,11,10,0,2,12,1,surplus,received teachers
+19609,G. M. L. P. S. Iringavoor,LPS,Tanur,69,0,4,0,4,3,0,2,5,1,surplus,
+19622,G. L. P. S. Nannambra,LPS,Tanur,106,0,5,0,5,4,0,2,6,1,surplus,
+19629,G. L. P. S. Rayirimangalam,LPS,Tanur,100,0,5,0,5,4,0,2,6,1,surplus,
+19631,G. M. L. P. S. Ponmundam South,LPS,Tanur,111,0,5,0,5,4,0,2,6,1,surplus,
+19633,G. M. L. P. S. Puthiyakadppuram North,LPS,Tanur,200,0,9,0,9,8,0,2,10,1,surplus,
+19636,A. M. L. P. S. Kormanthala,LPS,Tanur,132,0,8,0,8,7,0,2,9,1,surplus,
+19637,G. M. L. P. S. Rayirimangalam,LPS,Tanur,88,0,4,0,4,4,0,1,5,1,surplus,
+19642,G. M. L. P. S. Thalakadathur,LPS,Tanur,72,0,4,0,4,3,0,2,5,1,surplus,
+19646,G. M. L. P. S. Valavannur,LPS,Tanur,42,0,4,0,4,3,0,2,5,1,surplus,
+19664,G. L. P. S. Tanur,UPS,Tanur,310,107,12,4,16,15,0,2,17,1,surplus,
+19679,G. M. U. P. S. Cheerankadappuram,UPS,Tanur,0,573,0,17,17,1,14,3,18,1,surplus,
+19707,G. M. L. P. S. Edakkulam,LPS,Tirur,116,0,6,0,6,6,0,1,7,1,surplus,lost posts
+19719,G. M. L. P. S. Mangalam,LPS,Tirur,56,0,4,0,4,3,0,2,5,1,surplus,
+19723,G. M. L. P. S. Muttannur,LPS,Tirur,141,0,8,0,8,7,0,2,9,1,surplus,
+19730,G. L. P. S. Thekkankuttur,LPS,Tirur,38,0,4,0,4,3,0,2,5,1,surplus,
+19732,G. L. P. S. Thekkummuri,LPS,Tirur,115,0,6,0,6,5,0,2,7,1,surplus,lost posts
+19740,G. M. L. P. S. Vettam Pallippuram,LPS,Tirur,56,0,4,0,4,3,0,2,5,1,surplus,
+19764,G. L. P. S. Annara,UPS,Tirur,70,23,4,1,5,4,0,2,6,1,surplus,
+19774,G. M. U. P. S. Edakkanad,UPS,Tirur,169,235,8,8,16,8,6,3,17,1,surplus,
+19805,GMLPS C.U. Campus,LPS,Vengara,361,0,14,0,14,12,0,3,15,1,surplus,lost posts
+19812,GLPS Klari,LPS,Vengara,173,0,8,0,8,7,0,2,9,1,surplus,
+19818,GLPS Kodalikundu,LPS,Vengara,117,0,6,0,6,5,0,2,7,1,surplus,
+19830,GLPS Orakam Melmuri,LPS,Vengara,189,0,8,0,8,7,0,2,9,1,surplus,
+19881,GUPS Mundothuparamba,UPS,Vengara,0,649,0,19,19,0,15,5,20,1,surplus,
+48035,G M V H S S Nilambur,VHSE,Nilambur,0,84,0,4,4,0,4,1,5,1,surplus,
+48038,G H S S Pullangode,HSS,Wandoor,0,285,0,10,10,0,10,1,11,1,surplus,lost posts
+48136,C K H M G.H.S. Edappatta,HS,Melattur,0,178,0,7,7,0,7,1,8,1,surplus,
+48140,GHS Vadasseri,HS,Areacode,284,360,12,12,24,9,11,5,25,1,surplus,
+48215,GLPS Kuniyil,LPS,Areacode,72,0,4,0,4,3,0,2,5,1,surplus,
+48216,GLPS Kuniyil South,LPS,Areacode,242,0,10,0,10,8,0,3,11,1,surplus,
+48217,GLPS Kuthuparamba,LPS,Areacode,136,0,8,0,8,7,0,2,9,1,surplus,
+48221,G L P S Pathanapuram,LPS,Areacode,65,0,4,0,4,3,0,2,5,1,surplus,
+48222,GLPS Pavanna,LPS,Areacode,99,0,4,0,4,3,0,2,5,1,surplus,
+48227,GLPS Thencheri,LPS,Areacode,278,0,11,0,11,8,1,3,12,1,surplus,
+48309,G.L.P.S. Kara,LPS,Melattur,142,0,8,0,8,7,0,2,9,1,surplus,
+48315,G.L.P.S. Melkulangara,LPS,Melattur,69,0,4,0,4,3,0,2,5,1,surplus,
+48319,G.L.P.S. Pathirikode,LPS,Melattur,55,0,4,0,4,3,0,2,5,1,surplus,
+48401,Amarambalam GLPS,LPS,Nilambur,134,0,7,0,7,6,0,2,8,1,surplus,
+48414,GLPS Kattumunda East,LPS,Nilambur,345,0,13,0,13,11,0,3,14,1,surplus,
+48422,Mankuth GLPS,LPS,Nilambur,94,0,4,0,4,3,0,2,5,1,surplus,
+48426,GMLPS Mukkatta,LPS,Nilambur,75,0,4,0,4,3,0,2,5,1,surplus,
+48429,Naduvakkad GLPS,LPS,Nilambur,64,0,4,0,4,3,0,2,5,1,surplus,
+48431,GMLPS Nilambur,LPS,Nilambur,533,0,19,0,19,15,0,5,20,1,surplus,
+48436,Payampadam GLPS,LPS,Nilambur,79,0,4,0,4,3,0,2,5,1,surplus,
+48447,Varikkal GLPS,LPS,Nilambur,132,0,6,0,6,5,0,2,7,1,surplus,
+48469,Paramba G U P S,UPS,Nilambur,368,483,14,16,30,14,11,6,31,1,surplus,
+48478,Kattumunda East GUPS,UPS,Nilambur,0,770,0,22,22,0,18,5,23,1,surplus,
+48526,Pazhedam Panampoyil GLPS,LPS,Wandoor,285,0,11,0,11,9,0,3,12,1,surplus,
+48539,Uthirampoyil GLPS,LPS,Wandoor,129,0,6,0,6,5,0,2,7,1,surplus,
+48557,Maliyekkal GUPS,UPS,Wandoor,282,228,11,9,20,10,6,5,21,1,surplus,
+48559,Pazhayakadakkal GUPS,UPS,Wandoor,375,275,14,10,24,10,10,5,25,1,surplus,lost posts
+18009,GHSS POOKKOTTUR,HSS,Malappuram,0,412,0,15,15,0,15,2,17,2,surplus,
+18075,G H S S Kunnakkavu,HSS,Perinthalmanna,0,381,0,13,13,0,11,4,15,2,surplus,
+18097,G H S Aliparamba,HSS,Perinthalmanna,95,114,5,6,11,5,6,2,13,2,surplus,
+18138,G.H.S.S Chullikkode,HSS,Kizhisseri,157,135,8,6,14,8,6,2,16,2,surplus,
+18150,GHS CHERIYAM MANKADA,HS,Mankada,247,231,10,9,19,10,7,4,21,2,surplus,lost posts
+18305,G.L.P.S. Arimbra Melmuri,LPS,Kondotty,222,0,9,0,9,8,0,3,11,2,surplus,
+18318,G.M.L.P.S. Karippur,LPS,Kondotty,261,0,11,0,11,10,0,3,13,2,surplus,received teachers
+18472,G.M.U.P.S. Irumbuzhi,UPS,Malappuram,421,639,17,19,36,12,16,10,38,2,surplus,lost posts
+18508,G.L.P.S. Cherukulam,LPS,Manjeri,185,0,9,0,9,8,0,3,11,2,surplus,
+18515,G.M.L.P.S. Eranhikode,LPS,Manjeri,162,0,8,0,8,8,0,2,10,2,surplus,lost posts
+18517,G.M.L.P.S. Karakunnu,LPS,Manjeri,179,0,8,0,8,8,0,2,10,2,surplus,lost posts
+18523,G.M.L.P.S. Kidangazhi,LPS,Manjeri,303,0,13,0,13,12,0,3,15,2,surplus,
+18532,G.L.P.S. Manjeri,LPS,Manjeri,365,0,15,0,15,15,0,2,17,2,surplus,lost posts
+18553,G.L.P.S. Ramankulam,LPS,Manjeri,166,0,8,0,8,7,0,3,10,2,surplus,
+18554,G.L.P.S. Theyyampadikuth,LPS,Manjeri,93,0,5,0,5,4,0,3,7,2,surplus,
+18716,GLPS Kunnakkavu,LPS,Perinthalmanna,338,0,14,0,14,13,0,3,16,2,surplus,lost posts
+19013,GVHSS Vengara,VHSE,Vengara,0,276,0,10,10,0,10,2,12,2,surplus,lost posts
+19022,G. V. H. S. S. Kalpakanchery,VHSE,Kuttippuram,0,795,0,24,24,0,23,3,26,2,surplus,
+19026,D. G. H. S. S. Tanur,HSS,Tanur,0,892,0,28,28,0,24,6,30,2,surplus,received teachers
+19073,GHSS Peruvallur,HSS,Vengara,243,363,11,13,24,8,12,6,26,2,surplus,received teachers
+19253,G. U. P. S. Pothanur,UPS,Edappal,110,147,6,6,12,7,4,3,14,2,surplus,lost posts
+19321,G. L. P. S. Kattilangadi,LPS,Kuttippuram,143,0,7,0,7,7,0,2,9,2,surplus,lost posts
+19364,G. U. P. S. Painkannur,UPS,Kuttippuram,100,183,5,7,12,4,4,6,14,2,surplus,lost posts
+19401,G. L. P. S. Anappadi,LPS,Parappanangadi,178,0,8,0,8,8,0,2,10,2,surplus,
+19408,G. F. L. P. S. Parappanangadi,LPS,Parappanangadi,154,0,8,0,8,8,0,2,10,2,surplus,lost posts
+19412,G. M. L. P. S. Thirurangadi,LPS,Parappanangadi,206,0,8,0,8,7,0,3,10,2,surplus,
+19432,G. M. L. P. S. Parappanangadi,LPS,Parappanangadi,153,0,8,0,8,7,0,3,10,2,surplus,
+19514,G. L. P. S. Veliyancode New,LPS,Ponnani,183,0,8,0,8,8,0,2,10,2,surplus,
+19543,G. M. U. P. S. Veliyancode South,UPS,Ponnani,299,296,12,11,23,11,8,6,25,2,surplus,lost posts
+19607,G. M. L. P. S. Edakadappuram,LPS,Tanur,153,0,7,0,7,7,0,2,9,2,surplus,lost posts
+19660,G. L. P. S. K.Puram,UPS,Tanur,280,81,12,3,15,15,0,2,17,2,surplus,lost posts
+19667,G. U. P. S. Karingappara,UPS,Tanur,355,479,14,16,30,14,11,7,32,2,surplus,
+19686,K. P. N. M. U. P. S. Tanur,UPS,Tanur,0,127,0,6,6,0,5,3,8,2,surplus,
+19777,G. U. P. S. Purathupadinjarekkara,UPS,Tirur,184,184,8,7,15,8,7,2,17,2,surplus,
+19809,GMLPS Iringallur,LPS,Vengara,174,0,8,0,8,7,0,3,10,2,surplus,
+19867,GHS Kolappuram,HS,Vengara,320,281,13,9,22,11,9,4,24,2,surplus,lost posts
+19872,GUPS Valiyora,UPS,Vengara,257,265,11,9,20,12,6,4,22,2,surplus,
+48135,GHS Kappilkarad,HS,Wandoor,97,132,5,6,11,6,6,1,13,2,surplus,lost posts
+48137,G H S Vettilappara,HS,Areacode,256,318,11,11,22,11,9,4,24,2,surplus,received teachers
+48144,GHS Marutha,HS,Nilambur,319,385,13,13,26,11,12,5,28,2,surplus,
+48225,GLPS Thachanna,LPS,Areacode,326,0,12,0,12,11,0,3,14,2,surplus,
+48276,G L P S West Pathanapuram,LPS,Areacode,61,0,4,0,4,4,0,2,6,2,surplus,
+48406,Cholamunda GLPS,LPS,Nilambur,188,0,9,0,9,8,0,3,11,2,surplus,lost posts
+48423,GLPS Meppadam,LPS,Nilambur,111,0,6,0,6,6,0,2,8,2,surplus,lost posts
+48482,Pulliyil GUPS,UPS,Nilambur,0,540,0,18,18,0,16,4,20,2,surplus,lost posts
+48512,Kallamoola GLPS,LPS,Wandoor,176,0,8,0,8,7,0,3,10,2,surplus,
+48524,Pattanamkundu GLPS,LPS,Wandoor,82,0,4,0,4,4,0,2,6,2,surplus,
+18666,Govt. U P School Pang,UPS,Mankada,279,614,12,19,31,13,16,5,34,3,surplus,
+18674,G U P S Panagangara,UPS,Mankada,0,340,0,12,12,0,10,5,15,3,surplus,
+19014,GMVHSS Vengara Town,VHSE,Vengara,132,365,7,13,20,8,12,3,23,3,surplus,lost posts
+19119,G. H. S. S. Ponmundam,HSS,Tanur,217,365,10,12,22,10,12,3,25,3,surplus,
+19254,K. M. G. U. P. S. Thavanur,UPS,Edappal,317,420,12,15,27,14,12,4,30,3,surplus,lost posts
+19363,G. U. P. S. Koodasseri,UPS,Kuttippuram,245,285,10,10,20,10,8,5,23,3,surplus,
+19512,G. L. P. S. Theyyangad,LPS,Ponnani,458,0,16,0,16,17,0,2,19,3,surplus,
+19541,G. F. U. P. S. Palapetty,UPS,Ponnani,134,140,7,6,13,7,5,4,16,3,surplus,
+19673,G. M. U. P. S. Tanur Town,UPS,Tanur,168,434,9,15,24,8,14,5,27,3,surplus,
+19699,G. U. P. S Niramaruthur,UPS,Tanur,294,699,12,21,33,11,18,7,36,3,surplus,
+19704,G. L. P. S. B. P. Angadi,LPS,Tirur,121,0,7,0,7,9,0,1,10,3,surplus,lost posts
+19779,G. M. U. P. S. Tirur,UPS,Tirur,375,564,14,17,31,14,13,7,34,3,surplus,
+19862,CHAKKEERI AHAMMED KUTTY MEMORIAL G.M.U.P.S.CHERUR,UPS,Vengara,608,719,20,21,41,20,16,8,44,3,surplus,
+48090,G V H S S Kizhuparamba,VHSE,Areacode,0,205,0,8,8,1,7,3,11,3,surplus,
+48253,GUPS Chengara,UPS,Areacode,0,503,0,16,16,0,14,5,19,3,surplus,lost posts
+48466,Nilambur GMUPS,UPS,Nilambur,121,307,6,11,17,6,8,6,20,3,surplus,lost posts
+48553,Kalikavu Bazar G M U P S,UPS,Wandoor,639,563,20,16,36,19,12,8,39,3,surplus,
+18384,G.M.U.P.S. Kondotty,UPS,Kondotty,0,811,0,24,24,0,20,8,28,4,surplus,lost posts
+18758,GMUPS Valapuram,UPS,Perinthalmanna,208,379,9,13,22,10,9,7,26,4,surplus,lost posts
+19024,G. H. S. S. Kattilangadi,HSS,Tanur,278,394,11,14,25,13,13,3,29,4,surplus,lost posts
+19775,G. U. P. S. Purathur,UPS,Tirur,470,643,18,19,37,17,18,6,41,4,surplus,
+19868,G H S Kuruka,HS,Vengara,348,445,14,15,29,16,14,3,33,4,surplus,lost posts
+48049,G G V H S S Wandoor,VHSE,Wandoor,134,251,7,9,16,8,8,4,20,4,surplus,lost posts
+48100,GHSS Edakkara,HSS,Nilambur,259,374,11,12,23,9,13,5,27,4,surplus,lost posts
+48139,G.H.S. Kappu,HS,Melattur,350,413,14,13,27,12,13,6,31,4,surplus,
+48333,G.M.U.P.S. Oravambram,UPS,Melattur,244,349,10,11,21,8,11,6,25,4,surplus,lost posts
+48455,Eranhimangad GUPS,UPS,Nilambur,270,410,11,13,24,12,10,6,28,4,surplus,lost posts
+48549,G.H.S Anchachavadi,HS,Wandoor,452,443,17,15,32,18,11,7,36,4,surplus,
+18028,G V H S S Nellikuth,VHSE,Manjeri,198,695,8,21,29,8,18,8,34,5,surplus,
+18232,G U P S Cheecode,UPS,Kizhisseri,274,249,11,9,20,10,9,6,25,5,surplus,
+18234,GUPS Kadungallur,UPS,Kizhisseri,206,226,9,9,18,11,6,6,23,5,surplus,
+18471,G.M.U.P.S. Chemmankadavu,UPS,Malappuram,176,557,8,18,26,8,15,8,31,5,surplus,lost posts
+18575,G.U.P.S. Manjeri,UPS,Manjeri,144,158,8,6,14,8,8,3,19,5,surplus,lost posts
+18583,G.U.P.S. Veembur,UPS,Manjeri,213,275,8,9,17,8,9,5,22,5,surplus,lost posts
+18586,Anakkayam GP Govt. UP School Pandallur,UPS,Manjeri,0,946,0,27,27,0,23,9,32,5,surplus,
+19063,G.H. S. S. Kokkur,HSS,Edappal,113,226,5,8,13,5,10,3,18,5,surplus,lost posts
+19357,G. H. S. Athavanad,HS,Kuttippuram,214,434,10,14,24,9,16,4,29,5,surplus,
+19671,G H S Meenadathur,HS,Tanur,353,577,15,17,32,17,15,5,37,5,surplus,lost posts
+48242,GUPS Maithra,UPS,Areacode,256,351,10,12,22,10,10,7,27,5,surplus,
+48243,GUPS Moorkanad,UPS,Areacode,179,722,8,22,30,9,18,8,35,5,surplus,
+48244,GMUPS Mundambra,UPS,Areacode,340,294,13,11,24,13,8,8,29,5,surplus,
+18375,G.M.U.P.S. Ozhukur,UPS,Kondotty,482,722,19,21,40,19,17,10,46,6,surplus,received teachers
+18380,G.M.U.P.S. Vazhakkad,UPS,Kondotty,223,246,10,9,19,8,10,7,25,6,surplus,lost posts
+48134,G. H. S Pannippara,HS,Areacode,301,543,13,17,30,13,16,7,36,6,surplus,
+18677,MPGUP SCHOOL VADAKKANGARA,UPS,Mankada,0,482,0,16,16,0,16,7,23,7,surplus,
+18578,G.U.P.S. Pathappiriyam,UPS,Manjeri,345,370,15,12,27,15,12,8,35,8,surplus,lost posts
+19441,G. M. U. P. S. Kakkad,UPS,Parappanangadi,344,375,14,13,27,15,13,7,35,8,surplus,lost posts
+18373,G.M.U.P.S. Chirayil,UPS,Kondotty,321,732,13,22,35,15,20,9,44,9,surplus,lost posts

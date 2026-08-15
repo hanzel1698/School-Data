@@ -1,174 +1,167 @@
-# Estimating LP/UP post entitlement from enrolment, and testing it against the department
+# Estimating LP/UP division entitlement, and testing it against the department
 
 Produced by `estimate_sanctioned_posts.py`. Enrolment re-crawled from Sametham
-on 2026-08-15 (standard × medium, 519 schools). Validated against the DDE
-Malappuram staff-fixation order of 14.07.2026.
+on 2026-08-15 (519 schools). Division rules from the Kerala staff-fixation
+ready reckoner and strength-wise division tables (`data/sources/`), cross-checked
+against muralipanamanna.in. Validated against the DDE Malappuram staff-fixation
+order of 14.07.2026.
 
 > The re-crawl reproduced the staff side **byte-identically** to the 14.08.2026
 > crawl — all 519 schools, every designation count unchanged, 6,088 LP/UP posts
-> both times. That is a second, independent confirmation of the finding in
-> `output/staff_data_currency.md`: Sametham's staff data is not moving, and has
-> not moved since well before the 15.07.2026 redeployment. The committed
-> `data/processed/malappuram_staff.csv` is therefore left as it was.
+> both times. That independently confirms `output/staff_data_currency.md`:
+> Sametham's staff data is not moving. `data/processed/malappuram_staff.csv` is
+> therefore left as it was.
 
 ## What this is
 
 Every staffing figure elsewhere in this repository is staff *in position*. A
 vacant sanctioned post appears in no public source, so vacancies cannot be read
 off Sametham. This approaches them from the other side: reconstruct how many
-class divisions each school's enrolment earns, and compare against who is
-actually in place.
+class divisions each school's enrolment earns, and compare against who is in
+place.
 
-The output is a signed **imbalance**, not a vacancy count — positive means more
-teachers than divisions earn, negative means fewer. Both occur, and surplus was
-the commoner case in Malappuram this year.
+The output is a signed **imbalance**, not a vacancy count.
 
 ## Headline
 
-**The method works.** Scored against 134 schools where the department's own
-2026-27 verdict is known, the estimate separates them with **AUC 0.862** — the
-probability that a school the department found surplus scores above one it sent
-teachers to. Held-out cross-validation gives **0.838**, so this is not an
-artefact of fitting.
+**The method works, and the district is close to balanced.**
 
 | | Value |
 |---|---:|
-| Divisions earned (519 Government schools, LP+UP) | 6,621 |
+| Divisions earned (519 Government schools, LP+UP) | 6,050 |
 | LP/UP teaching posts filled | 6,088 |
-| **District imbalance** | **−533** |
-| Schools estimated short | 269 |
-| Schools estimated in surplus | 141 |
-| Schools balanced | 109 |
+| **District imbalance** | **+38** |
+| Schools estimated short | 184 |
+| Schools balanced | 127 |
+| Schools estimated in surplus | 208 |
 
-The −533 is sensitive to the division-strength assumption in a way the ranking
-is not: across the strengths that fit the department's decisions equally well
-(LP 1:30–33, UP 1:35–40), the district figure ranges from **−277 to −533**.
-Treat it as "a few hundred posts short across the district", not as 533.
+Scored against the 134 schools where the department's own 2026-27 verdict is
+known, the estimate separates them with **AUC 0.879** — the probability that a
+school the department found surplus scores above one it sent teachers to.
+Held-out cross-validation gives **0.855**, so this is not an artefact of
+fitting.
 
-## Three corrections to the method as originally proposed
+A district that is roughly at entitlement, with surplus schools slightly
+outnumbering short ones, is exactly the picture the department's own action
+implies: it spent the 2026-27 fixation moving 91 teachers *out* of over-staffed
+schools, not recruiting into empty ones.
 
-### 1. Divisions are formed per standard *and* per medium
+## The rule, as the sources actually state it
 
-Not by dividing a section total. This is the single biggest arithmetic
-difference:
+The tables are **not** flat ratios:
 
-| Method | Divisions |
-|---|---:|
-| Per standard × medium | 6,621 |
-| Naive: section total ÷ strength | 5,055 |
-| **Understatement** | **1,566 (31%)** |
+- **LP (1:30)** — 1–30 → 1 division, 31–60 → 2, 61–90 → 3, 91–120 → 4, then a
+  plateau: **121–200 all give 5 divisions**, after which it moves in steps of
+  40, not 30.
+- **UP (1:35)** — a clean 1:35 throughout, 1–35 → 1, 36–70 → 2, and so on.
+- **HS (1:45)** — 1–50 → 1, then steps of 45. Out of scope here.
 
-GLPS Kuzhimanna, standard 1: 19 Malayalam-medium and 34 English-medium. That is
-three divisions (1 + 2), not the two that 53 ÷ 30 gives. Applying the ratio to
-the section total understates entitlement by nearly a third district-wide, and
-understates it worst in exactly the small schools where the vacancy question
-matters most.
+The ratio bands **do not line up with the sections**. The reckoner applies
+1:30 to **standards I–V** and 1:35 to **VI–VIII**. Standard 5 therefore sits in
+the UP section but forms its divisions at the LP ratio. Modelling that
+correctly is worth a little accuracy (AUC 0.879 against 0.878 for a naive
+section split).
 
-### 2. 1:30 and 1:35 are right — but only if you count all LP/UP staff
+Per standard, the upper bands are almost never reached, so the tables and a
+flat `ceil(n / ratio)` differ by only a division or two district-wide. The
+tables are used anyway, because they are what the rule says.
 
-The strengths were swept from 1:22 to 1:45 on both sections and scored against
-the department's verdicts. The peak is LP 1:31 / UP 1:39 at AUC 0.867; the
-conventional **1:30 and 1:35 score 0.862**, inside the noise. The assumed
-figures are kept rather than fitted ones.
+## Three corrections to the method as originally proposed — one of them to my own
 
-This only holds when the comparison counts **every LP/UP-attached teaching
-post**, including the headmaster and the Arabic/Urdu/Hindi language teachers
-that `malappuram_summary.md` reports as the shared column. Excluding them — on
-the theory that only LP-specific and UP-specific designations hold divisions —
-drops separation to 0.814 and leaves the model calling 25 of 65 known-surplus
-schools a shortfall. In practice a Kerala LP/UP headmaster commonly holds a
-division and language teachers take classes across standards 1–7; the fixation
-decisions bear that out.
+### 1. Divisions are counted per standard, not per section total
 
-So the 1,288 shared posts that the summary cannot split between LP and UP do
-not need splitting for this purpose. They count in full against the combined
-LP+UP division total.
+Your step 2 proposed dividing total section enrolment. That scores **AUC
+0.837** and puts the district 1,033 posts in surplus. Counting each standard
+separately scores **0.879** and puts it at +38. Divisions are physical classes
+of one standard; the arithmetic has to follow that.
 
-### 3. "Required − appointed" is an imbalance, not a vacancy count
+### 2. But NOT per medium — I was wrong about this
 
-The difference is signed and both signs are common: 141 schools estimated in
-surplus against 269 short. Reporting the negative side alone as "vacancies"
-would mislabel the 141, and the department's own order confirms surplus is
-real — it moved 91 teachers *out* of over-staffed schools.
+I previously argued that because Kerala forms divisions medium-wise, and
+Sametham publishes a Standard × Medium table, the calculation had to split on
+medium. **The department's decisions say otherwise.** Splitting by medium
+scores **0.862** against 0.879, and pushes the district to a 524-post shortfall
+that the 2026-27 redeployment plainly contradicts.
+
+I over-modelled. The earlier claim that ignoring medium "understates
+entitlement by 31%" was measuring the gap between two wrong models — the
+section-total method against the medium-wise one. Against the correct
+per-standard method the medium split *overstates* entitlement. Your original
+instinct to work from plain enrolment was closer than my refinement; it just
+needed to be per standard rather than per section. The variant is kept behind
+`--medium-wise` since it is a reasonable hypothesis that the data rejects.
+
+### 3. The shared posts count against divisions
+
+Excluding the headmaster and the Arabic/Urdu/Hindi language teachers drops
+separation to **0.827**. The reckoner explains why: language posts are
+sanctioned on **periods per division** (Sanskrit/Arabic/Urdu 4 periods each in
+standards I–IV; Hindi 2–3 periods in V–VII), with 4–14 periods giving one
+part-time post and 15–28 one full-time post. They scale *with* divisions rather
+than sitting outside them. So the 1,288 posts `malappuram_summary.md` cannot
+split between LP and UP need no splitting here — they count in full against the
+combined division total.
+
+### And your step 4 concern was right
+
+The difference is signed and both signs are common: 208 schools in surplus
+against 184 short. Reporting only the negative side as "vacancies" would
+mislabel more than half the schools that differ from entitlement.
 
 ## Validation against the department's decisions
 
-The order gives a verdict for 134 of the 519 schools: 65 lost posts (carrying
-surplus) and 69 received redeployed teachers (posts available). Both the
-fixation and this estimate run off the same sixth-working-day enrolment, and
-the staff figures predate the 15.07.2026 redeployment, so the comparison is
-aligned in time.
-
 | Department's verdict | Estimate: surplus | balanced | shortfall |
 |---|---:|---:|---:|
-| **Lost posts** (65) | **41** | 8 | 16 |
-| **Received teachers** (69) | 5 | 8 | **56** |
+| **Lost posts** (65) | **54** | 2 | 9 |
+| **Received teachers** (69) | 8 | 16 | **45** |
 
-- Sign agreement: **97 of 134 (72%)**
-- Sign backwards: 21 (16%)
-- Ranking separation: **AUC 0.862**; held-out CV **0.838**
+- Sign agreement: **99 of 134 (74%)**
+- Sign backwards: 17 (13%)
+- Ranking separation: **AUC 0.879**; held-out CV **0.855**
 
-The extremes line up better than the aggregate suggests. The model's three
-largest estimated surpluses are `18578 G.U.P.S. Pathappiriyam` (+7),
-`18373 G.M.U.P.S. Chirayil` (+6) and `19441 G. M. U. P. S. Kakkad` (+5) — and
-those are the department's biggest losers, at 6, 2 and 2 posts removed
-respectively. Where the estimate is most confident, it is right.
+Sweeping the ratios from 1:24 to 1:45 peaks at LP 1:31 / UP 1:35 (AUC 0.884).
+The rule's own 1:30 / 1:35 scores 0.879 — inside the noise — so the rule is
+kept rather than a fitted approximation to it. That the sweep lands on the
+statutory values from a standing start is itself corroboration.
 
-## Where the residual error comes from
+## What is still not modelled
 
-The 16 schools the department found surplus but the model calls short are the
-informative failures. Candidate causes, none of which this model sees:
-
-- **Post protection.** A teacher whose post was abolished in an earlier year is
-  redeployed, not removed, so a school can hold protected staff above its
-  current entitlement.
-- **Language teachers' separate basis.** They are sanctioned on pupils opting
-  for that language, so a school can hold one for reasons enrolment totals do
-  not reveal — even though counting them improves the fit overall.
+- **Effective strength.** The reckoner defines it as
+  `Verified Strength + (Roll Strength × 5%)`, capped at roll strength. Sametham
+  publishes one enrolment figure and does not say which it is. Adding a flat 5%
+  moves the district by about 120 posts and *lowers* separation to 0.874,
+  suggesting Sametham's figure already behaves like the effective one — but
+  that is inference, not evidence.
+- **Post protection.** A teacher whose post was abolished earlier is redeployed,
+  not removed, so a school can hold protected staff above entitlement.
+- **The pupils-opting threshold for language posts** — minimum 30 pupils in the
+  UP section for one Hindi/Sanskrit/Arabic post. Sametham does not publish
+  language options per school.
 - **Relaxations** for hilly, coastal and single-teacher schools. Sametham
-  carries `Is Hilly Area` and `Is Coastal Area` flags, so this is testable.
-- **Specialist posts** (PD teacher, drawing, sewing), excluded from both sides
-  here but which may absorb divisions in practice.
-
-## Largest estimated shortfalls
-
-| Code | School | Divisions | Staff | Imbalance | Department's verdict |
-|---|---|---:|---:|---:|---|
-| 19453 | G. M. U. P. S. Venniyur | 67 | 39 | −28 | — |
-| 19866 | GUPS Klari | 65 | 40 | −25 | received teachers |
-| 19439 | G. U. P. S. Ariyallur | 45 | 33 | −12 | received teachers |
-| 18021 | G B H S S Manjeri | 20 | 10 | −10 | received teachers |
-| 18204 | GLPS Kizhisseri | 33 | 23 | −10 | — |
-| 48457 | Kurumbalangode GUPS | 28 | 18 | −10 | — |
-
-`19453 G. M. U. P. S. Venniyur` is worth flagging: the largest estimated
-shortfall in the district, and it also appeared in `output/udise_crosscheck.md`
-as a pupil-teacher-ratio outlier — yet the redeployment did not reach it. On
-this evidence it is genuinely under-staffed rather than a stale record.
-
-Full ranked list: `data/processed/malappuram_division_estimate.csv`.
+  carries `Is Hilly Area` and `Is Coastal Area` flags, so this is the most
+  promising next refinement.
 
 ## How far to trust this
 
-**Do** use it to rank schools by likely shortfall, and to size the district
-problem to within a couple of hundred posts.
+**Do** use it to rank schools by likely shortfall or surplus, and to size the
+district position.
 
 **Do not** cite a per-school figure as that school's vacancy count. The model
-gets the sign wrong on 16% of schools where the answer is known, carries no
-model of protection or relaxation, and rests on division strengths inferred
-from 134 labelled schools rather than read from the KER text. Confirm the
-strengths against the current rules before publishing any number from this.
+gets the sign wrong on 13% of schools where the answer is known, and carries no
+model of protection or relaxation.
 
-One further caveat inherited from `output/staff_data_currency.md`: the staff
-side of this comparison predates the 15.07.2026 redeployment. That is what
-makes the validation valid, but it means the per-school imbalances describe the
-position *before* the department acted, not the position today.
+One caveat inherited from `output/staff_data_currency.md`: the staff side
+predates the 15.07.2026 redeployment. That is what makes the validation valid,
+but it means per-school imbalances describe the position *before* the
+department acted.
+
+Full ranked list: `data/processed/malappuram_division_estimate.csv`.
 
 ## Reproducing
 
 ```
-python phase2_fetch.py                    # populate data/cache/ (519 pages, ~17 min)
-python estimate_sanctioned_posts.py       # estimate and validate
-python estimate_sanctioned_posts.py --calibrate       # sweep division strengths
-python estimate_sanctioned_posts.py --exclude-shared  # the weaker variant
+python phase2_fetch.py                                # 519 pages, ~17 min
+python estimate_sanctioned_posts.py                   # estimate and validate
+python estimate_sanctioned_posts.py --calibrate       # sweep the ratios
+python estimate_sanctioned_posts.py --medium-wise     # the rejected variant
 ```
