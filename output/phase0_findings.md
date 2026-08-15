@@ -302,6 +302,15 @@ the counts are already on the school page.
 **Recommendation: don't fetch them.** Say so if you want one sampled to
 confirm what's behind the link.
 
+> **Addendum, 2026-08-15.** One sub-page was sampled on request
+> (`/publicView/employees/18232/16B/8001`, 1 request) to settle the provenance
+> question in [section 7](#7-provenance-and-freshness-of-the-staff-data). It
+> confirms the guess: the page is a table of `Sl no | Employee Name |
+> Designation`, five named individuals for that post code, with no PEN, no
+> joining date and no timestamp. The recommendation stands — nothing there
+> that the counts on the school page don't already give us, and it is personal
+> data. The sample was not written into `data/`.
+
 ---
 
 ## 6. Request-count estimate for the full crawl
@@ -322,6 +331,78 @@ the working set, which the district list alone already satisfies.
 
 Caching is per-school, so a re-run after a parser change costs **zero**
 requests.
+
+---
+
+## 7. Provenance and freshness of the staff data
+
+*Added 2026-08-15, after the Phase 1–4 crawl, to answer two questions: where do
+the teacher names come from, and when were they last updated. 13 further
+requests to Sametham — 1 school page, 5 header-only probes, 1 employee
+sub-page, 5 probes for a login route (all 404, there is none), 1 homepage —
+plus its two published PDFs.*
+
+### The data is not typed into Sametham
+
+**G.O.(Rt) No. 436/2019/G.Edn dated 01.02.2019**, linked from Sametham's own
+homepage as `assets/documents/GO Rt 436 19 KITE Sametham Online School Data
+Bank.pdf`, is the order that created the portal. Clause 1 of the operative
+part, translated from the Malayalam:
+
+> Since the data used in Sametham is that from **Sampoorna, SPARK, hscap and
+> vhscap**, the respective agencies shall make the data in the said
+> applications available to Sametham. **No direct data entry of any kind is
+> permitted in Sametham.** Schools and educational institutions must
+> therefore, in coordination with their offices, update all details in those
+> applications in a timely manner.
+
+Page 1 of the same order names the source per domain, and describes SPARK as
+"the Finance Department's SPARK (**employee details**)". So the chain for a
+teacher's name and post is:
+
+```
+DDO / Head Master enters it in SPARK  →  KITE syncs  →  Sametham renders
+                                                        /publicView/employees/{code}/16B/{post_id}
+```
+
+Three independent things in the data agree with a SPARK origin rather than a
+school-typed field:
+
+1. The homepage staff table reports **0 teachers for every Unaided Recognised
+   school** in the state, while their student and infrastructure data is
+   present. Unaided staff are not on the government payroll, so they are not
+   in SPARK.
+2. Designations come with stable numeric post codes (`5046`, `8001`, `12396`,
+   `10000` — see §5) rather than free text.
+3. Vacant sanctioned posts never appear; only people drawing salary do. This
+   is the same observation as [Risk B](#risk-b--the-staff-in-position-caveat-is-worse-than-stated),
+   and the payroll source explains *why* the figure is a floor.
+
+### There is no published update date for staff
+
+| Signal | What it actually is |
+|---|---|
+| Homepage `Data updated on 27 Jun 2026` | Present on the **Schools** and **Students Strength** panels only. The **Teaching Staff** and **Non Teaching Staff** panels carry no stamp. Unchanged between the 14 Aug sample and a 15 Aug refetch. |
+| HTTP `Last-modified` on a school page | Page-**cache** build time, not an edit time. Differs per school (18232 → 11 Aug 19:10:03, 18205 → 11 Aug 14:57:34), is byte-identical on repeated requests, and `max-age` = 840 000 s − age, i.e. a fixed ≈9.7-day cache TTL. |
+| School page, employee sub-page | Nothing. No "as on" date, no revision field, no per-record timestamp. |
+
+Upstream in SPARK the record changes on every joining, transfer and
+retirement — continuously — but that date is not exposed anywhere in Sametham.
+
+### What we can defensibly cite
+
+**The retrieval date, and only the retrieval date.** Every school in
+`data/processed/malappuram_staff.csv` traces to a `fetched_at` in
+`data/raw/fetch_manifest.jsonl`, all on **2026-08-14**. Phase 4 wording should
+say *staff in position as retrieved on 14 Aug 2026*, never *as on* any date,
+because the site does not support the stronger claim.
+
+Two ways to do better if the age of the data turns out to matter:
+
+- Ask KITE whether the SPARK sync is scheduled or on demand —
+  contact@kite.kerala.gov.in, 0471 2529800.
+- Measure it. The full 14 Aug HTML is cached under `data/raw/`, so a re-crawl
+  and diff yields an observed-change date, and a third run yields a cadence.
 
 ---
 
